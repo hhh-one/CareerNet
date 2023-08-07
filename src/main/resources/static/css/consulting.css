@@ -1,0 +1,92 @@
+@charset "UTF-8";
+#ct {
+  padding-top: 168px;
+}
+
+#ct .inner {
+  width: 980px;
+  margin: 0 auto;
+  min-height: 630px;
+}
+
+.board-view-wrap {
+  width: 100%;
+  margin: 28px 0 0;
+}
+
+#contents .content-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #000;
+}
+
+#contents .board-view {
+  width: 100%;
+  border-top: 2px solid #768699;
+  border-bottom: 1px solid #b6c1cd;
+}
+
+.board-view th {
+  text-align: left;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #b6c1cd;
+  padding: 15px 15px 12px;
+}
+
+.board-view .student-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #3f5063;
+  margin-bottom: 7px;
+}
+
+.board-view .student-date li {
+  font-size: 12px;
+  float: left;
+  color: #333;
+  font-weight: normal;
+  background: url(https://www.career.go.kr/webres/images/front/contents/mycareer/gray_line.gif) no-repeat 0 1px;
+  padding: 0 12px 0 10px;
+}
+
+.board-view .student-date li:first-child {
+  background: none;
+  padding: 0 12px 0 0;
+}
+
+.board-view .last .student-comment {
+  padding: 20px 15px 16px;
+  font-size: 10pt;
+  line-height: 1.5;
+}
+
+.board-view-btn {
+  width: 100%;
+  text-align: center;
+  margin: 15px 0 0;
+  overflow: hidden;
+}
+
+.board-view-btn .btn-right {
+  float: right;
+  background: url(https://www.career.go.kr/webres/images/front/btn/btn_gray_bg.gif) repeat-x left bottom;
+  height: 13px;
+  font-size: 12px;
+  padding: 8px 6px 7px;
+  border: solid 1px #e4eaed;
+  border-right-color: #b1bcc2;
+  border-bottom-color: #b1bcc2;
+}
+
+.board-view-btn .btn-right .btn-gray {
+  font-weight: bold;
+  padding: 8px 17px 7px;
+  margin-left: 8px;
+}
+
+.board-view-btn .btn-right .btn-gray a {
+  color: #566677;
+  font-weight: bold;
+  letter-spacing: -1px;
+  
+}
