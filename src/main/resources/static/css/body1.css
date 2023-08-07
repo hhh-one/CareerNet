@@ -1,0 +1,1789 @@
+@charset "utf-8";
+
+/* 진로교육 현황조사 2017년 초증등 */
+.report-wrap .img-cover.report2017_01 {background:url(/webres/images/bg_report2017_01.jpg) no-repeat 0 bottom;}
+.report-wrap .report-tab.on .img-cover.report2017_01 {background-position:0 top;}
+.report-view {display:none;}
+.report-view.on {display:block;}
+.report-view {margin-top:44px;}
+.indexBox ul li a:hover{margin-right:23px !important;}
+
+/* 진로교육 현황조사 2018년 */
+#eduInlineMenu02 #currentTabMenu ul {display:table;background:#eceeef;}
+#eduInlineMenu02 #currentTabMenu li {float:none;display:table-cell;width:auto;}
+#eduInlineMenu02 #currentTabMenu li:first-child {width:12.5%}
+#eduInlineMenu02 #currentTabMenu li:first-child a {padding-right:0;padding-left:0;}
+#eduInlineMenu02 #currentTabMenu li a {padding-right:0;padding-left:0;}
+.index-new ul li a {width:auto;margin-right:23px;}
+.index-new ul li a:hover {margin-right:23px;}
+
+.report-wrap {width:100%;height:215px;}
+.report-wrap .report-tab {position:relative;float:left;width:976px;height:211px;border:2px solid #ccc;border-radius:5px;background:#fefefe;cursor:pointer;}
+.report-wrap .report-tab.on {border:2px solid #0286e3;background:#fbfcfe}
+.report-wrap.both .report-tab {width:49%;height:211px;}
+.report-wrap.both .report-tab:first-child {margin-right:8px}
+.report-wrap .report-tab a {display:inline-block;width:100%;height:100%;}
+.report-wrap .report-tab .check {position:absolute;right:10px;top:8px;display:block;width:28px;height:28px;background:url(/webres/images/img_report_check.png) -28px 0 no-repeat}
+.report-wrap .report-tab.on .check{background-position: 0 0 }
+.report-wrap .report-tab .report-title {display:block;margin:50px 0 0 159px;font-size:20px;color:#333;line-height:24px;}
+.report-wrap .img-cover {position:absolute;top:29px;left:18px;display:block;width:110px;height:147px;border:1px solid #ddd;background:url(/webres/images/bg_report_noimg.gif) no-repeat center 0 #eee;}
+.report-wrap .img-cover.report2017_02 {background:url(/webres/images/bg_report2017_02.jpg) no-repeat 0 bottom;}
+.report-wrap .report-tab.on .img-cover.report2017_02 {background-position:0 top;}
+
+.data_view_file2 {clear:both;}
+.report-wrap + .data_view_file2 {margin-top:44px;}
+.pdb10 {padding-bottom:10px;}
+
+
+/* 진로지도 자료실 */
+.title_dec_data {margin-top:24px; height:40px; line-height:140%; font-size:13px; color:#333333; font-family:'NanumGothicWeb'; padding-left:65px; padding-top:15px; background:url(../../images/front/contents/edu/title_dec_img1.gif) no-repeat 9px top; }
+.title_dec_data2 {margin-top:24px; height:40px; line-height:140%; font-size:13px; color:#333333; font-family:'NanumGothicWeb'; padding-left:65px; padding-top:15px; background:url(../../images/front/contents/edu/title_dec_img3.gif) no-repeat 9px top; }
+.title_dec_dream {margin-top:24px; height:40px; line-height:140%; font-size:13px; color:#333333; font-family:'NanumGothicWeb'; padding-left:65px; padding-top:15px; background:url(../../images/front/contents/edu/title_dec_img2.gif) no-repeat 9px top; }
+.title_dec_recipe {margin-top:24px; height:40px; line-height:140%; font-size:13px; color:#333333; font-family:'NanumGothicWeb'; padding-left:65px; padding-top:15px; background:url(../../images/front/contents/edu/title_dec_img4.gif) no-repeat 9px top; }
+
+.data_list {margin-top:20px;}
+.data_list li { display:block;border-bottom:dotted 1px #b6c1cd; padding:15px; overflow:hidden}
+.data_list li:first-child {border-top:dotted 1px #b6c1cd;}
+.data_list li.bg {background:#eef1f4;}
+.data_list li .dataImg {float:left; width:165px; height:100px;}
+.data_list li .dataImg img {width:145px; height:100px;}
+.data_list li .dataTxt {float:right; width:739px; height:100px;}
+.data_list li .dataTxt dt {font-size:14px; font-weight:bold; color:#333; padding:2px 0 10px 0;}
+.data_list li .dataTxt dt span{ display:block; font-weight:normal; font-size:12px; color:#546f90; padding:5px 0 10px 0;}
+.data_list li .dataTxt dd a {line-height:150%;}
+.data_list li .dataTxt dt a {font-size:14px; font-weight:bold; color:#333;}
+
+.data_view .data_view_head {border-top:solid 2px #768699; border-bottom:solid 1px #b6c1cd; background:#f9f9f9; padding:15px 0 0 0;}
+.data_view .data_view_head h2 {font-size:14px; font-weight:bold; color:#3f5063; padding-left:15px;}
+.data_view .data_view_head p {padding-top:8px; padding-left:15px; padding-bottom:13px;}
+.data_view .data_view_head p span {font-size:12px; color:#888; background:url(../../images/front/icon/line_01.gif) no-repeat left top; padding:0 8px;}
+.data_view .data_view_head p span.noLine {background:none; padding-left:0;}
+.data_view_file {background:url(../../images/front/icon/icon_allow08.gif) no-repeat 16px center; padding:15px 0 0 0; overflow:hidden;}
+.data_view_file .file {display:inline-block; margin-right:17px; margin-top:-2px; margin-bottom:4px; float:right}
+.data_view_file .file_fgrade {display:inline-block; margin: -2px 17px 4px 50px; float: left;}
+.data_view_file .file a {font-size:12px; color:#888; display:block; padding:2px 0;}
+.data_view_file .file a:hover {text-decoration:underline;}
+.data_view_file .file a img {display:inline-block; margin-top:-3px; }
+.data_view_file .foot_line {clear:both; background:url(../../images/front/contents/courseEdu/leadingView2_line1.gif) repeat-x left bottom; height:11px; width:100%; }
+.board_view_conts.view_comment{white-space:pre-line;}
+.data_view_file2 {background:url(../../images/front/icon/icon_allow08.gif) no-repeat 16px center; padding:15px 0 0 0; border-top:solid 2px #768699; overflow:hidden;}
+.data_view_file2 .file {display:inline-block; margin-right:17px; margin-top:-2px; margin-bottom:4px; float:right}
+.data_view_file2 .file a {font-size:12px; color:#888; display:block; padding:2px 0;}
+.data_view_file2 .file a:hover {text-decoration:underline;}
+.data_view_file2 .file a img {display:inline-block; margin-top:-3px; }
+.data_view_file2 .file a .file_download{color:#888; width: 145px}
+.data_view_file2 .file a .file_download::before{background:#888;}
+.data_view_file2 .foot_line {clear:both; background:url(../../images/front/contents/courseEdu/leadingView2_line1.gif) repeat-x left bottom; height:11px; width:100%; }
+.board_view_conts .view_comment{white-space:pre-line;}
+.data_view_file3 {background:url(../../images/front/icon/icon_allow08.gif) no-repeat 16px center; padding:15px 0 0 0; overflow:hidden;}
+.data_view_file3 .file {display:inline-block; margin-left:100px; margin-top:-2px; margin-bottom:4px;}
+.data_view_file3 .file ul {overflow:hidden; width:800px;}
+.data_view_file3 .file li {float:left; width:50%; padding:2px 0; height:15px;}
+.data_view_file3 .file a {font-size:12px; color:#888;}
+.data_view_file3 .file a:hover {text-decoration:underline;}
+.data_view_file3 .file a img {display:inline-block; margin-top:-3px; }
+.data_view_file3 .foot_line {clear:both; background:url(../../images/front/contents/courseEdu/leadingView2_line1.gif) repeat-x left bottom; height:11px; width:100%; }
+
+
+.data_view .data_view_body  { width:908px;padding:30px 16px; display:inline-block;}
+.data_view .data_view_body  p {line-height:140%;}
+.data_view .data_view_body  h3 {background:url(../../images/front/icon/icon_arr_one.gif) no-repeat left top; padding-left:16px; padding-bottom:13px; font-size:14px; font-weight:bold; color:#3f5063}
+.data_view .data_view_body  h3 span {color:#536f90; font-weight:normal; font-size:12px;}
+.data_view .data_view_body  h4 {padding-left:16px; padding-bottom:13px; font-size:14px; font-weight:bold; color:#222222; line-height: 1.4;}
+.data_view .data_view_body  h5 {padding-left:16px; padding-bottom:10px; font-size:13px; font-weight:bold; color:#222222; line-height: 1.4;}
+.data_view .data_view_body  ol {padding:0 0 30px 16px;}
+.data_view .data_view_body  ol li {padding-bottom:9px; line-height:140%;}
+.data_view .data_view_body  ul li {padding-bottom:9px; line-height:140%;}
+.data_view .data_view_body  .leading_view_figure1 {position:relative; background:url(../../images/front/contents/courseEdu/leadingView2_img1.gif) no-repeat left top; width:910px; height:320px; margin-bottom:30px;}
+.data_view .data_view_body  .leading_view_figure1 .txt1 {position:absolute; left:87px; top:67px; line-height:140%;}
+.data_view .data_view_body  .leading_view_figure1 .txt2 {position:absolute; left:87px; top:152px; line-height:140%;}
+.data_view .data_view_body  .leading_view_figure1 .txt3 {position:absolute; left:87px; top:219px; line-height:140%;}
+.data_view .data_view_body  .leading_view_figure1 .txt4 {position:absolute; left:361px; top:67px; line-height:140%;}
+.data_view .data_view_body  .leading_view_figure1 .txt5 {position:absolute; left:361px; top:143px; line-height:140%;}
+.data_view .data_view_body  .leading_view_figure1 .txt6 {position:absolute; left:361px; top:219px; line-height:140%;}
+.data_view .data_view_body  .leading_view_figure1 .txt7 {position:absolute; left:630px; top:146px; font-size:18px; color:#fff; font-family:'NanumGothicBoldWeb';}
+.data_view .data_view_body  .data_view_txt {padding:0 0 0 16px;}
+.data_view .data_view_body  .data_view_txt li {line-height:140%; padding:0 0 28px 0;}
+.data_view .data_view_body  .data_view_txt li a:hover {text-decoration:underline;}
+.data_view .data_view_body  .data_view_txt li ul {padding-top:7px;}
+.data_view .data_view_body  .data_view_txt li li {line-height:140%; padding:0 0 3px 9px;}
+.data_view .data_view_body  .data_view_txt2 {padding:0 0 20px 16px;}
+.data_view .data_view_body  .data_view_txt2 li {line-height:140%; padding:0 0 5px 0;}
+.data_view .data_view_body  .data_view_txt2 li a:hover {text-decoration:underline;}
+.data_view .data_view_body  .data_view_txt2 li ol {padding-top:7px; padding-left:8px;}
+.data_view .data_view_body  p.data_view_txt {padding:0 0 28px 16px;}
+.data_view_foot {text-align:right; margin:40px -15px 0 -15px; border-top:solid 1px #b6c1cd; padding-top:15px; }
+.program_step {background:url(../../images/front/contents/courseEdu/leadingView3_img1.gif) no-repeat left top; width:912px; height:127px; margin-top:10px;}
+.step_number {float:left; width:115px; height:100px; padding-top:25px; text-align:center; font-size:16px; color:#2e5079; font-family:'NanumGothicBoldWeb';}
+.step_number em {display:block; color:#2e5079; font-family:'NanumGothicBoldWeb'; font-size:60px; font-weight:800}
+.step_info {float:left; width:756px; padding:19px 0 0 20px;}
+.step_info dt {font-size:14px; font-weight:bold; color:#333; padding-bottom:10px;}
+.step_info dd {line-height:150%; color:#666; }
+.step_info p {padding-top:10px; padding-bottom:13px;}
+.step_info p span {font-size:12px; color:#888; background:url(../../images/front/icon/line_01.gif) no-repeat left 2px; padding:0 8px;}
+.step_info p span.noLine {background:none; padding-left:0;}
+.step_info p span a:hover {text-decoration:underline;}
+
+
+
+/* 진로교육자료실 */
+.data_view_body .movie_script {padding:25px 15px;}
+.data_view_body .movie_script h3 {background:url(../../images/front/contents/edu/icon_tit1.gif) no-repeat left 2px; padding-left:23px;  color:#305884; font-family:'NanumGothicBoldWeb'; font-size:18px;}
+.script_txt_sky {font-size:14px; font-weight:bold; color:#26a1c1}
+.script_t {padding:4px 0 4px 30px; font-size:12px; color:#214c80; line-height:150%;}
+.script_t span {padding-right:10px; display:inline-block; margin-left:-30px;}
+.script_s {padding:4px 0 4px 30px; font-size:12px; color:#666666; line-height:150%;}
+.script_s span {padding-right:10px; display:inline-block; margin-left:-30px;}
+.data_view_right {padding: 0 5px 30px 0; margin: -32px 0 0 0; text-align: right;}
+.data_view_right .btn_gray {width: 200px; height: 26px; line-height: 26px; text-align: center; color: #58667E; font-size: 15px; font-weight: bold;}
+.data_view_right .btn_gray:hover {color: #fff; background:url(../../images/front/contents/edu/main_btn_left_on.gif) no-repeat left top;}
+
+.data_view .data_view_body .data_view_h3 {font-size:12px; color:#3f5063; font-weight:normal; background:url(../../images/front/contents/edu/icon_movie.gif) no-repeat left 1px; padding-left:42px;}
+.data_view .data_view_body .data_view_h3 strong {font-size:16px; color:#3f5063; font-weight:bold; display:block; padding-top:7px;}
+.data_view .data_view_body .btn_movie_view {float:right; margin-top:-35px}
+.data_movie_list {width:100%; padding:5px 0 30px; border-bottom:dotted 1px #b6c1cd; overflow:hidden}
+.data_movie_list li {float:left; }
+.data_movie_list li div {background:#eef1f4; margin-left:7px; width:160px; height:178px; padding:9px 8px;}
+.data_movie_list li.first div {margin-left:0;}
+.data_movie_list li div .thumImg {width:160px; height:115px; display:block;}
+.data_movie_list li div .thumImg img {width:160px; height:115px; display:block;}
+.data_movie_list li div .thumImg:hover {width:154px; height:109px; border:solid 3px #ff6633; overflow:hidden;}
+.data_movie_list li div .thumImg:hover img {margin:-3px 0 0 -3px;}
+.data_movie_list li div .movie_caption {color:#546f90; padding:11px 0 0 5px; height:33px;}
+.data_movie_list li div .movie_caption strong {display:block; color:#546f90; padding-bottom:8px;}
+.data_movie_list li div .movie_caption strong a {color:#546f90;}
+.data_movie_list li div .movie_caption strong a:hover {color:#ff6633; text-decoration:underline;}
+.data_movie_list li div .time {background:url(../../images/front/contents/edu/icon_allow.gif) no-repeat 8px 3px; padding-left:19px; color:#546f90; margin-top:5px;}
+
+
+
+.edu_search{
+  clear:both;
+  display:block;
+  width:978px;
+  height:auto;
+  margin:0;
+  padding:0;
+  border:1px solid #ccc;
+  border-bottom:2px solid #eceef1;
+  margin:30px 0 0 0;
+  padding:0;
+  background: url(../../images/front/contents/courseEdu/bg01.gif) repeat-x left bottom;
+}
+
+.edu_search form label{display:inline-block;width:94px; height:27px; line-height:27px; float:left;color:#E76208; font-size:14px; font-weight:bold;}
+.edu_search form input{display:inline-block;}
+.edu_search form fieldset p{display:block;border-bottom:1px dotted #ccc; padding:10px 15px;}
+.edu_search form fieldset .txtForm01{width:263px; height:25px; line-height:25px; padding:0 0 0 7px; border:1px solid #dbdada; background:#fff;}
+.edu_search form fieldset .txtForm02{width:143px; height:25px; line-height:25px; padding:0 0 0 7px; border:1px solid #dbdada; background:#fff;}
+.edu_search form fieldset .select01{width:98px; height:23px; line-height:25px; padding:0 0 0 7px; border:1px solid #dbdada; background:#fff;}
+.edu_search .list_num{ margin:60px 0 11px 18px;}
+.edu_search .list_num strong{ color:#ff3c00;}
+.edu_search form .btn_search{display:block;width:800px; height:42px; margin:0; padding:14px 0 0 109px;}
+.edu_search form .btn_search input{display:inline-block; float:left;}
+.edu_search form .btn_search button{display:inline-block; float:left; background:url(../../images/front/contents/courseEdu/btn_reset01.gif) no-repeat; width:115px; height:27px;margin:0 0 0 5px; padding:0 0 0 14px; text-align:left; border:none; color:#f25525; }
+.edu_search .icon_cursor{ cursor:pointer;}
+
+/*s:내부탭메뉴 아이콘설정*/
+
+#eduInlineMenu #currentTabMenu1 li a,
+#eduInlineMenu  #currentTabMenu2 li a,
+#eduInlineMenu  #currentTabMenu3 li a,
+#eduInlineMenu  #currentTabMenu4 li a,
+#eduInlineMenu  #currentTabMenu5 li a{padding:2px 10px;background:url(../../images/front/contents/courseEdu/bg03.gif) no-repeat left center; font-family:'NanumGothicBoldWeb'; font-size:13px;}
+
+#eduInlineMenu #currentTabMenu1 li a.firstList,
+#eduInlineMenu #currentTabMenu2 li a.firstList,
+#eduInlineMenu #currentTabMenu3 li a.firstList,
+#eduInlineMenu #currentTabMenu4 li a.firstList,
+#eduInlineMenu #currentTabMenu5 li a.firstList{background:none; font-family:'NanumGothicBoldWeb'; font-size:13px;}
+
+/*e:내부탭메뉴 아이콘설정*/
+
+
+.word_tit_h2{ margin:30px 0;background:url(../../images/front/common/word_ico.gif) no-repeat 1px 3px; padding:1px 0 0 11px; font-size:24px; color:#f95405; font-family:'NanumGothicBoldWeb'; line-height:100%;}
+
+.data_view_foot_2 {text-align:right; margin:0 -15px 0 -15px; border-top: dotted 1px #b6c1cd; padding-top:15px; }
+.btnViewMovie{ display:inline-block; background:url(../../images/front/contents/courseEdu/btnbg01.gif) no-repeat; width:215px; height:30px; padding:15px 0 0 40px; font-size:16px; color:#fff; font-weight:bold;}
+.btnViewscript{ display:inline-block; background:url(../../images/front/contents/courseEdu/btnbg02.gif) no-repeat; width:215px; height:30px; padding:15px 0 0 40px; font-size:16px; color:#fff; font-weight:bold;}
+.contentsBox01{width:595px; height:47px;background:url(../../images/front/contents/courseEdu/bg02.gif) no-repeat; padding:15px; margin:5px 0 9px 0; }
+.autoscroll{width:595px; height:47px;overflow:auto;}
+.data_view_body_right{ float:right}
+.data_view_body_right dt{ display:inline-block; background:url(../../images/front/contents/courseEdu/icon_check.gif) no-repeat left center; padding:2px 0 2px 20px; font-size:14px; margin-bottom:9px;}
+.data_view_body_right dd{ display:inline-block; font-size:14px; margin-bottom:9px;}
+
+
+.downloadBox{ display:inline-block; width:944px; border:1px solid #d2d9e1; border-bottom: 1px solid #eef1f4; background:url(../../images/front/contents/courseEdu/downLoadBoxBg.gif) repeat-x left bottom; padding:11px 17px; margin-bottom:30px;}
+.downloadBox h3{ font-family:"돋움";color:#044444; font-weight:bold; font-size:12px; display:block; float:left; width:140px; height:23px; line-height:23px; padding:0 0 0 30px; background:url(../../images/front/icon/icon_allow08.gif) no-repeat;}
+.downloadBox ul{ display:inline-block;}
+.downloadBox ul li{ display:block; float:left;}
+.downloadBox ul li a{display:block;margin-left:15px; text-decoration:underline; height:23px; line-height:23px; width:110px;}
+.downloadBox ul li a:hover{ display:block;margin-left:15px; text-decoration:underline; color:#ff6633;}
+.reportContents h3{ font-family:"돋움";background:url(../../images/front/icon/icon_arr_one.gif) no-repeat left 2px; padding-left:16px; padding-bottom:13px; font-size:14px; font-weight:bold; color:#3f5063;}
+.reportContents { font-family:"돋움";padding:0 16px;}
+.reportContents p{margin-bottom:30px; padding-left:16px; line-height:1.3em;}
+.reportContents p span{ display:inline-block;margin-top:25px; line-height:1.3em;}
+.reportContents table{margin-bottom:30px;}
+.reportContents ul{ margin-left:16px;}
+.reportContents ul li a{display:block; height:1%; padding:4px 0;}
+.reportContents ul li a:hover{ text-decoration:underline;}
+
+
+.survey2010Contents h3{ font-family:"돋움";background:url(../../images/front/icon/icon_arr_one.gif) no-repeat left 2px; padding-left:16px; padding-bottom:13px; font-size:14px; font-weight:bold; color:#3f5063; margin-top:30px}
+.survey2010Contents { font-family:"돋움";padding:0 16px;}
+.indexBox{ display:inline-block; width:872px; border:1px solid #d2d9e1; border-bottom: 1px solid #eef1f4; padding:11px 17px; margin-top:30px;}
+.indexBox h3{ font-family:"돋움";color:#044444; font-weight:bold; font-size:12px; display:block; float:left; width:40px; height:23px; line-height:23px; padding:0; margin:0; background:none;}
+.indexBox ul{ display:block;}
+.indexBox ul li{ display:inline; float:left;}
+.indexBox ul li a{display:block;width:auto !important;margin-right:23px; text-decoration:underline; height:23px; line-height:23px;}
+.indexBox ul li a:hover{ display:block;margin-right:23px; text-decoration:underline; color:#ff6633;}
+
+
+.surveyContents { font-family:"돋움";padding:0 16px;}
+.surveyContents dl{margin-left:16px;}
+.surveyContents dl dt{ font-weight:bold; margin-bottom:7px;}
+.surveyContents dl dd{margin-bottom:15px;}
+.surveyContents dl dd table{margin-left:-16px;}
+.surveyContents h3{ font-family:"돋움";background:url(../../images/front/icon/icon_arr_one.gif) no-repeat left 2px; padding-left:16px; padding-bottom:13px; margin-top:30px; font-size:14px; font-weight:bold; color:#3f5063;}
+.surveyContents ul li { height:20px; line-height:20px; margin-left:16px;}
+.surveyContents table{width:100%; margin-top:10px;}
+.surveyContents table th {height:33px; border:solid 1px #6182a6; background:#7a93ad;}
+.surveyContents table th span {display:block;border:solid 1px #83a0c0; padding:9px 0 11px 0; height:11px;  font-weight:bold; color:#fff;  font-size:12px;}
+.surveyContents table th span.light_blue {background:#85a2c2;}
+.surveyContents table th span.rows2 {padding:29px 0 11px 0; height:25px}
+.surveyContents table th span.rows3 {padding:44px 0 20px 0; height:35px}
+.surveyContents table td {border-bottom:solid 1px #e0e5e9; padding:9px 14px 5px 14px; height:20px; text-align:center;}
+.surveyContents table td.bg {background:#f3f7f9; color:#364c66; text-align:left;}
+.surveyContents table td.bg2 {background:#f6f6f6; color:#364c66;}
+.surveyContents table .rowth{ background:none; border:none;border-bottom:solid 1px #e0e5e9; padding:9px 14px 5px 14px; height:20px; text-align:center; color:#666;}
+.surveyContents table .last td {border-bottom:solid 1px #b6c1cd;}
+.surveyContents table tfoot td{ font-weight:bold; color:#5e80a8;}
+
+.survey2007Contents { font-family:"돋움";padding:0 16px;}
+.survey2007Contents h3{font-family:"돋움";background:url(../../images/front/icon/icon_arr_one.gif) no-repeat left 2px; padding-left:16px; padding-bottom:13px; margin-top:30px; font-size:14px; font-weight:bold; color:#3f5063;}
+.survey2007Contents p{margin-left:16px; line-height:1.5em;}
+.survey2007Contents dl{margin-left:16px;}
+.survey2007Contents dl dt{ font-weight:bold; margin-top:20px; margin-bottom:7px;}
+.survey2007Contents dl dd{margin-bottom:5px;}
+.survey2007Contents dl dd table{margin-left:-16px;}
+.survey2007Contents table{width:100%; margin-top:10px;}
+.survey2007Contents table th {height:33px; border:solid 1px #6182a6; background:#7a93ad;}
+.survey2007Contents table th span {display:block;border:solid 1px #83a0c0; padding:9px 0 11px 0; height:11px;  font-weight:bold; color:#fff;  font-size:12px;}
+.survey2007Contents table th span.light_blue {background:#85a2c2;}
+.survey2007Contents table th span.rows2 {padding:29px 0 11px 0; height:25px}
+.survey2007Contents table th span.rows3 {padding:44px 0 20px 0; height:35px}
+.survey2007Contents table td {border-bottom:solid 1px #e0e5e9; padding:9px 14px 5px 14px; height:20px; text-align:center;}
+.survey2007Contents table td.bg {background:#f3f7f9; color:#364c66; text-align:left;}
+.survey2007Contents table td.bg2 {background:#f6f6f6; color:#364c66;}
+.survey2007Contents table .last td {border-bottom:solid 1px #b6c1cd;}
+.survey2007Contents table tfoot td{ font-weight:bold; color:#5e80a8;}
+.survey2007Contents table .rowth{ background:none; border:none;border-bottom:solid 1px #e0e5e9; padding:9px 14px 5px 14px; height:20px; text-align:center;}
+.survey2007Contents table th[rowspan="3"]{width:112px;}
+.survey2007Contents ul li{height:20px; line-height:20px; margin-left:16px;}
+
+.survey2006Contents { font-family:"돋움";padding:0 16px;}
+.survey2006Contents h3{font-family:"돋움";background:url(../../images/front/icon/icon_arr_one.gif) no-repeat left 2px; padding-left:16px; padding-bottom:13px; margin-top:30px; font-size:14px; font-weight:bold; color:#3f5063;}
+.survey2006Contents p{margin-left:16px; line-height:1.5em;}
+
+.roundbox{ background:url(../../images/front/contents/courseEdu/box01.gif) no-repeat; width:205px; height:227px; padding:20px 25px; margin-bottom:20px;  }
+.roundbox02{ background:url(../../images/front/contents/courseEdu/box02.gif) no-repeat; width:205px; height:107px; padding:20px 25px; margin-bottom:20px;  }
+
+.indexList { display:inline-block;width:872px; background:#f8f8f8; padding:20px 15px 0 15px;}
+.indexList h4{font-family:"돋움"; font-size:12px; font-weight:bold; margin-bottom:10px;}
+.indexList h5{font-family:"돋움"; font-size:12px; font-weight:bold; margin-bottom:10px;}
+.indexList div{display:block; width:436px; float:left; margin-bottom:20px;}
+.indexList ul li{display:block; height:20px; line-height:20px;}
+
+
+
+.table_edu_1 {width:100%;}
+.table_edu_1 th {height:33px; border:solid 1px #6182a6; background:#7690ac;}
+.table_edu_1 th span {display:block; height:31px; border:solid 1px #83a0c0; padding:9px 0 11px 0;  height:11px;  font-weight:bold; color:#fff;  font-size:12px;}
+.table_edu_1 th span.rows2 {padding:29px 0 11px 0;  height:25px}
+.table_edu_1 td {background:url(../../images/front/contents/courseEdu/tdbg01.gif) repeat-x; padding:9px 14px 5px 14px; height:81px; line-height:140%; border:1px solid #e0e5e9; border-collapse:collapse;color:#666;}
+.table_edu_1 td  strong{display:block; font-weight:bold; font-size:14px; margin-bottom:15px;}
+
+.table_edu_2 {width:950px; margin:30px 15px 0 15px}
+.table_edu_2 th {height:33px; border:solid 1px #6182a6; background:#7690ac;}
+.table_edu_2 th span {display:block; height:31px; border:solid 1px #83a0c0; padding:9px 0 11px 0;  height:11px;  font-weight:bold; color:#fff;  font-size:12px;}
+.table_edu_2 th span.rows2 {padding:29px 0 11px 0;  height:25px}
+.table_edu_2 td {background:url(../../images/front/contents/courseEdu/tdbg02.gif) repeat-x; padding:9px 14px 5px 14px; height:20px; line-height:140%; border:1px solid #e0e5e9; border-collapse:collapse;color:#666;}
+.table_edu_2 td  strong{display:block; font-weight:bold; font-size:14px; margin-bottom:15px;}
+
+.table_edu_3 {width:944px; margin:10px 0 0 0;}
+.table_edu_3 th {height:43px; border:solid 1px #6182a6; background:#7690ac;}
+.table_edu_3 th span {display:block; height:31px; border:solid 1px #83a0c0; padding:9px 0 11px 0;  height:21px;  font-weight:bold; color:#fff;  font-size:12px;}
+.table_edu_3 th span.rows2 {padding:29px 0 11px 0;  height:25px}
+.table_edu_3 td {padding:9px 14px 5px 14px; height:1%; line-height:140%; border-bottom:1px solid #e0e5e9; border-collapse:collapse;color:#666;}
+.table_edu_3 td strong{display:block; font-weight:bold; font-size:14px; margin-bottom:15px;}
+.table_edu_3 td.tc{background:#f3f7f9;}
+.table_edu_3 td.tc2{background:#f3f7f9;text-align:left;}
+.table_edu_3 td{ text-align:center;}
+
+
+.btn_data_down {position: absolute;right: 21px;margin: -6px 0 0 0;}
+.btn_data_down a {border: 1px solid #c5c5c5;border-radius: 5px;display: inline-block;padding: 5px 8px;background: #fff;font-size: 11px;color: #333;font-family: 'Noto Sans KR';font-weight: 400;height: 12px;letter-spacing: -1px;}
+.btn_data_down a:after {content:'';display:inline-block;width: 11px;height: 11px;background: url(../../images/front/contents/courseEdu/b_down.png) no-repeat;vertical-align: middle;margin: -3px 0 0 5px;}
+
+
+.edulistBoxSM{display:block; width:255px; height: auto; padding-top:16px; margin:0; background:url(../../images/front/contents/web/bg_BoxTop.gif) no-repeat left top; overflow:hidden;}
+.edulistBoxSM .scrollBox{display:block; width:255px; height:auto; padding-bottom:16px; margin-bottom:15px; background:url(../../images/front/contents/web/bg_BoxBottom.gif) no-repeat left bottom;}
+.edulistBoxSM .scrollBox .scrollBoxContents{display:block; width:225px; height:200px; padding:0 15px; background:#eaedf3; overflow: auto; white-space:pre-line; line-height:1.5em;}
+
+.edublank{ display:block;width:213px; height:29px; background:url(../../images/front/contents/web/btn_icon04.gif) no-repeat; margin:0; padding:16px 0 0 42px; font-size:16px; font-weight:bold; color:#fff;}
+.edusubtitle{ display:block; width:213px; height:29px; background:url(../../images/front/contents/web/btn_icon05.gif) no-repeat; margin:9px 0 15px 0; padding:16px 0 0 42px; font-size:16px; font-weight:bold; color:#fff;}
+
+.edublank:active, .edublank:focus, .edublank:visited {
+  background:url(../../images/front/contents/web/btn_icon04.gif) no-repeat;
+}
+.edusubtitle:active, .edusubtitle:focus, .edusubtitle:visited {
+  background:url(../../images/front/contents/web/btn_icon05.gif) no-repeat;
+}
+
+.eduIndicatorContents{display:inline-block;padding:15px 30px; border-top:2px solid #768699;  color:#3f5063}
+.eduIndicatorContents h3{font-family:"돋움";background:url(../../images/front/icon/icon_arr_one.gif) no-repeat left 2px; padding-left:16px; padding-bottom:13px; font-size:14px; font-weight:bold;}
+.eduIndicatorContents p.box{ border-bottom:1px dotted #b6c1cd; padding-bottom:30px; line-height:1.5em; color:#666666;}
+.eduIndicatorContents h4{height:37px; padding-left:47px; margin:38px 0 0 175px; background:url(../../images/front/contents/courseEdu/icon_eduIndi01gif.gif) no-repeat left top; font-size:16px; font-weight:bold;}
+.eduIndicatorContents .p1{font-size:14px; margin:-20px 0 0 222px;}
+
+.eduIndicatorContents .stepList_1{display:block; float:left;width:140px; height:125px; margin:25px 0 0 165px; margin:25px 0 0 82px; background:url(../../images/front/contents/courseEdu/eduIndi_none.gif) no-repeat;}
+.eduIndicatorContents .stepList_1 h5{display:block; width:140px; height:58px; line-height:58px; text-align:center; font-size:16px;font-family:'NanumGothicBoldWeb';}
+.eduIndicatorContents .stepList_1 p a{display:block; width:140px; height:27px; line-height:27px; margin-bottom:3px; color:#FFFFFF; text-align: center;}
+
+.eduIndicatorContents .stepList_2{ display:block; float:left;width:140px; height:125px; margin:25px 0 0 6px; background:url(../../images/front/contents/courseEdu/eduIndi_none.gif) no-repeat;}
+.eduIndicatorContents .stepList_2 h5{display:block;width:140px; height:58px; line-height:58px; text-align:center; font-size:16px;font-family:'NanumGothicBoldWeb';}
+.eduIndicatorContents .stepList_2 p a{display:block; width:140px; height:27px; line-height:27px; margin-bottom:3px; color:#FFFFFF; text-align: center;}
+
+.eduIndicatorContents .stepList_3{ display:block; float:left;width:140px; height:125px; margin:25px 0 0 6px; background:url(../../images/front/contents/courseEdu/eduIndi_none.gif) no-repeat;}
+.eduIndicatorContents .stepList_3 h5{display:block;width:140px; height:58px; line-height:58px; text-align:center; font-size:16px;font-family:'NanumGothicBoldWeb';}
+.eduIndicatorContents .stepList_3 p a{display:block; width:140px; height:27px; line-height:27px; margin-bottom:3px; color:#FFFFFF; text-align: center;}
+
+.eduIndicatorContents .stepList_4{ display:block; float:left;width:140px; height:125px; margin:25px 0 0 6px; background:url(../../images/front/contents/courseEdu/eduIndi_none.gif) no-repeat;}
+.eduIndicatorContents .stepList_4 h5{display:block;width:140px; height:40px; padding-top:18px; text-align:center; font-size:16px;font-family:'NanumGothicBoldWeb';}
+.eduIndicatorContents .stepList_4 p a{display:block; width:140px; height:27px; line-height:27px; margin-bottom:3px; color:#FFFFFF; text-align: center;}
+
+.eduIndicatorContents .processMap{position:relative; clear:both; height:500px;}
+.eduIndicatorContents .processMap_h4{ position:absolute; left:407px; top:160px; width:95px;height:95px;background:none;padding:0;margin:0; z-index:10;}
+.eduIndicatorContents ul .list1{ position:absolute; left:334px; top:50px; z-index:0;}
+.eduIndicatorContents ul .list2{ position:absolute; left:407px; top:229px; z-index:0;}
+.eduIndicatorContents ul .list3{ position:absolute; left:407px; top:50px; z-index:0;}
+.eduIndicatorContents ul .list1 h5{ position:absolute; left:-73px; top:54px;}
+.eduIndicatorContents ul .list2 h5{ position:absolute; left:95px; top:69px;}
+.eduIndicatorContents ul .list3 h5{ position:absolute; left:95px; top:0px;}
+
+.eduIndicatorContents ul .list1 ul{ position:absolute;width:400px; left:-475px; top:120px; text-align:right;}
+.eduIndicatorContents ul .list2 ul{ position:absolute;width:400px; left:186px; top:79px;}
+.eduIndicatorContents ul .list3 ul{ position:absolute;width:400px; left:185px; top:10px;}
+.eduIndicatorContents ul .list1 ul li{ height:18px; line-height:18px;color:#535b6a;}
+.eduIndicatorContents ul .list2 ul li{ height:18px; line-height:18px;color:#535b6a;}
+.eduIndicatorContents ul .list3 ul li{ height:18px; line-height:18px;color:#535b6a;}
+
+
+.eduIndicatorContents .processMap p{ position:absolute; left:252px; top:376px; width:404px; height:98px; background:url(../../images/front/contents/courseEdu/eduIndi02.gif) no-repeat; text-align:center; font-size:14px; font-weight:bold; padding-top:35px;}
+.eduIndicatorContents .processMap p span{background:#f3f3f3; height:15px; line-height:15px; margin:2px 0; padding:1px 0;display:inline-block;}
+
+
+
+
+/*** 진로교육자료 > 진로교육 > 진로교육국제포럼_수정_20130814 ***/
+.table_edu_1 tbody tr td.a_mb a { display: inline-block; margin-bottom: 5px;  }
+.table_edu_1 tbody tr td.a_mb {  padding-left: 23px; text-align: left !important; }
+
+
+
+/*** 진로교육자료 진로상담 ***/
+.Tab_Menu .devide17 {width:17%;}
+.Tab_Menu .devide16 {width:16%;}
+/*.Tab_Menu .last2 {*margin-left:-2px;}*/
+
+.board_list .courseEdugs_list td.firstgs {padding-left:45px; color:#364c66;}
+.board_list .courseEdugs_list td a {color:#666;}
+.board_list .courseEdugs_list td a:hover {color:#364c66;}
+
+.board_view .edugs_view_title {font-weight:normal; color:#546f90;}
+.board_view .edugs_view_step01 {line-height:20px; margin-bottom:25px;}
+.board_view .edugs_view_step02 {margin:0 0 15px;}
+.board_view .edugs_view_step02 dt {font-weight:bold; color:#3f5063; font-size:14px; background:url(../../images/front/icon/icon_tit01.gif) no-repeat left center; padding-left:15px; margin-bottom:10px;}
+.board_view .edugs_view_step02 dd {line-height:20px; padding-left:15px;}
+.board_view .edugs_view_step03 {width:876px; background-color:#f8f8f8; padding:20px 16px 12px; margin:0 0 30px 15px;}
+.board_view .edugs_view_step03 .edugs_adviser {width:876px; padding:0 0 8px;}
+.board_view .edugs_view_step03 .edugs_adviser:after {content:""; display:block; clear:both;}
+.board_view .edugs_view_step03 .edugs_adviser dt {float:left; width:57px; height:18px; color:#fff; font-weight:bold; text-align:center; background:url(../../images/front/contents/courseEdu/bg_edugs_adviser.gif) no-repeat left top; padding:7px 0 0;}
+.board_view .edugs_view_step03 .edugs_adviser dd {float:left; width:806px; color:#214c80; line-height:20px; padding:5px 0 0 13px; margin:-1px 0 0;}
+.board_view .edugs_view_step03 .edugs_student {width:876px; padding:0 0 8px;}
+.board_view .edugs_view_step03 .edugs_student:after {content:""; display:block; clear:both;}
+.board_view .edugs_view_step03 .edugs_student dt {float:left; width:57px; height:18px; color:#3f699b; font-weight:bold; text-align:center; background:url(../../images/front/contents/courseEdu/bg_edugs_student.gif) no-repeat left top; padding:7px 0 0;}
+.board_view .edugs_view_step03 .edugs_student dd {float:left; width:806px; color:#666; line-height:20px; padding:5px 0 0 13px; margin:-1px 0 0;}
+.board_view .edugs_view_step03 .edugs_parent {width:876px; padding:0 0 8px;}
+.board_view .edugs_view_step03 .edugs_parent:after {content:""; display:block; clear:both;}
+.board_view .edugs_view_step03 .edugs_parent dt {float:left; width:57px; height:18px; color:#fff; font-weight:bold; text-align:center; background:url(../../images/front/contents/courseEdu/bg_edugs_parent.gif) no-repeat left top; padding:7px 0 0;}
+.board_view .edugs_view_step03 .edugs_parent dd {float:left; width:806px; color:#666; line-height:20px; padding:5px 0 0 13px; margin:-1px 0 0;}
+.board_view .edugs_view_step03 .edugs_step03_info {text-align:center; margin:0 0 10px;}
+.board_view .edugs_view_step04 {line-height:20px; margin:-10px 0 25px 15px;}
+.board_view .edugs_view_step05 {text-align:center; margin:0 0 25px;}
+.board_view .edugs_view_step06 {padding:0 20px; margin:0 0 25px;}
+.board_view .edugs_view_step06 .edugs_step06_info {text-align:center; margin:10px 0 0;}
+
+/* */
+.board_view tr.last .edugs_view_step06 .vitae_view {width:100%; border-top:1px solid #b6c1cd; border-bottom:1px solid #b6c1cd;}
+.board_view tr.last .edugs_view_step06 .vitae_view th {line-height:120%; text-align:center; color:#546f90; background-color:#fff; border-right:1px solid #e0e5e9; border-bottom:1px solid #b6c1cd; padding:10px 0;}
+.board_view tr.last .edugs_view_step06 .vitae_view th label {color:#546f90;}
+.board_view tr.last .edugs_view_step06 .vitae_view td {line-height:120%; text-align:center; border-right:1px solid #e0e5e9; border-bottom:1px solid #e0e5e9; padding:10px 0;}
+.board_view tr.last .edugs_view_step06 .vitae_view th.row_last,
+.board_view tr.last .edugs_view_step06 .vitae_view td.row_last {border-right:0 none;}
+.board_view tr.last .edugs_view_step06 .vitae_view tr.col_last td {border-bottom:0 none;}
+.board_view tr.last .edugs_view_step06 .vitae_view tr.col_last td .calendar_box .calendar table td {border-bottom:1px solid #c9c8ce;}
+.board_view tr.last .edugs_view_step06 .vitae_view td.left_txt {text-align:left; line-height:18px; padding:10px;}
+
+/* 달력 */
+.advice_list_box .advice_list_inner dd.devide800 {position:relative; width:800px;}
+.input_txt_search {border:solid 1px #7384a0; height:21px; padding:2px 0; vertical-align:middle; background:#fff; width:125px !important;}
+.input_txt_search:hover  {border:solid 1px #7384a0; height:21px; padding:2px 0; vertical-align:middle; background:#f3f3f3; width:142px;}
+.btn_calendar {display:inline-block; margin-left:-20px; padding:1px 0 0 0; vertical-align:middle}
+.btn_calendar img {display:inline-block;}
+.calendar_wrap {display:none; position:absolute; width:1px; z-index:100}
+#calendar_deff_end {display:none; position:absolute; left:150px; top:22px; width:1px;}
+.calendar_wrap .calendar_head {position:relative; background:url(../../images/admin/common/carlendar_bg.gif) repeat-x left top; border:solid 1px #373f4e; height:22px; width:186px; padding-top:3px; color:#c1dbe1; text-align:center;}
+.calendar_wrap .calendar_head .btn_calendar_pre {position:absolute; left:11px; top:9px;}
+.calendar_wrap .calendar_head .btn_calendar_next {position:absolute; right:11px; top:9px;}
+.calendar_wrap .calendar_head select {height:20px;}
+.calendar_wrap table {width:188px; border:solid 1px #a5a5a5; border-top:0;}
+.calendar_wrap table th {background:#faf9fc; font-size:11px; color:#7a7979; border:0; text-align:center; font-weight:normal; padding:10px 0 8px;}
+.calendar_wrap table td {background:url(../../images/admin/common/carlendar_bg2.gif) no-repeat left top; border-left:solid 1px #c9c8ce;  border-top:solid 1px #c9c8ce; width:26px; height:23px; padding:0 0 0 0; text-align:center; vertical-align:middle; padding:0 !important}
+.calendar_wrap table td a {display:inline-block; font-size:12px; color:#666; vertical-align:middle; }
+.calendar_wrap table td:hover {background:url(../../images/admin/common/carlendar_bg2_on.gif) no-repeat left top}
+.calendar_wrap table td:hover a {font-size:12px; color:#333333; font-weight:bold; }
+.calendar_wrap table td:hover a:hover {text-decoration:none;}
+.calendar_wrap table td.otherMonth {background:url(../../images/admin/common/carlendar_bg3.gif) no-repeat left top; font-size:12px; color:#a0a0a0;}
+.calendar_wrap table td.sunday {border-left:0;}
+
+/* 직업체험 */
+.experienciags_step01 {font-family:'NanumGothicWeb'; font-size:13px; color:#333; line-height:20px; letter-spacing:-1px; background:url(../../images/front/contents/courseEdu/icon_experiencia.gif) no-repeat 0 0; padding-left:68px;}
+.experienciags_step01 .step01_bold {font-family:'NanumGothicWeb'; font-size:13px; letter-spacing:-1px; font-weight: bold;}
+
+.experienciags_step02 {border-bottom:2px solid #eceef1;}
+.experienciags_step02 .experienciags_inner { position:relative; width:938px; border:1px solid #b6c1cd;}
+.experienciags_step02 .experienciags_inner:after {content:""; display:block; clear:both;}
+.experienciags_step02 .experienciags_inner li {float:left; width:218px; border-right:1px solid #e4e8ec; padding:8px;}
+.experienciags_step02 .experienciags_inner li.last {width:217px; border-right:0 none;}
+.experienciags_step02 .experienciags_inner li dl {width:187px; height:105px; background-color:#f7f7f6; padding:13px 16px 0 15px;}
+.experienciags_step02 .experienciags01_inner li dl {width:218px; height:121px; background-color:#f7f7f6; padding:20px 16px 0 15px;}
+.experienciags_step02 .experienciags_inner li dt {margin-bottom:8px;}
+.experienciags_step02 .experienciags_inner li dt a {color:#333; font-size:13px; font-weight:bold;  line-height:18px;}
+.experienciags_step02 .experienciags_inner li dd a {color:#666; line-height:17px; letter-spacing:-1px;}
+.experienciags_step02 .experienciags_inner li dl.experienciags_top {background:#f7f7f6 url(../../images/front/contents/courseEdu/experiencia_line.gif) no-repeat 15px 100%; padding:15px 16px 0 15px;}
+
+.experienciags_step03 {margin:50px 0 0;}
+.experienciags_step03 li {width:910px; padding:15px; border-bottom:1px dotted #b6c1cd;}
+.experienciags_step03 li:after {content:""; display:block; clear:both;}
+.experienciags_step03 li p {position:relative; float:left; width:145px; margin-right:20px;}
+.experienciags_step03 li p .icon_experienciags {position:absolute; top:0; right:0;}
+.experienciags_step03 li dl {float:left; margin:2px 0 0; width: 700px;}
+.experienciags_step03 li dt {margin-bottom:6px;}
+.experienciags_step03 li dt a {color:#333; font-size:14px; font-weight:bold; }
+.experienciags_step03 li dd {}
+.experienciags_step03 li dd a {color:#666; line-height:24px;  letter-spacing:-1px;}
+.experienciags_step03 li.bg_eef1f4 {background-color:#eef1f4;}
+
+.experienciags_step04 {margin:0 0 32px;}
+.experienciags_step04 dt {font-weight:bold; color:#3f5063; font-size:14px; background:url(../../images/front/icon/icon_tit01.gif) no-repeat left top; padding-left:15px; margin-bottom:10px;}
+.experienciags_step04 dd {background:url(../../images/front/common/dot_c666.gif) no-repeat 15px 7px; padding-left:21px; margin-bottom:8px; line-height:150%;}
+.experienciags_step04 dd.noico {background:none; padding-left:18px;}
+
+.experienciags_step05 {margin:0 0 32px;}
+.experienciags_step05 dt {font-weight:bold; color:#3f5063; font-size:14px; background:url(../../images/front/icon/icon_tit01.gif) no-repeat left top; padding-left:15px; margin-bottom:10px;}
+.experienciags_step05 dd { line-height:150%;}
+.experienciags_step05 dd dl {margin:0 0 30px;}
+.experienciags_step05 dd dt {color:#666; font-size:12px; background:none; margin-bottom:8px;}
+.experienciags_step05 dd dd {padding-left:15px; margin-bottom:8px;}
+
+
+.experienciags_img {margin: 30px 0 30px 0; text-align: center;}
+.experienciags_p {padding-bottom:5px; text-align: left;}
+
+.board_view {width:100%; border-top:2px solid #768699; border-bottom:1px solid #b6c1cd;}
+.board_view th {text-align:left; background-color:#f9f9f9; border-bottom:1px solid #b6c1cd; padding:15px 15px 12px;}
+.board_view td {border-bottom:1px solid #e3e7ec; padding:20px 15px 16px;}
+
+
+.board_view .table_job_st1{width:100%}
+.board_view .table_job_st1 th{height:33px;border:solid 1px #6182a6;background:#7690ac; padding:0}
+.board_view .table_job_st1 th span{display:block;height:31px;height:11px;padding:9px 0 11px;border:solid 1px #83a0c0;font-weight:bold;font-size:12px;color:#fff}
+.board_view .table_job_st1 th span.light_blue{background:#85a2c2}
+.board_view .table_job_st1 th span.rows2{height:25px;padding:29px 0 11px}
+.board_view .table_job_st1 td{height:20px;padding:9px 14px 5px;border-bottom:solid 1px #e0e5e9;line-height:140%}
+.board_view .table_job_st1 td.bg{background:#f3f7f9;color:#364c66}
+.board_view .table_job_st1 td.bg a{color:#364c66}
+.board_view .table_job_st1 td a:hover{text-decoration:underline}
+.board_view .table_job_st1 td li{padding:3px 0;padding-left:9px;background:url(../../images/front/icon/icon_point04.gif) no-repeat left 9px;line-height:140%}
+.board_view .table_job_st1 .last td{border-bottom:solid 1px #b6c1cd}
+
+
+
+
+/* 진로관련사이트 */
+.relationsitegs_step01 {height:31px; font-family:'NanumGothicWeb'; font-size:13px; color:#333; line-height:20px; letter-spacing:-1px;  background:url(../../images/front/contents/courseEdu/icon_relationsite.gif) no-repeat 0 0; padding:15px 0 0 60px;}
+.relationsitegs_wrap {border-top:1px solid #b6c1cd;}
+.relationsitegs_wrap .relationsitegs_step02 {background:url(../../images/front/contents/mycareer/mine_dotline_b6.gif) repeat-x left bottom;}
+.relationsitegs_wrap .relationsitegs_step02 .relation_top {width:900px; height:30px; background-color:#eef1f4; padding:15px 26px 0 14px;}
+.relationsitegs_wrap .relationsitegs_step02 .relation_top:after {content:""; display:block; clear:both;}
+.relationsitegs_wrap .relationsitegs_step02 .relation_top dt {float:left;}
+.relationsitegs_wrap .relationsitegs_step02 .relation_top dt a {font-size:14px; color:#333; font-weight:bold;}
+.relationsitegs_wrap .relationsitegs_step02 .relation_top dt img {display:inline-block; margin-top:-3px;}
+.relationsitegs_wrap .relationsitegs_step02 .relation_top dd {float:right;}
+.relationsitegs_wrap .relationsitegs_step02 .relation_top dd img {float:left; margin-right:5px;}
+.relationsitegs_wrap .relationsitegs_step02 .relation_top dd span {float:left; color:#546f90; margin:4px 0 0;}
+.relationsitegs_wrap .relationsitegs_step02 .relation_btm {padding:15px;}
+.relationsitegs_wrap .relationsitegs_step02 .relation_btm a {line-height:20px;}
+.relationsitegs_step03 {width:940px; margin:10px 0;}
+.relationsitegs_step03:after {content:""; display:block; clear:both;}
+.relationsitegs_step03 ul {float:right;}
+.relationsitegs_step03 li {float:left; display:inline; margin-left:14px;}
+
+.areags_step01 {font-size:14px; font-weight:bold; color:#3f5063; background:url(../../images/front/icon/icon_tit01.gif) no-repeat left center; padding-left:15px; margin-bottom:10px;}
+
+/* 진로교육 관련사이트 */
+.edu-relation-link { overflow:hidden; width:987px; margin:37px 0 0 -7px;}
+.edu-relation-link li { position:relative; float:left; width:218px; height:243px; margin:0 0 8px 7px; padding:9px 9px 0; border:1px solid #dedede; box-shadow:1px 1px 7px #dbdada;}
+.edu-relation-link li:hover { border:1px solid #ff4901;}
+.edu-relation-link li > a { width:100%; height:100%;}
+.edu-relation-link li dl { padding-left:7px;}
+.edu-relation-link li dt { padding-top:140px; color:#333; font-size:17px; font-weight:bold; line-height:32px;}
+.edu-relation-link li:hover  dt {color:#ff5c03}
+.edu-relation-link li dd.link-img { position:absolute; top:9px; left:9px; width:220px; height:127px;}
+.edu-relation-link li dd.link-img img { width:100%; height:auto;}
+.edu-relation-link li dd.txt-organ { color:#7d7d7d; font-size:13px; font-weight:bold; line-height:17px;}
+.edu-relation-link li dd.link-addr { margin-top:21px; padding-left:13px; color:#333; font-size:12px; line-height:16px; background:url("../../images/front/contents/edu/ico_relation_link.gif") no-repeat 0 50%;}
+
+
+/*  메인  */
+#edu_main {width:100%; background:url(../../images/front/contents/edu/main_bg02.gif) repeat-x left 376px; overflow:hidden;}
+#edu_main #contents {width:940px; margin:0 auto; padding-bottom:50px; }
+/* .advice_main_colum1 {float:left; width:597px; height:376px;} */
+.edu_main_colum1 {height:300px; background:url(../../images/front/contents/edu/main_img1.gif) no-repeat 611px 20px; }
+.edu_main_colum1 .tip1 {clear:both; background:url(../../images/front/contents/counsel/icon_tip1.gif) no-repeat 3px top; padding-left:23px; padding-top:1px; font-size:11px; color:#ff6633;}
+.edu_main_colum1 .mainTxt1 {padding:40px 0 10px ; font-family:'NanumGothicBoldWeb'; font-size:30px; color:#444; letter-spacing:-1px;}
+.edu_main_colum1 .mainTxt1 span {font-family:'NanumGothicBoldWeb'; font-size:30px; color:#f56200}
+.edu_main_colum1 .mainTxt2 {font-size:14px; color:#666; line-height:150%; }
+.edu_main_colum1 .mainTxt2 strong {display:inline-block; background:#575757; font-weight:bold; color:#fff; font-size:14px; line-height:135%}
+.edu_main_colum1 .text_blur {width:281px;height:12px;margin:5px;padding:9px 12px;border:0;background:url(../../images/front/contents/job/text_blur.gif) no-repeat 12px 7px; }
+.edu_main_colum1 .text_focus {width:281px;height:12px;margin:5px;padding:9px 12px;border:0;background:#fff}
+
+.edu_main_colum1 .mainLink1 a {display:inline-block; padding-right:3px; vertical-align:bottom;}
+.edu_main_colum1 h2 {font-family:'NanumGothicBoldWeb'; font-size:16px; color:#333333; padding:27px 0 8px 0;}
+.edu_main_colum1 li {float:left; padding-right:3px;}
+.btn_edu_main1 {display:block; background:url(../../images/front/contents/edu/main_btn_left_off.gif) no-repeat left top;}
+.btn_edu_main1 span {display:block; height:38px; padding:13px 30px 0 15px;; font-size:13px; font-weight:bold; color:#ff6633; background:url(../../images/front/contents/edu/main_btn_right_off.gif) no-repeat right top; }
+.btn_edu_main1:hover {display:block;background:url(../../images/front/contents/edu/main_btn_left_on.gif) no-repeat left top; }
+.btn_edu_main1:hover span  {display:block; height:38px; padding:13px 30px 0 15px;; font-size:13px; font-weight:bold; color:#fff; background:url(../../images/front/contents/edu/main_btn_right_on.gif) no-repeat right top; }
+
+.btn_edu_main2 {display:block; background:url(../../images/front/contents/edu/main_btn_left_off.gif) no-repeat left top;}
+.btn_edu_main2 span {display:block; height:31px; padding:20px 30px 0 15px;; font-size:13px; font-weight:bold; color:#ff6633; background:url(../../images/front/contents/edu/main_btn_right_off.gif) no-repeat right top; }
+.btn_edu_main2:hover {display:block;background:url(../../images/front/contents/edu/main_btn_left_on.gif) no-repeat left top; }
+.btn_edu_main2:hover span  {display:block; height:31px; padding:20px 30px 0 15px;; font-size:13px; font-weight:bold; color:#fff; background:url(../../images/front/contents/edu/main_btn_right_on.gif) no-repeat right top; }
+
+.edu_main_colum2 { clear:both; width:100%; height:170px; padding-bottom:100px; /*padding-top:30px;*/ padding-top:15px; }
+.edu_main_colum2 .fl {float:left; width:414px; background:url(../../images/front/contents/edu/main_ico_01.gif) no-repeat left top; padding:14px 0 0 45px;}
+.edu_main_colum2 .fr {position:relative; float:left; width:436px; background:url(../../images/front/contents/edu/main_ico_02.gif) no-repeat left top; padding:14px 0 0 45px;}
+.edu_main_colum2 .mainTxt3 {padding:5px 0 10px 0; font-size:11px; color:#888888; letter-spacing:-1px; line-height:140%;}
+.edu_main_colum2 .edu_data {background:url(../../images/front/contents/edu/main_ico_03.gif) no-repeat 288px top; width:355px; min-height:62px; margin:22px  0 0 -12px;}
+.edu_main_colum2 .edu_data li a  {display:block; background:url(../../images/front/contents/edu/main_link_1.gif) no-repeat left top;  padding:2px 0 0 14px; font-size:12px; color:#666;  height:18px; letter-spacing:-1px;}
+.edu_main_colum2 .edu_data li a:hover {text-decoration:underline;}
+.edu_main_colum2 dl { margin-left:-12px; overflow:hidden; }
+.edu_main_colum2 dt {float:left; font-family:'NanumGothicBoldWeb'; font-size:13px; color:#ff6300;  background:url(../../images/front/contents/job/main_ico_allow.gif) no-repeat right top; padding-right:15px;}
+.edu_main_colum2 dd {float:left;}
+.edu_main_colum2 dd a {display:inline-block; padding:1px 7px 7px 7px ; background:url(../../images/front/contents/job/main_line1.gif) no-repeat left top; font-size:12px; color:#666666; line-height:110%;}
+.edu_main_colum2 dd a.first {background:none}
+.edu_main_colum3 dd a:hover {text-decoration:underline}
+.edu_main_colum2 .fr dl {margin:14px 0 0 0}
+.edu_main_colum2 .fr dt { width: 70px; padding:0}
+.edu_main_colum2 .fr dt.long { width: 100px; padding:0}
+
+.edu_main_colum2 h3 {font-family:'NanumGothicBoldWeb'; font-size:14px; color:#49556d; letter-spacing:-1px;}
+.edu_main_colum2 li strong {font-family:'NanumGothicBoldWeb'; font-size:14px; color:#f37200;}
+.edu_main_colum2 li p {font-size:11px; color:#afafaf; line-height:135%; padding:5px 0 9px; letter-spacing:-1px;}
+.edu_main_colum2 li.weekAdvice {float:left; width:213px; background:url(../../images/front/contents/counsel/main_img2.gif) no-repeat 145px top;}
+.edu_main_colum2 li.adviceSearch {float:left; width:162px; background:url(../../images/front/contents/counsel/main_img3.gif) no-repeat 106px top;}
+.edu_main_colum2 .fr ul {overflow:hidden; padding-top:41px;}
+.edu_main_colum2 .fr li {float:left; padding-right:49px;}
+
+.txt_info {position:relative; width:100%;}
+.txt_info span {position:absolute; right:0;}
+
+.table_forum td {height:auto; background:#fbfbfb;}
+.table_forum td p {margin-bottom:8px; line-height:18px;}
+.table_forum tfoot td {height:38px; padding:20px 14px 5px 14px; text-align:right;}
+
+.viewmain_step .experienciags_inner li dl {height:65px;}
+
+/* SCEP 인트로 */
+#gnb #conteniner .view_intro {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #9ed3b7; z-index: 999999999999999999999999999999999999;}
+#gnb #conteniner .view_intro p {margin: 0 auto; padding: 15px 0 0 15px; width: 1223px;}
+#gnb #conteniner .view_intro01 {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #f1faf9; z-index: 999999999999999999999999999999999999;}
+#gnb #conteniner .view_intro01 p {margin: 0 auto; padding: 35px 0 0 15px; width: 1223px;}
+
+/* 직업체험_20130902_추가수정 */
+.experienciags_step02 .experienciags_inner.width_s li { width: 138px; padding-right: 8px  }
+.experienciags_step02 .experienciags_inner01.width_s01 li { width: 215px; padding-right: 8px  }
+.experienciags_step02 .experienciags_inner.width_s li dl { width: 128px; padding: 20px 0 0 10px; }
+.experienciags_step02 .experienciags_inner.width_s li.last { padding-right: 0px }
+.experienciags_step02 .experienciags_inner.width_s li.last dl { width: 132px; }
+.experienciags_step02 .experienciags_inner.width_s li dl dt a .f_ws { margin-right: 8px; line-height:20px; letter-spacing:-0.2em; }
+.experienciags_step03 li p a.size_re img { width: 145px; height: 100px; }
+
+/* 학교진로교육프로그램(SCEP) - 학교 진로교육 목표와 성취기준_20130902_페이지 추가 */
+.experienciags_step05 dd .in_list { padding-top: 10px; }
+.experienciags_step05 dd .in_list .list_style_01 strong { display: inline-block; margin-bottom: 5px; }
+.experienciags_step05 dd .in_list .list_style_01 p { padding-left: 5px; line-height: 20px;  }
+.experienciags_step05 dd .in_list .list_style_01 ul { margin-bottom: 20px; padding-left: 10px; }
+.experienciags_step05 dd .in_list .list_style_01 ul li { padding-left: 7px; line-height: 18px; background:url(../../images/front/icon/icon_lidot01.gif) no-repeat left 45%; }
+.experienciags_step05 dd .in_list .list_style_02 strong { display: inline-block; margin-bottom: 5px; }
+.experienciags_step05 dd .in_list .list_style_02 ul { margin-bottom: 20px;  padding-left: 5px; }
+.experienciags_step05 dd .in_list .list_style_02 ul li {  line-height: 18px; }
+
+
+/* 진료교육 메인 리뉴얼 20140228 */
+.bg_none {background:none !important}
+.e_mt18 {margin-top:18px}
+.edu_main_re {padding: 0 0 19px 0;}
+.edu_main_re .mainTxt1 {padding:40px 0 10px ; font-family:'NanumGothicBoldWeb'; font-size:30px; color:#444; letter-spacing:-1px;}
+.edu_main_re .mainTxt1 span {font-family:'NanumGothicBoldWeb'; font-size:30px; color:#f56200}
+.edu_main_re .mainTxt2 {font-size:14px; color:#666; line-height:150%; }
+.edu_main_re .mainTxt2 strong {display:inline-block; background:#575757; font-weight:bold; color:#fff; font-size:14px; line-height:135%}
+.edu_box01 {border:1px solid #ccc;background:#f9f9f9;width:295px;height:402px;float:left;margin-right:5px;padding:35px 0 0 33px}
+.edu_ba {margin-left:25px}
+.edu_ba li {float:left;margin:0 32px 35px 0}
+
+.edu_search01 {margin:30px 0;position:relative}
+.edu_search01 label {visibility: hidden;font-size: 0 !important;color: #fff !important;}
+.edu_search01 input[type=text] {position: relative;margin: 2px;padding: 0 50px 0 10px;border: 1px solid #e7e7e7;width: 200px;height: 42px;line-height: 42px;vertical-align: middle;}
+.edu_search01 .edu_button {position: absolute;top: 6px;right: 31px;border-left: 1px solid #C7C5C6;width: 44px;height: 42px;line-height: 42px;border: 0;font-size: 0;overflow: hidden;vertical-align: middle;
+  background: url(../../images/front/contents/job/search_button.gif) 0 0 no-repeat;cursor: pointer;z-index: 999;}
+*:first-child+html .edu_search01 .edu_button {position: absolute;top: 17px;right: 31px;border-left: 1px solid #C7C5C6;width: 44px;height: 42px;line-height: 42px;border: 0;font-size: 0;overflow: hidden;vertical-align: middle;
+  background: url(../../images/front/contents/job/search_button.gif) 0 0 no-repeat;cursor: pointer;z-index: 999;}
+
+
+
+.goru_list {margin-bottom:20px}
+.goru_list li {display: block;margin: 0;padding: 0 0 0 7px;height: 24px;background: url(../../images/front/contents/job/cnetsubmain_bullet.gif) 0 5px no-repeat;}
+.goru_list li.on {font-weight:bold}
+.grou h2 {margin-bottom:15px}
+.edu_box02 {background: url(../../images/front/contents/edu/box_bg.gif) 0 0 no-repeat;float:left;width:237px;height:404px;padding:35px 0 0 33px}
+.edu_box02 li {margin-bottom:8px}
+
+.edu_list_inner {border:1px solid #b5c1cd;padding:21px 0 21px 44px}
+.edu_list_inner p {display: block;height: 33px;line-height: 33px;}
+.edu_list_inner label {display: inline-block;width: 94px;height: 27px;line-height: 27px;float: left;color: #000;font-size: 14px;font-weight: bold}
+.edu_list_inner .sebox {width: 98px;height: 27px;line-height: 25px;padding: 0 0 0 7px;border: 1px solid #dbdada;background: #fff;float:left;;margin:2px 5px 0 0}
+.edu_list_inner .inp_lifetime {width: 263px;height: 25px;line-height: 25px;padding: 0 0 0 7px;border: 1px solid #dbdada;background: #fff;float:left;margin:2px 5px 0 0}
+
+.w170 {width:170px}
+
+.box_table {width:100%;margin-top:15px}
+.box_table th {text-align: left;background-color: #f9f9f9;border-bottom: 1px solid #b6c1cd;padding: 15px 15px 12px;border-top:2px solid #768598}
+.box_table .box_title {float: left;font-size: 16px;color: #415063;}
+.box_table .box_reply {float: right;color: #888;font-weight: normal;margin: 4px 0 0;}
+
+
+/*특수교육대학생 신규 2017.04.04 */
+.tab_menus_re.multi  ul li a{font-size: 14px;letter-spacing:-1px}
+.tab_menus_re.multi  ul li{margin-bottom:3px;}
+.tab_menus_re.multi .grid3 li:nth-child(1),
+.tab_menus_re.multi .grid3 li:nth-child(4){width:34%;}
+.tabcnt{margin:0 0 30px 0;display:none}
+.tabcnt.on{display:block}
+.tabcnt h3{font-size:24px;color:#555;margin:60px 0 30px 0;font-weight: bold;}
+.tabcnt h4{font-size:20px;color:#0471f9;font-weight:bold;padding:15px 0 20px 0}
+.tabcnt .special_img{position:relative;height:363px;padding:0 0 0 290px}
+.tabcnt .special_img img{position:absolute;left:0;top:0}
+.tabcnt .special_img p{font-size:13px;color:#555;padding:0 0 15px 0;word-break:keep-all;line-height:1.6}
+.year_step{background:url(/webres/images/years.png)  left 50px no-repeat}
+.year_step .step{width:19%;float:left;margin: 0 7px 0 0;position:relative}
+.year_step .step h5{text-align:center;color:#fff}
+.year_step .step .stit{display:block;height:63px;text-align: center;}
+.year_step .step .stit strong{display:block;font-size:14px;color:#333;padding:0 0 5px 0}
+.year_step .step_cont{border:1px solid #b8bdca;margin:28px 0 0 0;background:#fff}
+.year_step .step_cont:before{content:"";background:url(/webres/images/arw_top.png) no-repeat;display:block;width: 30px;height: 30px;margin: -14px auto 0 auto;}
+.year_step .step_cont .mtit{display:block;font-size:14px;color:#333;padding:0 0 18px 0;text-align:center;background:#fff;border-bottom: 1px solid #ddd;}
+.year_step .step_cont .mtit strong{display:block;font-size:14px;color:#333;padding:0 0 5px 0}
+.year_step .step_cont>ul{background:#fafafc;padding:15px 8px;height:350px}
+.year_step .step_cont>ul>li{line-height:1.8;padding-bottom:5px;color:#333}
+.year_step .step_cont>ul>li>ul>li{line-height:1.6;padding-left:15px;color:#666}
+.year_step .step .now{width:4px;height:473px;position:absolute;left:-5px;top:86px;background:url(/webres/images/red_dot.png) repeat-y}
+.year_step .step .now img{left: -16px;top: -69px;position:absolute;}
+.flow_step{margin:60px 0 0 0}
+.flow_step .flow_top{width:368px;margin:0 auto}
+.flow_step .flow_top h5{color:#fff;background:#5e759c;padding:18px 0 18px 0;text-align:center;font-size:16px}
+.flow_step .flow_top>ul{background:#edeff2;padding:18px 15px}
+.flow_step .flow_top>ul>li{line-height:2;padding:0 15px 0 10px;color:#333;text-indent:-13px}
+.flow_step .flow_top>ul>li>ul>li{text-indent:0;line-height:1.8}
+.flow_step .flows{width:24.7%;display:inline-block;vertical-align:top}
+.flow_step .flows h5{color:#fff;background:#8aa0b8;padding:18px 0 18px 0;text-align:center}
+.flow_step .flows h5 span{display:block;text-align:center;font-size:13px;padding-top:5px}
+.flow_step .flows>ul{background:#edeff2;padding:18px 15px;height:330px}
+.flow_step .flows>ul>li{line-height:1.8;padding:0 5px 5px 15px;color:#333;text-indent:-13px;word-break:keep-all}
+.flow_step .flow_wrap{background: url(/webres/images/flow.png) 120px top no-repeat;padding:42px 0 0 0;}
+
+.bookWrap{height:187px}
+.bookWrap.four{height:282px}
+.bookWrap .bkTab{width:976px;height:211px;display:block;border:2px solid #ccc;border-radius:5px;background:#fefefe;position:relative;float:left}
+.bookWrap.both .bkTab{width:49%;height:211px;display:inline-block;border:2px solid #ccc;border-radius:5px;background:#fefefe;position:relative;float:left}
+.bookWrap.three .bkTab{width:32.2%;height:211px;display:inline-block;border:2px solid #ccc;border-radius:5px;background:#fefefe;position:relative;float:left;margin-right:9px}
+.bookWrap.four .bkTab{width:24%;height:187px;display:inline-block;border:2px solid #ccc;border-radius:5px;background:#fefefe;position:relative;float:left}
+.bookWrap.both .bkTab:nth-child(1){margin-right:8px}
+.bookWrap.three .bkTab:nth-child(3){margin-right:0}
+.bookWrap .bkTab.on{border:2px solid #0286e3;background:#fbfcfe}
+.bookWrap .bkTab .book{display:block;padding:31px 0 0 150px;font-size:13px;color:#333;line-height:1.5;height: 180px;position:relative;z-index:1;word-break:keep-all}
+.bookWrap .bkTab .book_img{display:block;width:110px;height:147px;border:1px solid #ddd;position:absolute;left:18px;top:29px}
+.bookWrap .bkTab .job .book_img{background:url(/webres/images/book1.png) -110px 0 no-repeat}
+.bookWrap .bkTab.on .job .book_img{background-position: 0 0}
+.bookWrap .bkTab .school .book_img{background:url(/webres/images/book2.png) -110px 0 no-repeat}
+.bookWrap .bkTab.on .school .book_img{background-position: 0 0}
+.bookWrap .bkTab .builder .book_img{background:url(/webres/images/book3.png) -110px 0 no-repeat}
+.bookWrap .bkTab.on .builder .book_img{background-position: 0 0}
+.bookWrap .bkTab .service .book_img{background:url(/webres/images/book4.png) -110px 0 no-repeat;top:18px;}
+.bookWrap .bkTab.on .service .book_img{background-position: 0 0}
+.bookWrap .bkTab .program .book_img{background:url(/webres/images/book5.png) -110px 0 no-repeat;top:18px;}
+.bookWrap .bkTab.on .program .book_img{background-position: 0 0}
+.bookWrap .bkTab .story1 .book_img{background:url(/webres/images/book6.png) -110px 0 no-repeat;top:18px;}
+.bookWrap .bkTab.on .story1 .book_img{background-position: 0 0}
+.bookWrap .bkTab .story2 .book_img{background:url(/webres/images/book7.png) -110px 0 no-repeat;top:18px;}
+.bookWrap .bkTab.on .story2 .book_img{background-position: 0 0}
+.bookWrap .bkTab .social .book_img{background:url(/webres/images/book8.png) -110px 0 no-repeat}
+.bookWrap .bkTab.on .social .book_img{background-position: 0 0}
+.bookWrap .bkTab .farm .book_img{background:url(/webres/images/book9.png) -110px 0 no-repeat}
+.bookWrap .bkTab.on .farm .book_img{background-position: 0 0}
+.bookWrap .bkTab .story3 .book_img{background:url(/webres/images/book10.png) -110px 0 no-repeat}
+.bookWrap .bkTab.on .story3 .book_img{background-position: 0 0}
+.bookWrap .bkTab .story4 .book_img{background:url(/webres/images/book11.png) -110px 0 no-repeat}
+.bookWrap .bkTab.on .story4 .book_img{background-position: 0 0}
+
+.bookWrap.four .bkTab .book{height:70px;}
+.bookWrap .bkTab.on .book{cursor:default}
+.bookWrap .bkTab .book_btn{display:block;position:absolute;left:150px;top:155px;z-index:2}
+.bookWrap.four .bkTab .book_btn{left:18px;top:252px;z-index:0}
+.bookWrap .bkTab.on .book_btn{z-index:2}
+.bookWrap .bkTab .book img{display:block;margin-top:10px}
+.bookWrap .bkTab .book strong{display:block;margin-top:10px;font-size:16px;word-break:keep-all}
+.bookWrap .bkTab .book_btn a{display:inline-block;padding:5px 10px;background:#edf3fb;border-radius:3px;border:1px solid #8e9dc2;text-align:center}
+.bookWrap .bkTab .book_btn a.help{padding:5px 8px;background:#fff;border-radius:15px;}
+.bookWrap .bkTab .book_btn a:hover{background:#8e9dc2;border:1px solid #8e9dc2;color:#fff}
+.bookWrap .bkTab .check{display:block;position:absolute;right:10px;top:8px;width:28px;height:28px;background:url(/webres/images/check.png) -28px 0 no-repeat}
+.bookWrap .bkTab.on .check{background-position: 0 0 }
+.bookWrap.four .bkTab .book{padding:175px 0 0 20px}
+.bookWrap.four .bkTab{height:290px;margin-right:7px}
+.bookWrap.four .bkTab:nth-child(4){margin-right:0}
+
+
+.bkView{display:none;padding:65px 0 0 0}
+.bkView.on{display:block}
+.bkView h4{padding: 0 0 0 25px;color:#000;background:url(http://www.career.go.kr//webres/images//arrow_blue.png) no-repeat;margin-bottom: 20px;}
+.bkView h5{background:#777f93;border-radius:25px;color:#fff;padding:10px 15px;width:140px;text-align:center;margin:20px auto -15px auto}
+.bkView ul{border:1px solid #777f93;border-radius:5px;padding:20px 20px 40px 20px}
+.bkView ul li{font-size: 13px;color:#000;line-height: 1.8;text-indent: -6px;padding:5px 0 5px 10px;word-break:keep-all}
+.bkView ul li strong{font-size: 14px;}
+.bkView ul.job_illust li{display:inline-block;width:112px;height:115px;border-radius:112px;margin:30px 30px 40px 40px;vertical-align:middle;position:relative;text-indent:0;padding:0}
+.bkView ul.job_illust span{text-align:center;position:absolute;top:126px;width:115px;word-break:keep-all;line-height:1.4}
+.bkView ul.job_illust.y2012 li{background:url(/webres/images/illust01.png) no-repeat}
+.bkView ul.job_illust.y2012.public li:nth-child(2){background-position: -112px 0}
+.bkView ul.job_illust.y2012.public li:nth-child(3){background-position: -224px 0}
+.bkView ul.job_illust.y2012.public li:nth-child(4){background-position: -336px 0}
+.bkView ul.job_illust.y2012.public li:nth-child(5){background-position: -448px 0}
+.bkView ul.job_illust.y2012.public li:nth-child(6){background-position: 0 -112px}
+.bkView ul.job_illust.y2012.public li:nth-child(7){background-position: -112px -112px}
+.bkView ul.job_illust.y2012.public li:nth-child(8){background-position: -224px -112px}
+.bkView ul.job_illust.y2012.favorit li:nth-child(1){background-position: 0 -224px}
+.bkView ul.job_illust.y2012.favorit li:nth-child(2){background-position: -112px -224px}
+.bkView ul.job_illust.y2012.favorit li:nth-child(3){background-position: -224px -224px}
+.bkView ul.job_illust.y2012.favorit li:nth-child(4){background-position: -336px -224px}
+.bkView ul.job_illust.y2012.favorit li:nth-child(5){background-position: -448px -224px}
+.bkView ul.job_illust.y2012.favorit li:nth-child(6){background-position: 0 -336px}
+.bkView ul.job_illust.y2012.favorit li:nth-child(7){background-position: -112px -336px}
+.bkView ul.job_illust.y2012.favorit li:nth-child(8){background-position: -224px -336px}
+.bkView ul.job_illust.y2012.favorit li:nth-child(9){background-position: -336px -336px}
+.bkView ul.job_illust.y2012.favorit li:nth-child(10){background-position: -448px -336px}
+.bkView ul.job_illust.y2012.future li:nth-child(1){background-position: 0 -448px}
+.bkView ul.job_illust.y2012.future li:nth-child(2){background-position: -112px -448px}
+.bkView ul.job_illust.y2012.future li:nth-child(3){background-position: -224px -448px}
+.bkView ul.job_illust.y2012.future li:nth-child(4){background-position: -336px -448px}
+.bkView ul.job_illust.y2012.future li:nth-child(5){background-position: -448px -448px}
+.bkView ul.job_illust.y2012.future li:nth-child(6){background-position: 0 -560px}
+.bkView ul.job_illust.y2012.future li:nth-child(7){background-position: -112px -560px}
+.bkView ul.job_illust.y2012.future li:nth-child(8){background-position: -224px -560px}
+.bkView ul.job_illust.y2012.future li:nth-child(9){background-position: -336px -560px}
+.bkView ul.job_illust.y2012.future li:nth-child(10){background-position: -448px -560px}
+.bkView ul.job_illust.y2012.future li:nth-child(11){background-position: 0 -672px}
+.bkView ul.job_illust.y2012.future li:nth-child(12){background-position: -112px -672px}
+.bkView ul.job_illust.y2013 li{background:url(/webres/images/illust02.png) no-repeat}
+.bkView ul.job_illust.y2013.public li:nth-child(2){background-position: -112px 0}
+.bkView ul.job_illust.y2013.public li:nth-child(3){background-position: -224px 0}
+.bkView ul.job_illust.y2013.public li:nth-child(4){background-position: -336px 0}
+.bkView ul.job_illust.y2013.public li:nth-child(5){background-position: -448px 0}
+.bkView ul.job_illust.y2013.public li:nth-child(6){background-position: 0 -112px}
+.bkView ul.job_illust.y2013.public li:nth-child(7){background-position: -112px -112px}
+.bkView ul.job_illust.y2013.public li:nth-child(8){background-position: -224px -112px}
+.bkView ul.job_illust.y2013.public li:nth-child(9){background-position: -336px -112px}
+.bkView ul.job_illust.y2013.public li:nth-child(10){background-position: -448px -112px}
+.bkView ul.job_illust.y2013.public li:nth-child(11){background-position: 0 -224px}
+.bkView ul.job_illust.y2013.public li:nth-child(12){background-position: -112px -224px}
+.bkView ul.job_illust.y2013.favorit li:nth-child(1){background-position: 0 -336px}
+.bkView ul.job_illust.y2013.favorit li:nth-child(2){background-position: -112px -336px}
+.bkView ul.job_illust.y2013.favorit li:nth-child(3){background-position: -224px -336px}
+.bkView ul.job_illust.y2013.favorit li:nth-child(4){background-position: -336px -336px}
+.bkView ul.job_illust.y2013.favorit li:nth-child(5){background-position: -448px -336px}
+.bkView ul.job_illust.y2013.favorit li:nth-child(6){background-position: 0 -448px}
+.bkView ul.job_illust.y2013.favorit li:nth-child(7){background-position: -112px -448px}
+.bkView ul.job_illust.y2013.favorit li:nth-child(8){background-position: -224px -448px}
+.bkView ul.job_illust.y2013.favorit li:nth-child(9){background-position: -336px -448px}
+.bkView ul.job_illust.y2013.future li:nth-child(1){background-position: 0 -448px}
+.bkView ul.job_illust.y2013.future li:nth-child(2){background-position: -112px -560px}
+.bkView ul.job_illust.y2013.future li:nth-child(3){background-position: -224px -560px}
+.bkView ul.job_illust.y2013.future li:nth-child(4){background-position: -336px -560px}
+.bkView ul.job_illust.y2013.future li:nth-child(5){background-position: -448px -560px}
+.bkView ul.job_illust.y2013.future li:nth-child(6){background-position: 0 -672px}
+.bkView ul.job_illust.y2013.future li:nth-child(7){background-position: -112px -672px}
+.bkView ul.job_illust.y2013.future li:nth-child(8){background-position: -224px -672px}
+.bkView ul.job_illust.y2013.future li:nth-child(9){background-position: -336px -672px}
+.bkView ul.job_illust.y2014 li{background:url(/webres/images/illust03.png) no-repeat}
+.bkView ul.job_illust.y2014.public li:nth-child(2){background-position: -112px 0}
+.bkView ul.job_illust.y2014.public li:nth-child(3){background-position: -224px 0}
+.bkView ul.job_illust.y2014.public li:nth-child(4){background-position: -336px 0}
+.bkView ul.job_illust.y2014.public li:nth-child(5){background-position: -448px 0}
+.bkView ul.job_illust.y2014.public li:nth-child(6){background-position: 0 -112px}
+.bkView ul.job_illust.y2014.public li:nth-child(7){background-position: -112px -112px}
+.bkView ul.job_illust.y2014.public li:nth-child(8){background-position: -224px -112px}
+.bkView ul.job_illust.y2014.public li:nth-child(9){background-position: -336px -112px}
+.bkView ul.job_illust.y2014.public li:nth-child(10){background-position: -448px -112px}
+.bkView ul.job_illust.y2014.favorit li:nth-child(1){background-position: 0 -224px}
+.bkView ul.job_illust.y2014.favorit li:nth-child(2){background-position: -112px -224px}
+.bkView ul.job_illust.y2014.favorit li:nth-child(3){background-position: -224px -224px}
+.bkView ul.job_illust.y2014.favorit li:nth-child(4){background-position: -336px -224px}
+.bkView ul.job_illust.y2014.favorit li:nth-child(5){background-position: -448px -224px}
+.bkView ul.job_illust.y2014.favorit li:nth-child(6){background-position: 0 -336px}
+.bkView ul.job_illust.y2014.favorit li:nth-child(7){background-position: -112px -336px}
+.bkView ul.job_illust.y2014.favorit li:nth-child(8){background-position: -224px -336px}
+.bkView ul.job_illust.y2014.favorit li:nth-child(9){background-position: -336px -336px}
+.bkView ul.job_illust.y2014.favorit li:nth-child(10){background-position: -448px -336px}
+.bkView ul.job_illust.y2014.future li:nth-child(1){background-position: 0 -448px}
+.bkView ul.job_illust.y2014.future li:nth-child(2){background-position: -112px -448px}
+.bkView ul.job_illust.y2014.future li:nth-child(3){background-position: -224px -448px}
+.bkView ul.job_illust.y2014.future li:nth-child(4){background-position: -336px -448px}
+.bkView ul.job_illust.y2014.future li:nth-child(5){background-position: -448px -448px}
+.bkView ul.job_illust.y2014.future li:nth-child(6){background-position: 0 -560px}
+.bkView ul.job_illust.y2014.future li:nth-child(7){background-position: -112px -560px}
+.bkView ul.job_illust.y2014.future li:nth-child(8){background-position: -224px -560px}
+.bkView ul.job_illust.y2014.future li:nth-child(9){background-position: -336px -560px}
+.bkView ul.job_illust.y2014.future li:nth-child(10){background-position: -448px -560px}
+
+.bkView ul.job_illust.y2015 li{background:url(/webres/images/illust04.png) no-repeat}
+.bkView ul.job_illust.y2015.public li:nth-child(2){background-position: -112px 0}
+.bkView ul.job_illust.y2015.public li:nth-child(3){background-position: -224px 0}
+.bkView ul.job_illust.y2015.public li:nth-child(4){background-position: -336px 0}
+.bkView ul.job_illust.y2015.public li:nth-child(5){background-position: -448px 0}
+.bkView ul.job_illust.y2015.public li:nth-child(6){background-position: 0 -112px}
+.bkView ul.job_illust.y2015.public li:nth-child(7){background-position: -112px -112px}
+.bkView ul.job_illust.y2015.public li:nth-child(8){background-position: -224px -112px}
+.bkView ul.job_illust.y2015.public li:nth-child(9){background-position: -336px -112px}
+.bkView ul.job_illust.y2015.public li:nth-child(10){background-position: -448px -112px}
+.bkView ul.job_illust.y2015.favorit li:nth-child(1){background-position: 0 -224px}
+.bkView ul.job_illust.y2015.favorit li:nth-child(2){background-position: -112px -224px}
+.bkView ul.job_illust.y2015.favorit li:nth-child(3){background-position: -224px -224px}
+.bkView ul.job_illust.y2015.favorit li:nth-child(4){background-position: -336px -224px}
+.bkView ul.job_illust.y2015.favorit li:nth-child(5){background-position: -448px -224px}
+.bkView ul.job_illust.y2015.favorit li:nth-child(6){background-position: 0 -336px}
+.bkView ul.job_illust.y2015.favorit li:nth-child(7){background-position: -112px -336px}
+.bkView ul.job_illust.y2015.favorit li:nth-child(8){background-position: -224px -336px}
+.bkView ul.job_illust.y2015.favorit li:nth-child(9){background-position: -336px -336px}
+.bkView ul.job_illust.y2015.favorit li:nth-child(10){background-position: -448px -336px}
+.bkView ul.job_illust.y2015.future li:nth-child(1){background-position: 0 -448px}
+.bkView ul.job_illust.y2015.future li:nth-child(2){background-position: -112px -448px}
+.bkView ul.job_illust.y2015.future li:nth-child(3){background-position: -224px -448px}
+.bkView ul.job_illust.y2015.future li:nth-child(4){background-position: -336px -448px}
+.bkView ul.job_illust.y2015.future li:nth-child(5){background-position: -448px -448px}
+.bkView ul.job_illust.y2015.future li:nth-child(6){background-position: 0 -560px}
+.bkView ul.job_illust.y2015.future li:nth-child(7){background-position: -112px -560px}
+.bkView ul.job_illust.y2015.future li:nth-child(8){background-position: -224px -560px}
+.bkView ul.job_illust.y2015.future li:nth-child(9){background-position: -336px -560px}
+.bkView ul.job_illust.y2015.future li:nth-child(10){background-position: -448px -560px}
+
+.bkView ul.job_illust.y2016 li{background:url(/webres/images/illust05.png) no-repeat}
+.bkView ul.job_illust.y2016.public li:nth-child(2){background-position: -112px 0}
+.bkView ul.job_illust.y2016.public li:nth-child(3){background-position: -224px 0}
+.bkView ul.job_illust.y2016.public li:nth-child(4){background-position: -336px 0}
+.bkView ul.job_illust.y2016.public li:nth-child(5){background-position: -448px 0}
+.bkView ul.job_illust.y2016.public li:nth-child(6){background-position: 0 -112px}
+.bkView ul.job_illust.y2016.public li:nth-child(7){background-position: -112px -112px}
+.bkView ul.job_illust.y2016.public li:nth-child(8){background-position: -224px -112px}
+.bkView ul.job_illust.y2016.public li:nth-child(9){background-position: -336px -112px}
+.bkView ul.job_illust.y2016.public li:nth-child(10){background-position: -448px -112px}
+.bkView ul.job_illust.y2016.favorit li:nth-child(1){background-position: 0 -224px}
+.bkView ul.job_illust.y2016.favorit li:nth-child(2){background-position: -112px -224px}
+.bkView ul.job_illust.y2016.favorit li:nth-child(3){background-position: -224px -224px}
+.bkView ul.job_illust.y2016.favorit li:nth-child(4){background-position: -336px -224px}
+.bkView ul.job_illust.y2016.favorit li:nth-child(5){background-position: -448px -224px}
+.bkView ul.job_illust.y2016.favorit li:nth-child(6){background-position: 0 -336px}
+.bkView ul.job_illust.y2016.favorit li:nth-child(7){background-position: -112px -336px}
+.bkView ul.job_illust.y2016.favorit li:nth-child(8){background-position: -224px -336px}
+.bkView ul.job_illust.y2016.favorit li:nth-child(9){background-position: -336px -336px}
+.bkView ul.job_illust.y2016.favorit li:nth-child(10){background-position: -448px -336px}
+.bkView ul.job_illust.y2016.future li:nth-child(1){background-position: 0 -448px}
+.bkView ul.job_illust.y2016.future li:nth-child(2){background-position: -112px -448px}
+.bkView ul.job_illust.y2016.future li:nth-child(3){background-position: -224px -448px}
+.bkView ul.job_illust.y2016.future li:nth-child(4){background-position: -336px -448px}
+.bkView ul.job_illust.y2016.future li:nth-child(5){background-position: -448px -448px}
+.bkView ul.job_illust.y2016.future li:nth-child(6){background-position: 0 -560px}
+.bkView ul.job_illust.y2016.future li:nth-child(7){background-position: -112px -560px}
+.bkView ul.job_illust.y2016.future li:nth-child(8){background-position: -224px -560px}
+.bkView ul.job_illust.y2016.future li:nth-child(9){background-position: -336px -560px}
+.bkView ul.job_illust.y2016.future li:nth-child(10){background-position: -448px -560px}
+
+
+
+.help_popup{display:none;border:2px solid #7c7e9a;border-radius:5px;background:#fff;position:absolute;top:280px;z-index:5;padding:20px 25px}
+.help_popup .close{position:absolute;right:5px;top:5px;width:34px;height:34px;background:url(/webres/images/help_close.png) no-repeat;text-indent:-9999px}
+.help_popup .popboth_left{width:45%;display:inline-block;vertical-align:top;padding:20px}
+.help_popup .popboth_right{width:45%;display:inline-block;vertical-align:top;border-left:1px solid #ddd;padding:20px 10px 0 30px}
+.help_popup h3{background:url(/webres/images/help_bullet.png) no-repeat;font-size:16px;color:#000;padding:2px 0 10px 35px}
+.help_popup p{font-size:12px;color:#000;padding:5px 0;word-break:keep-all;line-height:1.6;}
+.help_popup ul li{font-size:12px;padding:5px 0;line-height:1.6;word-break:keep-all}
+
+
+/*진로교육 집중학년학기제*/
+
+.semester{margin:52px 0 42px 0}
+.seme_box:after{content:"";display:block;clear:both}
+.seme_tab{width:260px;border:1px solid #1EA192;float:right}
+.seme_tab li a{display:block;height:55px;border-bottom:1px solid #5dbbb0;color:#fff;background:#1EA192;font-size:16px;line-height:55px;padding:0 0 0 40px;font-weight:600}
+.seme_tab li.active a{color:#017e6f;background:#fff}
+.seme_tab li.active a:before,
+.seme_tab li.active a:hover:before{content:"▶";font-size:12px;color:#ed1c24;margin:0 14px 0 -25px;}
+.seme_tab li a:hover:before{content:"▶";font-size:12px;color:#fff;margin:0 14px 0 -25px;}
+.seme_tab li:last-child a{border-bottom:none}
+.seme_title{width:705px;height:223px;border:1px solid #8ca2a9;background:url(/webres/images/front/course/fgrade/semebox_bg.png) left top no-repeat}
+.seme_title>span{display:block;padding:45px 0 28px 165px;color:#017f70;font-size:26px;font-weight: 600;}
+.seme_title>p{padding:0 30px 0 165px;font-size:14px;color:#666;line-height:1.5;word-break:keep-all}
+.tab_menus_re.seme ul li a.selected{background: #1EA192;}
+.tab_menus_re.seme ul li a {font-size: 16px;line-height:20px;}
+.tab_menus_re.seme ul li a .noti_count{background: #fe4249;width: 25px;height: 25px;display: inline-block;border-radius: 100%;color: #fff;text-align: center;line-height: 25px;float: right;margin:-3px 20px 0 0;}
+.seme_content {margin:0 0 54px 0 ; overflow:hidden;}
+.seme_content h3{font-size:24px;margin:54px 0 10px 0;color:#000}
+.seme_content h3:before{content:"";display:inline-block;border-left:3px solid #ed1c24;margin:0 3px 0 0;width:2px;height:20px}
+.seme_content h4{font-size:18px;margin:40px 0 15px 0;padding-top:40px;color:#000;font-weight:600;border-top:1px solid #ddd}
+.seme_content p{font-size:14px;color:#333;line-height:1.5;word-break:keep-all}
+.seme_content p em{font-size: 11px;vertical-align: top;}
+.seme_content p.second_comt1{font-size:13px;color:#2174c5;line-height:1.5;word-break:keep-all;margin-top:10px;text-indent: -10px;padding-left:10px}
+.seme_content p.second_comt2{font-size:13px;color:#707070;line-height:1.5;word-break:keep-all;margin:10px 0 35px 0;text-indent: -10px;padding-left:10px}
+.seme_content p > a{font-size: 14px; color: #5771a5;text-decoration: underline;}
+.seme_content .seme_rull{border:1px solid #b8bdca;background:#fcfcfd;padding:20px 0 25px 25px;margin-top:10px}
+.seme_content .seme_rull dl:last-child{margin-top:20px}
+.seme_content .seme_rull dt{color:#464646;font-size:15px;padding:10px 0}
+.seme_content .seme_rull dd{color:#707070;font-size:13px;line-height:1.6}
+.seme_content .seme_list{padding:10px 0 50px 0}
+.seme_content .seme_list li{font-size:14px;color:#333;line-height:1.5;}
+.seme_content .seme_diagram{border:1px solid #d8dce5;background:#fafafb;text-align:center;padding:60px 0}
+.seme_content table.seme_table{ table-layout: fixed;border-collapse: collapse;width: 100%;margin:10px 0}
+.seme_content table.seme_table thead tr th{ height:44px;font-size:14px;color:#333;border-top:1px solid #ddd;border-bottom:1px solid #7f7f7f;background:#f6f6f6}
+.seme_content table.seme_table tbody tr td{ height:32px;font-size:14px;color:#333;border:1px solid #ddd;text-align:center}
+.seme_content table.seme_table tbody tr td:first-child{border-left:none;}
+.seme_content table.seme_table tbody tr td:last-child{border-right:none}
+.seme_content table.seme_table tbody tr.sum td,
+.seme_content table.seme_table .sum{border-bottom:1px solid #7f7f7f;}
+.seme_content .notice_search{width: auto;}
+
+
+/*한국인의 직업지표*/
+.kjob_wrap{border:1px solid #cecece;margin:35px 0 0 0;}
+.kjob_wrap .kjob_select{height:300px;}
+.kjob_wrap .kjob_select:after{content:"";display:block;clear:both;}
+.kjob_wrap .kjob_search{padding:0 0 20px 20px;border-bottom:1px solid #cecece;}
+.kjob_wrap .kjob_select .left{height:238px;width:340px;float:left;overflow:hidden;overflow-y:scroll;}
+.kjob_wrap .kjob_select .right{height:238px;width:637px;float:left;overflow:hidden;overflow-y:scroll;border-left:1px solid #cecece;}
+.kjob_wrap .kjob_select li{height:34px;}
+.kjob_wrap .kjob_select li a{display:block;height:34px;line-height:34px;padding:0 0 0 32px;font-size:13px;}
+.kjob_wrap .kjob_select li a.active{background:#eeeff2 url(/webres/images/front/job/jobIndicator/kjob_bullet.png) left -128px no-repeat;color:#000;font-weight:600;}
+.kjob_opt {height:42px;margin:30px 0 15px 0;}
+.kjob_opt h4{float:left;font-size:23px;color:#000;font-weight:600;margin:10px 0 0 0;}
+.kjob_opt h4:before{content:"";display:inline-block;width:4px;height:24px;background:#ff8b00;margin:0 10px 0 0;vertical-align:middle;}
+.kjob_opt .kjob_btn{float:right;height:42px;border:1px solid #939292;border-radius:8px;}
+.kjob_opt .kjob_btn a{display:inline-block;width:80px;text-align:center;line-height:42px;height:42px;font-size:15px;background:url(/webres/images/front/job/jobIndicator/kjob_bullet.png) no-repeat;font-weight:600;}
+.kjob_opt .kjob_btn a.pre{background-position:0 0;margin:0 0 0 10px}
+.kjob_opt .kjob_btn a.next{background-position: right -41px;margin:0 10px 0 0 }
+.kjob_opt .kjob_btn a.pre:hover{background-position:0 -82px}
+.kjob_opt .kjob_btn a.next:hover{background-position: right -123px }
+.kjob_opt .kjob_btn a:nth-child(2){border-left:1px solid #ccc;}
+
+/*jplot chart*/
+.kjob-chart{padding:70px 40px 40px 40px;border:2px solid #ccc}
+.kjob-chart table.jqplot-table-legend, table.jqplot-cursor-legend{background-color: rgba(255,255,255,0.6);border:none;color:#000;position: absolute;font-size: 0.75em;top: -48px!important;right: 0!important;}
+.kjob-chart div.jqplot-table-legend-swatch-outline {border:none;padding: 1px;}
+.kjob-chart div.jqplot-table-legend-swatch {border-top-width: 10px;border-left-width: 32px;}
+.kjob-chart td.jqplot-table-legend {font-size: 13px;}
+.kjob-chart div.jqplot-table-legend-swatch-outline {margin: 0 5px 0 10px;}
+
+
+/* 특수교육대상 학생을 위한 진로정보서 */
+.tab_wrap_edu.new-spcUnv-tab {display:table;width:980px;margin:37px 0 0;height:80px;overflow:hidden;}
+.tab_wrap_edu.new-spcUnv-tab .grid7 li {display:table-cell;width:124px;height:54px;border-left:1px solid #fff;padding:13px 8px 10px 7px;background:#e4e5e7;text-align:center;vertical-align:middle;}
+.tab_wrap_edu.new-spcUnv-tab .grid7 li:first-child {width:123px;border-left:none;}
+.tab_wrap_edu.new-spcUnv-tab .grid7 li.selected {background:#345396;}
+.tab_wrap_edu.new-spcUnv-tab .grid7 li a {color:#666;font-size:14px;line-height:19px;letter-spacing:-1px;}
+.tab_wrap_edu.new-spcUnv-tab .grid7 li.selected a {color:#fff;}
+
+.special_img.new-spcuniv-img {height:auto;margin:0 0 27px;}
+.special_img.new-spcuniv-img p {padding:0;margin:0 0 16px;}
+.year_step.new-5th .step_cont .narrow {letter-spacing:-1px;}
+.year_step.new-5th .step .now {left:inherit;right:-5px;}
+.year_step.new-5th .step .now img {top:-64px;}
+
+.flow_step.new-5th-table {min-height:680px;margin:40px 0 50px;background:url(../../images/bg_flows_line.png) no-repeat 259px 50%;}
+.flow_step.new-5th-table:after {content:'';display:block;clear:both;}
+.flow_step.new-5th-table .flow_top {float:left;width:259px;margin:227px 0 0;font-size:13px;}
+.flow_step.new-5th-table .flow_top h5 {padding:18px 10px 17px 20px;text-align:left;font-family:'NanumGothicBoldWeb';}
+.flow_step.new-5th-table .flow_top ul {padding:19px 15px 12px 15px;}
+.flow_step.new-5th-table .flow_top ul ul {padding:0;}
+.flow_step.new-5th-table .flow_top li {padding:0 0 0 8px;background:url(../../images/bg_flows_dot.png) no-repeat 0 12px;text-indent:0;line-height:19px;font-weight:bold;}
+.flow_step.new-5th-table .flow_top li li {padding:0;background:none;font-size:12px;letter-spacing:-1.5px;font-weight:normal;}
+.flow_step.new-5th-table .flow_wrap {float:left;width:678px;padding:0 0 0 43px;}
+.flow_step.new-5th-table .flow_wrap .flows {float:none;width:100%;min-height:120px;display:block;padding:0 0 20px;background:url(../../images/bg_flows_arrow.png) no-repeat 69px 120px;}
+.flow_step.new-5th-table .flow_wrap .flows.last {padding:0;background:none;}
+.flow_step.new-5th-table .flow_wrap .flows.last h5 {background-color:#5e759c;}
+.flow_step.new-5th-table .flow_wrap .flows h5 {float:left;width:151px;min-height:97px;padding:13px 9px 10px 10px;text-align:left;font-family:'NanumGothicBoldWeb';}
+.flow_step.new-5th-table .flow_wrap .flows h5 span {padding:5px 0 0;text-align:left;font-size:14px;letter-spacing:-1px;}
+.flow_step.new-5th-table .flow_wrap .flows ul {float:left;width:483px;height:91px;padding:13px 10px 16px 15px;}
+.flow_step.new-5th-table .flow_wrap .flows ul li {padding:0 0 0 6px;background:url(../../images/bg_flows_bar.png) no-repeat 0 9px;font-size:12px;line-height:19px;text-indent:0;color:#333;}
+
+.new-spcUnv-word {padding:0 0 0 16px;margin:0 0 15px;background-position:0 3px;}
+.new-spcUnv-word .lf-line {display:block;margin:7px 0 0;}
+
+.bookWrap .bkTab .keco .book_img {background:url(../../images/book12.png) -110px 0 no-repeat}
+.bookWrap .bkTab.on .keco .book_img {background-position: 0 0}
+.bookWrap .bkTab .keco2 .book_img {background:url(../../images/book13.png) -110px 0 no-repeat}
+.bookWrap .bkTab.on .keco2 .book_img {background-position: 0 0}
+.bookWrap .bkTab .keco3 .book_img {background:url(../../images/book14.png) -110px 0 no-repeat}
+.bookWrap .bkTab.on .keco3 .book_img {background-position: 0 0}
+
+.bkView ul.job_illust.y2017 li {background:url(../../images/illust06.png) no-repeat 0 10px;}
+.bkView ul.job_illust.y2017.public li:nth-child(2) {background-position: -131px 0}
+.bkView ul.job_illust.y2017.public li:nth-child(3) {background-position: -258px 0}
+.bkView ul.job_illust.y2017.public li:nth-child(4) {background-position: -390px 0}
+.bkView ul.job_illust.y2017.public li:nth-child(5) {background-position: -510px 0}
+.bkView ul.job_illust.y2017.public li:nth-child(6) {background-position: 0 -114px}
+.bkView ul.job_illust.y2017.public li:nth-child(7) {background-position: -137px -114px}
+.bkView ul.job_illust.y2017.public li:nth-child(8) {background-position: -275px -114px}
+.bkView ul.job_illust.y2017.public li:nth-child(9) {background-position: -414px -114px}
+.bkView ul.job_illust.y2017.public li:nth-child(10) {background-position: -560px -114px}
+.bkView ul.job_illust.y2017.public li:nth-child(11) {background-position: -16px -228px}
+.bkView ul.job_illust.y2017.public li:nth-child(12) {background-position: -136px -225px}
+.bkView ul.job_illust.y2017.public li:nth-child(13) {background-position: -262px -228px}
+.bkView ul.job_illust.y2017.favorit li:first-child {background-position: 0 -343px}
+.bkView ul.job_illust.y2017.favorit li:nth-child(2) {background-position: -127px -343px}
+.bkView ul.job_illust.y2017.favorit li:nth-child(3) {background-position: -266px -343px}
+.bkView ul.job_illust.y2017.favorit li:nth-child(4) {background-position: -408px -343px}
+.bkView ul.job_illust.y2017.favorit li:nth-child(5) {background-position: -538px -343px}
+.bkView ul.job_illust.y2017.favorit li:nth-child(6) {background-position: 2px -458px}
+.bkView ul.job_illust.y2017.favorit li:nth-child(7) {background-position: -114px -458px}
+.bkView ul.job_illust.y2017.favorit li:nth-child(8) {background-position: -244px -458px}
+.bkView ul.job_illust.y2017.future li:first-child {background-position: 0 -573px}
+.bkView ul.job_illust.y2017.future li:nth-child(2) {background-position: -106px -573px}
+.bkView ul.job_illust.y2017.future li:nth-child(3) {background-position: -218px -573px}
+.bkView ul.job_illust.y2017.future li:nth-child(4) {background-position: -348px -573px}
+.bkView ul.job_illust.y2017.future li:nth-child(5) {background-position: -479px -573px}
+.bkView ul.job_illust.y2017.future li:nth-child(6) {background-position: 0px -688px}
+.bkView ul.job_illust.y2017.future li:nth-child(7) {background-position: -126px -688px}
+.bkView ul.job_illust.y2017.future li:nth-child(8) {background-position: -265px -688px}
+.bkView ul.job_illust.y2017.future li:nth-child(9) {background-position: -374px -688px}
+.bkView.bkView3 .spcUv-report-wrap strong {font-size:13px;}
+.bkView.bkView3 .spcUv-report-wrap .report-table {margin-left:15px;text-indent:0;line-height:24px;}
+
+/* 진로교육 현황조사 서브탭 */
+#eduInlineMenu02 #currentTabMenu5.hiddenTab,
+#eduInlineMenu02 #currentTabMenu6.hiddenTab {width:100%;padding:30px 0;}
+#eduInlineMenu02 #currentTabMenu5.hiddenTab li:first-child,
+#eduInlineMenu02 #currentTabMenu6.hiddenTab li:first-child {margin-left:25px;}
+
+#eduInlineMenu #currentTabMenu .currentTabMenu1,
+#eduInlineMenu #currentTabMenu .currentTabMenu2,
+#eduInlineMenu #currentTabMenu .currentTabMenu3,
+#eduInlineMenu #currentTabMenu .currentTabMenu4,
+#eduInlineMenu #currentTabMenu .currentTabMenu5,
+#eduInlineMenu #currentTabMenu .currentTabMenu6,
+#eduInlineMenu #currentTabMenu .currentTabMenu7 {width:14%;}
+
+#eduInlineMenu #currentTabMenu .currentTabMenu1 {width:16%;}
+
+#eduInlineMenu #currentTabMenu .currentTabMenu1 a,
+#eduInlineMenu #currentTabMenu .currentTabMenu2 a,
+#eduInlineMenu #currentTabMenu .currentTabMenu3 a,
+#eduInlineMenu #currentTabMenu .currentTabMenu4 a,
+#eduInlineMenu #currentTabMenu .currentTabMenu5 a,
+#eduInlineMenu #currentTabMenu .currentTabMenu6 a,
+#eduInlineMenu #currentTabMenu .currentTabMenu7 a {padding-right:0;padding-left:0;}
+
+#eduInlineMenu #currentTabMenu3.hiddenTab,
+#eduInlineMenu #currentTabMenu4.hiddenTab,
+#eduInlineMenu #currentTabMenu5.hiddenTab {width:100%;padding:30px 0;}
+#eduInlineMenu #currentTabMenu3.hiddenTab ul,
+#eduInlineMenu #currentTabMenu4.hiddenTab ul,
+#eduInlineMenu #currentTabMenu5.hiddenTab ul {margin-left:25px;}
+#eduInlineMenu #currentTabMenu3.hiddenTab ul:after,
+#eduInlineMenu #currentTabMenu4.hiddenTab ul:after,
+#eduInlineMenu #currentTabMenu5.hiddenTab ul:after {content:'';display:block;clear:both;}
+#eduInlineMenu #currentTabMenu3.hiddenTab ul li:first-child a,
+#eduInlineMenu #currentTabMenu4.hiddenTab ul li:first-child a,
+#eduInlineMenu #currentTabMenu5.hiddenTab ul li:first-child a {background:none;}
+
+.jinro-search-box {width:100%;margin:35px 0 0;}
+.jinro-search-box .rdo-type {display:table;width:978px;padding:24px 0;border:1px solid #d5d9dc;background:#f7f8f9;text-align:center;}
+.jinro-search-box .rdo-type input {display:inline-block;vertical-align:middle;}
+.jinro-search-box .rdo-type input[type=radio] {width:14px;height:14px;margin-right:-17px;opacity:0;cursor:pointer;}
+.jinro-search-box .rdo-type label {display:inline-block;margin:0 12px 0 0;vertical-align:middle;font-size:14px;}
+.jinro-search-box .rdo-type label:before {content:'';display:inline-block;width:18px;height:18px;margin:-2px 5px 0 0;background:url(../../images/edu/img_radio_jinro.png) no-repeat center 50%;vertical-align:top;}
+.jinro-search-box .rdo-type input[type=radio]:checked + label:before {background-image:url(../../images/edu/img_radio_jinro_checked.png)}
+.jinro-search-box .rdo-type input[type=text] {height:32px;line-height:32px;padding:0 10px;border:1px solid #d5d9dc;border-radius:3px;background:#fff;}
+.jinro-search-box .rdo-type input[type=text]::placeholder {color:#898989;font-weight:300;font-size:13;}
+.jinro-search-box .rdo-type input[type=text]::-webkit-input-placeholder {color:#898989;font-weight:300;font-size:13;}
+.jinro-search-box .rdo-type input[type=text]::-moz-placeholder {color:#898989;font-weight:300;font-size:13;}
+.jinro-search-box .rdo-type input[type=text]:-ms-input-placeholder {color:#898989;font-weight:300;font-size:13;}
+.jinro-search-box .rdo-type input[type=text]:-moz-placeholder {color:#898989;font-weight:300;font-size:13;}
+.jinro-search-box .btn-search {display:inline-block;width:92px;height:34px;line-height:34px;margin:0 0 0 7px;border-radius:3px;background:#3057b5;color:#fff;font-size:15px;font-weight:500;text-align:center;vertical-align:middle;}
+.jinro-search-box .btn-toggle-condition {display:inline-block;height:34px;line-height:34px;padding:0 14px 0 12px;margin:0 0 0 7px;border-radius:3px;background:#6e83a3;color:#fff;font-size:15px;font-weight:500;vertical-align:middle;}
+.jinro-search-box .btn-toggle-condition .arw {display:inline-block;width:10px;height:6px;margin-right:8px;margin-top:-3px;background:url(../../images/edu/bg_arw_jinro.png) no-repeat 0 0;vertical-align:middle;}
+.jinro-search-box .btn-toggle-condition.on .arw {background-image:url(../../images/edu/bg_arw_jinro_on.png)}
+.jinro-search-box .chk-condition {display:none;padding:30px;margin:10px 0 0;border:1px solid #f2f4f4;background:#f0f5f9;text-align:center;}
+.jinro-search-box .chk-condition.on {display:block;}
+.jinro-search-box .chk-condition .chk-list-wrap {overflow:hidden;border-bottom:1px solid #d5d9dc;text-align:left;}
+
+.jinro-search-box .chk-condition .chk-bx:first-of-type {border-left:none;}
+.jinro-search-box .chk-condition .chk-bx strong {display:block;height:41px;line-height:41px;padding:0 0 0 22px;background:#5b6d88;color:#fff;font-size:13px;font-weight:500;}
+.jinro-search-box .chk-condition .chk-bx .chk-list {height:442px;overflow-y:auto;padding:10px 0 20px 22px;background:#fff;font-size:13px;line-height:26px;color:#666;font-weight:400;}
+.jinro-search-box.data-srchbx .chk-condition .chk-bx .chk-list {height:240px;}
+.jinro-search-box .chk-condition .chk-bx .chk-list li {line-height:26px;font-weight:500;}
+.jinro-search-box .chk-condition .chk-bx input[type=radio],
+.jinro-search-box .chk-condition .chk-bx input[type=checkbox] {margin:0;width:0;height:0;opacity:0;}
+.jinro-search-box .chk-condition .chk-bx input[type=radio]:focus + label,
+.jinro-search-box .chk-condition .chk-bx input[type=checkbox]:focus + label {padding:2px;outline:auto;}
+.jinro-search-box .chk-condition .chk-bx label {display:inline-block;vertical-align:middle;color:#555;line-height:18px;}
+.jinro-search-box .chk-condition .chk-bx label span {color:#888;}
+.jinro-search-box .chk-condition .chk-bx input[type=radio]:checked + label {font-weight:500;color:#3057b5;}
+.jinro-search-box .chk-condition .chk-bx input[type=radio]:checked + label:after {content:'';display:inline-block;width:11px;height:13px;margin-left:4px;margin-top:-2px;background:url(../../images/edu/img_radio_jinro2.png) no-repeat 0 4px;}
+.jinro-search-box .chk-condition .chk-bx input[type=checkbox] + label:before {content:'';display:inline-block;width:18px;height:18px;margin:0 10px 0 0;background:url(../../images/edu/img_checkbox_jinro.png) no-repeat 0 0;vertical-align:top;}
+.jinro-search-box .chk-condition .chk-bx input[type=checkbox]:checked + label:before {background:url(../../images/edu/img_checkbox_jinro_checked.png) no-repeat 0 0;}
+.jinro-search-box .chk-condition .chk-bx strong label {color:#fff;}
+.jinro-search-box .chk-condition .chk-bx strong input[type=checkbox]:checked + label:before {background:url(../../images/edu/img_checkbox_jinro_checked2.png) no-repeat 0 0;}
+.jinro-search-box .chk-condition .btn-search-condition {display:inline-block;height:34px;line-height:34px;padding:0 27px 0 54px;margin:20px 0 0;border-radius:16px;background:url(../../images/edu/ico_search_jinro.png) no-repeat 26px 8px #3057b5;color:#fff;font-size:15px;font-weight:500;}
+.jinro-search-box .rdo-type input[type=radio]:checked:focus + label:before,
+.jinro-search-box .chk-condition .chk-bx input[type=radio]:checked:focus + label,
+.jinro-search-box .chk-condition .chk-bx input[type=checkbox]:focus + label {border:1px dotted #000;}
+.ui-tbl-list tr td {line-height:16px;}
+.ellipsis-line2 {display:-webkit-box;max-height:32px;overflow:hidden;text-overflow:ellipsis;-webkit-line-clamp:2;-webkit-box-orient:vertical;line-height:16px;vertical-align:middle;}
+@-moz-document url-prefix() { /* ff */
+  .ellipsis-line2 {overflow:hidden;position:relative;}
+  .ellipsis-line2:before {background:#fff;bottom:0;position:absolute;right:0;float:right;content:'\2026';margin-left:-3rem;width:1rem;}
+  .ellipsis-line2:after {content: '';background:#FFF;position:absolute;height:32px;width:100%;z-index: 1;}
+}
+.ellipsis-line2 {display:block\9;} /* ie9 */
+@media screen and (-ms-high-contrast:active), (-ms-high-contrast:none) { /* ie10, ie11*/
+  .ellipsis-line2 {display:block;}
+}
+
+figure{
+  margin:0;
+  padding:0;
+}
+figcaption{
+  text-indent:-9999px;
+}
+
+
+/*연구선도학교 추가 20190416*/
+
+.title_h1 span {
+  font-family: 'Nanum Gothic','돋움',dotum,AppleGothic,droidS,sans-serif;
+}
+
+.re_school{
+  background:#8499e7;
+  height:125px;
+  margin:30px 0 0 0;
+  position:relative;
+}
+.re_school:after{
+  background:url(/webres/images/research_img.png) no-repeat;
+  content:'';
+  display:block;
+  position:absolute;
+  right:25px;
+  top:-26px;
+  width:220px;
+  height:206px;
+}
+.re_school h3{
+  font-family: 'Noto Sans KR', '돋움', dotum, sans-serif;
+  font-size:45px;
+  letter-spacing:-3px;
+  font-weight:100;
+  color:#fff;
+  padding:45px 0 20px 40px;
+}
+.re_school h3 span{
+  font-size:25px;
+  display:inline-block;
+  margin: 0 10px;
+}
+.re_school_tab{
+  padding:36px 0 0 32px;
+}
+.re_school_tab li {
+  display:inline-block;
+}
+.re_school_tab li a{
+  width:314px;
+  height:57px;
+  line-height:57px;
+  text-align:center;
+  color:#fff;
+  display:block;
+  background:#4968DC;
+  font-size:18px;
+  font-weight:400;
+  font-family: 'Noto Sans KR', '돋움', dotum, sans-serif;
+}
+.re_school_tab li.active a{
+  color:#000;
+  background:#fff;
+}
+.res_school_tab{
+  padding:40px 0 0 0;
+}
+.res_school_tab li{
+  display:inline-block;
+  margin:0 10px 0 0;
+}
+.res_school_tab li a{
+  width:216px;
+  height:46px;
+  line-height:46px;
+  text-align:center;
+  color:#000;
+  display:block;
+  background:#fff;
+  font-size:16px;
+  font-weight:400;
+  font-family: 'Noto Sans KR', '돋움', dotum, sans-serif;
+  border:2px solid #3057b5;
+  border-radius:46px;
+}
+.res_school_tab li.active a{
+  color:#fff;
+  background:#3057b5;
+}
+.seme_rull h4{
+  font-size: 16px;
+  margin: 0;
+  padding: 0 0 15px 0;
+  border: none;
+  font-weight: 400;
+}
+.school_cont_list{
+  margin:0 0 10px 0;
+}
+.school_cont_list li:before{
+  color:#4968dc;
+  font-weight:500;
+  font-size:10px;
+  content:'▶';
+  vertical-align:middle;
+  display:inline-block;
+  margin-right: 8px;
+}
+.school_cont_list li.bin:before{
+  color:#fff;
+}
+.school_cont_list li{
+  color:#4968dc;
+  font-weight:500;
+  font-size:14px;
+  padding:6px 0;
+}
+.school_cont_list li p{
+  display:inline;
+  font-weight:400;
+  line-height: 1.6;
+  padding: 2px 0 2px 0;
+}
+.school_cont_list li p.sub{
+  display:block;
+}
+.school_cont_list li p.sub.ct{
+  text-align:center;
+  font-weight:500;
+}
+.school_cont_list li span{
+  display:inline-block;
+  margin:0 15px 0 -5px;
+}
+.re_school_diagram{
+  border:1px solid #b7b7b7;
+  font-family: 'Noto Sans KR', '돋움', dotum, sans-serif;
+}
+.re_school_diagram{
+  padding:20px;
+  margin:0 0 45px 0;
+}
+.re_school_diagram dl:after{
+  content:'';
+  display:block;
+  clear:both;
+}
+.re_school_diagram dt{
+  display:block;
+  width:20%;
+  float:left;
+  font-size:24px;
+  color:#898989;
+  border-bottom:1px solid #000;
+  text-align:center;
+  padding: 45px 0;
+}
+.re_school_diagram dd{
+  display:block;
+  width:79%;
+  float:left;
+  min-height:115px;
+  border-bottom:1px dotted #999;
+  margin-left:5px;
+}
+.re_school_diagram strong{
+  display:block;
+  background:#4968dc;
+  border-radius:48px;
+  width:440px;
+  height:48px;
+  margin:0 auto;
+  line-height:48px;
+  font-size:18px;
+  color:#fff;
+  text-align:center;
+  font-weight:500;
+  margin-top:15px;
+}
+.re_school_diagram strong:after{
+  display:block;
+  content:'';
+  width:18px;
+  height:18px;
+  border:2px solid #000;
+  transform: rotate( 45deg );
+  margin:20px auto 0 auto;
+  border-bottom:none;
+  border-right:none;
+}
+.re_school_diagram .row02 dt{
+  padding: 85px 0;
+}
+.re_school_diagram .row02 dd{
+  padding: 21px 0
+}
+.re_school_diagram .row02 img{
+  display:block;
+  margin:0 auto;
+}
+.re_school_diagram .row03 dt{
+  padding:70px 0;
+  border:none;
+}
+.re_school_diagram .row03 dd{
+  padding:20px 0 0 0;
+  border:none;
+}
+.re_school_diagram .row03 dd ul li{
+  font-size:14px;
+  padding:5px 0 5px 35px;
+}
+.re_school_diagram .row03 dd ul li:before{
+  display:inline-block;
+  width:3px;
+  height:3px;
+  content:'';
+  background:#4968dc;
+  margin:0 10px 0 0;
+  vertical-align:middle;
+}
+.re_school_cont .sel_table{
+  font-size:13px;
+  font-weight:300;
+  border-right: 1px solid #e3e7ec;
+  margin:20px 0 15px 0;
+}
+.re_school_cont .sel_table td{
+  border: 1px solid #e3e7ec;
+  padding: 20px 15px 16px;
+  background-color: #f9f9f9;
+  line-height: 16px;
+  color:#333;
+}
+.re_school_cont .sel_table tbody th{
+  border: 1px solid #e3e7ec;
+  line-height:1.3;
+}
+
+.re_school_cont.seme_content .seme_rull dl:last-child {
+  margin-top: 0;
+}
+.re_school_cont.seme_content .seme_rull dl {
+  margin: 10px 0;
+}
+.re_school_diagram.circle{
+  position:relative;
+}
+.re_school_diagram.circle img{
+  margin:0 auto;
+  display:block;
+}
+.re_school_diagram.circle .diagram_cont li{
+  position:absolute;
+  display:block;
+  width:243px;
+  padding:15px;
+  border:1px solid #bec7ea;
+  background:#f8f9fc;
+  font-size:13px;
+  color:#666;
+  line-height:1.5;
+}
+.re_school_diagram.circle .diagram_cont li:nth-child(1){
+  left:85px;
+  top:40px;
+}
+.re_school_diagram.circle .diagram_cont li:nth-child(2){
+  left:55px;
+  top:177px;
+}
+.re_school_diagram.circle .diagram_cont li:nth-child(3){
+  left:85px;
+  top:351px;
+}
+.re_school_diagram.circle .diagram_cont li:nth-child(4){
+  left:620px;
+  top:40px;
+}
+.re_school_diagram.circle .diagram_cont li:nth-child(5){
+  left:650px;
+  top:180px;
+}
+.re_school_diagram.circle .diagram_cont li:nth-child(6){
+  left:620px;
+  top:338px;
+}
+.re_school_cont .table_wrap{
+  margin:30px 0 0 0;
+}
+.edu_exam{
+  padding:10px 25px;
+  line-height:1.8;
+  border:1px solid #ddd;
+  font-size:14px;
+  background: #f9f9f9;
+  background: #f9f9f9;
+}
+.edu_exam dl{
+  padding:15px 0;
+}
+.edu_exam dl dt{
+  font-weight:600;
+  padding:0 0 5px 0;
+}
+.edu_exam dl dd{
+
+  line-height:1.6;
+}
+
+/*자료실 멀티셀렉 추가*/
+.jinro-search-box .chk-condition.refer .chk-bx {float:left;width: 138px;border-left:1px solid #e2e4e6;}
+.jinro-search-box .chk-condition.refer .chk-bx:after {clear:both;display:none;content:'';}
+.jinro-search-box .chk-condition.refer .chk-bx:nth-child(1) {width: 200px;}
+.jinro-search-box .chk-condition.refer .chk-bx:nth-child(4) {width: 158px;}
+
+/* 진로교육자료실 자료 게시판 추가 2021-06*/
+.jinro-search-box .chk-condition .chk-bx {float:left;width:277px;border-left:1px solid #e2e4e6;}
+.jinro-search-box .chk-condition .chk-bx:first-child, .jinro-search-box .chk-condition .chk-bx:last-child{width:180px;}
+.ui-tbl-list td.overtxt > div{overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; max-height: 32px; line-height: 16px;}
+
+.ui-tbl-list td.subject.clamp2{
+  white-space:normal;
+  overflow: inherit;
+  padding: 0;
+  width: auto;
+  text-align: left;
+  text-overflow: inherit;
+}
+.ui-tbl-list td.subject.clamp2 a{
+  text-overflow: ellipsis;
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  max-height: 34px;
+  line-height: 1.5;
+  overflow: hidden;
+  padding:  0;
+}
+
+.direct_btn01 {
+  position: absolute;
+  right: 0;
+  top: -5px;
+  display: inline-block;
+  padding: 0 23px 0 67px;
+  height: 44px;
+  line-height: 44px;
+  border-radius: 44px;
+  color: #fff;
+  background: #5771a5 url(/webres/images/front/contents/edu/edu_tit_icon.png) 5px -11px no-repeat;
+  font-size: 15px;
+  font-weight: 500;
+}
+.direct_btn02 {
+  position: absolute;
+  right: 0;
+  top: -5px;
+  display: inline-block;
+  padding: 0 23px 0 67px;
+  height: 44px;
+  line-height: 44px;
+  border-radius: 44px;
+  color: #5771a5;
+  background: url(/webres/images/front/contents/edu/edu_tit_icon.png) 5px -87px no-repeat;
+  font-size: 15px;
+  font-weight: 500;
+  border: 2px solid #5771a5;
+}
+
+
+
+/*교과연계진로교육자료*/
+.career_edu{
+  background:#199097;
+  height:125px;
+  margin:43px 0 0 0;
+  position:relative;
+}
+.career_edu:after{
+  background:url(/webres/images/front/contents/edu/img_career_edu.png) no-repeat;
+  content:'';
+  display:block;
+  position:absolute;
+  right:-38px;
+  top:-30px;
+  width:250px;
+  height:213px;
+}
+.career_edu_tab{
+  padding:36px 0 0 32px;
+}
+.career_edu_tab li {
+  display:inline-block;
+}
+.career_edu_tab li a{
+  width:244px;
+  height:57px;
+  line-height:57px;
+  text-align:center;
+  color:#fff;
+  display:block;
+  background:#63b4b8;
+  font-size:18px;
+  font-weight:400;
+  font-family: 'Noto Sans KR', '돋움', dotum, sans-serif;
+}
+.career_edu_tab li.active a{
+  color:#000;
+  background:#fff;
+}
+.career_edu_cont {
+  margin-top: 77px;
+}
+.career_edu_cont h3{
+  font-size:24px;
+  margin:35px 0 19px 0;
+  color:#000;
+}
+.career_edu_cont h3:before{
+  content:"";
+  display:inline-block;
+  border-left:3px solid #ed1c24;
+  margin:0 3px 0 0;
+  width:2px;
+  height:20px;
+}
+.career_edu_cont h4 {
+  margin-top: 36px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  line-height: 20px;
+}
+.career_edu_cont .desc-txt {
+  margin-top: 21px;
+  font-size: 14px;
+  color: #000;
+  line-height: 24px;
+}
+.career_edu_cont p {
+  font-size:14px;
+  line-height:24px;
+}
+.career_edu_cont .info-txt + p {
+  margin-top: 10px;
+}
+.career_edu_cont .info-txt {
+  position: relative;
+  display: block;
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #199097;
+}
+.career_edu_cont .info-txt:before {
+  color: #199097;
+  font-weight: 500;
+  font-size: 10px;
+  content: '▶';
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.career_edu_cont .venndiagram {
+  padding: 20px 0 20px 50px;
+  margin-top: 20px;
+  border: 1px solid #e5e5e5;
+  overflow: hidden;
+}
+.career_edu_cont .venndiagram .img {
+  float: left;
+  width: 194px;
+}
+.career_edu_cont .desc-hide {
+  display: none;
+}
+.career_edu_cont .venndiagram .desc {
+  float: left;
+  width: 700px;
+  padding: 40px 0 40px 65px;
+  box-sizing: border-box;
+}
+.career_edu_cont .venndiagram .desc li {
+  font-size: 14px;
+  line-height: 20px;
+  color: #666;
+}
+.career_edu_cont .venndiagram .desc li+li {
+  margin-top: 30px;
+}
+.career_edu_cont .venndiagram .desc li em{
+  display: block;
+  color: #000;
+  text-indent: -26px;
+  line-height: 24px;
+}
+.career_edu_cont .venndiagram .desc li em .num {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+  border: 1px solid #b8b8b8;
+  border-radius: 50px;
+  font-size: 12px;
+  text-align: center;
+  color: #000;
+  line-height: 18px;
+  text-indent: 0;
+}
+.career_edu_cont .program-img {
+  margin-top: 25px;
+}
+.career_edu_cont .table_wrap {
+  margin-top: 30px;
+}
+.ui-tab-menu {
+  position: relative;
+  margin: 30px 0 15px;
+  overflow: hidden;
+}
+.ui-tab-menu:after {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: #cecece;
+  z-index: -1;
+}
+
+.career_edu_cont .tags_link {padding:10px 0 7px;}
+.career_edu_cont .tags_link:after {clear:both;display:block;content:'';}
+.career_edu_cont .tags_link li {float:left;line-height:17px;}
+.career_edu_cont .tags_link li a {white-space:normal;}
+
+.career_edu.blended{background:#d5b38e url(../../images/front/bg_blended.png);}
+.career_edu.blended:after{width:274px; height: 298px; background:url(../../images/front/img_career_blended.png); top:-80px;}
+.career_edu.blended .career_edu_tab li a{background:#9f8569}
+.career_edu.blended .career_edu_tab li.active a{background:#fff;color:#723f08}
+.career_edu_cont .s-txt{display:block; font-size:13px; color:#666; margin-top:25px;}
+.career_edu_cont.blend_cont h3{margin-top:50px;}
+.career_edu_cont.blend_cont .ex-txt{display:block; font-size:14px; font-weight: 500; color:#e75f41; padding:34px 0 12px;}
+.blend_cont .bdclass-bx{width: 100%; padding: 30px 0 36px; border:1px solid #e8dada; background:#faf8f8; text-align: center; font-family: 'Noto Sans KR', dotum, '돋움', sans-serif;}
+.blend_cont .bdclass-bx > strong{display:block; font-size:18px; font-weight: 500; margin-bottom:14px;}
+.blend_cont .bdclass-bx > span{font-size:14px; color:#666;}
+.blend_cont .bdclass-bx .bdclass{margin-top:24px;}
+.blend_cont .bdclass-bx .bdclass li{width:320px; height: 110px; box-sizing: border-box; display:inline-block; text-align: left;}
+.blend_cont .bdclass-bx .bdclass li + li{margin-left:12px;}
+.blend_cont .bdclass-bx .bdclass li:first-child{background:#f9e7e7;padding:20px 0 28px 62px; position:relative}
+.blend_cont .bdclass-bx .bdclass li:first-child:before{content:''; display:block; width: 142px; height: 111px; background:url(../../images/front/img_blended.png); position:absolute; top:-4px; left:-100px;}
+.blend_cont .bdclass-bx .bdclass li:nth-child(2){background:#f5e9d1;padding:20px 0 28px 28px; position:relative}
+.blend_cont .bdclass-bx .bdclass li:nth-child(2):before{content:''; display:block; width: 113px; height: 123px; background:url(../../images/front/img_blended.png) -143px 0; position:absolute; top:-14px; right:-64px;}
+.blend_cont .bdclass-bx .bdclass li em{font-size: 17px; font-weight: 500;}
+.blend_cont .bdclass-bx .bdclass li em span{padding:5px 14px; border-radius: 20px; font-size: 15px; color:#fff;margin-left:6px;}
+.blend_cont .bdclass-bx .bdclass li:first-child em span{background:#f84f8e}
+.blend_cont .bdclass-bx .bdclass li:nth-child(2) em span{background:#c0721d}
+.blend_cont .bdclass-bx .bdclass li p{margin-top:20px; font-weight: 500;}
+.career_edu_cont .xs-txt{display:block; font-size: 14px; font-weight: 500; color:#000; margin:25px 0 20px;}
+
+.career_edu.yearSurvey{background:#e8f0fa; margin:32px 0 0 0;}
+.career_edu.yearSurvey:after{background:url(../../images/img_yearSurvey.png) no-repeat; right:60px; top:-59px;}
+.career_edu.yearSurvey .career_edu_tab li + li{margin-left:6px;}
+.career_edu.yearSurvey .career_edu_tab li a{background:#f8fcff; color:#6c7a9f;}
+.career_edu.yearSurvey .career_edu_tab li.active a{background:#417cc1; color:#fff;}
+
+
+.data_view_file2{background:none;}
+.data_view_file2 .file{margin:0;}
+.data_view_file2 .file a, .indexBox h3, .indexBox ul li a{font-size:13px; }
+.data_view_file2 .file a, .data_view_file2 .file a .file_download{color:#666;}
+.indexBox h3{line-height: 22px;}
+.indexBox ul li a{font-size:13px; font-weight: 600; color:#5771a5; line-height: 24px;}
+
+.career_edu.yearSurvey + .sub-title-wrap{margin-top: 40px;}
+.sub-title-wrap + .seme_content{margin-top: -20px;}
+.tit-style01{display:inline-block; font-size:26px; color:#000; font-family: 'Noto Sans KR', dotum, '돋움', sans-serif; line-height: 35px;}
+.tit-style01 span{font-weight: 600;}
+.c417cc1{color:#417cc1;}
+.sub-title-wrap .sch-style01{float:right; font-size:0;}
+
+
+.sch-style01 select{height: 34px; line-height: 34px; font-size:13px; font-weight: 600; padding-left:8px; border:2px solid #4b5b6d; vertical-align: top;}
+.sch-style01 option{font-size: 13px; color:#333;}
+.sch-style01 select + button{margin-left: 5px;}
+.sch-style01 select.sch-year{width: 194px;}
+.report-view .sub-title-wrap{margin-bottom:22px;}
+.btn-navy{background:#4b5b6d; font-size:13px; color:#fff;line-height: 34px; padding:0 22px;}
+.btn-navy span{font-size:13px; font-weight: 600; letter-spacing: 1px;}
+
+.indexBox h3, .indexBox .indexList h4, .indexBox .indexList ul li{font-family: 'Nanum Gothic','돋움',dotum,AppleGothic,droidS,sans-serif;}
+
+.data_view_file2 .file a .file_download{display:flex; justify-content: space-between;}
+.data_view_file2 .file a .file_download .download01{display:block; width:100%; text-align: left;}
+.data_view_file2 .file a .file_download .download02{text-align: right;}

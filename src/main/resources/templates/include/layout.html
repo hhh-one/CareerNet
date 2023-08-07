@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<th:block th:fragment="setContent(content)">	
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <!-- 헤더css -->
+    <link rel="stylesheet" th:href="@{/css/layout.css}">
+    <script th:src="@{/js/jquery.js}"></script>
+    
+    <script th:src="@{/js/layout.js}"></script>
+</head>
+<body>
+
+    <header id="headerR">
+        <div id="headerA">
+        <h1 class="headerLogo">
+        <a src="#">
+            <img th:src="@{/img/logo.png}">
+        </a>
+        </h1>
+
+        <div class="topMenu">
+            <ul>
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">아이디/비밀번호 찾기</a></li>
+            </ul>
+            <div class="hd-search">
+                <form name="topFrm" id="topFrm" action="#" method="get">
+                    <input type="text" name="keywd" id="topkd" class="inputsrch">
+                    <button class="btn btn-default" type="submit">
+                        
+                    </button>
+                </form>
+            </div>
+        	</div>
+
+        </div>
+        <div class="gnb">
+        <ul >
+            <li class="m"><a href="#"  class="depth1">진로심리 검사</a>
+                <div class="submenu">
+                    <p class="submenu-title">
+                        <strong>진로심리검사</strong>
+                        자신을 이해하는데 도움이 되는 심리검사는 진로 의사결정에 유용한 정보를 제공합니다
+                    </p>
+                <ul class="submenu-list"><!-- position absolute -->
+                    <li><a href="#">중,고등학생용</a></li>
+                    <li><a href="#">대학생용</a></li>
+                
+                </ul>
+            </div>
+            </li>
+            <li class="m"><a href="#" class="depth1">진로상담</a>
+                <div class="submenu">
+                    <p class="submenu-title"> 
+                        <strong>진로상담</strong>
+                        진로문제로 고민하는 학생·학부모를 위해 진로상담 서비스를 제공합니다.
+                    </p>
+                <ul class="submenu-list"><!-- position absolute -->
+                    <li><a href="#">상담신청</a></li>
+                    <li><a href="#">상담보기</a></li>
+                </ul>
+                </div>
+            </li>
+            <li class="m"><a href="#" class="depth1">직업정보</a>
+                <div class="submenu">
+                    <p class="submenu-title">
+                        <strong>직업정보</strong>
+                        관심 있는 직업에 대한 다양한 정보를 확인하세요.
+                    </p>
+                <ul class="submenu-list"><!-- position absolute -->
+                    <li><a href="#">직업 종류</a></li>
+                </ul>
+                </div>
+            </li>
+            <li class="m"><a href="#" class="depth1">학과정보</a>
+                <div class="submenu">
+                    <p class="submenu-title">
+                        <strong>학과정보</strong>
+                        관심 있는 학과에 대한 다양한 정보를 
+                        확인하세요.
+                    </p>
+                <ul class="submenu-list"><!-- position absolute -->
+                    <li><a href="#">학과정보</a></li>
+                    <li><a href="#">학교정보</a></li>
+                    <li><a href="#">학과인터뷰</a></li>
+                </ul>
+            </div>
+            </li>
+            <li class="m"><a href="#" class="depth1">진로 동영상</a>
+                <div class="submenu">
+                    <p class="submenu-title">
+                        <strong>진로 동영상</strong>
+                        직업, 학과등의 다양한 동영상 자료를 통한
+                        진로탐색
+                    </p>
+                <ul class="submenu-list"><!-- position absolute -->
+                    <li><a href="#">프로그램별</a></li>
+                    <li><a href="#">연도별</a></li>
+                    <li><a href="#">대상별</a></li>
+                    <li><a href="#">진로교육영역별</a></li>
+                </ul>
+            </div>
+            </li>
+            <li class="m">
+                <a href="#" class="depth1">진로교육자료</a>
+                <div class="submenu">
+                    <p class="submenu-title">
+                        <strong>진로교육자료</strong>
+                        진로교육에 대한 이해를 높이고 <br>진로지도 
+                        활동에 활용할 수 있는 다양한 자료
+                    </p>
+                <ul class="submenu-list"><!-- position absolute -->
+                    <li><a href="#">자료게시판</a></li>
+                    <li><a href="#">블렌디드 수업자료</a></li>
+                    <li><a href="#">드림레터</a></li>
+                    <li><a href="#">진로레시피</a></li>
+                </ul>
+            </div>
+            </li>
+        </ul>
+   	 </div>
+		</div>
+    </header>
+	<!-- 바디 영역입니다!-->
+   <div th:replace="${content}"></div>
+
+
+
+
+    <footer id="footerR">
+
+        <div class="footer-menu">
+            <ul class="footer-menu-list">
+                <li> <a href=# style="color:red">개인정보처리방침</a></li>
+                <li><a href="#" title="새창 열림" >이메일주소무단수집거부</a></li>
+                <li> <a href=#>이용안내</a></li>
+                <li> <a href=# style="color:red">이용문의 및 오류 제보</a></li>
+                <li><a href=#>오픈 api</a></li>
+        
+    </div>
+     
+
+        <div class="address">
+            <div class="copyright">주소 : 세종특별자치시 시청대로 370 세종국책연구단지 사회정책동 한국직업능력연구원 커리어넷
+                <br>
+                운영 : 한국직업능력연구원 국가진로교육연구센터 | 지원 : 교육부
+                <br>
+			COPYRIGHTS ⓒ KRIVET ALL RIGHTS RESERVED.
+            </div>
+            <div class="logo-site">
+                <a href="http://www.moe.go.kr/main.do" target="_blank" title="교육부 바로가기(새창)"><img th:src="@{/img/img_logo_footer_link1.jpg}" alt="교육부"></a>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+</body>
+</th:block>
+</html>
