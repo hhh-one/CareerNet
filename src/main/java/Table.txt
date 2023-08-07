@@ -10,3 +10,13 @@ CREATE TABLE student (
     birthday	varchar(20),
 	identity	varchar(20)	DEFAULT '일반'
 );
+
+//상담 테이블 - 임의
+CREATE TABLE consulting (
+	boardId		INT PRIMARY KEY AUTO_INCREMENT,
+	title		varchar(20)	NULL,
+	content		varchar(1000)	NULL,
+	regdate		TIMESTAMP DEFAULT NOW(),
+	writer		varchar(20)	NULL,
+	hit			int	DEFAULT 0
+);
