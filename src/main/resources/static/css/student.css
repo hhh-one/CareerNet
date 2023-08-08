@@ -239,3 +239,30 @@
   cursor: pointer;
   border: none;
 }
+
+/* --------------------------- login --------------------------------- */
+#container > .inner {
+  display: flex;
+  justify-content: center;
+  height: 600px;
+  align-items: center;
+}
+
+.info-input .login-btn {
+  display: inline-block;
+  min-width: 400px;
+  height: 54px;
+  padding: 0 25px;
+  background: #f42b3c;
+  border: none;
+  cursor: pointer;
+  margin: 20px 0 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #e3f2ed;
+  border-radius: 5px;
+}
+
+.info-input .login-input {
+  width: 400px;
+}

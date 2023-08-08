@@ -18,4 +18,6 @@ public class ConsultingVO {
 	private LocalDateTime regdate;
 	private String writer;
 	private Integer hit;
+	private Integer sno;
+	private String identity;
 }

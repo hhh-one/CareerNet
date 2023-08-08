@@ -6,6 +6,9 @@
       <div class="bodytext_area box_inner">
         <!-- appForm -->
         <form action="writeForm" class="appForm" name="writeForm" method="post">
+			<input type="hidden" name="sno" th:value="${session.student_no}">
+			<input type="hidden" name="writer" th:value="${session.student_name}">
+			<input type="hidden" name="identity" th:value="${session.student_identity}">
           <fieldset>
             <p class="board-title">상담 신청</p>
             <ul class="app_list">

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<th:block th:replace="~{./include/layout :: setContent(~{ :: #container})}">
+  <div id="container" style="min-height: 650px;">
+    <div class="inner">
+      <form action="loginForm" method="post">
+        <div class="info-input">
+          <div class="id-input">
+            <input class="login-input" type="text" name="id" placeholder="아이디">
+          </div>
+          <div class="pw-input">
+            <input class="login-input" type="password" name="pw" placeholder="비밀번호">
+          </div>
+          <input class="login-btn" type="submit" value="로그인">
+        </div>
+        <a href="#">회원가입</a>
+      </form>
+    </div>
+  </div>
+</th:block>
+
+<script th:inline="javascript">
+	let join_success = '[[${join_success}]]';
+	
+	if (join_success !== 'null') {
+		alert(join_success);
+	}
+	
+	let login_fail = '[[${login_fail}]]';
+	
+	if (login_fail !== 'null') {
+		alert(login_fail);
+	}
+	
+	let login_please = '[[${login_please}]]';
+	if (login_please !== 'null') {
+		alert(login_please);
+	}
+</script>

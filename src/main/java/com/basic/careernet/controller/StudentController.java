@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.basic.careernet.command.StudentVO;
 import com.basic.careernet.student.service.StudentService;
@@ -30,13 +31,8 @@ public class StudentController {
 		return "student/join";
 	}
 	
-	@GetMapping("/login")
-	public String login() {
-		return "student/login";
-	}
-	
 	@PostMapping("/joinForm")
-	public String joinForm(@Valid @ModelAttribute("vo") StudentVO vo, Errors errors, Model model) {
+	public String joinForm(@Valid @ModelAttribute("vo") StudentVO vo, Errors errors, Model model, RedirectAttributes ra) {
 		if (errors.hasErrors()) {
 			List<FieldError> errorList = errors.getFieldErrors();
 
@@ -49,8 +45,8 @@ public class StudentController {
 			}
 			return "student/join";
 		}
-		model.addAttribute("join_success", "회원가입이 완료되었습니다 !");
+		ra.addFlashAttribute("join_success", "회원가입이 완료되었습니다 !");
 		studentService.studentRegist(vo);
-		return "redirect:/student/login";
+		return "redirect:/main/login";
 	}
 }

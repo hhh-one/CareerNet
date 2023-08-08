@@ -5,6 +5,7 @@
 
 <mapper namespace="com.basic.careernet.consulting.service.ConsultingMapper">
 	<insert id="writeBoard" >
-		insert into consulting(title, content) values(#{title}, #{content});
+		insert into consulting(title, content, writer, sno, identity) 
+		values(#{title}, #{content}, #{writer}, #{sno}, #{identity});
 	</insert>
 </mapper>
