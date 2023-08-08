@@ -61,37 +61,13 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>1</td>
-                <td>고등학생</td>
-                <td class="board-content"><a>어떤 직업을 선택해야 할까요 ?</a></td>
+              <tr th:each="board,status : ${boardList}">
+                <td>[[${status.count}]]</td>
+                <td>[[${board.identity}]]</td>
+                <td class="board-content"><a th:href="@{detail/} + ${board.boardId}">[[${board.title}]]</a></td>
                 <td><span></span></td>
-                <td>2023-06-06</td>
-                <td>40</td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>고등학생</td>
-                <td class="board-content"><a>어떤 직업을 선택해야 할까요 ?</a></td>
-                <td><span></span></td>
-                <td>2023-06-06</td>
-                <td>40</td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>고등학생</td>
-                <td class="board-content"><a>어떤 직업을 선택해야 할까요 ?</a></td>
-                <td><span></span></td>
-                <td>2023-06-06</td>
-                <td>40</td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>고등학생</td>
-                <td class="board-content"><a>어떤 직업을 선택해야 할까요 ?</a></td>
-                <td><span></span></td>
-                <td>2023-06-06</td>
-                <td>40</td>
+                <td>[[${#temporals.format(board.regdate, 'yyyy-MM-dd')}]]</td>
+                <td>[[${board.hit}]]</td>
               </tr>
             </tbody>
           </table>

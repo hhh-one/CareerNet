@@ -10,22 +10,17 @@
           <table class="board-view">
             <thead>
               <th scope="col">
-                <p class="student-title">학생 상담 제목</p>
+                <p class="student-title">[[${consultingVO.title}]]</p>
                 <ul class="student-date">
-                  <li>대상: <span>학생 선택한 대상</span></li>
-                  <li>조회수: 조회수</li>
-                  <li>등록일: 등록일</li>
+                  <li>대상: <span>[[${consultingVO.identity}]]</span></li>
+                  <li>조회수: [[${consultingVO.hit}]]</li>
+                  <li>등록일: [[${#temporals.format(consultingVO.regdate, 'yyyy-MM-dd')}]]</li>
                 </ul>
               </th>
             </thead>
             <tbody>
               <tr class="last">
-                <td class="student-comment">
-                  내용 : 좀더 길게 써볼게요 <br/>
-                  안녕하세요 안녕하세요 <br/>
-                  저는 맡은 부분이 많아 할게 많습니다 <br/>
-                  도와줘
-                </td>
+                <td class="student-comment">[[${consultingVO.content}]]</td>
               </tr>
             </tbody>
           </table>
