@@ -8,4 +8,12 @@
 		insert into consulting(title, content, writer, sno, identity) 
 		values(#{title}, #{content}, #{writer}, #{sno}, #{identity});
 	</insert>
+	
+	<select id="getBoardList" resultType="ConsultingVO">
+		select * from consulting;
+	</select>
+	
+	<select id="getBoardDetail" resultType="ConsultingVO">
+		select * from consulting where boardId = #{boardId};
+	</select>
 </mapper>
