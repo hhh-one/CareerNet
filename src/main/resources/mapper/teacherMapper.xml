@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.basic.careernet.teacher.service.TeacherMapper">
+
+	<insert id="teacherJoin" parameterType="TeacherVO">
+		insert into teacher(tea_id,
+						    tea_pw,
+						    tea_name,
+						    tea_gender,
+						    tea_birthday,
+						    tea_email,
+						    tea_area,
+						    tea_school,
+						    tea_age
+						    )
+	    values(#{tea_id},
+		       #{tea_pw},
+		       #{tea_name},
+		       #{tea_gender},
+		       #{tea_birthday},
+		       #{tea_email},
+		       #{tea_area},
+		       #{tea_school},
+		       #{tea_age})
+	</insert>
+
+
+</mapper>
