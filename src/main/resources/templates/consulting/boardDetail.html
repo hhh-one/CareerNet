@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<th:block th:replace="~{./include/layout :: setContent(~{ :: #ct})}">
+  <div id="ct">
+    <div class="inner">
+      <div id="contents">
+        <h2 class="content-title">상담 보기</h2>
+        <div class="board-view-wrap">
+          <!-- 학생 상담 내용 -->
+          <table class="board-view">
+            <thead>
+              <th scope="col">
+                <p class="student-title">학생 상담 제목</p>
+                <ul class="student-date">
+                  <li>대상: <span>학생 선택한 대상</span></li>
+                  <li>조회수: 조회수</li>
+                  <li>등록일: 등록일</li>
+                </ul>
+              </th>
+            </thead>
+            <tbody>
+              <tr class="last">
+                <td class="student-comment">
+                  내용 : 좀더 길게 써볼게요 <br/>
+                  안녕하세요 안녕하세요 <br/>
+                  저는 맡은 부분이 많아 할게 많습니다 <br/>
+                  도와줘
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- 현주언니 파트 -->
+          <table class="advice-reply">
+
+          </table>
+          <!-- 현주언니 파트 끝 -->
+        </div>
+
+        <!-- 목록 보기 -->
+        <div class="board-view-btn">
+          <span class="btn-right">
+            <a href="#" class="btn-gray">목록보기</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</th:block>

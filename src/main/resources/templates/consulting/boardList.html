@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<th:block th:replace="~{./include/layout :: setContent(~{ :: #ct})}">
+	<div id="ct">
+    <div class="inner">
+      <div id="contents">
+        <h2 class="content-title">상담 리스트</h2>
+        <span class="title-comment">나와 비슷한 고민을 가진 분들의 상담내용이 궁금하신가요? <br>
+          상담내용을 통해 나와 같은 고민에 대한 상담답변을 확인해 보세요!
+        </span>
+        <fieldset>
+          <div class="search-box">
+            <div class="search-box-inner">
+              <dl>
+                <dt>대상</dt>
+                <dd>
+                  <select name="identity" id="" class="identity-select">
+                    <option value="">회원구분 선택</option>
+                    <option value="일반">일반</option>
+                    <option value="초등학생">초등학생</option>
+                    <option value="중학생">중학생</option>
+                    <option value="고등학생">고등학생</option>
+                    <option value="대학생">대학생</option>
+                  </select>
+                </dd>
+              </dl>
+              <dl>
+                <dt>검색어</dt>
+                <input type="text" class="search-text">
+              </dl>
+              <p class="search-box-btn">
+                <a class="search-btn" href="#">검색</a>
+                <a class="reset-btn" href="#">초기화</a>
+              </p>
+            </div>
+          </div>
+        </fieldset>
+        <div class="board-list-top">
+          <p class="list-top-right">
+            <a href="#">상담신청</a>
+          </p>
+        </div>
+        <div class="board-list">
+          <table>
+            <colgroup>
+              <col width="120">
+              <col width="180">
+              <col width="359">
+              <col width="120">
+              <col width="100">
+              <col width="100">
+            </colgroup>
+            <thead>
+              <tr>
+                <th scope="col" class="first">번호</th>
+                <th scope="col">대상</th>
+                <th scope="col">제목</th>
+                <th scope="col">답변현황</th>
+                <th scope="col">등록일</th>
+                <th scope="col" class="last">조회수</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>고등학생</td>
+                <td class="board-content"><a>어떤 직업을 선택해야 할까요 ?</a></td>
+                <td><span></span></td>
+                <td>2023-06-06</td>
+                <td>40</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>고등학생</td>
+                <td class="board-content"><a>어떤 직업을 선택해야 할까요 ?</a></td>
+                <td><span></span></td>
+                <td>2023-06-06</td>
+                <td>40</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>고등학생</td>
+                <td class="board-content"><a>어떤 직업을 선택해야 할까요 ?</a></td>
+                <td><span></span></td>
+                <td>2023-06-06</td>
+                <td>40</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>고등학생</td>
+                <td class="board-content"><a>어떤 직업을 선택해야 할까요 ?</a></td>
+                <td><span></span></td>
+                <td>2023-06-06</td>
+                <td>40</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="pagination">
+            <a href="#">
+              <img src="https://www.career.go.kr/cnet/images/egovframework/com/cmm/mod/icon/icon_prevend.gif" alt="맨앞">
+            </a>
+            <a href="#">
+              <img src="https://www.career.go.kr/cnet/images/egovframework/com/cmm/mod/icon/icon_prev.gif" alt="이전">
+            </a>
+            <a href="#">1</a>
+            <a href="#">1</a>
+            <a href="#">1</a>
+            <a href="#">1</a>
+            <a href="#">1</a>
+            <a href="#">1</a>
+            <a href="#">1</a>
+            <a href="#">1</a>
+            <a href="#">1</a>
+            <a href="#">1</a>
+            <a href="#">
+              <img src="https://www.career.go.kr/cnet/images/egovframework/com/cmm/mod/icon/icon_next.gif" alt="다음">
+            </a>
+            <a href="#">
+              <img src="https://www.career.go.kr/cnet/images/egovframework/com/cmm/mod/icon/icon_nextend.gif" alt="맨뒤">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</th:block>

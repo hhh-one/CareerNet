@@ -1,0 +1,22 @@
+//학생 테이블
+CREATE TABLE student (
+	sno			INT PRIMARY KEY AUTO_INCREMENT,
+	id			varchar(20)	NOT NULL,
+	pw			varchar(20)	NOT NULL,
+	name		varchar(20)	NOT NULL,
+	gender		char(1)	DEFAULT 'M' CHECK (gender IN ('M', 'F')),
+	email		varchar(20)	NOT NULL,
+	area		varchar(20)	NOT NULL,
+    birthday	varchar(20),
+	identity	varchar(20)	DEFAULT '일반'
+);
+
+//상담 테이블 - 임의
+CREATE TABLE consulting (
+	boardId		INT PRIMARY KEY AUTO_INCREMENT,
+	title		varchar(20)	NULL,
+	content		varchar(1000)	NULL,
+	regdate		TIMESTAMP DEFAULT NOW(),
+	writer		varchar(20)	NULL,
+	hit			int	DEFAULT 0
+);

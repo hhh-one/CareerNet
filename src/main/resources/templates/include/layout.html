@@ -5,13 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+	<title>커리어넷</title>
     
     <!-- 헤더css -->
     <link rel="stylesheet" th:href="@{/css/layout.css}">
     <script th:src="@{/js/jquery.js}"></script>
     
     <script th:src="@{/js/layout.js}"></script>
+    
+    <!-- student css -->
+    <link rel="stylesheet" th:href="@{/css/student.css}">
+    <link rel="stylesheet" th:href="@{/css/reset.css}">
+    <!-- consulting css -->
+    <link rel="stylesheet" th:href="@{/css/consulting_common.css}">
+    <link rel="stylesheet" th:href="@{/css/consulting.css}">
 </head>
 <body>
 
@@ -62,7 +69,7 @@
                         진로문제로 고민하는 학생·학부모를 위해 진로상담 서비스를 제공합니다.
                     </p>
                 <ul class="submenu-list"><!-- position absolute -->
-                    <li><a href="#">상담신청</a></li>
+                    <li><a th:href="@{../consulting/write}">상담신청</a></li>
                     <li><a href="#">상담보기</a></li>
                 </ul>
                 </div>

@@ -256,5 +256,5 @@ ul .m .submenu-list li a{
 }
 
 #wrap{
-	height: 400px;
+	min-height: 800px;
 }

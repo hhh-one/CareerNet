@@ -1,0 +1,268 @@
+@charset "UTF-8";
+#container {
+  width: 100%;
+  min-height: 1250px;
+  padding-top: 132px;
+}
+
+#container .container-inner {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 0 80px 0;
+}
+
+.container-inner .cbox-visual {
+  border-color: #dae9e4;
+  background: #e3f2ed;
+}
+
+.cbox-visual .visual-inner {
+  display: table;
+  width: 100%;
+  max-width: 1000px;
+  height: 120px;
+  margin: 0 auto;
+  background-image: url(https://api.career.go.kr/_web/images/common/sub_visual01.png);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+}
+
+.cbox-visual .visual-inner div {
+  display: table-cell;
+  padding: 0 20px 0 540px;
+  vertical-align: middle;
+}
+
+.cbox-visual .visual-inner h2 {
+  color: #222;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+.container-inner .info-input {
+  margin-top: 40px;
+  padding-top: 40px;
+}
+
+.container-inner .input-title-select {
+  border-top: 1px solid #dcdcdc;
+}
+
+.info-input > .input-title {
+  font-size: 22px;
+  color: #303030;
+  font-weight: bold;
+}
+
+.info-input > div {
+  display: block;
+  margin-top: 10px;
+}
+
+.info-input input[type='text'],
+.info-input input[type='password'] {
+  height: 50px;
+  padding: 2px 0 0 17px;
+  border: 1px solid #dcdcdc;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.info-input select {
+  height: 52px;
+  padding: 2px 40px 0 17px;
+  border: 1px solid #dcdcdc;
+  background-image: url(https://api.career.go.kr/_web/images/common/icon/bl_select.png);
+  background-position: right center;
+  background-repeat: no-repeat;
+  appearance: none;
+  border-radius: 5px;
+  font-size: 17px;
+  color: #767676;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.info-input .btn-gray {
+  margin-left: 8px;
+  min-width: 105px;
+  display: inline-block;
+  height: 50px;
+  padding: 0 20px;
+  border: 1px solid #dcdcdc;
+  background: #f4f4f4;
+  color: #999;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 48px;
+  vertical-align: center;
+  border-radius: 5px;
+}
+
+.info-input .btn-gray:hover {
+	color: #222;
+	border: 1px solid #444;
+}
+
+.info-input .txt-msg,
+.info-input .txt-error,
+.info-input .txt-noti {
+  margin-top: 7px;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+.info-input .txt-msg {
+  color: #999;
+}
+
+.info-input .txt-error {
+  color: #ff0000;
+}
+
+.info-input .txt-noti {
+  color: #31a9e1;
+}
+
+.info-input .input-gender {
+  display: inline-block;
+  margin-left: 8px;
+  font-size: 0;
+  line-height: 0;
+  vertical-align: middle;
+}
+
+.input-gender input[type='radio'],
+.input-memberCheck input[type='radio'] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+.input-gender input[type='radio'] + label,
+.input-memberCheck input[type='radio'] + label {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 48px;
+  margin-left: -1px;
+  border: 1px solid #dcdcdc;
+  color: #999;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 48px;
+  border-radius: 5px 0 0 5px;
+  cursor: pointer;
+}
+
+.input-gender input[type='radio'] + label ~ label {
+  border-radius: 0 5px 5px 0;
+  margin-left: -2px;
+}
+
+.input-gender input[type='radio']:checked + label {
+  border-color: #31a9e1;
+  color: #31a9e1;
+  z-index: 2;
+}
+
+.info-input .input-birthday input[type='text'] {
+  width: 120px;
+}
+
+.input-birthday select {
+  width: 120px;
+}
+
+.info-input #studentArea {
+  width: 360px;
+  vertical-align: middle;
+}
+
+.input-memberCheck input[type='radio'] + label {
+  width: 100px;
+  border-radius: 0;
+}
+
+.input-memberCheck input[type='radio']:checked + label {
+  border-color: #31a9e1;
+  color: #31a9e1;
+}
+
+.container-inner .join-btn {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.join-btn .btn-ok {
+  margin: 0 6px;
+  display: inline-block;
+  min-width: 160px;
+  height: 60px;
+  padding: 0 25px;
+  background: #f29200;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 60px;
+  vertical-align: middle;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.join-btn .btn-cancel {
+  margin: 0 6px;
+  display: inline-block;
+  min-width: 160px;
+  height: 60px;
+  padding: 0 25px;
+  background: #6c6a6b;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 60px;
+  vertical-align: middle;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+/* --------------------------- login --------------------------------- */
+#container > .inner {
+  display: flex;
+  justify-content: center;
+  height: 600px;
+  align-items: center;
+}
+
+.info-input .login-btn {
+  display: inline-block;
+  min-width: 400px;
+  height: 54px;
+  padding: 0 25px;
+  background: #f42b3c;
+  border: none;
+  cursor: pointer;
+  margin: 20px 0 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #e3f2ed;
+  border-radius: 5px;
+}
+
+.info-input .login-input {
+  width: 400px;
+}
