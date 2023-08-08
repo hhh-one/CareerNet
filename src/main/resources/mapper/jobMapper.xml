@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  
+  <mapper namespace="com.basic.careernet.bsy.service.jobMapper">
+  
+  	<insert id="setJob_type">
+  	
+  		insert into job_type(jbgp_code,jbgp_code_nm) values(#{jbgp_code},#{jbgp_code_nm})
+  	
+  	
+  	</insert>
+  	<insert id="setJob">
+  	
+  		insert into job(jobdicSeq,
+  						profession,
+  						summary,
+  						similarJob,
+  						salery,
+  						equalemployment,
+  						totalCount,
+  						aptd_type_code,
+  						prospect,
+  						job_ctg_code,
+  						job_code,
+  						job,
+  						possibility) values(
+					  						#{jobdicSeq},
+					  						#{profession},
+					  						#{summary},
+					  						#{similarJob},
+					  						#{salery},
+					  						#{equalemployment},
+					  						#{totalCount},
+					  						#{aptd_type_code},
+					  						#{prospect},
+					  						#{job_ctg_code},
+					  						#{job_code},
+					  						#{job},
+					  						#{possibility})
+  	
+  	</insert>
+  
+	<select id="getList" resultType="com.basic.careernet.command.jobVO">
+	
+		select * from job order by binary(job)
+	</select>
+	<select id="getTotal" resultType="int">
+	
+		select count(*) from job 
+	</select>
+	
+	
+	
+	
+  </mapper>
+

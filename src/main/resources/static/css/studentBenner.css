@@ -1,0 +1,362 @@
+#container {
+    width: 100%;
+    padding: 0 0 0;
+}
+
+.mb-srvc-cont .wide-cont-hd {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background: #e6f5fe;
+}
+
+.wide-cont-hd .visual-title {
+    width: 980px;
+    height: 141px;
+    padding: 59px 0 0 30px;
+    margin: 0 auto;
+    background: url(../img/studentBenner/bg_mbsrvc_title.png) no-repeat right 19px;
+    font-size: 30px;
+    color: #000;
+    font-family: 'Noto Sans KR';
+    font-weight: 550;
+    letter-spacing: -1px;
+}
+
+.wide-cont-hd .visual-title .fc-blue {
+    color: #0083d4;
+}
+
+.wide-cont-hd .visual-title .sub-title {
+    margin: 20px 0 0;
+    line-height: 18px;
+    font-size: 13px;
+    color: #555;
+    letter-spacing: -0.5px;
+    font-weight: 400;
+}
+
+.mb-srvc-cont .contents {
+    width: 980px;
+    margin: 0 auto 100px;
+}
+
+.sel-mb-type {
+    width: 100%;
+    margin: 50px 0 0;
+    letter-spacing: -1px;
+}
+
+.sel-mb-type .btn-mbty-wrap {
+    height: 50px;
+    overflow: hidden;
+    margin: 0 0 40px;
+}
+.sel-mb-type .btn-mbty-wrap li {
+    float: left;
+    width: 155px;
+    margin: 0 0 0 10px;
+}
+.sel-mb-type .btn-mbty-wrap li:first-child {
+    margin-left: 0;
+}
+.sel-mb-type .btn-mbty-wrap li .btn-mbtype {
+    position: relative;
+    display: block;
+    width: 155px;
+    height: 50px;
+    line-height: 48px;
+    padding: 0 0 0 59px;
+    border: 1px solid #d4def4;
+    border-radius: 9px;
+    background-color: #e9effd;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    color: #000;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR';
+}
+
+.sel-mb-type .btn-mbty-wrap li.mbty1 a:before {
+    width: 41px;
+    background-image: url(../img/studentBenner/img_mbsrvc_mb01.png);
+}
+.sel-mb-type .btn-mbty-wrap li.selected .btn-mbtype, .sel-mb-type .btn-mbty-wrap li .btn-mbtype:hover {
+    border-color: #2f8fea;
+    background-color: #2f8fea;
+    color: #fff;
+}
+.sel-mb-type .btn-mbty-wrap li .btn-mbtype:hover:before, 
+.sel-mb-type .btn-mbty-wrap li.selected .btn-mbtype:before{
+    background-position: right 0;
+}
+.sel-mb-type .btn-mbty-wrap li .btn-mbtype:before {
+    content: '';
+    display: block;
+    width: 37px;
+    height: 38px;
+    position: absolute;
+    left: 9px;
+    top: 10px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: 0 left;
+}
+
+.sel-mb-type .btn-mbty-wrap li.mbty2 a:before {
+    background-image: url(../img/studentBenner/img_mbsrvc_mb02.png);
+}
+.sel-mb-type .btn-mbty-wrap li.mbty3 a:before {
+    width: 39px;
+    background-image: url(../img/studentBenner/img_mbsrvc_mb03.png);
+}
+.sel-mb-type .btn-mbty-wrap li.mbty4 a:before {
+    width: 35px;
+    background-image: url(../img/studentBenner/img_mbsrvc_mb04.png);
+}
+.sel-mb-type .btn-mbty-wrap li.mbty5 a:before {
+    top: 13px;
+    width: 45px;
+    height: 35px;
+    background-image: url(../img/studentBenner/img_mbsrvc_mb05.png);
+}
+.sel-mb-type .btn-mbty-wrap li.mbty6 a:before {
+    width: 35px;
+    background-image: url(../img/studentBenner/img_mbsrvc_mb06.png);
+}
+.sel-mb-type .bx-wrapper {
+    position: relative;
+    margin: 0 auto;
+    min-height: 422px;
+}
+.mbty-menu-container {
+    position: relative;
+    width: 100%;
+}
+.mbty-menu-container .menu-wrap {
+    position: relative;
+    width: 870px;
+    margin: 0 auto;
+    border: 1px solid #d4def4;
+}
+
+.mbty-menu-container .menu-wrap .subject {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 268px;
+    padding: 42px 0 0 30px;
+    background: url(../img/studentBenner/bg_mbsrvc_subject.png) no-repeat center bottom #edfaff;
+    font-size: 23px;
+    line-height: 30px;
+    color: #000;
+    font-weight: 500;
+    font-family: 'Noto Sans KR';
+}
+
+.mbty-menu-container .menu-wrap .subject.ele span {
+    margin: 0 0 7px;
+    line-height: 18px;
+    line-height: 28px;
+}
+.mbty-menu-container .menu-wrap .subject span {
+    display: block;
+    margin: 0 0 9px;
+    color: #666;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.mbty-menu-container .menu-wrap .menu-list {
+    width: 508px;
+    min-height: 344px;
+    padding: 21px 30px 20px 31px;
+    margin-left: 298px;
+    border-left: 1px solid #d4def4;
+    font-family: 'Noto Sans KR';
+}
+
+.mbty-menu-container .menu-wrap .menu-list li:first-child, .mbty-menu-container .menu-wrap .menu-list li li {
+    border-top: none;
+}
+
+.mbty-menu-container .menu-wrap .menu-list li {
+    position: relative;
+    padding: 18px 0 0;
+    border-top: 1px solid #e4ecfd;
+}
+
+.mbty-menu-container .menu-wrap .menu-list li strong {
+    display: block;
+    float: left;
+    width: 232px;
+    padding-left: 28px;
+    margin-top: -3px;
+    font-size: 18px;
+    color: #000;
+    font-weight: 500;
+    line-height: 23px;
+    padding-right: 20px;
+}
+.mbty-menu-container .menu-wrap .menu-list li strong .num {
+    position: absolute;
+    left: 0;
+    top: 17px;
+    color: #2f8fea;
+    font-weight: 500;
+}
+
+.mbty-menu-container .menu-wrap .menu-list li:first-child, .mbty-menu-container .menu-wrap .menu-list li li {
+    border-top: none;
+}
+
+.mbty-menu-container .menu-wrap .menu-list li li {
+    padding: 0 0 13px;
+    font-size: 16px;
+}
+
+.mbty-menu-container .menu-wrap .menu-list li {
+    position: relative;
+    padding: 18px 0 0;
+    border-top: 1px solid #e4ecfd;
+}
+
+.mbty-menu-container .menu-wrap .menu-list li:after {
+    clear: both;
+    display: block;
+    content: '';
+}
+.mbty-menu-container .menu-wrap .menu-list li ul {
+    float: left;
+    width: 227px;
+    padding: 0 0 11px;
+    
+}
+
+.mbty-menu-container .menu-wrap .menu-list .elementary {
+    padding: 13px 0 0;
+    text-align: center;
+}
+.mbty-menu-container .menu-wrap .menu-list .elementary .intro {
+    margin: 0 0 16px;
+    font-size: 16px;
+    color: #333;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+}
+.mbty-menu-container .menu-wrap .menu-list .elementary .intro span {
+    color: #2f8fea;
+}
+
+.mbty-menu-container .menu-wrap .menu-list .elementary .btn-gojr {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 30px;
+    border-radius: 23px;
+    background: #079AA9;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Noto Sans KR';
+}
+
+.mbty-menu-container .menu-wrap .menu-list .elementary .btn-gojr span:after {
+    display: inline-block;
+    content: '';
+    width: 9px;
+    height: 14px;
+    margin: 0 0 0 10px;
+    background: url(../img/studentBenner/ico_mbsrvc_arw.png) no-repeat 0 0;
+    vertical-align: middle;
+}
+
+.mbty-menu-container .menu-wrap .menu-list .elementary .jr-mu-info li.mn01 {
+    background-image: url(../img/studentBenner/img_mbsrvc_ele01.png);
+}
+
+.mbty-menu-container .menu-wrap .menu-list .elementary .jr-mu-info li {
+    float: left;
+    width: 150px;
+    padding: 79px 0 0;
+    margin: 35px 0 0;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center 0;
+    font-size: 13px;
+    color: #666;
+    line-height: 20px;
+}
+
+.mbty-menu-container .menu-wrap .menu-list .elementary .jr-mu-info li strong {
+    float: none;
+    width: auto;
+    padding: 0;
+    margin: 0 0 4px;
+    line-height: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+.mbty-menu-container .menu-wrap .menu-list li:after {
+    clear: both;
+    display: block;
+    content: '';
+}
+.mbty-menu-container .menu-wrap .menu-list .elementary .jr-mu-info li.mn02 {
+    background-image: url(../img/studentBenner/img_mbsrvc_ele03.png);
+}
+.mbty-menu-container .menu-wrap .menu-list .elementary .jr-mu-info li.mn03 {
+    background-image: url(../img/studentBenner/img_mbsrvc_ele02.png);
+}
+.mbty-menu-container .menu-wrap .menu-list li li a {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR';
+    font-size: 16px;
+}
+
+.mbty-menu-container .menu-wrap .menu-list li strong {
+    display: block;
+    float: left;
+    width: 232px;
+    padding-left: 28px;
+    margin-top: -3px;
+    font-size: 18px;
+    color: #000;
+    font-weight: 500;
+    line-height: 23px;
+    padding-right: 20px;
+}
+
+.mbty-menu-container .menu-wrap .menu-list li li a:hover {
+    color: #2f8fea;
+}
+
+.mbty-menu-container .menu-wrap .subject span em {
+    color: #2f8fea;
+}
+
+.sel-mb-type .bx-wrapper .bx-controls .bx-controls-direction a.bx-prev {
+    left: -31px;
+    background-position: 0 bottom;
+}
+
+.sel-mb-type .bx-wrapper .bx-controls .bx-controls-direction a {
+    position: absolute;
+    top: 186px;
+    display: block;
+    width: 14px;
+    height: 24px;
+    overflow: hidden;
+    background: url(../img/studentBenner/btn_mbsrvc_bxArw.png) no-repeat 0 0;
+    text-indent: -999999px;
+    font-size: 0;
+}
+
+.sel-mb-type .bx-wrapper .bx-controls .bx-controls-direction a.bx-next {
+    right: -31px;
+    background-position: 0 top;
+}
