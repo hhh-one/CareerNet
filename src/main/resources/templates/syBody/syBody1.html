@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<th:block th:replace="~{./include/layout::setContent(~{:: #wrap})}">
+    <div id="wrap">
+    <div class="inner">
+        <div id="contents">
+            <h2 class="title_h1"><span class="icon"><strong>직업백과</strong></span></h2>
+            <form name="frm" id="frm" method="get" action="syBody">
+                <input type="hidden" name="JOB_NM" id="JOB_NM" value="주차관리원">
+                <input type="hidden" name="SEQ" id="SEQ" value="1120">
+                <input type="hidden" name="LOGIN_ID" id="LOGIN_ID" value="baeksy97">
+                <input type="hidden" name="isIframe" id="isIframe" value="N">
+                <input type="hidden" name="href" id="href" value="">
+                <input type="hidden" name="TABCHK" id="TABCHK" value="">
+                <input type="hidden" name="INTRST_JOB_YN" id="INTRST_JOB_YN" value="N">
+                <div class="job_wrap" id="job_wrap">
+                        <div class="left_cont">
+                            <div class="sticky"><!--좌측 플로팅영역 wrapping-->
+                                <h3 class="job_name">[[${job.job}]]</h3>
+                                <ul class="interest_bx">
+                                    <li class="interest01"><a href="/cnet/front/base/job/intrstJobInsertProc.do?SEQ=1120&amp;JOB_NM=주차관리원" onclick="javascript:return false;"><img th:src="@{/img/ico_btn_interest01_off.png}" alt="관심 추가"></a></li>
+                                    <li class="interest02 thumb_off"><a href="javascript:;"><img th:src="@{/img/ico_btn_interest02_off.png}" alt="추천"></a></li>
+                                    <li class="interest03"><a href="#" onclick="javascript:fn_pdfOpen(1120);"><img th:src="@{/img/ico_btn_interest03.png}" alt="PDF 다운로드"></a></li>
+                                </ul>
+                                <ul class="job_terms_bx">
+                                    <li>
+                                        <em class="grade04"><strong>[[${job.salery}]]</strong></em>
+                                            <span>평균연봉</span>
+                                    </li>
+                                    <li>
+                                        <em class="grade03"><strong>보통이상</strong></em>
+                                            <span>일·가정균형</span>
+                                    </li>
+                                    <li>
+                                        <em class="grade01"><strong>[[${job.equalemployment}]]</strong></em>
+                                            <span>사회공헌</span>
+                                    </li>
+                                </ul>
+                                <ul class="job_tab_bx" onclick="javascript:active()">
+                                    <li class="active_1 active"    data-tab="tab1"><a href="javascript:void(0);"><strong>직업개요</strong></a></li>
+                                    <li class="active_1"    data-tab="tab2"><a href="javascript:void(0);"><strong>직업탐색 및 준비</strong></a></li>
+                                    <li class="active_1"    data-tab="tab3"><a href="javascript:void(0);"><strong>직업현황 및 지표</strong></a></li>
+                                    <li  class="active_1 " data-tab="tab4"><a href="javascript:void(0);"><strong>능력/지식/환경</strong></a></li>
+                                    </ul>
+                                <ul class="sns_bx">
+                                    <li><a href="#snsList" title="페이스북(새창 열림)" onclick="pstFaceBook('주차관리원', window.location.href.replace('#',''), 1120); return false;"><img src="https://www.career.go.kr/webres/images/front/icon/ico_sns_fb.png" alt="페이스북"></a></li>
+                                    <li><a href="#snsList" title="트위터(새창 열림)" onclick="shareTwitter(); return false;"><img src="https://www.career.go.kr/webres/images/front/icon/ico_sns_tt.png" alt="트위터"></a></li>
+                                    <li><a href="#snsList" title="카카오스토리(새창 열림)" onclick="pstKakaostory('주차관리원', window.location.href.replace('#',''), 1120); return false;"><img src="https://www.career.go.kr/webres/images/front/icon/ico_sns_ct.png" alt="카카오스토리"></a></li>
+                                </ul>
+                                <ul class="about_num_bx">
+                                    <li id="likesCnt">추천수 1</li>
+                                    <li id="viewsCnt">조회수 <span>15540</span></li>
+                                </ul>
+                                <p class="update-txt"><em>최종수정일</em><span> 2023-02-22</span></p>
+                            </div>
+                        </div>
+                            <!-- 직업개요 -->
+                            <div id="tab1" class="right_cont current">
+                                <div class="cont">
+                                        <h4>관련직업명</h4>
+                                        <p class="cont_txt">[[${job.similarJob}]]</p>
+                                    </div>
+                                <div class="cont">
+                                        <h4>관련학과 및 관련자격</h4>
+                                        <dl>
+                                                <dt>관련자격</dt>
+                                                <dd>
+                                                <a href="http://www.q-net.or.kr/crf005.do?id=crf00503&amp;jmCd=0388" target="_blank" title="새창" class="link_tag">자동차운전면허</a>
+                                                        </dd>
+                                            </dl>
+                                        </div>
+                                <div class="cont">
+                                        <h4>하는일</h4>
+                                        <ul class="dash_ul">
+                                            <li>[[${job.summary}]]</li>
+                                          
+                                            </ul>
+                                    </div>
+                                <div class="cont">
+                                        <h4>핵심능력</h4>
+                                        <span class="ico_txt"><img th:src="@{/img/ico_jobability09.jpg}" alt="대인관계능력">
+                                            대인관계능력</span>
+                                        </div>
+                                <div class="cont">
+                                        <h4>적성 및 흥미</h4>
+                                        
+                                        <dl class="dash_dl">
+                                            <dt>적성</dt>
+                                                <dd>
+                                                    고객들에게 주차 공간을 안내하고 주차된 차들을 관리하는 업무를 주로 담당하기에 대인관계능력이 필요합니다.</dd>
+                                                </dl>
+                                        <dl class="dash_dl">
+                                                <dt>흥미</dt>
+                                                    <dd>
+                                                        맡은 일에 대해 책임감이 있고, 약속을 잘 지키는 사람에게 적합합니다.</dd>
+                                                    <dd>
+                                                        손이나 도구를 사용하거나 조작하는 것을 즐겨 하는 사람에게 적합합니다.</dd>
+                                                    </dl>
+                                        </div>
+                                <div class="cont">
+                                    <h4>분류</h4>
+                                    <p class="cont_txt">표준직업분류 : 주차 관리원 및 안내원 (세분류 9923)</p>
+                                    <p class="cont_txt">고용직업분류 : 주차 관리ㆍ안내원 (세분류 5623)</p>
+                                </div>
+                                <div class="cont page-break">
+                                        <h4>태그</h4>
+                                        <ul class="cont_tag">
+                                            <li>#주차 공간</a></li>
+                                            <li>#출입</a></li>
+                                            <li>#주차유도</a></li>
+                                            </ul>
+                                    </div>	
+                                </div>
+                            <!-- 직업탐색 및 준비 -->
+                            <div id="tab2" class="right_cont ">
+                                <div class="cont">
+                                        <h4>직업탐색</h4>
+                                        <dl class="dash_dl">
+                                                <dt>진로 탐색 활동</dt>
+                                                <dd></dd>
+                                                </dl>
+                                        </div>
+                                <div class="cont">
+                                        <h4>준비방법</h4>
+                                        <dl class="dash_dl">
+                                                <dt>정규교육과정</dt>
+                                                <dd>
+                                                        특별히 요구되는 학력의 조건은 없습니다.</dd>
+                                                </dl>
+                                        <dl class="dash_dl">
+                                                <dt>관련자격증</dt>
+                                                <dd>
+                                                        국가자격증이 반드시 필요한 것은 아니지만 자동차운전면허 자격증 취득 시 우대받을 수 있습니다.</dd>
+                                                </dl>
+                                        <dl class="dash_dl">
+                                                <dt>입직 및 취업방법</dt>
+                                                <dd>
+                                                        공개 채용이나 구인 광고를 통해 건물 또는 공공기관의 주차장의 관리원으로 취업할 수 있습니다.</dd>
+                                                </dl>
+                                        </div>
+                                <div class="cont page-break">
+                                        <h4>관련기관</h4>
+                                        <ul class="institution_wrap">
+                                            <li>사단법인 한국주차관리협회<a href="http://www.ekpc.net" target="_blank" title="새창">http://www.ekpc.net</a></li>
+                                            <li>사단법인 대한주차산업협회<a href="https://www.kpia16.or.kr" target="_blank" title="새창">https://www.kpia16.or.kr</a></li>
+                                            </ul>
+                                    </div>
+                                </div>
+                            
+                            <!-- 직업현황 및 지표 -->
+                            <div id="tab3" class="right_cont">
+                            <div class="cont">
+                                    <h4>직업현황</h4>
+                                    <dl>
+                                            <dt>직업전망</dt>
+                                            <dd>
+                                                <p>향후 5년간 주차관리원의 일자리 규모는 현 상태를 유지할 전망입니다. 차량이 많아지고 도로가 복잡해지면서 주차시설 이용에 대한 필요성은 계속 증가하고 있습니다. 그러나 점차 주차장이 대형화되고 주차비 자동 정산 시스템이 생기면서 주차관리원 및 안내원의 고용은 현 상태를 유지하는 수준이 될 것으로 예측됩니다. (자료: 워크넷 직업정보)</p>
+                                            </dd>
+                                            </dl>					
+                                    <dl>
+                                            <dt>임금수준 및 직업만족도</dt>
+                                            <dd>
+                                                <ul class="level_wrap">
+                                                <li>
+                                                        <img src="/webres/images/front/contents/job/ico_jobGrade_big01.png" alt="보통미만">
+                                                            <em>평균연봉<span class="pay">2,383<span>만원</span></span></em>
+                                                        <p>주차관리원의 관련 직업인 주차관리·안내원의 평균연봉(중앙값)은 2,383만원으로, 조사 대상 전체 직업 평균연봉(중앙값)인 4,072만원과 비교하여 낮은 수준입니다. (자료 : 워크넷, 주차관리·안내원(2021))</p>
+                                                    </li>
+                                                <li>
+                                                        <img src="/webres/images/front/contents/job/ico_jobGrade_big02.png" alt="보통">
+                                                            <em>직업만족도<span class="satis">48.7<span>%</span></span></em>
+                                                        <p>주차관리원의 관련 직업인 주차관리·안내원의 일자리 증가 가능성, 발전가능성 및 고용안정에 대해 재직자가 느끼는 직업만족도는 48.7%입니다. (자료: 워크넷, 주차관리·안내원(2021))</p>
+                                                    </li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                    <dl id="dl_graph">
+                                        <dt>학력분포 및 전공계열</dt>
+                                        <dd class="dd_graph_half">
+                                        <div class="graph_wrap half" id="graph_wrap_grade">
+                                            <div class="graph" style="height:300px;">
+                                                <canvas id="graph01" width="217" style="margin: 0px auto; display: block; box-sizing: border-box; height: 174px; width: 174px;" height="217"></canvas>
+                                                <div id="graph01_legend" class="graph_legend"><ul data-chart-id="0"><li><span style="background-color: rgba(154, 101, 253, 1)"></span>중졸이하(23%)</li><li><span style="background-color: rgba(81, 160, 236, 1)"></span>고졸(63%)</li><li><span style="background-color: rgba(248, 117, 148, 1)"></span>전문대졸(7%)</li><li><span style="background-color: rgba(248, 206, 86, 1)"></span>대졸(7%)</li><li><span style="background-color: rgba(249, 160, 67, 1)"></span>대학원졸(0%)</li><li><span style="background-color: rgba(184, 181, 138, 1)"></span>박사졸(0%)</li></ul></div>
+                                                <div class="hidden_h">고졸: 20%, 전문대졸: 20%, 대졸: 20%, 대학원졸: 20%, 박사졸: 20%</div>
+                                            </div>
+                                            <p class="source">[자료 : 워크넷, 주차관리·안내원 직업정보(2021)]</p>
+                                        </div>
+                                        <div class="graph_wrap half" id="graph_wrap_major" style="display: none;">
+                                            <div class="graph" style="height:300px;">
+                                                <canvas id="graph02" width="217" style="margin: 0px auto; display: block; box-sizing: border-box; height: 174px; width: 174px;" height="217"></canvas>
+                                                <div id="graph02_legend" class="graph_legend"><ul data-chart-id="1"><li><span style="background-color: rgba(154, 101, 253, 1)"></span>인문계열(0%)</li><li><span style="background-color: rgba(81, 160, 236, 1)"></span>사회계열(0%)</li><li><span style="background-color: rgba(248, 117, 148, 1)"></span>교육계열(0%)</li><li><span style="background-color: rgba(248, 206, 86, 1)"></span>공학계열(0%)</li><li><span style="background-color: rgba(249, 160, 67, 1)"></span>자연계열(0%)</li><li><span style="background-color: rgba(184, 181, 138, 1)"></span>의학계열(0%)</li><li><span style="background-color: rgba(210, 158, 206, 1)"></span>예체능계열(0%)</li></ul></div>
+                                                <div class="hidden_h">공학계열: 50%, 자연계열: 50%</div>
+                                            </div>
+                                            <p class="source"></p>
+                                        </div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            <div class="cont page-break" id="graph_wrap_indicat">
+                                    <h4>한국의 직업지표</h4>
+                                    <div class="graph_wrap">
+                                        <div class="graph">
+                                            <canvas id="graph03" width="662" height="331" style="display: block; box-sizing: border-box; height: 265px; width: 530px;"></canvas>
+                                        </div>
+                                        <p class="source">[자료 : 한국직업능력연구원, 맞춤형취업지원을 위한 직업지표 연구(2020-22)]</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- 능력/지식/환경 -->
+                            <div id="tab4" class="right_cont">
+                                <div class="cont nopd">
+                                        <h4>업무수행능력</h4>
+                                        <table class="table_job_st3">
+                                            <caption>중요도, 능력명, 설명으로 이루어진 업무수행능력표</caption>
+                                            <colgroup>
+                                                <col style="width:15%;">
+                                                <col style="width:20%;">
+                                                <col style="width:65%;">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col"><span>중요도</span></th>
+                                                    <th scope="col"><span>능력명</span></th>
+                                                    <th scope="col"><span>설명</span></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                        <td>43</td>
+                                                        <td>서비스 지향</td>
+                                                        <td>다른 사람들을 돕기 위해 적극적으로 노력한다</td>
+                                                    </tr>
+                                                <tr>
+                                                        <td>41</td>
+                                                        <td>사람 파악</td>
+                                                        <td>타인의 반응을 파악하고 왜 그렇게 행동하는지 이해한다</td>
+                                                    </tr>
+                                                <tr>
+                                                        <td>39</td>
+                                                        <td>움직임 통제</td>
+                                                        <td>신체를 사용하여 기계나 기구를 정확한 위치로 빠르게 움직인다</td>
+                                                    </tr>
+                                                <tr>
+                                                        <td>39</td>
+                                                        <td>유연성 및 균형</td>
+                                                        <td>신체의 균형을 유지하거나 각 부위를 구부리고 편다</td>
+                                                    </tr>
+                                                <tr>
+                                                        <td>38</td>
+                                                        <td>반응시간과 속도</td>
+                                                        <td>신호에 빠르게 반응하거나 신체를 신속히 움직인다</td>
+                                                    </tr>
+                                                <tr>
+                                                        <td>38</td>
+                                                        <td>공간지각력</td>
+                                                        <td>자신의 위치를 파악하거나 다른 대상들이 자신을 중심으로 어디에 있는지 안다</td>
+                                                    </tr>
+                                                <tr>
+                                                        <td>34</td>
+                                                        <td>청력</td>
+                                                        <td>음의 고저와 크기의 차이를 구분한다</td>
+                                                    </tr>
+                                                <tr>
+                                                        <td>34</td>
+                                                        <td>행동조정</td>
+                                                        <td>다른 사람들의 행동에 맞추어 적절히 대응한다</td>
+                                                    </tr>
+                                                <tr>
+                                                        <td>34</td>
+                                                        <td>신체적 강인성</td>
+                                                        <td>물건을 들어 올리고, 밀고, 당기고, 운반하기 위해 힘을 사용한다</td>
+                                                    </tr>
+                                                <tr>
+                                                        <td>31</td>
+                                                        <td>고장의 발견·수리</td>
+                                                        <td>오작동의 원인이 무엇인가를 확인하고 이를 어떻게 처리할 것인지 결정한다</td>
+                                                    </tr>
+                                                </tbody>
+                                        </table>
+                                        <p class="source">[자료 : 워크넷, 주차관리·안내원 직업정보(2021)]</p>
+                                    </div>
+                                <div class="cont nopd">
+                                        <h4>지식중요도</h4>
+                                        <table class="table_job_st3">
+                                            <caption>중요도, 능력명, 설명으로 이루어진 업무수행능력표</caption>
+                                            <colgroup>
+                                                <col style="width:15%;">
+                                                <col style="width:20%;">
+                                                <col style="width:65%;">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col"><span>중요도</span></th>
+                                                    <th scope="col"><span>능력명</span></th>
+                                                    <th scope="col"><span>설명</span></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                        <td>73</td>
+                                                        <td>고객서비스</td>
+                                                        <td>고객에게 서비스를 제공하는데 필요한 지식(고객의 욕구평가, 고객의 만족도 평가, 서비스 기준 설정 등)</td>
+                                                    </tr>
+                                                <tr>
+                                                        <td>69</td>
+                                                        <td>안전과 보안</td>
+                                                        <td>사람들과 재산을 보호하기 위해 필요한 지식</td>
+                                                    </tr>
+                                                <tr>
+                                                        <td>48</td>
+                                                        <td>운송</td>
+                                                        <td>비행기, 철도, 선박 그리고 자동차를 통해 사람들과 물품을 움직이는 원리와 방법에 관한 지식</td>
+                                                    </tr>
+                                                <tr>
+                                                        <td>37</td>
+                                                        <td>의료</td>
+                                                        <td>질병이나 치아의 질환 여부를 진단하고 치료하는 것에 관한 지식</td>
+                                                    </tr>
+                                                <tr>
+                                                        <td>34</td>
+                                                        <td>건축 및 설계</td>
+                                                        <td>집, 빌딩, 혹은 도로를 만들고 수리하기 위해 필요한 지식</td>
+                                                    </tr>
+                                                <tr>
+                                                        <td>32</td>
+                                                        <td>기계</td>
+                                                        <td>기계와 도구를 사용하고, 수리·유지하는 것과 관련된 지식</td>
+                                                    </tr>
+                                                <tr>
+                                                        <td>30</td>
+                                                        <td>경제와 회계</td>
+                                                        <td>돈의 흐름, 은행업무, 그리고 재무자료의 보고와 분석과 같은 경제 및 회계원리에 관한 지식</td>
+                                                    </tr>
+                                                <tr>
+                                                        <td>27</td>
+                                                        <td>식품생산</td>
+                                                        <td>식용을 위해 동물이나 식물을 기르고 수확물을 채취하기 위한 기법이나 필요한 장비에 관련된 지식</td>
+                                                    </tr>
+                                                <tr>
+                                                        <td>27</td>
+                                                        <td>국어</td>
+                                                        <td>맞춤법, 작문법, 문법에 관한 지식</td>
+                                                    </tr>
+                                                <tr>
+                                                        <td>27</td>
+                                                        <td>법</td>
+                                                        <td>법률, 규정에 관한 지식</td>
+                                                    </tr>
+                                                </tbody>
+                                        </table>
+                                        <p class="source">[자료 : 워크넷, 주차관리·안내원 직업정보(2021)]</p>
+                                    </div>
+                                <div class="cont nopd">
+                                        <h4>업무환경</h4>
+                                        <table class="table_job_st3">
+                                            <caption>중요도, 능력명, 설명으로 이루어진 업무수행능력표</caption>
+                                            <colgroup>
+                                                <col style="width:15%;">
+                                                <col style="width:20%;">
+                                                <col style="width:65%;">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col"><span>중요도</span></th>
+                                                    <th scope="col"><span>능력명</span></th>
+                                                    <th scope="col"><span>설명</span></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                        <td>98</td>
+                                                        <td>매우 춥거나 더운 기온</td>
+                                                        <td>매우 덥거나(섭씨 32도 이상) 매우 추운(섭씨 0도 이하) 기온에 노출되는 빈도</td>
+                                                    </tr>
+                                                <tr>
+                                                        <td>97</td>
+                                                        <td>걷거나 뛰기</td>
+                                                        <td>걷거나 뛰면서 근무하는 빈도</td>
+                                                    </tr>
+                                                <tr>
+                                                        <td>86</td>
+                                                        <td>극단적으로 밝거나 부적절한 조명</td>
+                                                        <td>극단적으로 밝거나 혹은 부적절한 조명에 노출되는 빈도</td>
+                                                    </tr>
+                                                <tr>
+                                                        <td>86</td>
+                                                        <td>불쾌하거나 무례한 사람 상대</td>
+                                                        <td>불쾌하거나, 화나거나, 혹은 무례한 사람을 대하는 빈도</td>
+                                                    </tr>
+                                                <tr>
+                                                        <td>85</td>
+                                                        <td>소음 노출</td>
+                                                        <td>산만하거나 불안할 정도의 소음에 노출되는 빈도</td>
+                                                    </tr>
+                                                <tr>
+                                                        <td>85</td>
+                                                        <td>오염물질 노출</td>
+                                                        <td>오염물질(가스, 먼지, 악취 등)에 노출되는 빈도</td>
+                                                    </tr>
+                                                <tr>
+                                                        <td>85</td>
+                                                        <td>주말 및 공휴일 근무</td>
+                                                        <td>주말 및 공휴일 출근 빈도</td>
+                                                    </tr>
+                                                <tr>
+                                                        <td>76</td>
+                                                        <td>실외 근무</td>
+                                                        <td>바깥공기에 노출되는 실외에서 근무하는 빈도</td>
+                                                    </tr>
+                                                <tr>
+                                                        <td>72</td>
+                                                        <td>비좁은 업무 공간</td>
+                                                        <td>불편한 자세를 취해야 하는 비좁은 공간에 노출되는 빈도</td>
+                                                    </tr>
+                                                <tr>
+                                                        <td>69</td>
+                                                        <td>서서 근무</td>
+                                                        <td>서서 근무하는 빈도</td>
+                                                    </tr>
+                                                </tbody>
+                                        </table>
+                                        <p class="source">[자료 : 워크넷, 주차관리·안내원 직업정보(2021)]</p>
+                                    </div>
+                                </div>	
+                    </div>
+                <div class="btn_wrap">
+                        <input type="submit" class="btn_list" onclick="fn_goBack();" name="목록보기"></input>
+                    </div>
+                </form>
+        
+        </div>
+
+    </div>
+</div>
+
+</th:block>
+<script th:inline="javascript">
+		
+		console.log('[[${job.job}]]');
+		
+		
+	</script>
+
+</html>

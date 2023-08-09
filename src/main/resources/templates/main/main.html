@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+	
+<th:block th:replace="~{./include/layout::setContent(~{:: #container})}">
+    <div id="container">
+		<div class="main-visual-area">
+			<div class="main-visual">
+				<h2 class="slogan"><span>꿈, 미래, 진로!</span> 함께하는 진로정보망</h2>
+				<div class="member-type">
+					<h5 class="invisible"> </h5>
+					<ul>
+						<li><a href="javascript:go_jr()" class="mb01" title="초등학생 맞춤 서비스 바로가기">초등학생</a></li>
+						<li><a href="/cnet/front/type/typeService.do?seq=100206" class="mb02" title="중학생 맞춤 서비스 바로가기">중학생</a></li>
+						<li><a href="/cnet/front/type/typeService.do?seq=100207" class="mb03" title="고등학생 맞춤 서비스 바로가기">고등학생</a></li>
+						<li><a href="/cnet/front/type/typeService.do?seq=100208" class="mb04" title="대학생,일반 맞춤 서비스 바로가기">대학생·일반</a></li>
+						<li><a href="/cnet/front/type/typeService.do?seq=100210" class="mb05" title="학부모 맞춤 서비스 바로가기">학부모</a></li>
+						<li><a href="/cnet/front/type/typeService.do?seq=100214" class="mb06" title="교사 맞춤 서비스 바로가기">교사</a></li>
+					</ul>
+				</div>
+				<div class="main-search-bx">
+					<h3 class="txt-info">커리어넷의 <span>다양한 진로정보</span>를 찾아보세요.</h3>
+					<div class="input-wrap">
+						<select class="sel-srch-type" title="검색어 구분">
+							<option>통합검색</option>
+							<option>직업정보</option>
+							<option>학과정보</option>
+						</select>
+						<input type="text" id="mainSrchInput" placeholder="키워드를 입력해주세요." class="input-main-search" title="검색어 입력" onkeypress="fnKeyAction(this);">
+						<a href="javascript:fn_search()" title="검색결과 보기" class="btn-main-search">검색</a>
+					</div>
+					<div class="tag-keyword">
+						<h5 class="invisible"> </h5>
+						<a href="javascript:fn_tagSearch('4차 산업혁명')"><span>#4차 산업혁명</span></a>
+						<a href="javascript:fn_tagSearch('인공지능')"><span>#인공지능</span></a>
+						<a href="javascript:fn_tagSearch('진로드라마')"><span>#진로드라마</span></a>
+						<a href="javascript:fn_tagSearch('실감형')"><span>#실감형</span></a>
+						<a href="javascript:fn_tagSearch('창업')"><span>#창업</span></a>
+						<a href="javascript:fn_tagSearch('진로상담')"><span>#진로상담</span></a>
+						<a href="javascript:fn_tagSearch('교과통합')"><span>#교과통합</span></a>
+						<a href="javascript:fn_tagSearch('심리검사')"><span>#심리검사</span></a>
+						<a href="javascript:fn_tagSearch('스포츠')"><span>#스포츠</span></a>
+						<a href="javascript:fn_tagSearch('블렌디드 수업자료')"><span>#블렌디드 수업자료</span></a>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="main-notice-area">
+			<div class="main-notice">
+				<h4 class="notice-title"><span class="alrim"></span>공지사항</h4>
+				<div class="notice-item-warp">
+					<div class="bx-wrapper" style="max-width: 613px;"><div class="bx-viewport" aria-live="polite" style="width: 100%; overflow: hidden; position: relative; height: 58px;"><ul class="notice-slider bxslider" style="width: auto; position: relative; transition-duration: 0s; transform: translate3d(0px, -115.99px, 0px);"><li style="float: none; list-style: none; position: relative; width: 593px;" class="bx-clone" aria-hidden="true"><a href="/cnet/front/commbbs/notice/commBbsView.do?BBS_SEQ=6402579">[안내] 5월 1일/5월 5일 이용문의 운영안내</a></li>
+
+						<li style="float: none; list-style: none; position: relative; width: 593px;" aria-hidden="true"><a href="/cnet/front/commbbs/notice/commBbsView.do?BBS_SEQ=6402971">[알림] 시스템 작업 예정 안내 (2023.07.14(금) 18:00 ~ 22:00)</a></li>
+							<li aria-hidden="false" style="float: none; list-style: none; position: relative; width: 593px;"><a href="/cnet/front/commbbs/notice/commBbsView.do?BBS_SEQ=6402753">[안내] 5월 29일 부처님오신날 대체휴일  이용문의 운영안내</a></li>
+							<li style="float: none; list-style: none; position: relative; width: 593px;" aria-hidden="true"><a href="/cnet/front/commbbs/notice/commBbsView.do?BBS_SEQ=6402579">[안내] 5월 1일/5월 5일 이용문의 운영안내</a></li>
+							<li style="float: none; list-style: none; position: relative; width: 593px;" class="bx-clone" aria-hidden="true"><a href="/cnet/front/commbbs/notice/commBbsView.do?BBS_SEQ=6402971">[알림] 시스템 작업 예정 안내 (2023.07.14(금) 18:00 ~ 22:00)</a></li></ul></div><div class="bx-controls bx-has-controls-auto bx-has-pager"><div class="bx-controls-auto"><div class="bx-controls-auto-item"><a class="bx-start" href="">Start</a></div></div><div class="bx-pager bx-default-pager"><div class="bx-pager-item"><a href="" data-slide-index="0" class="bx-pager-link">1</a></div><div class="bx-pager-item"><a href="" data-slide-index="1" class="bx-pager-link active">2</a></div><div class="bx-pager-item"><a href="" data-slide-index="2" class="bx-pager-link">3</a></div></div></div></div>
+				</div>
+				<a href="/cnet/front/commbbs/notice/commBbsList.do" class="btn-more-notice" title="공지사항 더보기">더보기</a>
+			</div>
+		</div>
+		<div class="main-banner-area">
+			<div class="main-banner">
+				<div class="banner-zone event">
+					<h4 class="banner-title">이벤트·소식</h4>
+					<div class="bx-wrapper" style="max-width: 254px;"><div class="bx-viewport" aria-live="polite" style="width: 100%; overflow: hidden; position: relative; height: 195px;"><ul class="banner-slider bxslider" style="width: 3215%; position: relative; transition-duration: 0s; transform: translate3d(-507.986px, 0px, 0px);"><li style="float: left; list-style: none; position: relative; width: 254px;" class="bx-clone" aria-hidden="true"><a href="https://www.career.go.kr/cnet/front/web/event/eventView.do?SEQ=94" target="_blank"><img src="@{/img/main/bannerImgPath.do?bnr_ser=1011891}" alt="진로 웹소식지 커리어넷 PICK 오픈 기념 초성퀴즈 이벤트"></a></li>
+						<li style="float: left; list-style: none; position: relative; width: 254px;" aria-hidden="true"><a href="https://www.sciencecareer.kr/" target="_blank"><img src="/cnet/front/main/bannerImgPath.do?bnr_ser=1011888" alt="과학기술 진로에 대해 더 알고싶다면? 과학기술인재 진로지원센터 둘러보기"></a></li>
+						<li aria-hidden="false" style="float: left; list-style: none; position: relative; width: 254px;"><a href="https://www.career.go.kr/cnet/front/webzine/recent.do" target="_blank"><img th:src="@{/img/main/bannerImgPath.png}" alt="진로 웹소식지 커리어넷 PICK 바로가기"></a></li>
+						<li style="float: left; list-style: none; position: relative; width: 254px;" aria-hidden="true"><a href="https://www.career.go.kr/cnet/front/web/event/eventView.do?SEQ=94" target="_blank"><img src="/cnet/front/main/bannerImgPath.do?bnr_ser=1011891" alt="진로 웹소식지 커리어넷 PICK 오픈 기념 초성퀴즈 이벤트"></a></li>
+						<li style="float: left; list-style: none; position: relative; width: 254px;" class="bx-clone" aria-hidden="true"><a href="https://www.sciencecareer.kr/" target="_blank"><img src="/cnet/front/main/bannerImgPath.do?bnr_ser=1011888" alt="과학기술 진로에 대해 더 알고싶다면? 과학기술인재 진로지원센터 둘러보기"></a></li></ul></div><div class="bx-controls bx-has-controls-direction bx-has-controls-auto"><div class="bx-controls-direction"><a class="bx-prev" href="">이전 행사·이벤트</a><a class="bx-next" href="">다음 행사·이벤트</a></div><div class="bx-controls-auto"><div class="bx-controls-auto-item"><a class="bx-start" href="">배너 롤링 시작</a></div></div></div></div>
+				</div>
+
+			
+				<div class="banner-zone dream">
+					<div class="bx-wrapper" style="max-width: 254px;"><div class="bx-viewport" aria-live="polite" style="width: 100%; overflow: hidden; position: relative; height: 226px;"><ul class="banner-slider bxslider" style="width: 4215%; position: relative; transition-duration: 0s; transform: translate3d(-507.986px, 0px, 0px);"><li style="float: left; list-style: none; position: relative; width: 254px;" class="bx-clone" aria-hidden="true">
+							<h4 class="banner-title">블랜디드 수업자료</h4>
+							<a href="/cnet/front/eduInfo/blended.do" target="_self">
+								<img src="" alt="블렌디드 수업자료 안내 GO">
+							</a>
+						</li>
+					
+						<li style="float: left; list-style: none; position: relative; width: 254px;" aria-hidden="true">
+							<h4 class="banner-title">직업백과 신규 개편</h4>
+							<a href="/cnet/front/base/job/jobList.do">
+								<img src="/webres/images/front/remote/bnr_jobList.png" alt="직업백과 신규 개편">
+							</a>
+						</li>
+						
+						<li aria-hidden="true" style="float: left; list-style: none; position: relative; width: 254px;">
+							<h4 class="banner-title">원격수업 안내</h4>
+							<a href="/cnet/front/web/remotelearning/remotelearning.do">
+								<img th:src="@{/img/main/bnr_remotelearning_v2.jpg}" alt="원격 수업 등에 활용 가능한 온라인 진로교육 활동 안내">
+							</a>
+						</li>
+						<li style="float: left; list-style: none; position: relative; width: 254px;" aria-hidden="true">
+							<h4 class="banner-title">블랜디드 수업자료</h4>
+							<a href="/cnet/front/eduInfo/blended.do" target="_self">
+								<img src="https://www.career.go.kr/cnet/front/main/bannerImgPath.do?bnr_ser=1011707" alt="블렌디드 수업자료 안내 GO">
+							</a>
+						</li>
+					<li style="float: left; list-style: none; position: relative; width: 254px;" class="bx-clone" aria-hidden="true">
+							<h4 class="banner-title">직업백과 신규 개편</h4>
+							<a href="/cnet/front/base/job/jobList.do">
+								<img src="/webres/images/front/remote/bnr_jobList.png" alt="직업백과 신규 개편">
+							</a>
+						</li></ul></div><div class="bx-controls bx-has-controls-direction bx-has-controls-auto"><div class="bx-controls-direction"><a class="bx-prev" href="">이전 배너</a><a class="bx-next" href="">다음 배너</a></div><div class="bx-controls-auto"><div class="bx-controls-auto-item"><a class="bx-start" href="">배너 롤링 시작</a></div></div></div></div>
+				</div>
+    
+				<div class="banner-zone jinroMv">
+					<h4 class="banner-title">진로동영상</h4>
+					<div class="bx-wrapper" style="max-width: 254px;"><div class="bx-viewport" aria-live="polite" style="width: 100%; overflow: hidden; position: relative; height: 194px;"><ul class="jinroMv-slider bxslider" style="width: 6215%; position: relative; transition-duration: 0s; transform: translate3d(-507.986px, 0px, 0px);"><li style="float: left; list-style: none; position: relative; width: 254px;" class="bx-clone" aria-hidden="true">
+								<a href="/cnet/front/web/movie/catMapp/catMappView.do?ARCL_SER=1035143&amp;GATE=MAIN&amp;SUP_CAT_ID=MCAT0028">
+									<img src="/cnet/commonBiz/imageViewBySer.do?seq=55088" style="width:100%" alt="">
+									<span class="mvtitle">사회복지사, 유한미&nbsp;</span>
+									</a>
+							</li>
+						<li style="float: left; list-style: none; position: relative; width: 254px;" aria-hidden="true">
+								<a href="/cnet/front/web/movie/catMapp/catMappView.do?ARCL_SER=1035166&amp;GATE=MAIN&amp;SUP_CAT_ID=MCAT0028">
+									<img src="/cnet/commonBiz/imageViewBySer.do?seq=55147" style="width:100%" alt="">
+									<span class="mvtitle">은행원, 당민지&nbsp;</span>
+									</a>
+							</li>
+						<li aria-hidden="false" style="float: left; list-style: none; position: relative; width: 254px;">
+								<a href="/cnet/front/web/movie/catMapp/catMappView.do?ARCL_SER=1035163&amp;GATE=MAIN&amp;SUP_CAT_ID=MCAT0028">
+									<img th:src="@{/img/main/image.jpg}" style="width:100%" alt="">
+									<span class="mvtitle">영화감독, 박루슬란&nbsp;</span>
+									</a>
+							</li>
+						<li aria-hidden="true" style="float: left; list-style: none; position: relative; width: 254px;">
+								<a href="/cnet/front/web/movie/catMapp/catMappView.do?ARCL_SER=1035155&amp;GATE=MAIN&amp;SUP_CAT_ID=MCAT0028">
+									<img src="/cnet/commonBiz/imageViewBySer.do?seq=55100" style="width:100%" alt="">
+									<span class="mvtitle">사법통역사, 임재은&nbsp;</span>
+									</a>
+							</li>
+						<li aria-hidden="true" style="float: left; list-style: none; position: relative; width: 254px;">
+								<a href="/cnet/front/web/movie/catMapp/catMappView.do?ARCL_SER=1035154&amp;GATE=MAIN&amp;SUP_CAT_ID=MCAT0028">
+									<img src="/cnet/commonBiz/imageViewBySer.do?seq=55078" style="width:100%" alt="">
+									<span class="mvtitle">비행교관, 르바타 재민&nbsp;</span>
+									</a>
+							</li>
+						<li aria-hidden="true" style="float: left; list-style: none; position: relative; width: 254px;">
+								<a href="/cnet/front/web/movie/catMapp/catMappView.do?ARCL_SER=1035152&amp;GATE=MAIN&amp;SUP_CAT_ID=MCAT0028">
+									<img src="/cnet/commonBiz/imageViewBySer.do?seq=55097" style="width:100%" alt="">
+									<span class="mvtitle">CSR 전문가를 꿈꾸다, 라자 마리엄&nbsp;</span>
+									</a>
+							</li>
+						<li style="float: left; list-style: none; position: relative; width: 254px;" aria-hidden="true">
+								<a href="/cnet/front/web/movie/catMapp/catMappView.do?ARCL_SER=1035143&amp;GATE=MAIN&amp;SUP_CAT_ID=MCAT0028">
+									<img src="/cnet/commonBiz/imageViewBySer.do?seq=55088" style="width:100%" alt="">
+									<span class="mvtitle">사회복지사, 유한미&nbsp;</span>
+									</a>
+							</li>
+						<li style="float: left; list-style: none; position: relative; width: 254px;" class="bx-clone" aria-hidden="true">
+								<a href="/cnet/front/web/movie/catMapp/catMappView.do?ARCL_SER=1035166&amp;GATE=MAIN&amp;SUP_CAT_ID=MCAT0028">
+									<img src="/cnet/commonBiz/imageViewBySer.do?seq=55147" style="width:100%" alt="">
+									<span class="mvtitle">은행원, 당민지&nbsp;</span>
+									</a>
+							</li></ul></div><div class="bx-controls bx-has-controls-direction bx-has-controls-auto"><div class="bx-controls-direction"><a class="bx-prev" href="">이전 진로동영상</a><a class="bx-next" href="">다음 진로동영상</a></div><div class="bx-controls-auto"><div class="bx-controls-auto-item"><a class="bx-start" href="">배너 롤링 시작</a></div></div></div></div>
+					<a href="/cnet/front/web/movie/catMapp/catMappList.do?SUP_CAT_ID=MCAT0028" class="btn-more-banner" title="진로동영상 더보기">더보기</a>
+				</div>
+			</div>
+		</div>
+		
+		</th:block>
+
+
+        <script src="js/main.js" ></script>
+</body>
+</html>

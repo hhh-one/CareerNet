@@ -105,6 +105,7 @@ header{
 }
 .submenuHide{
     position: absolute;
+    z-index: 999;
     top: 50px;
     left: 0;
     width: 100%;
@@ -254,6 +255,7 @@ ul .m .submenu-list li a{
     letter-spacing: 0;
     color: #2e3434;
 }
+
 
 #wrap{
 	min-height: 800px;

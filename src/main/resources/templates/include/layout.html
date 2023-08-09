@@ -9,16 +9,27 @@
     
     <!-- 헤더css -->
     <link rel="stylesheet" th:href="@{/css/layout.css}">
+     <link rel="stylesheet" th:href="@{/css/syBody.css}">
+     <link rel="stylesheet" th:href="@{/css/main.css}">
+     
+      <link rel="stylesheet" th:href="@{/css/studentBenner.css}">
     <script th:src="@{/js/jquery.js}"></script>
-    
+    <script th:src="@{/js/jquery-1.12.1.min.js}"></script>
+	<script th:src="@{/js/jquery-ui.min.js}"></script>
+    <script th:src="@{/js/syBody.js}"></script>
     <script th:src="@{/js/layout.js}"></script>
     
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
     <!-- student css -->
     <link rel="stylesheet" th:href="@{/css/student.css}">
     <link rel="stylesheet" th:href="@{/css/reset.css}">
     <!-- consulting css -->
     <link rel="stylesheet" th:href="@{/css/consulting_common.css}">
     <link rel="stylesheet" th:href="@{/css/consulting.css}">
+
 </head>
 <body>
 
@@ -81,7 +92,7 @@
                         관심 있는 직업에 대한 다양한 정보를 확인하세요.
                     </p>
                 <ul class="submenu-list"><!-- position absolute -->
-                    <li><a href="#">직업 종류</a></li>
+                    <li><a href="/syBody/syBody">직업 종류</a></li>
                 </ul>
                 </div>
             </li>
@@ -148,7 +159,7 @@
                 <li><a href="#" title="새창 열림" >이메일주소무단수집거부</a></li>
                 <li> <a href=#>이용안내</a></li>
                 <li> <a href=# style="color:red">이용문의 및 오류 제보</a></li>
-                <li><a href=#>오픈 api</a></li>
+                <li><a href="https://www.career.go.kr/cnet/front/openapi/openApiMainCenter.do">오픈 api</a></li>
         
     </div>
      

@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<th:block th:replace="~{./include/layout::setContent(~{:: #wrap})}">
+
+    
+    <div id="wrap">
+    <div class="inner">
+
+        <div id="contents">
+			<input type="hidden" name="SEQ" id="SEQ" value="">
+			<input type="hidden" name="searchAt" id="searchAt" value="Y">
+			<input type="hidden" name="pageIndex" id="pageIndex" value="1">
+			<input type="hidden" name="fPageSize" id="fPageSize" value="9">
+			<input type="hidden" name="listTypeStatus" id="listTypeStatus" value="D">
+			<input type="hidden" name="LOGIN_ID" id="LOGIN_ID" value="2043607905">
+			<input type="hidden" name="isIframe" id="isIframe" value="N">
+			<input type="hidden" name="searchAbltyCodes" id="searchAbltyCodes" value="">
+			<input type="hidden" name="searchAptdCodes" id="searchAptdCodes" value="">
+			<input type="hidden" name="searchTextList" id="searchTextList" value="">
+			<input type="hidden" name="searchThemeCode" id="searchThemeCode" value="">
+			<input type="hidden" name="searchJobCode" id="searchJobCode" value="">
+			<input type="hidden" name="searchPayCodes" id="searchPayCodes" value="">
+			<input type="hidden" name="searchWlbCodes" id="searchWlbCodes" value="">
+			<input type="hidden" name="searchContriCodes" id="searchContriCodes" value="">
+			<input type="hidden" name="tabIndex" id="tabIndex" value="2">
+			<input type="hidden" name="preTabIndex" id="preTabIndex" value="2">
+			<input type="hidden" name="abltyStr" id="abltyStr" value="">
+			<input type="hidden" name="aptdStr" id="aptdStr" value="">
+			<input type="hidden" name="jobStr" id="jobStr" value="">
+			<input type="hidden" name="themeStr" id="themeStr" value="">
+			<input type="hidden" name="searchIntrstJob" id="searchIntrstJob" value="">
+			<input type="hidden" name="searchJobNm2nd" id="searchJobNm2nd" value="">
+			<input type="hidden" name="searchJobChange" id="searchJobChange" value="N">
+			<input type="hidden" name="reSearchYn" id="reSearchYn" value="false">
+			<input type="hidden" name="sortType" id="sortType" value="R">
+			<input type="hidden" name="searchSeed" id="searchSeed" value="208">
+			<input type="hidden" name="searchJobCode2" id="searchJobCode2" value="">
+            <form name="frm" id="frm" method="post" action="#">
+                <input type="hidden" name="" id="" value>
+
+                <h2 class="title_h1">
+                    <a href="#" class="tip_part">
+                        <span class="icon">직업백과</span>
+                    </a>
+                </h2>
+                <fieldset>
+                <div class="srh_style01">
+                    <div class="srh_bx">
+                        <select id="searchParam" name="searchParam"> <!-- 검색기능 -->
+                            <option value="">전체</option>
+                            <option value="jobNm">직업명</option>
+                            <option value="work">하는일</option>
+                        </select>
+                           <div class="srh_input">
+                            <input type="text" name="searchJobNm" id="searchJobNm" value="" maxlength="30" placeholder="검색어를 입력해주세요">
+                            <input type="hidden" name="preSearchJobNm" id="preSearchJobNm" value="">
+                            <input type="hidden" name="preSearchParam" id="preSearchParam" value="">
+                            <button type="button" title="검색하기" onclick="fn_jobNmList();"><img class="srchBtn" th:src="@{/img/btn_search.png}" alt="검색"></button>
+                        </div>
+                        <div class="srh_checkbox">
+                            <input type="checkbox" id="srh_chb_re" onchange="javascript:fn_reSearch()"><label for="srh_chb_re">결과 내 재검색</label>
+                        </div>
+                    </div>
+                    <!--검색어 없을시 srh_word_bx 사라짐-->
+                    <div class="srh_word_bx" id="srh_word_bx">
+                    </div>
+                </div>
+                <div class="searchBox_style01">
+                    <!-- 탭 -->
+                    <div class="tab_style01">
+                        <ul>
+                            <li id="tabTagA1" class="selected">
+                                <a href="#tab01" onclick="return fn_changeTab(1);"><em>테마</em>별 검색</a>
+                            </li>
+                            <li id="tabTagA2" class="">
+                                <a href="#tab02" onclick="return fn_changeTab(2);"><em>적성유형</em>별 검색</a>
+                            </li>
+                            <li id="tabTagA3" class="">
+                                <a href="#tab3" onclick="return fn_changeTab(3);"><em>조건</em>별 검색</a>
+                            </li>
+                            <li id="tabTagA4" class="">
+                                <a href="#tab4" onclick="return fn_changeTab(4);"><em>직업 분류</em>별 검색</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="tab01" class="tabWrap" style="display: block;">
+                        <div class="tab_info">
+                        <p>최근 대두되는 관심과 흥미를 반영한 <span>직업별 테마</span>를 선택하여 직업을 검색할 수 있습니다.</p>
+                        <button type="button" class="btn_re" onclick="javascript:fn_clear('1')">선택초기화</button>
+                    </div>
+                    <ul class="type1 jobdicType_icon_bx01">
+                       <li>
+                                        <a name="themeTag" title="AI/로봇 선택" id="themeTag102420" href="#this01" onclick="javascript:fn_clickThemeCode(102420); return false;" class="jobdicType_icon_1" value="102420"> 
+                                            <span>AI/로봇</span>
+                                        </a>
+                                    </li>
+                                <li>
+                                        <a name="themeTag" title="IT/SW 선택" id="themeTag102421" href="#this01" onclick="javascript:fn_clickThemeCode(102421); return false;" class="jobdicType_icon_2" value="102421"> 
+                                            <span>IT/SW</span>
+                                        </a>
+                                    </li>
+                                <li>
+                                        <a name="themeTag" title="게임 선택" id="themeTag102422" href="#this01" onclick="javascript:fn_clickThemeCode(102422); return false;" class="jobdicType_icon_3" value="102422"> 
+                                            <span>게임</span>
+                                        </a>
+                                    </li>
+                                <li>
+                                        <a name="themeTag" title="공학 선택" id="themeTag102423" href="#this01" onclick="javascript:fn_clickThemeCode(102423); return false;" class="jobdicType_icon_4" value="102423"> 
+                                            <span>공학</span>
+                                        </a>
+                                    </li>
+                                <li>
+                                        <a name="themeTag" title="교육 선택" id="themeTag102424" href="#this01" onclick="javascript:fn_clickThemeCode(102424); return false;" class="jobdicType_icon_5" value="102424"> 
+                                            <span>교육</span>
+                                        </a>
+                                    </li>
+                                <li>
+                                        <a name="themeTag" title="금융 선택" id="themeTag102425" href="#this01" onclick="javascript:fn_clickThemeCode(102425); return false;" class="jobdicType_icon_6" value="102425"> 
+                                            <span>금융</span>
+                                        </a>
+                                    </li>
+                                <li>
+                                        <a name="themeTag" title="동물 선택" id="themeTag102426" href="#this01" onclick="javascript:fn_clickThemeCode(102426); return false;" class="jobdicType_icon_7" value="102426"> 
+                                            <span>동물</span>
+                                        </a>
+                                    </li>
+                                <li>
+                                        <a name="themeTag" title="디자인 선택" id="themeTag102427" href="#this01" onclick="javascript:fn_clickThemeCode(102427); return false;" class="jobdicType_icon_8" value="102427"> 
+                                            <span>디자인</span>
+                                        </a>
+                                    </li>
+                                <li>
+                                        <a name="themeTag" title="미용/패션 선택" id="themeTag102428" href="#this01" onclick="javascript:fn_clickThemeCode(102428); return false;" class="jobdicType_icon_9" value="102428"> 
+                                            <span>미용/패션</span>
+                                        </a>
+                                    </li>
+                                <li>
+                                        <a name="themeTag" title="방송 선택" id="themeTag102429" href="#this01" onclick="javascript:fn_clickThemeCode(102429); return false;" class="jobdicType_icon_10" value="102429"> 
+                                            <span>방송</span>
+                                        </a>
+                                    </li>
+                                <li>
+                                        <a name="themeTag" title="법/수사 선택" id="themeTag102430" href="#this01" onclick="javascript:fn_clickThemeCode(102430); return false;" class="jobdicType_icon_11" value="102430"> 
+                                            <span>법/수사</span>
+                                        </a>
+                                    </li>
+                                <li>
+                                        <a name="themeTag" title="사회복지 선택" id="themeTag102431" href="#this01" onclick="javascript:fn_clickThemeCode(102431); return false;" class="jobdicType_icon_12" value="102431"> 
+                                            <span>사회복지</span>
+                                        </a>
+                                    </li>
+                                <li>
+                                        <a name="themeTag" title="스포츠 선택" id="themeTag102432" href="#this01" onclick="javascript:fn_clickThemeCode(102432); return false;" class="jobdicType_icon_13" value="102432"> 
+                                            <span>스포츠</span>
+                                        </a>
+                                    </li>
+                                <li>
+                                        <a name="themeTag" title="여행 선택" id="themeTag102433" href="#this01" onclick="javascript:fn_clickThemeCode(102433); return false;" class="jobdicType_icon_14" value="102433"> 
+                                            <span>여행</span>
+                                        </a>
+                                    </li>
+                                <li>
+                                        <a name="themeTag" title="영화/드라마 선택" id="themeTag102434" href="#this01" onclick="javascript:fn_clickThemeCode(102434); return false;" class="jobdicType_icon_15" value="102434"> 
+                                            <span>영화/드라마</span>
+                                        </a>
+                                    </li>
+                                <li>
+                                        <a name="themeTag" title="우주/항공 선택" id="themeTag102435" href="#this01" onclick="javascript:fn_clickThemeCode(102435); return false;" class="jobdicType_icon_16" value="102435"> 
+                                            <span>우주/항공</span>
+                                        </a>
+                                    </li>
+                                <li>
+                                        <a name="themeTag" title="음식 선택" id="themeTag102436" href="#this01" onclick="javascript:fn_clickThemeCode(102436); return false;" class="jobdicType_icon_17" value="102436"> 
+                                            <span>음식</span>
+                                        </a>
+                                    </li>
+                                <li>
+                                        <a name="themeTag" title="음악 선택" id="themeTag102437" href="#this01" onclick="javascript:fn_clickThemeCode(102437); return false;" class="jobdicType_icon_18" value="102437"> 
+                                            <span>음악</span>
+                                        </a>
+                                    </li>
+                                <li>
+                                        <a name="themeTag" title="의료/바이오 선택" id="themeTag102438" href="#this01" onclick="javascript:fn_clickThemeCode(102438); return false;" class="jobdicType_icon_19" value="102438"> 
+                                            <span>의료/바이오</span>
+                                        </a>
+                                    </li>
+                                <li>
+                                        <a name="themeTag" title="환경/생태 선택" id="themeTag102439" href="#this01" onclick="javascript:fn_clickThemeCode(102439); return false;" class="jobdicType_icon_20" value="102439"> 
+                                            <span>환경/생태</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                    </div>
+    
+    <div id="tab02" class="tabWrap" style="display: none;">
+                        <div class="tab_info">
+                        <p>신체·운동과 같은 <span>핵심능력</span> 선택을 통해 <span>직업군</span>을 선택하거나 직업군을 직접 선택하여 직업을 검색할 수 있습니다.</p>
+                        <button type="button" class="btn_re" onclick="javascript:fn_clear('2')">선택초기화</button>
+                    </div>
+                    <ul class="type1 jobdicType_icon_bx02">								
+                        <li>
+                                        <a name="abltyTagA" title="신체·운동능력 선택" id="abltyTagA100829" data-value="104718,104719,104720,104721" href="#this01" onclick="javascript:fn_clickAbltyCode(100829, 'ablty','104718,104719,104720,104721'); return false;" class="jobdicType_icon_1"> 
+                                            <span>신체·운동능력</span>
+                                        </a>
+                                    </li>
+                                <li>
+                                        <a name="abltyTagA" title="손재능 선택" id="abltyTagA100830" href="#this01" data-value="104722,104723,104724,104725,104726" onclick="javascript:fn_clickAbltyCode(100830, 'ablty','104722,104723,104724,104725,104726'); return false;" class="jobdicType_icon_2"> 
+                                            <span>손재능</span>
+                                        </a>
+                                    </li>
+                                <li>
+                                        <a name="abltyTagA" title="공간지각력 선택" id="abltyTagA100831" href="#this01" data-value="104726,104727,104728,104729" onclick="javascript:fn_clickAbltyCode(100831, 'ablty','104726,104727,104728,104729'); return false;" class="jobdicType_icon_3"> 
+                                            <span>공간지각력</span>
+                                        </a>
+                                    </li>
+                                <li>
+                                        <a name="abltyTagA" title="음악능력 선택" id="abltyTagA100832" href="#this01"data-value="104730,104731" onclick="javascript:fn_clickAbltyCode(100832, 'ablty','104730,104731'); return false;" class="jobdicType_icon_4"> 
+                                            <span>음악능력</span>
+                                        </a>
+                                    </li>
+                                <li>
+                                        <a name="abltyTagA" title="창의력 선택" id="abltyTagA100833" href="#this01" data-value="104732,104733,104734,104735,104745,104753,104755" onclick="javascript:fn_clickAbltyCode(100833, 'ablty','104732,104733,104734,104735,104745,104753,104755'); return false;" class="jobdicType_icon_5"> 
+                                            <span>창의력</span>
+                                        </a>
+                                    </li>
+                                <li>
+                                        <a name="abltyTagA" title="언어능력 선택" id="abltyTagA100834" href="#this01" data-value="104737,104742,104744,104745,104759" onclick="javascript:fn_clickAbltyCode(100834, 'ablty','104737,104742,104744,104745,104759'); return false;" class="jobdicType_icon_6"> 
+                                            <span>언어능력</span>
+                                        </a>
+                                    </li>
+                                <li>
+                                        <a name="abltyTagA" title="수리·논리력 선택" id="abltyTagA100835" href="#this01" data-value="104728,104729,104737,104738,104739,104740,104741,104742,104743,104759,104760" onclick="javascript:fn_clickAbltyCode(100835, 'ablty','104728,104729,104737,104738,104739,104740,104741,104742,104743,104759,104760'); return false;" class="jobdicType_icon_7"> 
+                                            <span>수리·논리력</span>
+                                        </a>
+                                    </li>
+                                <li>
+                                        <a name="abltyTagA" title="자기성찰능력 선택" id="abltyTagA100836" href="#this01" data-value="104736,104737,104738,104739,104746,104759" onclick="javascript:fn_clickAbltyCode(100836, 'ablty','104736,104737,104738,104739,104746,104759'); return false;" class="jobdicType_icon_8"> 
+                                            <span>자기성찰능력</span>
+                                        </a>
+                                    </li>
+                                <li>
+                                        <a name="abltyTagA" title="대인관계능력 선택" id="abltyTagA100837" href="#this01" data-value="104746,104747,104748,104749,104750,104751,104752" onclick="javascript:fn_clickAbltyCode(100837, 'ablty','104746,104747,104748,104749,104750,104751,104752'); return false;" class="jobdicType_icon_9"> 
+                                            <span>대인관계능력</span>
+                                        </a>
+                                    </li>
+                                <li>
+                                        <a name="abltyTagA" title="자연친화력 선택" id="abltyTagA100838" href="#this01" data-value="104756,104757,104758" onclick="javascript:fn_clickAbltyCode(100838, 'ablty','104756,104757,104758'); return false;" class="jobdicType_icon_10"> 
+                                            <span>자연친화력</span>
+                                        </a>
+                                    </li>
+                                <li>
+                                        <a name="abltyTagA" title="예술시각능력 선택" id="abltyTagA100839" href="#this01" data-value="104733,104734,104735,104753,104754,104755" onclick="javascript:fn_clickAbltyCode(100839, 'ablty','104733,104734,104735,104753,104754,104755'); return false;" class="jobdicType_icon_11"> 
+                                            <span>예술시각능력</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                    <ul class="job_type_fl">
+                        <li name="aptdTagLi" id="aptdTagLi104718" class="">
+                                        <input type="checkbox" name="aptdCheck" id="aptdCheck104718" value="104718" onclick="javascript:fn_clickAbltyCode(104718, 'aptd')">
+                                        <label for="aptdCheck104718">운동 관련직</label>
+                                    </li>
+                                <li name="aptdTagLi" id="aptdTagLi104719" class="">
+                                        <input type="checkbox" name="aptdCheck" id="aptdCheck104719" value="104719" onclick="javascript:fn_clickAbltyCode(104719, 'aptd')">
+                                        <label for="aptdCheck104719">무용 관련직</label>
+                                    </li>
+                                <li name="aptdTagLi" id="aptdTagLi104720" class="">
+                                        <input type="checkbox" name="aptdCheck" id="aptdCheck104720" value="104720" onclick="javascript:fn_clickAbltyCode(104720, 'aptd')">
+                                        <label for="aptdCheck104720">안전 관련직</label>
+                                    </li>
+                                <li name="aptdTagLi" id="aptdTagLi104721" class="">
+                                        <input type="checkbox" name="aptdCheck" id="aptdCheck104721" value="104721" onclick="javascript:fn_clickAbltyCode(104721, 'aptd')">
+                                        <label for="aptdCheck104721">일반운전 관련직</label>
+                                    </li>
+                                <li name="aptdTagLi" id="aptdTagLi104722" class="">
+                                        <input type="checkbox" name="aptdCheck" id="aptdCheck104722" value="104722" onclick="javascript:fn_clickAbltyCode(104722, 'aptd')">
+                                        <label for="aptdCheck104722">기능직</label>
+                                    </li>
+                                <li name="aptdTagLi" id="aptdTagLi104723" class="">
+                                        <input type="checkbox" name="aptdCheck" id="aptdCheck104723" value="104723" onclick="javascript:fn_clickAbltyCode(104723, 'aptd')">
+                                        <label for="aptdCheck104723">의복제조 관련직</label>
+                                    </li>
+                                <li name="aptdTagLi" id="aptdTagLi104724" class="">
+                                        <input type="checkbox" name="aptdCheck" id="aptdCheck104724" value="104724" onclick="javascript:fn_clickAbltyCode(104724, 'aptd')">
+                                        <label for="aptdCheck104724">조리 관련직</label>
+                                    </li>
+                                <li name="aptdTagLi" id="aptdTagLi104725" class="">
+                                        <input type="checkbox" name="aptdCheck" id="aptdCheck104725" value="104725" onclick="javascript:fn_clickAbltyCode(104725, 'aptd')">
+                                        <label for="aptdCheck104725">이미용 관련직</label>
+                                    </li>
+                                <li name="aptdTagLi" id="aptdTagLi104726" class="">
+                                        <input type="checkbox" name="aptdCheck" id="aptdCheck104726" value="104726" onclick="javascript:fn_clickAbltyCode(104726, 'aptd')">
+                                        <label for="aptdCheck104726">기타 게임·오락·스포츠 관련직</label>
+                                    </li>
+                                <li name="aptdTagLi" id="aptdTagLi104727" class="">
+                                        <input type="checkbox" name="aptdCheck" id="aptdCheck104727" value="104727" onclick="javascript:fn_clickAbltyCode(104727, 'aptd')">
+                                        <label for="aptdCheck104727">고급 운전 관련직</label>
+                                    </li>
+                                <li name="aptdTagLi" id="aptdTagLi104728" class="">
+                                        <input type="checkbox" name="aptdCheck" id="aptdCheck104728" value="104728" onclick="javascript:fn_clickAbltyCode(104728, 'aptd')">
+                                        <label for="aptdCheck104728">공학 기술직</label>
+                                    </li>
+                                <li name="aptdTagLi" id="aptdTagLi104729" class="">
+                                        <input type="checkbox" name="aptdCheck" id="aptdCheck104729" value="104729" onclick="javascript:fn_clickAbltyCode(104729, 'aptd')">
+                                        <label for="aptdCheck104729">공학 전문직</label>
+                                    </li>
+                                <li name="aptdTagLi" id="aptdTagLi104730" class="">
+                                        <input type="checkbox" name="aptdCheck" id="aptdCheck104730" value="104730" onclick="javascript:fn_clickAbltyCode(104730, 'aptd')">
+                                        <label for="aptdCheck104730">음악 관련직</label>
+                                    </li>
+                                <li name="aptdTagLi" id="aptdTagLi104731" class="">
+                                        <input type="checkbox" name="aptdCheck" id="aptdCheck104731" value="104731" onclick="javascript:fn_clickAbltyCode(104731, 'aptd')">
+                                        <label for="aptdCheck104731">악기 관련직</label>
+                                    </li>
+                                <li name="aptdTagLi" id="aptdTagLi104732" class="">
+                                        <input type="checkbox" name="aptdCheck" id="aptdCheck104732" value="104732" onclick="javascript:fn_clickAbltyCode(104732, 'aptd')">
+                                        <label for="aptdCheck104732">연기 관련직</label>
+                                    </li>
+                                <li name="aptdTagLi" id="aptdTagLi104733" class="">
+                                        <input type="checkbox" name="aptdCheck" id="aptdCheck104733" value="104733" onclick="javascript:fn_clickAbltyCode(104733, 'aptd')">
+                                        <label for="aptdCheck104733">웹·게임·애니메이션 관련직</label>
+                                    </li>
+                                <li name="aptdTagLi" id="aptdTagLi104734" class="">
+                                        <input type="checkbox" name="aptdCheck" id="aptdCheck104734" value="104734" onclick="javascript:fn_clickAbltyCode(104734, 'aptd')">
+                                        <label for="aptdCheck104734">미술 및 공예 관련직</label>
+                                    </li>
+                                <li name="aptdTagLi" id="aptdTagLi104735" class="">
+                                        <input type="checkbox" name="aptdCheck" id="aptdCheck104735" value="104735" onclick="javascript:fn_clickAbltyCode(104735, 'aptd')">
+                                        <label for="aptdCheck104735">기타 특수 예술직</label>
+                                    </li>
+                                <li name="aptdTagLi" id="aptdTagLi104736" class="">
+                                        <input type="checkbox" name="aptdCheck" id="aptdCheck104736" value="104736" onclick="javascript:fn_clickAbltyCode(104736, 'aptd')">
+                                        <label for="aptdCheck104736">사회서비스직</label>
+                                    </li>
+                                <li name="aptdTagLi" id="aptdTagLi104737" class="">
+                                        <input type="checkbox" name="aptdCheck" id="aptdCheck104737" value="104737" onclick="javascript:fn_clickAbltyCode(104737, 'aptd')">
+                                        <label for="aptdCheck104737">인문계 교육 관련직</label>
+                                    </li>
+                                <li name="aptdTagLi" id="aptdTagLi104738" class="">
+                                        <input type="checkbox" name="aptdCheck" id="aptdCheck104738" value="104738" onclick="javascript:fn_clickAbltyCode(104738, 'aptd')">
+                                        <label for="aptdCheck104738">이공계 교육 관련직</label>
+                                    </li>
+                                <li name="aptdTagLi" id="aptdTagLi104739" class="">
+                                        <input type="checkbox" name="aptdCheck" id="aptdCheck104739" value="104739" onclick="javascript:fn_clickAbltyCode(104739, 'aptd')">
+                                        <label for="aptdCheck104739">의료관련 전문직</label>
+                                    </li>
+                                <li name="aptdTagLi" id="aptdTagLi104740" class="">
+                                        <input type="checkbox" name="aptdCheck" id="aptdCheck104740" value="104740" onclick="javascript:fn_clickAbltyCode(104740, 'aptd')">
+                                        <label for="aptdCheck104740">IT관련전문직</label>
+                                    </li>
+                                <li name="aptdTagLi" id="aptdTagLi104741" class="">
+                                        <input type="checkbox" name="aptdCheck" id="aptdCheck104741" value="104741" onclick="javascript:fn_clickAbltyCode(104741, 'aptd')">
+                                        <label for="aptdCheck104741">금융 및 경영 관련직</label>
+                                    </li>
+                                <li name="aptdTagLi" id="aptdTagLi104742" class="">
+                                        <input type="checkbox" name="aptdCheck" id="aptdCheck104742" value="104742" onclick="javascript:fn_clickAbltyCode(104742, 'aptd')">
+                                        <label for="aptdCheck104742">인문 및 사회과학 관련직</label>
+                                    </li>
+                                <li name="aptdTagLi" id="aptdTagLi104743" class="">
+                                        <input type="checkbox" name="aptdCheck" id="aptdCheck104743" value="104743" onclick="javascript:fn_clickAbltyCode(104743, 'aptd')">
+                                        <label for="aptdCheck104743">회계 관련직</label>
+                                    </li>
+                                <li name="aptdTagLi" id="aptdTagLi104744" class="">
+                                        <input type="checkbox" name="aptdCheck" id="aptdCheck104744" value="104744" onclick="javascript:fn_clickAbltyCode(104744, 'aptd')">
+                                        <label for="aptdCheck104744">언어 관련 전문직</label>
+                                    </li>
+                                <li name="aptdTagLi" id="aptdTagLi104745" class="">
+                                        <input type="checkbox" name="aptdCheck" id="aptdCheck104745" value="104745" onclick="javascript:fn_clickAbltyCode(104745, 'aptd')">
+                                        <label for="aptdCheck104745">작가 관련직</label>
+                                    </li>
+                                <li name="aptdTagLi" id="aptdTagLi104746" class="">
+                                        <input type="checkbox" name="aptdCheck" id="aptdCheck104746" value="104746" onclick="javascript:fn_clickAbltyCode(104746, 'aptd')">
+                                        <label for="aptdCheck104746">교육관련 서비스직</label>
+                                    </li>
+                                <li name="aptdTagLi" id="aptdTagLi104747" class="">
+                                        <input type="checkbox" name="aptdCheck" id="aptdCheck104747" value="104747" onclick="javascript:fn_clickAbltyCode(104747, 'aptd')">
+                                        <label for="aptdCheck104747">기획서비스직</label>
+                                    </li>
+                                <li name="aptdTagLi" id="aptdTagLi104748" class="">
+                                        <input type="checkbox" name="aptdCheck" id="aptdCheck104748" value="104748" onclick="javascript:fn_clickAbltyCode(104748, 'aptd')">
+                                        <label for="aptdCheck104748">매니지먼트 관련직</label>
+                                    </li>
+                                <li name="aptdTagLi" id="aptdTagLi104749" class="">
+                                        <input type="checkbox" name="aptdCheck" id="aptdCheck104749" value="104749" onclick="javascript:fn_clickAbltyCode(104749, 'aptd')">
+                                        <label for="aptdCheck104749">보건의료 관련 서비스직</label>
+                                    </li>
+                                <li name="aptdTagLi" id="aptdTagLi104750" class="">
+                                        <input type="checkbox" name="aptdCheck" id="aptdCheck104750" value="104750" onclick="javascript:fn_clickAbltyCode(104750, 'aptd')">
+                                        <label for="aptdCheck104750">사무 관련직</label>
+                                    </li>
+                                <li name="aptdTagLi" id="aptdTagLi104751" class="">
+                                        <input type="checkbox" name="aptdCheck" id="aptdCheck104751" value="104751" onclick="javascript:fn_clickAbltyCode(104751, 'aptd')">
+                                        <label for="aptdCheck104751">영업관련 서비스직</label>
+                                    </li>
+                                <li name="aptdTagLi" id="aptdTagLi104752" class="">
+                                        <input type="checkbox" name="aptdCheck" id="aptdCheck104752" value="104752" onclick="javascript:fn_clickAbltyCode(104752, 'aptd')">
+                                        <label for="aptdCheck104752">일반 서비스직</label>
+                                    </li>
+                                <li name="aptdTagLi" id="aptdTagLi104753" class="">
+                                        <input type="checkbox" name="aptdCheck" id="aptdCheck104753" value="104753" onclick="javascript:fn_clickAbltyCode(104753, 'aptd')">
+                                        <label for="aptdCheck104753">디자인 관련직</label>
+                                    </li>
+                                <li name="aptdTagLi" id="aptdTagLi104754" class="">
+                                        <input type="checkbox" name="aptdCheck" id="aptdCheck104754" value="104754" onclick="javascript:fn_clickAbltyCode(104754, 'aptd')">
+                                        <label for="aptdCheck104754">영상 관련직</label>
+                                    </li>
+                                <li name="aptdTagLi" id="aptdTagLi104755" class="">
+                                        <input type="checkbox" name="aptdCheck" id="aptdCheck104755" value="104755" onclick="javascript:fn_clickAbltyCode(104755, 'aptd')">
+                                        <label for="aptdCheck104755">예술기획 관련직</label>
+                                    </li>
+                                <li name="aptdTagLi" id="aptdTagLi104756" class="">
+                                        <input type="checkbox" name="aptdCheck" id="aptdCheck104756" value="104756" onclick="javascript:fn_clickAbltyCode(104756, 'aptd')">
+                                        <label for="aptdCheck104756">자연친화 관련직</label>
+                                    </li>
+                                <li name="aptdTagLi" id="aptdTagLi104757" class="">
+                                        <input type="checkbox" name="aptdCheck" id="aptdCheck104757" value="104757" onclick="javascript:fn_clickAbltyCode(104757, 'aptd')">
+                                        <label for="aptdCheck104757">농생명산업 관련직</label>
+                                    </li>
+                                <li name="aptdTagLi" id="aptdTagLi104758" class="">
+                                        <input type="checkbox" name="aptdCheck" id="aptdCheck104758" value="104758" onclick="javascript:fn_clickAbltyCode(104758, 'aptd')">
+                                        <label for="aptdCheck104758">환경관련 전문직</label>
+                                    </li>
+                                <li name="aptdTagLi" id="aptdTagLi104759" class="">
+                                        <input type="checkbox" name="aptdCheck" id="aptdCheck104759" value="104759" onclick="javascript:fn_clickAbltyCode(104759, 'aptd')">
+                                        <label for="aptdCheck104759">법률 및 사회활동 관련직</label>
+                                    </li>
+                                <li name="aptdTagLi" id="aptdTagLi104760" class="">
+                                        <input type="checkbox" name="aptdCheck" id="aptdCheck104760" value="104760" onclick="javascript:fn_clickAbltyCode(104760, 'aptd')">
+                                        <label for="aptdCheck104760">이학 전문직</label>
+                                    </li>
+                                </ul>
+                    <div id="abltyTagDiv" class="job_type_check_list" style="display:none">
+                        <dl>
+                            <dt>적성유형</dt>
+                            <dd id="abltyTagDd"></dd>
+                        </dl>
+                        <dl>
+                            <dt>적성유형별직군</dt>
+                            <dd id="aptdTagDd"></dd>
+                        </dl>
+                    </div>
+                    </div>
+    
+    
+    
+    
+                </fieldset>
+            </form>
+
+
+
+        </div>
+        <div>
+            <p class="result_list_info" id="result_list_info"> 총 <strong id="totalCnt">[[${total}]]</strong> 건이 검색되었습니다</p>
+            <div class="select_right wid-auto">
+                <div class="select">
+                    <select id="tagUl2" name="sortType" class="iList" title="정렬순서 선택">
+                        <option class="option" value="R" selected="" hidden="">정렬순서</option>
+                        <option class="option" value="N">최신순</option>
+                        <option class="option" value="V">조회순</option>
+                        <option class="option" value="L">추천순</option>
+                        <option class="option" value="A">가나다순</option>
+                    </select>
+                    <select id="tagUl1" name="pageSize" class="iList" title="목록보기 개수 선택" style="">
+                    <option class="option" value="9" th:selected="${pageVO.amount==9}">9개씩보기</option>
+                    <option class="option" value="18" th:selected="${pageVO.amount==18}">18개씩보기</option>
+                    <option class="option" value="27" th:selected="${pageVO.amount==27}">27개씩보기</option></select>
+                    <a href="javascript:;" onclick="changeAmount()" class="list_apply" title="목록보기 변경시 페이지가 새로고침됩니다">적용</a></div>
+                    <span class="list_type"> 
+                     <a href="#this01" onclick="javascript:fn_changeListType('D'); return false;" title="선택됨">
+                        <img id="detailListImage" th:src="@{/img/icon_board_gallery_on.gif}" alt="갤러리 리스트 보기"></a>
+                     <a href="#this01" onclick="javascript:fn_changeListType('S'); return false;" title="">
+                        <img id="simpleListImage" th:src="@{/img/icon_board_list.gif}" alt="간편 리스트 보기"></a> 
+                 </span>
+            </div>
+           
+        </div>
+        <div class="board_list jobList">
+            <!-- 카드형 -->
+            <div id="searchList">
+				<ul id="JOB_DETAIL_LIST" class="search_result_list">
+
+
+
+
+
+
+
+</ul>
+</div>
+
+            <!-- 테이블형 -->	
+            <table id="JOB_SIMPLE_LIST" summary="번호, 직업명, 분야, 유사직업, 자료로 구성된 표" style="display: none;">
+                <caption>직업정보 검색 결과</caption>
+                <colgroup>
+                    <col style="width:70px">
+                    <col style="width:160px">
+                    <col style="width:40px">
+                    <col style="width:40px">
+                    <col style="width:40px">
+                </colgroup>
+                <thead>
+                <tr>
+                    <th scope="col">직업명</th>
+                    <th scope="col">하는일</th>
+                    <th scope="col">평균연봉</th>
+                    <th scope="col">일가정균형</th>
+                    <th scope="col" class="last">사회공헌</th>
+                </tr>
+                </thead>
+                <tbody id="searchTbody"></tbody>
+            </table>
+        </div>
+        <div id="pagination" class="pagination">
+			
+            
+            </div>
+    </div>
+</div>
+	
+	
+
+	
+
+
+</th:block>
+
+</html>

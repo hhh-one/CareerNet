@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+
+<th:block th:replace="~{./include/layout::setContent(~{:: #wrap})}">
+	
+	<div id="wrap">
+		안녕하세요~!~!~!~!
+		테스트입니다
+		
+	</div>
+</th:block>
+	
+	<script>
+		
+			
+		$.ajax({
+				url: "https://www.career.go.kr/cnet/openapi/getOpenApi?apiKey=7d6a6a51c1013a1ed8389d01c2f5248b&svcType=api&svcCode=JOB&contentType=json&gubun=job_dic_list&perPage=1000",
+				type:'GET',
+				
+				success:function(data1){
+					console.log(data1)
+						$.ajax({
+							
+						 url: "../api/getData",
+    					type: "POST", // Use POST to send data to the server
+   						 data: JSON.stringify(data1.dataSearch.content), // Convert JSON data to string
+					    contentType: "application/json; charset=UTF-8",
+					    success: function(data) {
+					        console.log(data);
+					    },
+					    error: function(status, error) {
+					        console.log(status);
+					        console.log("Error occurred.");
+					    }
+							
+						})
+				
+				},
+				error:function(status,error){
+					console.log(status);
+					console.log("잘못 입력한듯?");
+					
+					
+				}
+				
+			})		
+		
+			
+	</script>
+	
+
+

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+<th:block th:replace="~{./include/layout::setContent(~{:: #container})}">
+        <div id="container" class="mb-srvc-cont">
+        <div class="wide-cont-hd">
+            <h2 class="visual-title">
+                <span class="fc-blue">회원 유형별</span> 맞춤 서비스
+                <p class="sub-title">커리어넷을 보다 적극적으로 이용하고 싶으신가요?<br>내가 해당되는 대상을 선택하여 보다 쉽게 커리어넷 서비스를 활용해보세요.
+                    </p>
+            </h2>
+        </div>
+        <div class="contents">
+            <div class="sel-mb-type">
+                <ul class="btn-mbty-wrap"><!-- 선택된 상태 li에 class="selected" 추가 -->
+                    <li class="mbty1"><a href="#" class="btn-mbtype" title="주니어 커리어넷 바로가기(새창)">초등학생</a></li>
+                    <li class="mbty2"><a href="#" class="btn-mbtype">중학생</a></li>
+                    <li class="mbty3 selected"><a href="#" class="btn-mbtype">고등학생</a></li>
+                    <li class="mbty4"><a href="#" class="btn-mbtype">대학생·일반</a></li>
+                    <li class="mbty5 "><a href="#" class="btn-mbtype">학부모</a></li>
+                    <li class="mbty6"><a href="#" class="btn-mbtype">교사</a></li>
+                </ul>
+                <div class="bx-wrapper" style="max-width: 870px;"><div class="bx-viewport" aria-live="polite" style="width: 100%; overflow: hidden; position: relative; height: 387px;"><div class="mbty-menu-container" style="width: 6215%; position: relative; transition-duration: 0.5s; transform: translate3d(-3480px, 0px, 0px);">
+                    <div class="menu-wrap" aria-hidden="true" style="float: left; list-style: none; position: relative; width: 868px;">
+                        <div class="subject ele">
+                            <span>초등학생만을 위한<br>진로 길잡이</span>
+                            주니어 커리어넷
+                        </div>
+                        <div class="menu-list">
+                            <div class="elementary">
+                                <p class="intro">주니어 커리어넷은 초등학생의 진로탐색과 자아이해를 돕는<br><span>‘초등학생 전용’</span> 진로 교육 사이트 입니다.</p>
+                                <a href="https://www.career.go.kr/jr/" class="btn-gojr" target="_blank" title="새창 열림"><span>주니어 커리어넷 바로 가기</span></a>
+                                <ul class="jr-mu-info">
+                                    <li class="mn01"><strong>나를 알아보아요</strong>다양한 진로검사와<br>진로카드로 나를 이해하고<br>탐구해볼 수 있어요.</li>
+                                    <li class="mn02"><strong>진로정보를 찾아봐요</strong>나의 장래희망과 연관된<br>진로정보와 직업정보를<br>찾아 보세요.</li>
+                                    <li class="mn03"><strong>진로고민이 있어요</strong>친구들, 직업 전문가들과<br>함께 고민을 나누고<br>알아볼 수 있어요.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-wrap" aria-hidden="true" style="float: left; list-style: none; position: relative; width: 868px;">
+                        <div class="subject ele">
+                            <span>중학생(<em>14~16세 청소년</em>)용 </span>
+                            꿈과 목표 설정을 위한<br>직업 및 진로 탐색</div>
+                        <ul class="menu-list">
+                            <li>
+                                        <strong><span class="num">1</span>자기이해</strong>
+                                        <ul>
+                                            <li><a href="/cnet/front/examen/inspctStd.do">중·고등학생용 심리검사</a></li>
+                                                <li><a href="/cnet/front/examen/inspctStd.do">아로플러스</a></li>
+                                                </ul>
+                                    </li>
+                                <li>
+                                        <strong><span class="num">2</span>진로고민 해결하기</strong>
+                                        <ul>
+                                            <li><a href="/cnet/front/counsel/counselInfo.do?frontMenu=Y">상담신청</a></li>
+                                                </ul>
+                                    </li>
+                                <li>
+                                        <strong><span class="num">3</span>진로정보탐색</strong>
+                                        <ul>
+                                            <li><a href="/cnet/front/base/job/jobList.do">직업정보</a></li>
+                                                <li><a href="/cnet/front/base/guidebook/guideBookList.do">미래직업</a></li>
+                                                <li><a href="/cnet/front/web/movie/catMapp/catMappList.do?SUP_CAT_ID=MCAT0037&amp;searchCatID=MCAT0040&amp;searchCatIDs=MCAT0041">중학생용 진로동영상</a></li>
+                                                <li><a href="/cnet/front/base/major/FhiSchMajorList.do">고등학교 학과정보</a></li>
+                                                <li><a href="/cnet/front/base/major/FunivMajorList.do">대학교 학과정보</a></li>
+                                                </ul>
+                                    </li>
+                                </ul>
+                    </div>
+                    <div class="menu-wrap" aria-hidden="false" style="float: left; list-style: none; position: relative; width: 868px;">
+                        <div class="subject ele">
+                            <span>고등학생(<em>17~19세 청소년</em>)용</span>
+                            적성과 흥미 탐색을 통한<br>학과 및 직업 정보 탐색</div>
+                        <ul class="menu-list">
+                            <li>
+                                        <strong><span class="num">1</span>자기이해</strong>
+                                        <ul>
+                                            <li><a href="/cnet/front/examen/inspctStd.do">중·고등학생용 심리검사</a></li>
+                                                <li><a href="/cnet/front/examen/inspctStd.do">아로플러스</a></li>
+                                                </ul>
+                                    </li>
+                                <li>
+                                        <strong><span class="num">2</span>진로고민 해결하기</strong>
+                                        <ul>
+                                            <li><a href="/cnet/front/counsel/counselInfo.do?frontMenu=Y">상담신청</a></li>
+                                                <li><a href="/cnet/front/commbbs/jSolutionBest/FcommBbsList.do">진로솔루션</a></li>
+                                                </ul>
+                                    </li>
+                                <li>
+                                        <strong><span class="num">3</span>진로정보탐색</strong>
+                                        <ul>
+                                            <li><a href="/cnet/front/base/job/jobList.do">직업정보</a></li>
+                                                <li><a href="/cnet/front/base/guidebook/guideBookList.do">미래직업</a></li>
+                                                <li><a href="/cnet/front/web/movie/catMapp/catMappList.do?SUP_CAT_ID=MCAT0037&amp;searchCatID=MCAT0040&amp;searchCatIDs=MCAT0040">고등학생용 진로동영상</a></li>
+                                                <li><a href="/cnet/front/base/major/FunivMajorList.do">대학교 학과정보</a></li>
+                                                <li><a href="/cnet/front/base/major/FunivMajorInterviewList.do">학과인터뷰</a></li>
+                                                <li><a href="/cnet/front/base/school/schoolUniversityList.do">대학교정보</a></li>
+                                                </ul>
+                                    </li>
+                                </ul>
+                    </div>
+                    <div class="menu-wrap" aria-hidden="true" style="float: left; list-style: none; position: relative; width: 868px;">
+                        <div class="subject ele">
+                            <span>대학생·일반용</span>
+                            목표달성을 위한<br>진로탐색과 정보</div>
+                        <ul class="menu-list">
+                            <li>
+                                        <strong><span class="num">1</span>자기이해</strong>
+                                        <ul>
+                                            <li><a href="/cnet/front/examen/inspctNor.do">대학생·일반용 심리검사</a></li>
+                                                </ul>
+                                    </li>
+                                <li>
+                                        <strong><span class="num">2</span>진로고민 해결하기</strong>
+                                        <ul>
+                                            <li><a href="/cnet/front/counsel/counselInfo.do?frontMenu=Y">상담신청</a></li>
+                                                </ul>
+                                    </li>
+                                <li>
+                                        <strong><span class="num">3</span>진로정보탐색</strong>
+                                        <ul>
+                                            <li><a href="/cnet/front/base/job/jobInterview_new/jobSpecialList_new.do">직업인 인터뷰</a></li>
+                                                <li><a href="/cnet/front/base/job/jobInterview_new/jobSpecialList_new.do?INTV_KND=101956">커리어패스</a></li>
+                                                <li><a href="/cnet/front/base/job/jobList.do">직업정보</a></li>
+                                                <li><a href="/cnet/front/base/guidebook/guideBookList.do">미래직업</a></li>
+                                                <li><a href="/cnet/front/web/movie/catMapp/catMappList.do?SUP_CAT_ID=MCAT0037&amp;searchCatID=MCAT0039&amp;searchCatIDs=MCAT0039">대학생·일반용 진로동영상</a></li>
+                                                </ul>
+                                    </li>
+                                </ul>
+                    </div>
+                    <div class="menu-wrap" aria-hidden="true" style="float: left; list-style: none; position: relative; width: 868px;">
+                        <div class="subject ele">
+                            <span>학부모용</span>
+                            자녀의 진로지도에 필요한<br>진로정보 및 소식</div>
+                        <ul class="menu-list">
+                            <li>
+                                        <strong><span class="num">1</span>학부모를 위한 진로소식</strong>
+                                        <ul>
+                                            <li><a href="/cnet/front/web/courseEdu/dreamLetter/dreamLetterList.do">드림레터</a></li>
+                                                <li><a href="/cnet/front/commbbs/recipe/commBbsList.do">진로레시피</a></li>
+                                                </ul>
+                                    </li>
+                                <li>
+                                        <strong><span class="num">2</span>자녀 진로고민 해결하기</strong>
+                                        <ul>
+                                            <li><a href="/cnet/front/counsel/counselInfo.do?frontMenu=Y">상담신청</a></li>
+                                                </ul>
+                                    </li>
+                                <li>
+                                        <strong><span class="num">3</span>자녀 진로지도를 위한<br>
+    콘텐츠</strong>
+                                        <ul>
+                                            <li><a href="/cnet/front/eduInfo/parentsGuide.do">학부모 길라잡이</a></li>
+                                                <li><a href="/cnet/front/commbbs/jSolutionBest/FcommBbsList.do">진로솔루션</a></li>
+                                                <li><a href="/cnet/front/base/job/jobInterview_new/jobSpecialList_new.do?INTV_KND=101956">커리어패스</a></li>
+                                                <li><a href="/cnet/front/commbbs/courseMenu/commBbsList.do">진로교육자료</a></li>
+                                                <li><a href="/cnet/front/cosecch/cosecchSiteNewList.do">진로교육 관련사이트</a></li>
+                                                </ul>
+                                    </li>
+                                </ul>
+                    </div>
+                    <div class="menu-wrap" aria-hidden="true" style="float: left; list-style: none; position: relative; width: 868px;">
+                        <div class="subject ele">
+                            <span>교사용</span>
+                            학생 진로지도에 필요한<br>진로지도 활용 자료<br>및 콘텐츠</div>
+                        <ul class="menu-list">
+                            <li>
+                                        <strong><span class="num">1</span>학생 진로지도 및<br>
+    진로교육을 위한 콘텐츠</strong>
+                                        <ul>
+                                            <li><a href="/cnet/front/commbbs/courseMenu/commBbsList.do">진로교육자료</a></li>
+                                                <li><a href="/cnet/front/commbbs/jSolutionBest/FcommBbsList.do">진로솔루션</a></li>
+                                                <li><a href="/cnet/front/web/movie/catMapp/catMappList.do?SUP_CAT_ID=MCAT0037">진로동영상</a></li>
+                                                <li><a href="/cnet/front/base/job/jobList.do#tab1">직업정보</a></li>
+                                                <li><a href="/cnet/front/base/major/FunivMajorList.do">학과정보</a></li>
+                                                <li><a href="/cnet/front/base/school/schoolUniversityList.do">학교정보</a></li>
+                                                <li><a href="/cnet/front/base/job/jobInterview_new/jobSpecialList_new.do?INTV_KND=101956">커리어패스</a></li>
+                                                <li><a href="/cnet/front/web/courseEdu/dreamLetter/dreamLetterList.do">드림레터</a></li>
+                                                </ul>
+                                    </li>
+                                <li>
+                                        <strong><span class="num">2</span>학생지도를 위한<br>
+    진로상담</strong>
+                                        <ul>
+                                            <li><a href="/cnet/front/counsel/counselInfo.do?frontMenu=Y">상담신청</a></li>
+                                                <li><a href="/cnet/front/counsel/counselList.do">상담보기</a></li>
+                                                </ul>
+                                    </li>
+                                </ul>
+                    </div>
+                    </div></div><div class="bx-controls bx-has-controls-direction"><div class="bx-controls-direction"><a class="bx-prev" href="" title="이전 보기">Prev</a><a class="bx-next" href="" title="다음 보기">Next</a></div></div></div>
+                
+                </th:block>
+                <script>
+					
+                    $(document).ready(function(){
+                        var sname ="seq";
+                        var serviceSlide = $('.mbty-menu-container').bxSlider({
+                            pager: false,
+                            infiniteLoop: false,
+                            hideControlOnEnd: true,
+                            adaptiveHeight: true,
+                            keyboardEnabled: true,
+                            touchEnabled: false,
+                            controls: true,
+                            slideWidth: 870,
+                            maxSlides: 1,
+                            onSliderLoad: function () {
+                                $('.bx-next').attr('title','다음 보기');
+                                $('.bx-prev').attr('title','이전 보기');
+                            },
+                            onSlideBefore: function($slideElement, oldIndex, newIndex) {
+                                $('.btn-mbty-wrap > li').eq(newIndex).addClass('selected').siblings().removeClass('selected');
+                            }
+                        });
+    
+                        if(getParam(sname) == '100205'){
+                            $('.btn-mbty-wrap > li').eq(0).addClass('selected').siblings().removeClass('selected');
+                            serviceSlide.goToSlide(0);
+                        }else if(getParam(sname) == '100206'){
+                            $('.btn-mbty-wrap > li').eq(1).addClass('selected').siblings().removeClass('selected');
+                            serviceSlide.goToSlide(1);
+                        }else if(getParam(sname) == '100207'){
+                            $('.btn-mbty-wrap > li').eq(2).addClass('selected').siblings().removeClass('selected');
+                            serviceSlide.goToSlide(2);
+                        }else if(getParam(sname) == '100208'){
+                            $('.btn-mbty-wrap > li').eq(3).addClass('selected').siblings().removeClass('selected');
+                            serviceSlide.goToSlide(3);
+                        }else if(getParam(sname) == '100210'){
+                            $('.btn-mbty-wrap > li').eq(4).addClass('selected').siblings().removeClass('selected');
+                            serviceSlide.goToSlide(4);
+                        }else if(getParam(sname) == '100214'){
+                            $('.btn-mbty-wrap > li').eq(5).addClass('selected').siblings().removeClass('selected');
+                            serviceSlide.goToSlide(5);
+                        }
+    
+                        $('.btn-mbty-wrap .btn-mbtype').on('click', function(e){
+                            e.preventDefault();
+    
+                            var _this = $(this),
+                                    _thisP = _this.parent(),
+                                    slideIndex = _thisP.index();
+                            console.log(_thisP);
+                            console.log(slideIndex);
+                            _thisP.addClass('selected').siblings().removeClass('selected');
+                            serviceSlide.goToSlide(slideIndex);
+                        });
+                    });
+                    function getParam(sname) {
+                        var params = location.search.substr(location.search.indexOf("?") + 1);
+                        var sval = "";
+                        params = params.split("&");
+                        for (var i = 0; i < params.length; i++) {
+                            temp = params[i].split("=");
+                            if ([temp[0]] == sname) { sval = temp[1]; }
+                        }
+                        return sval;
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+   
+    </body>
+</body>
+</html>
