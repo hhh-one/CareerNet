@@ -15,6 +15,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.basic.careernet.bsy.service.jobService;
+import com.basic.careernet.bsy.util.Criteria;
+import com.basic.careernet.bsy.util.pageVO;
 import com.basic.careernet.command.jobVO;
 
 @Controller
@@ -26,17 +28,30 @@ public class jobMainController {
 		
 	
 	@GetMapping("/syBody")
-	public String syBody(Model model) {
+	public String syBody(Model model,Criteria cri) {
 		
-//		ArrayList<jobVO> list=jobService.getList();
-////		System.out.println(list.toString());
-//		int total=jobService.getTotal();
-//		
-//		model.addAttribute("list",list);
+		ArrayList<jobVO> list=jobService.getList();
+		int total=jobService.getTotal();
+		pageVO vo=new pageVO(cri,total);
+//		System.out.println(vo.toString());
+		
+		
+		
+		model.addAttribute("list",list);
+		model.addAttribute("total",total);
+		model.addAttribute("pageVO",vo);
 		return "syBody/syBody";
 	}
+	
+	
+	
+	
 	@GetMapping("/syBody1")
-	public String syBody1() {
+	public String syBody1(int seq, Model model) {
+		
+		jobVO vo= jobService.getContent(seq);
+		
+		model.addAttribute("job",vo);
 		
 		return "syBody/syBody1";
 	}

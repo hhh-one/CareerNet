@@ -44,16 +44,45 @@
   	</insert>
   
 	<select id="getList" resultType="com.basic.careernet.command.jobVO">
-	
-		select * from job order by binary(job)
+		
+		select * from job order by binary(job) limit 0,9;
 	</select>
 	<select id="getTotal" resultType="int">
 	
 		select count(*) from job 
 	</select>
 	
+	<select id="getTarget" resultType="com.basic.careernet.command.jobVO">
 	
+		select * from job order by binary(job) limit #{pageStart},#{amount}
+	</select>
+	<select id="getDataOne" resultType="com.basic.careernet.command.jobVO">
 	
+		select * from job where aptd_type_code=#{bno}
+	</select>
+	
+	<select id="getData" resultType="com.basic.careernet.command.jobVO">
+	
+		select * from job b where aptd_type_code in
+		<foreach item="item" collection="list" open="(" separator="," close=")">
+		#{item}
+		</foreach>
+	 	limit #{cir.pageStart},#{cir.amount}
+	 	
+	
+	</select>
+	<select id="getTotalData" resultType="int">
+	
+		select count(*) from job  b where aptd_type_code in
+		<foreach item="item" collection="list" open="(" separator="," close=")">
+		#{item}
+		</foreach>
+	</select>
+	
+	<select id="getContent" resultType="com.basic.careernet.command.jobVO">
+	
+		select * from job where jobdicSeq=#{seq}
+	</select>
 	
   </mapper>
 

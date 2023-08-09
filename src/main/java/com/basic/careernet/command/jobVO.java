@@ -25,5 +25,4 @@ public class jobVO {
 	private String job;
 	private String possibility;
 	
-	
 }

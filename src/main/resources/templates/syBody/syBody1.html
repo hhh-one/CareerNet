@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
+	
 	<th:block th:replace="~{./include/layout::setContent(~{:: #wrap})}">
     <div id="wrap">
     <div class="inner">
         <div id="contents">
             <h2 class="title_h1"><span class="icon"><strong>직업백과</strong></span></h2>
-            <form name="frm" id="frm" method="post" action="/cnet/front/base/job/jobView.do">
+            <form name="frm" id="frm" method="get" action="syBody">
                 <input type="hidden" name="JOB_NM" id="JOB_NM" value="주차관리원">
                 <input type="hidden" name="SEQ" id="SEQ" value="1120">
                 <input type="hidden" name="LOGIN_ID" id="LOGIN_ID" value="baeksy97">
@@ -17,7 +17,7 @@
                 <div class="job_wrap" id="job_wrap">
                         <div class="left_cont">
                             <div class="sticky"><!--좌측 플로팅영역 wrapping-->
-                                <h3 class="job_name">주차관리원</h3>
+                                <h3 class="job_name">[[${job.job}]]</h3>
                                 <ul class="interest_bx">
                                     <li class="interest01"><a href="/cnet/front/base/job/intrstJobInsertProc.do?SEQ=1120&amp;JOB_NM=주차관리원" onclick="javascript:return false;"><img th:src="@{/img/ico_btn_interest01_off.png}" alt="관심 추가"></a></li>
                                     <li class="interest02 thumb_off"><a href="javascript:;"><img th:src="@{/img/ico_btn_interest02_off.png}" alt="추천"></a></li>
@@ -25,15 +25,15 @@
                                 </ul>
                                 <ul class="job_terms_bx">
                                     <li>
-                                        <em class="grade04"><strong>2,383 만원</strong></em>
+                                        <em class="grade04"><strong>[[${job.salery}]]</strong></em>
                                             <span>평균연봉</span>
                                     </li>
                                     <li>
-                                        <em class="grade03"><strong>보통미만</strong></em>
+                                        <em class="grade03"><strong>보통이상</strong></em>
                                             <span>일·가정균형</span>
                                     </li>
                                     <li>
-                                        <em class="grade01"><strong>보통미만</strong></em>
+                                        <em class="grade01"><strong>[[${job.equalemployment}]]</strong></em>
                                             <span>사회공헌</span>
                                     </li>
                                 </ul>
@@ -59,7 +59,7 @@
                             <div id="tab1" class="right_cont current">
                                 <div class="cont">
                                         <h4>관련직업명</h4>
-                                        <p class="cont_txt">주차장관리원, 주차안내원, 주차요원</p>
+                                        <p class="cont_txt">[[${job.similarJob}]]</p>
                                     </div>
                                 <div class="cont">
                                         <h4>관련학과 및 관련자격</h4>
@@ -73,12 +73,8 @@
                                 <div class="cont">
                                         <h4>하는일</h4>
                                         <ul class="dash_ul">
-                                            <li>
-                                                    주차관리원은 무료 또는 유료 주차 시설에서 효율적 주차장 사용을 위해 차량의 주차 공간을 안내하는 등의 운영 및 관리 업무를 담당합니다.</li>
-                                            <li>
-                                                    주차장 입구에서 차량 입차 시 주차 발권기로부터 주차권을 고객에게 배부합니다.</li>
-                                            <li>
-                                                    차량의 주차장 출입을 유도하기 위하여 차단기를 조작하며, 차량번호 및 주차 예정 시간을 기록합니다.</li>
+                                            <li>[[${job.summary}]]</li>
+                                          
                                             </ul>
                                     </div>
                                 <div class="cont">
@@ -430,7 +426,7 @@
                                 </div>	
                     </div>
                 <div class="btn_wrap">
-                        <button type="button" class="btn_list" onclick="fn_goBack();">목록보기</button>
+                        <input type="submit" class="btn_list" onclick="fn_goBack();" name="목록보기"></input>
                     </div>
                 </form>
         
@@ -438,5 +434,13 @@
 
     </div>
 </div>
+
+</th:block>
+<script th:inline="javascript">
+		
+		console.log('[[${job.job}]]');
+		
+		
+	</script>
 
 </html>

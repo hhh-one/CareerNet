@@ -6,6 +6,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.basic.careernet.bsy.util.Criteria;
 import com.basic.careernet.command.jobVO;
 import com.basic.careernet.command.job_typeVO;
 
@@ -41,6 +42,38 @@ public class jobServiceImpl implements jobService{
 	public int getTotal() {
 		// TODO Auto-generated method stub
 		return jobmapper.getTotal();
+	}
+
+	@Override
+	public List<jobVO> getPage(Criteria cri) {
+		// TODO Auto-generated method stub
+		return jobmapper.getTarget(cri);
+	}
+
+	@Override
+	public List<jobVO> getData(List<Integer> list,Criteria cir) {
+		// TODO Auto-generated method stub
+		
+		
+		return jobmapper.getData(list,cir);
+	}
+
+	@Override
+	public List<jobVO> getDataOne(int bno) {
+		// TODO Auto-generated method stub
+		return jobmapper.getDataOne(bno);
+	}
+
+	@Override
+	public int getTotalData(List<Integer> list) {
+		// TODO Auto-generated method stub
+		return jobmapper.getTotalData(list);
+	}
+
+	@Override
+	public jobVO getContent(int seq) {
+		// TODO Auto-generated method stub
+		return jobmapper.getContent(seq);
 	}
 	
 	
