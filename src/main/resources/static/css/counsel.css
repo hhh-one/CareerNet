@@ -1,0 +1,4833 @@
+@charset "utf-8"; /* 타이틀 */
+.title_h1 .title_comment {
+  margin-top: 12px;
+  font-family: "NanumGothicWeb";
+  font-size: 13px;
+  font-weight: normal;
+  color: #444;
+}
+
+.title_h1 .title_comment .cff5b25 {
+  font-family: "NanumGothicWeb";
+  font-size: 13px;
+  font-weight: normal;
+  color: #ff5b25;
+}
+
+.title_english {
+  font-family: "NanumGothicBoldWeb";
+  font-size: 24px;
+  color: #5385ac;
+}
+
+.stitle_f14 {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* 게시판 탑 */
+.advice_list_top {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.advice_list_top:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.advice_list_top .advice_point_info {
+  display: none;
+}
+
+/*.advice_list_top .advice_point_info {float:right; font-size:11px; color:#ff6633; letter-spacing:-1px; background:url(../../images/front/icon/icon_tip03.gif) no-repeat left top; padding:2px 0 2px 20px;}*/
+/* 게시판 버튼 */
+.advice_list_btm {
+  width: 100%;
+  text-align: center;
+  margin: 25px 0 0;
+}
+
+.advice_list_btm a {
+  display: inline-block;
+  margin-right: -3px;
+}
+
+/*진로솔루션*/
+/* 진로솔루션 목록 */
+.solution-title-wrap {
+  height: 145px;
+}
+
+.img-jinroSolution-top-new {
+  position: absolute;
+  right: 0;
+  bottom: -10px;
+  z-index: 1;
+  width: 339px;
+  height: 185px;
+  background: url(../../images/jinro/img_solution_top2023.png) no-repeat;
+}
+
+.list_num_type02 {
+  margin: 30px 0 18px;
+  font-size: 14px;
+}
+
+.album-wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.nodata {
+  padding-top: 30px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.solution-bx {
+  display: block;
+  height: 297px;
+  border: 1px solid #dadee1;
+}
+
+.solution-bx.new {
+  border-color: #f36405;
+  background: #fffaf3;
+}
+
+.solution-bx.new .ico-new {
+  display: inline-block;
+  width: 30px;
+  height: 16px;
+  line-height: 14px;
+  font-size: 8px;
+  font-weight: 700;
+  color: #ff5400;
+  border: 1px solid #ff5400;
+  border-radius: 5px;
+  background: #fff;
+  text-align: center;
+  box-sizing: border-box;
+  vertical-align: middle;
+  margin-bottom: 1px;
+}
+
+.solution-bx .pic-area {
+  padding: 20px;
+  border-bottom: 1px solid #eceef0;
+}
+
+.solution-bx .pic-area > img {
+  display: block;
+  width: 270px;
+  height: 152px;
+  margin: 0 auto;
+}
+
+.solution-bx .tit-area {
+  padding: 16px 20px 20px;
+}
+
+.solution-bx .tit-area::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.solution-bx .tit-area > strong {
+  display: block;
+  height: 37px;
+  font-size: 14px;
+  color: #333;
+  font-weight: 400;
+  word-break: break-all;
+  margin-bottom: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-height: 1.5em;
+  height: 3em;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.solution-bx .tit-area .view-area {
+  display: flex;
+  font-weight: 500;
+}
+
+.solution-bx .tit-area .view-area .date {
+  flex: 1 1 0;
+}
+
+.solution-bx .tit-area .view-area span {
+  font-size: 12px;
+  color: #777;
+}
+
+.solution-bx .tit-area .ico-bx > span::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 12px;
+  background: url(../../images/jinro/icons_view.png) no-repeat;
+  vertical-align: middle;
+  margin: -3px 6px 0 0;
+}
+
+.solution-bx .tit-area .ico-bx > .download::before {
+  background-position: -16px 0;
+  margin-left: 8px;
+}
+
+/* 진로솔루션 상세 */
+.solution-wrap {
+  border-top: 2px solid #4f6493;
+  padding-top: 18px;
+}
+
+.solution-wrap .titleIn-area {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.solution-wrap .titleIn-area .tit {
+  display: flex;
+  flex: 1 1 0;
+  font-size: 18px;
+  color: #000;
+  font-weight: 500;
+  font-family: "Nanum Gothic", "돋움", dotum, AppleGothic, droidS, sans-serif;
+}
+
+.solution-wrap .titleIn-area .tit span {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.solution-wrap .titleIn-area .tit .year {
+  color: #888;
+  padding: 0 15px 0 8px;
+}
+
+.solution-wrap .titleIn-area .tit .vol-num {
+  color: #4665b1;
+  padding-left: 8px;
+}
+
+.solution-wrap .titleIn-area .date {
+  font-size: 12px;
+  color: #777;
+}
+
+.solution-wrap .titleIn-area .ico-area {
+  margin: 0 15px;
+}
+
+.solution-wrap .titleIn-area .ico-area > span {
+  font-size: 12px;
+  color: #777;
+}
+
+.solution-wrap .titleIn-area .ico-area > span::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 12px;
+  background: url(../../images/jinro/icons_view.png) no-repeat;
+  vertical-align: middle;
+  margin: 0 5px 1px 0;
+}
+
+.solution-wrap .titleIn-area .ico-area > .download::before {
+  background-position: -16px 0;
+  margin-left: 8px;
+}
+
+.solution-wrap .titleIn-area .btn-download {
+  width: 71px;
+  height: 36px;
+  line-height: 36px;
+  padding-left: 35px;
+  background: #506392 url(../../images/jinro/ico_download.png) no-repeat 15px
+    12px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.solution-wrap .titleIn-area + .solution-cont {
+  margin-top: 12px;
+}
+
+.solution-wrap .solution-cont {
+  border: 1px solid #dadee1;
+}
+
+.solution-wrap .solution-cont .cont {
+  padding: 46px 106px;
+}
+
+.solution-wrap .solution-cont .cont > img {
+  max-width: 100%;
+}
+
+.solution-wrap .solution-cont .cont > img + img {
+  margin-top: 5px;
+}
+
+.solution-wrap .solution-cont .info {
+  display: flex;
+  padding: 14px 20px;
+  border-top: 1px solid #dadee1;
+  align-items: center;
+}
+
+.solution-wrap .solution-cont .info > strong {
+  width: 112px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #000;
+}
+
+.solution-wrap .solution-cont .info > strong:before {
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background: url(../../images/jinro/icons_info.png) no-repeat;
+  margin: 0 14px -4px 0;
+}
+
+.solution-wrap .solution-cont .info02 > strong:before {
+  background-position: -19px 0;
+}
+
+.solution-wrap .solution-cont .info > ul {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  flex-wrap: wrap;
+  width: calc(100% - 112px);
+}
+
+.solution-wrap .solution-cont .info > ul li a {
+  display: block;
+  padding: 8px;
+  border: 1px solid #dadee1;
+  border-radius: 3px;
+  font-size: 12px;
+  color: #666;
+}
+
+.solution-wrap .solution-cont .info > ul li a:hover {
+  text-decoration: underline;
+}
+
+.btn-top {
+  position: fixed;
+  /*bottom: 270px;*/
+  bottom: 50px;
+  left: calc(50% - 24px);
+  margin-left: 550px;
+}
+
+.btn-top.on {
+  position: absolute;
+  bottom: 100px;
+  animation-duration: 1s;
+  animation-name: slidetop;
+}
+
+@keyframes slidetop {
+  from {
+    bottom: 50px;
+  }
+
+  to {
+    bottom: 100px;
+  }
+}
+
+/* 상담신청 */
+.advice_step_wrap {
+  width: 940px;
+  margin: 36px 0 0;
+}
+
+.advice_step_wrap:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.advice_step_wrap li {
+  float: left;
+}
+
+.advice_step_wrap dl {
+  width: 298px;
+  height: 29px;
+  padding: 14px 0 0 15px;
+}
+
+.advice_step_wrap dl:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.advice_step_wrap dt {
+  float: left;
+  font-size: 14px;
+  color: #ff5b25;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.advice_step_wrap dd {
+  float: left;
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+}
+
+.advice_step_wrap .advice_step01 {
+  width: 299px;
+  background: url(../../images/front/contents/counsel/bg_advice_step01_off.gif)
+    no-repeat left top;
+}
+
+.advice_step_wrap .advice_step02 {
+  width: 298px;
+  background: url(../../images/front/contents/counsel/bg_advice_step02_off.gif)
+    no-repeat left top;
+}
+
+.advice_step_wrap .advice_step03 {
+  width: 298px;
+  background: url(../../images/front/contents/counsel/bg_advice_step03_off.gif)
+    no-repeat left top;
+}
+
+.advice_step_wrap .advice_step01_on {
+  width: 299px;
+  background: url(../../images/front/contents/counsel/bg_advice_step01_on.gif)
+    no-repeat left top;
+}
+
+.advice_step_wrap .advice_step02_on {
+  width: 299px;
+  background: url(../../images/front/contents/counsel/bg_advice_step02_on.gif)
+    no-repeat left top;
+  margin-left: -1px;
+}
+
+.advice_step_wrap .advice_step03_on {
+  width: 299px;
+  background: url(../../images/front/contents/counsel/bg_advice_step03_on.gif)
+    no-repeat left top;
+  margin-left: -1px;
+}
+
+.advice_step_wrap .advice_step01_on dt,
+.advice_step_wrap .advice_step02_on dt,
+.advice_step_wrap .advice_step03_on dt {
+  /*color:#bfbebe;*/
+  color: #fff;
+}
+
+.advice_step_wrap .advice_step01_on dd,
+.advice_step_wrap .advice_step02_on dd,
+.advice_step_wrap .advice_step03_on dd {
+  color: #fff;
+}
+
+.note_info {
+  color: #444;
+  line-height: 18px;
+  background: url(../../images/front/contents/counsel/icon_note_write.gif)
+    no-repeat left top;
+  padding: 4px 0 2px 55px;
+}
+
+.note_info p {
+  color: #444;
+  padding: 5px 0 10px;
+}
+
+/*20131008_수정*/
+.note_info p {
+  line-height: 140%;
+}
+
+.note_info p.img {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.note_info .f_org {
+  color: #ff6633;
+}
+
+.word_tit h2 {
+  font-weight: bold;
+}
+
+/* 상담신청 완료 */
+.advice_step3_box {
+  height: 224px;
+  background: #f9fafb url(../../images/front/contents/counsel/bg_advice_box.gif)
+    no-repeat 106px 48px;
+  border: 1px solid #dbdee2;
+  padding: 44px 0 0 347px;
+  margin: 25px 0 0;
+}
+
+.advice_step3_box .advice_step3_text01 {
+  font-family: "NanumGothicBoldWeb";
+  font-size: 28px;
+  color: #333;
+  letter-spacing: -1px;
+  margin-bottom: 6px;
+}
+
+.advice_step3_box .advice_step3_text01 span {
+  font-family: "NanumGothicBoldWeb";
+  font-size: 28px;
+  color: #ff6700;
+  letter-spacing: -1px;
+}
+
+.advice_step3_box .advice_step3_text02 {
+  font-size: 11px;
+  color: #777;
+  letter-spacing: -1px;
+  line-height: 18px;
+}
+
+.advice_step3_box .advice_step3_text02 strong {
+  color: #ff6700;
+}
+
+.advice_step3_box .advice_list_btm {
+  text-align: left;
+}
+
+/* 공개상담 */
+.advice_list_box {
+  width: 980px;
+  border-bottom: 2px solid #eceef1;
+  margin: 28px 0 0;
+}
+
+.advice_list_box .advice_list_inner {
+  border: 1px solid #b6c1cd;
+}
+
+.advice_list_box .advice_list_inner dl {
+  width: 946px;
+  background: url(../../images/front/contents/mycareer/mine_dotline_b6.gif)
+    repeat-x left bottom;
+  padding: 11px 17px 12px;
+}
+
+.advice_list_box .advice_list_inner dl:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.advice_list_box .advice_list_inner dt {
+  float: left;
+  width: 95px;
+  font-size: 14px;
+  color: #fd4b11;
+  font-weight: bold;
+  margin: 5px 0 0;
+}
+
+.advice_list_box .advice_list_inner dt label {
+  font-size: 14px;
+  color: #e43e07;
+}
+
+.advice_list_box .advice_list_inner dd {
+  float: left;
+}
+
+.advice_list_box .advice_list_inner .inp_lifetime {
+  float: left;
+  height: 21px;
+  line-height: 26px;
+  border: 1px solid #dbdada;
+  margin-right: 8px;
+}
+
+.advice_list_box .advice_list_inner select {
+  height: 23px;
+}
+
+.advice_list_box .advice_list_inner .selct_mine {
+  float: left;
+  height: 23px;
+  color: #596c83;
+  margin: 3px 6px 0 0;
+}
+
+.advice_list_box .advice_list_inner .advice_check {
+  width: 100%;
+}
+
+.advice_list_box .advice_list_inner .advice_check:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.advice_list_box .advice_list_inner .advice_check li {
+  float: left;
+  margin-right: 20px;
+}
+
+.advice_list_box .advice_list_inner .advice_check li input {
+  margin: 1px 0 0;
+}
+
+.advice_list_box .advice_list_inner .advice_box_btm {
+  background-color: #f7f7f6;
+  padding: 14px 112px;
+}
+
+/* 상담답변 */
+.advice_reply {
+  width: 100%;
+  border-bottom: 1px solid #b6c1cd;
+}
+
+.advice_reply th {
+  text-align: left;
+  background-color: #f9fafb;
+  border-bottom: 1px solid #e3e7ec;
+  padding: 13px 16px 11px 13px;
+}
+
+.advice_reply .reply_title {
+  float: left;
+  font-family: "NanumGothicBoldWeb";
+  font-size: 16px;
+  color: #333;
+  background: url(../../images/front/icon/icon_answer.gif) no-repeat 0 4px;
+  padding-left: 15px;
+}
+
+.advice_reply .reply_date {
+  float: right;
+  color: #888;
+  font-weight: normal;
+  margin: 4px 0 0;
+}
+
+.advice_reply th.reply_deff_title {
+  font-size: 14px;
+  color: #3f5063;
+  letter-spacing: -1px;
+  background-color: #fff;
+}
+
+.advice_reply td {
+  border-bottom: 1px solid #e3e7ec;
+  padding: 20px 15px 16px;
+}
+
+.advice_reply td.view_comment {
+  color: #666;
+  font-size: 10pt;
+  /*font-family:'돋움',Dotum,'굴림',Gulim,Helvetica,Sans-serif;*/
+  line-height: 1.5;
+}
+
+.advice_reply td.view_comment * {
+  line-height: 1.5;
+  font-size: 10pt;
+  font-family: inherit;
+}
+
+.advice_reply td.view_comment th,
+.advice_reply td.view_comment td {
+  margin: 0;
+  padding: 0;
+  color: #666;
+  font-size: 10pt;
+  font-family: "돋움", Dotum, "굴림", Gulim, Helvetica, Sans-serif;
+  line-height: 1.5;
+}
+
+.advice_reply td.view_comment p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+.advice_reply td.view_comment a:hover {
+  text-decoration: underline;
+}
+
+.advice_reply td.view_comment a:link {
+  color: #0000ff;
+}
+
+.advice_reply td.view_comment ul {
+  margin: 0 0 0 40px;
+  padding: 0;
+}
+
+.advice_reply td.view_comment ul li {
+  margin: 0;
+  list-style-type: disc;
+  padding: 0;
+}
+
+.advice_reply td.view_comment ul ul li {
+  list-style-type: circle;
+}
+
+.advice_reply td.view_comment ul ul ul li {
+  list-style-type: square;
+}
+
+.advice_reply td.view_comment img,
+.advice_reply td.view_comment fieldset {
+  border: 0;
+}
+
+.advice_reply tr.last td {
+  border-bottom: 0 none;
+}
+
+.advice_reply .view_file {
+  width: 100%;
+  overflow: hidden;
+}
+
+.advice_reply .view_file dt {
+  float: left;
+  color: #536f90;
+  font-weight: bold;
+  line-height: 18px;
+}
+
+.advice_reply .view_file dd {
+  float: right;
+  width: 845px;
+  line-height: 18px;
+}
+
+.advice_reply .view_file dd a {
+  line-height: 18px;
+}
+
+/* 진로상담 이용안내 */
+.user_guide_search {
+  background: url(../../images/front/contents/mycareer/mine_dotline_b6.gif)
+    repeat-x left bottom;
+  padding-bottom: 20px;
+  margin: 50px 0 0;
+}
+
+.user_guide_search .searchword {
+  margin-top: 0;
+}
+
+/* 탭 */
+#TabMenu_deff {
+  position: relative;
+  clear: both;
+  border-left: solid 1px #ccc;
+  margin-top: 33px;
+}
+
+#TabMenu_deff ul {
+  width: 100%;
+  overflow: hidden;
+}
+
+#TabMenu_deff li {
+  float: left;
+  display: inline;
+  text-align: center;
+}
+
+#TabMenu_deff li a {
+  display: inline-block;
+  background: #eceeef;
+  font-size: 14px;
+  color: #2e5079;
+  font-family: "Dotum";
+  border: solid 1px #ccc;
+  border-bottom: solid 1px #ccc;
+  margin-left: -1px;
+  height: 25px;
+  padding: 13px 30px 0;
+}
+
+#TabMenu_deff li a:hover {
+  border: 1px solid #ccc;
+  border-bottom: 1px solid #fff;
+  background: #fff;
+  color: #666;
+  font-weight: bold;
+  color: #ff6633;
+}
+
+#TabMenu_deff li a.on {
+  border: 1px solid #ccc;
+  border-bottom: 1px solid #fff;
+  background: #fff;
+  color: #666;
+  font-weight: bold;
+  color: #f93000;
+}
+
+#TabMenu_deff .link_menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  height: 38px;
+  padding: 0 17px 0 14px;
+  border: 1px solid #e0e5e9;
+  background: #527397;
+  line-height: 38px;
+  font-size: 14px;
+  text-align: center;
+  color: #ffffff;
+}
+
+#TabMenu_deff .link_ebook:before {
+  display: inline-block;
+  content: "";
+  vertical-align: text-bottom;
+  width: 15px;
+  height: 15px;
+  margin: 11px 9px 0 0;
+  background-image: url(../../images/front/contents/web/icon_header.gif);
+  background-size: 15px 15px;
+}
+
+/* faq */
+.counseling_faq {
+  border: solid 1px #d6dce2;
+  border-bottom: solid 2px #eceef1;
+  border-top: 0;
+}
+
+.counseling_faq > h4 {
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+.counseling_faq dl {
+  border-bottom: solid 1px #d6dce2;
+}
+
+.counseling_faq dt {
+  background: url(../../images/front/contents/examen/faq_bar_bg.gif) repeat-x
+    left top;
+}
+
+.counseling_faq dt p {
+  padding: 17px 0 0 43px;
+  height: 26px;
+  background: url(../../images/front/contents/examen/faq_q.gif) no-repeat 14px
+    center;
+}
+
+.counseling_faq dt a {
+  display: block;
+  background: url(../../images/front/contents/examen/faq_btn_open.gif) no-repeat
+    right 3px;
+  padding-right: 40px;
+}
+
+.counseling_faq dt a.on {
+  background: url(../../images/front/contents/examen/faq_btn_close.gif)
+    no-repeat right 3px;
+}
+
+.counseling_faq dt span {
+  display: block;
+  padding: 17px 0 0 43px;
+  height: 26px;
+  background: url(../../images/front/contents/examen/faq_q.gif) no-repeat 14px
+    center;
+}
+
+.counseling_faq dt span a {
+  display: block;
+  background: url(../../images/front/contents/examen/faq_btn_open.gif) no-repeat
+    right 3px;
+  outline: none;
+}
+
+.counseling_faq dt span a.on {
+  background: url(../../images/front/contents/examen/faq_btn_close.gif)
+    no-repeat right 3px;
+}
+
+.counseling_faq dt span a span {
+  display: inline;
+  background: none;
+  height: auto;
+  color: #546f90;
+  padding: 0 0 0 0;
+}
+
+.counseling_faq dt a span {
+  color: #546f90;
+  background: none;
+  display: inline;
+  height: auto;
+  padding: 0 0 0 0;
+}
+
+.counseling_faq dd {
+  background: #fffdee url(../../images/front/contents/examen/faq_a.gif)
+    no-repeat 14px 12px;
+  border-top: 2px solid #e8e7dd;
+  line-height: 150%;
+  border-bottom: 1px solid #e8e7dd;
+  padding: 12px 14px 12px 45px;
+  line-height: 150%;
+}
+
+.counseling_faq dd.close {
+  display: none;
+}
+
+.counseling_faq dd p {
+  line-height: 150%;
+}
+
+/* color */
+.cff5b25 {
+  color: #ff5b25;
+}
+
+.c888 {
+  color: #888;
+}
+
+/*  메인  */
+#advice_main {
+  width: 100%;
+}
+
+#advice_main #contents {
+  width: 940px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+/* .advice_main_colum1 {float:left; width:597px; height:376px;} */
+.advice_main_colum1 {
+  height: 300px;
+  background: url(../../images/front/contents/counsel/main_bg3.gif) no-repeat
+    611px 60px;
+  padding-top: 30px;
+}
+
+.advice_main_colum1 .title_h1 span {
+  font-family: "NanumGothicBoldWeb";
+  font-size: 33px;
+  color: #000;
+}
+
+.advice_main_colum1 .mainTxt1 {
+  padding: 15px 0 10px;
+  font-size: 14px;
+  color: #444;
+  letter-spacing: -1px;
+}
+
+.advice_main_colum1 .mainTxt1 span {
+  font-size: 14px;
+  color: #f56200;
+}
+
+.advice_main_colum1 .mainTxt2 {
+  font-size: 14px;
+  color: #666;
+  line-height: 150%;
+}
+
+.advice_main_colum1 .mainTxt2 strong {
+  display: inline-block;
+  background: #575757;
+  font-weight: bold;
+  color: #fff;
+  font-size: 14px;
+  line-height: 135%;
+}
+
+.advice_main_colum1 .mainLink1 {
+  padding: 22px 0 14px;
+}
+
+.advice_main_colum1 .mainLink1 a {
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: bottom;
+}
+
+.advice_main_colum1 .tip1 {
+  display: none;
+}
+
+/*.advice_main_colum1 .tip1 {background:url(../../images/front/contents/counsel/icon_tip1.gif) no-repeat 3px top; padding-left:23px; padding-top:1px; font-size:11px; color:#ff6633;}*/
+.advice_main_colum2 {
+  float: left;
+  width: 295px;
+  height: 376px;
+  padding-left: 48px;
+  background: url(../../images/front/contents/counsel/main_bg1.gif) no-repeat
+    left 4px;
+}
+
+.advice_main_colum2 h2 {
+  padding-top: 70px;
+}
+
+.advice_main_colum2 .mainTxt3 {
+  padding: 6px 0 20px 0;
+  font-size: 11px;
+  color: #777777;
+  line-height: 140%;
+  text-decoration: underline;
+  letter-spacing: -1px;
+}
+
+.advice_main_colum3 {
+  clear: both;
+  width: 100%;
+  height: 202px;
+  padding-bottom: 100px;
+  padding-top: 45px;
+}
+
+.advice_main_colum3 .fl {
+  float: left;
+  width: 385px;
+  background: url(../../images/front/contents/counsel/main_icon1.gif) no-repeat
+    left top;
+  padding: 14px 0 0 45px;
+}
+
+.advice_main_colum3 .fr {
+  position: relative;
+  float: left;
+  width: 465px;
+  background: url(../../images/front/contents/counsel/main_icon2.gif) no-repeat
+    left top;
+  padding: 14px 0 0 45px;
+}
+
+.advice_main_colum3 .mainTxt4 {
+  padding: 43px 0 24px 0;
+}
+
+.advice_main_colum3 .mainTxt5 {
+  padding: 10px 0 20px 0;
+  font-size: 11px;
+  /*color:#888888;*/
+  color: #4d4c4c;
+  letter-spacing: -1px;
+  line-height: 140%;
+}
+
+.advice_main_colum3 h3 {
+  font-family: "NanumGothicBoldWeb";
+  font-size: 14px;
+  color: #49556d;
+  letter-spacing: -1px;
+}
+
+.advice_main_colum3 li strong {
+  font-family: "NanumGothicBoldWeb";
+  font-size: 14px;
+  color: #f37200;
+}
+
+.advice_main_colum3 li p {
+  font-size: 11px;
+  /*color:#afafaf;*/
+  color: #4d4c4c;
+  line-height: 135%;
+  padding: 5px 0 9px;
+  letter-spacing: -1px;
+}
+
+.advice_main_colum3 li.weekAdvice {
+  float: left;
+  width: 213px;
+  background: url(../../images/front/contents/counsel/main_img2.gif) no-repeat
+    145px top;
+}
+
+.advice_main_colum3 li.adviceSearch {
+  float: left;
+  width: 162px;
+  background: url(../../images/front/contents/counsel/main_img3.gif) no-repeat
+    106px top;
+}
+
+.advice_main_colum3 .fr ul {
+  width: 348px;
+  overflow: hidden;
+}
+
+.advice_main_colum3 .fr li {
+  float: left;
+  width: 58px;
+  padding-bottom: 3px;
+}
+
+.advice_main_colum3 .fr li a {
+  display: block;
+  width: 55px;
+  height: 13px;
+  background: url(../../images/front/contents/counsel/main_map_off.gif)
+    no-repeat left top;
+  font-size: 11px;
+  color: #666;
+  padding: 7px 0 0 9px;
+}
+
+.advice_main_colum3 .fr li a span {
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+
+.advice_main_colum3 .fr li a:hover {
+  display: block;
+  width: 46px;
+  height: 15px;
+  background: url(../../images/front/contents/counsel/main_map_on.gif) no-repeat
+    left top;
+  font-size: 11px;
+  color: #fff;
+  padding: 5px 0 0 9px;
+}
+
+.advice_main_colum3 .fr li a:hover span {
+  visibility: visible;
+  position: absolute;
+  left: 455px;
+  top: 57px;
+  z-index: 100;
+}
+
+.advice_main_colum3 .fr .map {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.bnt_link1 {
+  background: url(../../images/front/contents/counsel/main_link1.gif) no-repeat
+    left top;
+  width: 140px;
+  height: 51px;
+  display: inline-block;
+}
+
+.bnt_link1:hover {
+  background: url(../../images/front/contents/counsel/main_link1_on.gif)
+    no-repeat left top;
+}
+
+.bnt_link1 span {
+  font-size: 0px !important;
+  color: #ffffff !important;
+  line-height: 0 !important;
+  height: 0 !important;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+.bnt_link2 {
+  background: url(../../images/front/contents/counsel/main_link2.gif) no-repeat
+    left top;
+  width: 140px;
+  height: 51px;
+  display: inline-block;
+}
+
+.bnt_link2:hover {
+  background: url(../../images/front/contents/counsel/main_link2_on.gif)
+    no-repeat left top;
+}
+
+.bnt_link2 span {
+  font-size: 0px !important;
+  color: #ffffff !important;
+  line-height: 0 !important;
+  height: 0 !important;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+.bnt_link3 {
+  background: url(../../images/front/contents/counsel/main_link3.gif) no-repeat
+    left top;
+  width: 140px;
+  height: 51px;
+  display: inline-block;
+}
+
+.bnt_link3:hover {
+  background: url(../../images/front/contents/counsel/main_link3_on.gif)
+    no-repeat left top;
+}
+
+.bnt_link3 span {
+  font-size: 0px !important;
+  color: #ffffff !important;
+  line-height: 0 !important;
+  height: 0 !important;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+/*  보물섬 메인 */
+.bomulsumHome {
+  position: relative;
+  background: url(../../images/front/contents/counsel/bomulsum/bomulsum_main_img.jpg)
+    no-repeat left top;
+  width: 940px;
+  height: 496px;
+}
+
+.bomulsumHome .txt1 {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.bomulsumHome .txt2 {
+  position: absolute;
+  right: 0;
+  top: 182px;
+}
+
+.bomulsumHome .btn_start {
+  position: absolute;
+  right: 60px;
+  top: 263px;
+}
+
+#bomulsumMain {
+  position: relative;
+  background: url(../../images/front/contents/counsel/bomulsum/bg_body_main.jpg)
+    no-repeat left top;
+  width: 920px;
+  height: 640px;
+}
+
+#bomulsumMain .bomulsum_logo {
+  position: absolute;
+  left: 12px;
+  top: 58px;
+  z-index: 6;
+}
+
+.bomulsum_gnb_on {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url(../../images/front/contents/counsel/bomulsum/gnb_bg.png)
+    no-repeat left top;
+  height: 142px;
+  width: 100%;
+  z-index: 10000;
+}
+
+.bomulsum_gnb_close {
+  position: absolute;
+  left: 0;
+  top: -94px;
+  background: url(../../images/front/contents/counsel/bomulsum/gnb_bg.png)
+    no-repeat left top;
+  height: 142px;
+  width: 100%;
+  z-index: 10000;
+}
+
+.bomulsum_gnb_on ul {
+  padding-left: 104px;
+}
+
+.bomulsum_gnb_on ul li {
+  float: left;
+  display: inline;
+}
+
+.bomulsum_gnb_on ul .gnb1 a {
+  display: block;
+  width: 95px;
+  height: 91px;
+  background: url(../../images/front/contents/counsel/bomulsum/bomulsum_gnb_01.jpg)
+    no-repeat center center;
+  text-indent: -100em;
+}
+
+.bomulsum_gnb_on ul .gnb1 a:hover {
+  display: block;
+  width: 95px;
+  height: 91px;
+  background: url(../../images/front/contents/counsel/bomulsum/bomulsum_gnb_01_hover.jpg)
+    no-repeat center center;
+  text-indent: -100em;
+}
+
+.bomulsum_gnb_on ul .gnb2 a {
+  display: block;
+  width: 122px;
+  height: 91px;
+  background: url(../../images/front/contents/counsel/bomulsum/bomulsum_gnb_02.jpg)
+    no-repeat center center;
+  text-indent: -100em;
+}
+
+.bomulsum_gnb_on ul .gnb2 a:hover {
+  display: block;
+  width: 122px;
+  height: 91px;
+  background: url(../../images/front/contents/counsel/bomulsum/bomulsum_gnb_02_hover.jpg)
+    no-repeat center center;
+  text-indent: -100em;
+}
+
+.bomulsum_gnb_on ul .gnb3 a {
+  display: block;
+  width: 107px;
+  height: 91px;
+  background: url(../../images/front/contents/counsel/bomulsum/bomulsum_gnb_03.jpg)
+    no-repeat center center;
+  text-indent: -100em;
+}
+
+.bomulsum_gnb_on ul .gnb3 a:hover {
+  display: block;
+  width: 107px;
+  height: 91px;
+  background: url(../../images/front/contents/counsel/bomulsum/bomulsum_gnb_03_hover.jpg)
+    no-repeat center center;
+  text-indent: -100em;
+}
+
+.bomulsum_gnb_on ul .gnb4 a {
+  display: block;
+  width: 100px;
+  height: 91px;
+  background: url(../../images/front/contents/counsel/bomulsum/bomulsum_gnb_04.jpg)
+    no-repeat center center;
+  text-indent: -100em;
+}
+
+.bomulsum_gnb_on ul .gnb4 a:hover {
+  display: block;
+  width: 100px;
+  height: 91px;
+  background: url(../../images/front/contents/counsel/bomulsum/bomulsum_gnb_04_hover.jpg)
+    no-repeat center center;
+  text-indent: -100em;
+}
+
+.bomulsum_gnb_on ul .gnb5 a {
+  display: block;
+  width: 105px;
+  height: 91px;
+  background: url(../../images/front/contents/counsel/bomulsum/bomulsum_gnb_05.jpg)
+    no-repeat center center;
+  text-indent: -100em;
+}
+
+.bomulsum_gnb_on ul .gnb5 a:hover {
+  display: block;
+  width: 105px;
+  height: 91px;
+  background: url(../../images/front/contents/counsel/bomulsum/bomulsum_gnb_05_hover.jpg)
+    no-repeat center center;
+  text-indent: -100em;
+}
+
+.bomulsum_gnb_on ul .gnb6 a {
+  display: block;
+  width: 111px;
+  height: 91px;
+  background: url(../../images/front/contents/counsel/bomulsum/bomulsum_gnb_06.jpg)
+    no-repeat center center;
+  text-indent: -100em;
+}
+
+.bomulsum_gnb_on ul .gnb6 a:hover {
+  display: block;
+  width: 111px;
+  height: 91px;
+  background: url(../../images/front/contents/counsel/bomulsum/bomulsum_gnb_06_hover.jpg)
+    no-repeat center center;
+  text-indent: -100em;
+}
+
+.bomulsum_gnb_on ul .btn_close a {
+  display: block;
+  width: 105px;
+  height: 91px;
+  background: url(../../images/front/contents/counsel/bomulsum/btn_bomulsum_close.jpg)
+    no-repeat center center;
+  text-indent: -100em;
+}
+
+.bomulsum_gnb_on ul .btn_close a:hover {
+  display: block;
+  width: 105px;
+  height: 91px;
+  background: url(../../images/front/contents/counsel/bomulsum/btn_bomulsum_close_hover.jpg)
+    no-repeat center center;
+  text-indent: -100em;
+}
+
+.bomulsum_gnb_on ul li.btn_close {
+  width: 58px;
+}
+
+.btn_gnb_close {
+  position: absolute;
+  left: 0;
+  top: 90px;
+  clear: both;
+  margin-left: 406px;
+}
+
+.bomulsum_gnb_close ul {
+  padding-left: 114px;
+}
+
+.bomulsum_gnb_close ul li {
+  float: left;
+}
+
+.bomulsum_gnb_close ul li.gnb1 {
+  width: 103px;
+}
+
+.bomulsum_gnb_close ul li.gnb2 {
+  width: 117px;
+}
+
+.bomulsum_gnb_close ul li.gnb3 {
+  width: 112px;
+}
+
+.bomulsum_gnb_close ul li.gnb4 {
+  width: 95px;
+}
+
+.bomulsum_gnb_close ul li.gnb5 {
+  width: 104px;
+}
+
+.bomulsum_gnb_close ul li.gnb6 {
+  width: 109px;
+}
+
+.bomulsum_gnb_close ul li.btn_close {
+  width: 58px;
+}
+
+.island_1 {
+  position: absolute;
+  left: 30px;
+  top: 137px;
+}
+
+.island_1 a {
+  display: block;
+  width: 243px;
+  height: 266px;
+  background: url(../../images/front/contents/counsel/bomulsum/island_1.jpg)
+    no-repeat left top;
+}
+
+.island_1 a:hover {
+  display: block;
+  width: 243px;
+  height: 266px;
+  background: url(../../images/front/contents/counsel/bomulsum/island_1_hover.jpg)
+    no-repeat left top;
+}
+
+.island_2 {
+  position: absolute;
+  left: 287px;
+  top: 84px;
+}
+
+.island_2 a {
+  display: block;
+  width: 407px;
+  height: 316px;
+  background: url(../../images/front/contents/counsel/bomulsum/island_2.jpg)
+    no-repeat left top;
+}
+
+.island_2 a:hover {
+  display: block;
+  width: 407px;
+  height: 316px;
+  background: url(../../images/front/contents/counsel/bomulsum/island_2_hover.jpg)
+    no-repeat left top;
+}
+
+.island_3 {
+  position: absolute;
+  left: 641px;
+  top: 91px;
+}
+
+.island_3 a {
+  display: block;
+  width: 262px;
+  height: 288px;
+  background: url(../../images/front/contents/counsel/bomulsum/island_3.jpg)
+    no-repeat left top;
+}
+
+.island_3 a:hover {
+  display: block;
+  width: 262px;
+  height: 288px;
+  background: url(../../images/front/contents/counsel/bomulsum/island_3_hover.jpg)
+    no-repeat left top;
+}
+
+.island_4 {
+  position: absolute;
+  left: 452px;
+  top: 310px;
+}
+
+.island_4 a {
+  display: block;
+  width: 340px;
+  height: 178px;
+  background: url(../../images/front/contents/counsel/bomulsum/island_4.jpg)
+    no-repeat left top;
+}
+
+.island_4 a:hover {
+  display: block;
+  width: 340px;
+  height: 178px;
+  background: url(../../images/front/contents/counsel/bomulsum/island_4_hover.jpg)
+    no-repeat left top;
+}
+
+.island_5 {
+  position: absolute;
+  left: 202px;
+  top: 332px;
+  z-index: 6;
+}
+
+.island_5 a {
+  display: block;
+  width: 194px;
+  height: 173px;
+  background: url(../../images/front/contents/counsel/bomulsum/island_5.png)
+    no-repeat left top;
+}
+
+.description_area {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: url(../../images/front/contents/counsel/bomulsum/bomulsum_main_bg.png)
+    no-repeat left top;
+  height: 102px;
+  width: 863px;
+  padding: 109px 0 0 57px;
+}
+
+/*  보물섬 서브 */
+#bomulsum {
+  position: relative;
+  background: url(../../images/front/contents/counsel/bomulsum/bg_body.jpg)
+    no-repeat left top;
+  width: 920px;
+  height: 640px;
+}
+
+.me_main_tit {
+  position: absolute;
+  left: 20px;
+  top: 67px;
+}
+
+.me_main_link {
+  position: absolute;
+  left: 95px;
+  top: 206px;
+}
+
+.me_main_link li {
+  float: left;
+}
+
+.me_main_link li .me_icon1 {
+  display: block;
+  width: 189px;
+  height: 197px;
+  background: url(../../images/front/contents/counsel/bomulsum/me_icon1.jpg)
+    no-repeat left top;
+}
+
+.me_main_link li .me_icon1:hover {
+  display: block;
+  width: 189px;
+  height: 197px;
+  background: url(../../images/front/contents/counsel/bomulsum/me_icon1_on.jpg)
+    no-repeat left top;
+}
+
+.me_main_link li .me_icon1.on {
+  display: block;
+  width: 189px;
+  height: 197px;
+  background: url(../../images/front/contents/counsel/bomulsum/me_icon1_on.jpg)
+    no-repeat left top;
+}
+
+.me_main_link li .me_icon2 {
+  display: block;
+  width: 189px;
+  height: 197px;
+  background: url(../../images/front/contents/counsel/bomulsum/me_icon2.jpg)
+    no-repeat left top;
+}
+
+.me_main_link li .me_icon2:hover {
+  display: block;
+  width: 189px;
+  height: 197px;
+  background: url(../../images/front/contents/counsel/bomulsum/me_icon2_on.jpg)
+    no-repeat left top;
+}
+
+.me_main_link li .me_icon2.on {
+  display: block;
+  width: 189px;
+  height: 197px;
+  background: url(../../images/front/contents/counsel/bomulsum/me_icon2_on.jpg)
+    no-repeat left top;
+}
+
+.me_main_link li .me_icon3 {
+  display: block;
+  width: 171px;
+  height: 197px;
+  background: url(../../images/front/contents/counsel/bomulsum/me_icon3.jpg)
+    no-repeat left top;
+}
+
+.me_main_link li .me_icon3:hover {
+  display: block;
+  width: 171px;
+  height: 197px;
+  background: url(../../images/front/contents/counsel/bomulsum/me_icon3_on.jpg)
+    no-repeat left top;
+}
+
+.me_main_link li .me_icon3.on {
+  display: block;
+  width: 171px;
+  height: 197px;
+  background: url(../../images/front/contents/counsel/bomulsum/me_icon3_on.jpg)
+    no-repeat left top;
+}
+
+.me_main_link li .me_icon4 {
+  display: block;
+  width: 203px;
+  height: 197px;
+  background: url(../../images/front/contents/counsel/bomulsum/me_icon4.jpg)
+    no-repeat left top;
+}
+
+.me_main_link li .me_icon4:hover {
+  display: block;
+  width: 203px;
+  height: 197px;
+  background: url(../../images/front/contents/counsel/bomulsum/me_icon4_on.jpg)
+    no-repeat left top;
+}
+
+.me_main_link li .me_icon4.on {
+  display: block;
+  width: 203px;
+  height: 197px;
+  background: url(../../images/front/contents/counsel/bomulsum/me_icon4_on.jpg)
+    no-repeat left top;
+}
+
+.btn_page_pre {
+  position: absolute;
+  left: 23px;
+  top: 276px;
+  z-index: 10000;
+}
+
+.btn_page_next {
+  position: absolute;
+  right: 23px;
+  top: 276px;
+  z-index: 10000;
+}
+
+.me_view_tit {
+  position: absolute;
+  left: 20px;
+  top: 76px;
+}
+
+.me_view_txt {
+  position: absolute;
+  left: 132px;
+  top: 202px;
+  font-family: "NanumGothicBoldWeb";
+  font-size: 14px;
+  color: #443428;
+  letter-spacing: -1px;
+  line-height: 190%;
+  width: 640px;
+  height: 350px;
+  overflow: auto;
+  padding: 0 10px;
+}
+
+.me_view_txt p {
+  font-family: "NanumGothicBoldWeb";
+  font-size: 14px;
+  color: #443428;
+  line-height: 190%;
+}
+
+/* 직업섬 */
+#bomulsumJobMain {
+  position: relative;
+  background: url(../../images/front/contents/counsel/bomulsum/job_body_main.jpg)
+    no-repeat left top;
+  width: 920px;
+  height: 640px;
+}
+
+.job_logo {
+  position: absolute;
+  left: 102px;
+  top: 14px;
+}
+
+.job_main_txt {
+  position: absolute;
+  left: 57px;
+  top: 526px;
+}
+
+.map_job_1 {
+  position: absolute;
+  left: 218px;
+  top: 115px;
+}
+
+.map_job_1 a {
+  display: block;
+  width: 135px;
+  height: 123px;
+  background: url(../../images/front/contents/counsel/bomulsum/bomulsum_job_map1.png)
+    no-repeat left top;
+}
+
+.map_job_2 {
+  position: absolute;
+  left: 145px;
+  top: 233px;
+}
+
+.map_job_2 a {
+  display: block;
+  width: 139px;
+  height: 135px;
+  background: url(../../images/front/contents/counsel/bomulsum/bomulsum_job_map2.png)
+    no-repeat left top;
+}
+
+.map_job_3 {
+  position: absolute;
+  left: 78px;
+  top: 340px;
+}
+
+.map_job_3 a {
+  display: block;
+  width: 139px;
+  height: 123px;
+  background: url(../../images/front/contents/counsel/bomulsum/bomulsum_job_map3.png)
+    no-repeat left top;
+}
+
+.map_job_4 {
+  position: absolute;
+  left: 460px;
+  top: 113px;
+}
+
+.map_job_4 a {
+  display: block;
+  width: 131px;
+  height: 99px;
+  background: url(../../images/front/contents/counsel/bomulsum/bomulsum_job_map4.png)
+    no-repeat left top;
+}
+
+.map_job_5 {
+  position: absolute;
+  left: 472px;
+  top: 250px;
+}
+
+.map_job_5 a {
+  display: block;
+  width: 201px;
+  height: 136px;
+  background: url(../../images/front/contents/counsel/bomulsum/bomulsum_job_map5.png)
+    no-repeat left top;
+}
+
+.map_job_6 {
+  position: absolute;
+  left: 349px;
+  top: 318px;
+}
+
+.map_job_6 a {
+  display: block;
+  width: 154px;
+  height: 121px;
+  background: url(../../images/front/contents/counsel/bomulsum/bomulsum_job_map6.png)
+    no-repeat left top;
+}
+
+.map_job_7 {
+  position: absolute;
+  left: 696px;
+  top: 43px;
+}
+
+.map_job_7 a {
+  display: block;
+  width: 152px;
+  height: 112px;
+  background: url(../../images/front/contents/counsel/bomulsum/bomulsum_job_map7.png)
+    no-repeat left top;
+}
+
+.map_job_8 {
+  position: absolute;
+  left: 640px;
+  top: 180px;
+}
+
+.map_job_8 a {
+  display: block;
+  width: 174px;
+  height: 83px;
+  background: url(../../images/front/contents/counsel/bomulsum/bomulsum_job_map8.png)
+    no-repeat left top;
+}
+
+#bomulsumJobView {
+  position: relative;
+  background: url(../../images/front/contents/counsel/bomulsum/bg_body.jpg)
+    no-repeat left top;
+  width: 920px;
+  height: 640px;
+}
+
+.job_view_logo {
+  position: absolute;
+  left: 777px;
+  top: 40px;
+}
+
+.job_view_tit {
+  position: absolute;
+  left: 25px;
+  top: 50px;
+}
+
+.job_view_h1 {
+  position: absolute;
+  left: 57px;
+  top: 526px;
+}
+
+.job_view_mountain {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1000;
+}
+
+.job_view_guide {
+  position: absolute;
+  left: 774px;
+  top: 432px;
+}
+
+.job_view_guide2 {
+  position: absolute;
+  left: 714px;
+  top: 313px;
+  z-index: 1000;
+}
+
+.job_view_cloud {
+  position: absolute;
+  left: 556px;
+  top: 78px;
+}
+
+.job_view_cont {
+  position: absolute;
+  left: 95px;
+  top: 130px;
+  background: url(../../images/front/contents/counsel/bomulsum/job_view_bg.png)
+    no-repeat left top;
+  width: 716px;
+  height: 460px;
+}
+
+.job_view_cont .scroll {
+  position: absolute;
+  width: 585px;
+  height: 256px;
+  overflow: auto;
+  margin: 0 0 0 70px;
+  z-index: 10000;
+}
+
+.job_view_cont h3 {
+  background: url(../../images/front/contents/counsel/bomulsum/job_view_tit_ico.gif)
+    no-repeat 1px 3px;
+  padding: 1px 0 16px 11px;
+  margin-left: 70px;
+  font-size: 24px;
+  color: #ff6633;
+  font-family: "NanumGothicBoldWeb";
+  line-height: 100%;
+}
+
+.job_view_cont strong {
+  display: block;
+  font-size: 16px;
+  color: #000;
+  font-family: "NanumGothicBoldWeb";
+  padding: 72px 0 5px 70px;
+}
+
+.job_view_cont p {
+  line-height: 150%;
+  color: #444444;
+  font-size: 12px;
+}
+
+.job_view_milepost {
+  position: relative;
+  left: 25px;
+  top: 128px;
+  width: 880px;
+  height: 485px;
+  text-align: center;
+  z-index: 100;
+}
+
+.weed {
+  position: absolute;
+  left: 382px;
+  top: 586px;
+  z-index: 1000;
+}
+
+.job_milepost_tit1 {
+  position: absolute;
+  left: 25px;
+  top: 50px;
+}
+
+.job_milepost_tit2 {
+  position: absolute;
+  left: 25px;
+  top: 65px;
+}
+
+.job_milepost_tit3 {
+  position: absolute;
+  left: 25px;
+  top: 62px;
+}
+
+.job_milepost_tit4 {
+  position: absolute;
+  left: 25px;
+  top: 59px;
+}
+
+.job_milepost_tit5 {
+  position: absolute;
+  left: 25px;
+  top: 50px;
+}
+
+.job_milepost_tit6 {
+  position: absolute;
+  left: 25px;
+  top: 62px;
+}
+
+.job_milepost_tit7 {
+  position: absolute;
+  left: 25px;
+  top: 70px;
+}
+
+.job_milepost_tit8 {
+  position: absolute;
+  left: 25px;
+  top: 50px;
+}
+
+.job_milepost_guide1 {
+  position: absolute;
+  left: 714px;
+  top: 313px;
+  z-index: 1000;
+}
+
+.job_milepost_guide2 {
+  position: absolute;
+  left: 642px;
+  top: 313px;
+  z-index: 1000;
+}
+
+.job_milepost_guide3 {
+  position: absolute;
+  left: 686px;
+  top: 313px;
+  z-index: 1000;
+}
+
+.job_milepost_guide4 {
+  position: absolute;
+  left: 643px;
+  top: 313px;
+  z-index: 1000;
+}
+
+.job_milepost_guide5 {
+  position: absolute;
+  left: 714px;
+  top: 313px;
+  z-index: 1000;
+}
+
+.job_milepost_guide6 {
+  position: absolute;
+  left: 714px;
+  top: 313px;
+  z-index: 1000;
+}
+
+.job_milepost_guide7 {
+  position: absolute;
+  left: 714px;
+  top: 313px;
+  z-index: 1000;
+}
+
+.job_milepost_guide8 {
+  position: absolute;
+  left: 642px;
+  top: 313px;
+  z-index: 1000;
+}
+
+/* 진로섬 */
+#bomulsumJinroMain {
+  position: relative;
+  background: url(../../images/front/contents/counsel/bomulsum/jinro_body_main.jpg)
+    no-repeat left top;
+  width: 920px;
+  height: 640px;
+}
+
+.jinro_logo {
+  position: absolute;
+  left: 30px;
+  top: 22px;
+}
+
+.box_description {
+  position: absolute;
+  left: 10px;
+  top: 490px;
+  background: url(../../images/front/contents/counsel/bomulsum/box_description.png)
+    no-repeat left top;
+  width: 856px;
+  height: 116px;
+  padding: 38px 0 0 38px;
+}
+
+.jinro_main_people {
+  position: absolute;
+  left: 671px;
+  top: 373px;
+}
+
+#bomulsumjinroView {
+  position: relative;
+  background: url(../../images/front/contents/counsel/bomulsum/bg_body.jpg)
+    no-repeat left top;
+  width: 920px;
+  height: 640px;
+}
+
+.jinro_view_logo {
+  position: absolute;
+  left: 82px;
+  top: 54px;
+}
+
+.jinro_milepost_tit1 {
+  position: absolute;
+  left: 25px;
+  top: 50px;
+}
+
+.jinro_view_h1 {
+  position: absolute;
+  left: 57px;
+  top: 526px;
+}
+
+.jinro_view_mountain {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.jinro_view_guide {
+  position: absolute;
+  left: 774px;
+  top: 432px;
+}
+
+.jinro_view_guide2 {
+  position: absolute;
+  left: 714px;
+  top: 313px;
+  z-index: 1000;
+}
+
+.jinro_view_cloud {
+  position: absolute;
+  left: 556px;
+  top: 78px;
+}
+
+.jinro_view_cont {
+  position: absolute;
+  left: 95px;
+  top: 130px;
+  background: url(../../images/front/contents/counsel/bomulsum/job_view_bg.png)
+    no-repeat left top;
+  width: 716px;
+  height: 460px;
+}
+
+.jinro_view_cont .scroll {
+  width: 585px;
+  height: 256px;
+  overflow: scroll;
+  overflow-x: hidden;
+  margin: 0 0 0 70px;
+}
+
+.jinro_view_cont h3 {
+  background: url(../../images/front/contents/counsel/bomulsum/job_view_tit_ico.gif)
+    no-repeat left 5px;
+  padding: 1px 0 16px 11px;
+  margin-left: 70px;
+  margin-top: 83px;
+  font-size: 24px;
+  color: #ff6633;
+  font-family: "NanumGothicBoldWeb";
+  line-height: 100%;
+}
+
+.jinro_view_cont p {
+  line-height: 150%;
+  color: #444444;
+  font-size: 12px;
+}
+
+.jinro_view_milepost {
+  position: absolute;
+  left: 175px;
+  top: 163px;
+  width: 880px;
+  height: 485px;
+  text-align: left;
+  z-index: 100;
+}
+
+.jinro_milepost_guide1 {
+  position: absolute;
+  left: 626px;
+  top: 313px;
+  z-index: 1000;
+}
+
+.jinro_weed {
+  position: absolute;
+  left: 547px;
+  top: 584px;
+  z-index: 1000;
+}
+
+/* 진학섬 */
+#bomulsumjinhakMain {
+  position: relative;
+  background: url(../../images/front/contents/counsel/bomulsum/jinhak_body_main.jpg)
+    no-repeat left top;
+  width: 920px;
+  height: 640px;
+}
+
+#bomulsumjinhakView {
+  position: relative;
+  background: url(../../images/front/contents/counsel/bomulsum/bg_body.jpg)
+    no-repeat left top;
+  width: 920px;
+  height: 640px;
+}
+
+.jinhak_logo {
+  position: absolute;
+  left: 47px;
+  top: 39px;
+}
+
+.box_description {
+  position: absolute;
+  left: 10px;
+  top: 490px;
+  background: url(../../images/front/contents/counsel/bomulsum/box_description.png)
+    no-repeat left top;
+  width: 856px;
+  height: 116px;
+  padding: 38px 0 0 38px;
+}
+
+.jinhak_main_people {
+  position: absolute;
+  left: 671px;
+  top: 405px;
+}
+
+#bomulsumjinhakView {
+  position: relative;
+  background: url(../../images/front/contents/counsel/bomulsum/bg_body.jpg)
+    no-repeat left top;
+  width: 920px;
+  height: 640px;
+}
+
+.jinhak_view_logo {
+  position: absolute;
+  left: 777px;
+  top: 32px;
+}
+
+.jinhak_view_tit {
+  position: absolute;
+  left: 95px;
+  top: 50px;
+}
+
+.jinhak_view_h1 {
+  position: absolute;
+  left: 57px;
+  top: 526px;
+}
+
+.jinhak_view_mountain {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.jinhak_view_guide {
+  position: absolute;
+  left: 760px;
+  top: 432px;
+}
+
+.jinhak_view_guide2 {
+  position: absolute;
+  left: 714px;
+  top: 313px;
+  z-index: 1000;
+}
+
+.jinhak_view_cloud {
+  position: absolute;
+  left: 556px;
+  top: 78px;
+}
+
+.jinhak_view_cont {
+  position: absolute;
+  left: 95px;
+  top: 130px;
+  background: url(../../images/front/contents/counsel/bomulsum/job_view_bg.png)
+    no-repeat left top;
+  width: 716px;
+  height: 388px;
+  padding-top: 72px;
+}
+
+.jinhak_view_cont .scroll {
+  width: 585px;
+  height: 256px;
+  overflow: scroll;
+  overflow-x: hidden;
+  margin: 0 0 0 70px;
+}
+
+.jinhak_view_cont h3 {
+  background: url(../../images/front/contents/counsel/bomulsum/job_view_tit_ico.gif)
+    no-repeat 1px 3px;
+  padding: 1px 0 16px 11px;
+  margin-left: 70px;
+  font-size: 24px;
+  color: #ff6633;
+  font-family: "NanumGothicBoldWeb";
+  line-height: 100%;
+}
+
+.jinhak_view_cont strong {
+  display: block;
+  font-size: 16px;
+  color: #000;
+  font-family: "NanumGothicBoldWeb";
+  padding: 0 0 5px 70px;
+}
+
+.jinhak_view_cont p {
+  line-height: 150%;
+  color: #444444;
+  font-size: 12px;
+}
+
+.jinhak_view_milepost2 {
+  position: absolute;
+  left: 175px;
+  top: 130px;
+  width: 880px;
+  height: 485px;
+  text-align: left;
+  z-index: 100;
+}
+
+.jinhak_view_milepost {
+  position: absolute;
+  left: 0;
+  top: 122px;
+  width: 655px;
+  height: 400px;
+  padding: 80px 0 0 265px;
+  text-align: left;
+  z-index: 100;
+  background: url(../../images/front/contents/counsel/bomulsum/study_milepost_bg.jpg)
+    no-repeat;
+}
+
+.jinhak_view_milepost h2 {
+  margin: 2px 0;
+}
+
+.jinhakCourseMenu {
+  background: url(../../images/front/contents/counsel/bomulsum/jinhak_body_main.jpg)
+    no-repeat;
+  width: 920px;
+  height: 640px;
+}
+
+.jinhak_milepost_guide1 {
+  position: absolute;
+  left: 626px;
+  top: 313px;
+  z-index: 1000;
+}
+
+.jinhak_milepost_guide2 {
+  position: absolute;
+  left: 702px;
+  top: 340px;
+  z-index: 1000;
+}
+
+.jinhak_milepost_guide3 {
+  position: absolute;
+  left: 626px;
+  top: 345px;
+  z-index: 1000;
+}
+
+.jinhak_weed {
+  position: absolute;
+  left: 547px;
+  top: 584px;
+  z-index: 1000;
+}
+
+.jinhakMenu1 a {
+  position: absolute;
+  left: 240px;
+  top: 220px;
+  width: 100px;
+  height: 70px;
+  text-indent: -100em;
+}
+
+.jinhakMenu2 a {
+  position: absolute;
+  left: 360px;
+  top: 190px;
+  width: 100px;
+  height: 70px;
+  text-indent: -100em;
+}
+
+.jinhakMenu3 a {
+  position: absolute;
+  left: 430px;
+  top: 130px;
+  width: 100px;
+  height: 50px;
+  text-indent: -100em;
+}
+
+/* 학습적응섬 */
+#bomulsumstudyMain {
+  position: relative;
+  background: url(../../images/front/contents/counsel/bomulsum/study_body_main.jpg)
+    no-repeat left top;
+  width: 920px;
+  height: 640px;
+  overflow: hidden;
+}
+
+#bomulsumstudyView {
+  position: relative;
+  background: url(../../images/front/contents/counsel/bomulsum/study_body_view.jpg)
+    no-repeat left top;
+  width: 920px;
+  height: 640px;
+}
+
+.study_logo {
+  position: absolute;
+  left: 55px;
+  top: 30px;
+}
+
+.study_main_txt {
+  position: absolute;
+  left: 57px;
+  top: 35px;
+}
+
+.study_main_people {
+  position: absolute;
+  left: 671px;
+  top: 389px;
+}
+
+.study_view_logo {
+  position: absolute;
+  left: 80px;
+  top: 48px;
+}
+
+.study_view_tit {
+  position: absolute;
+  left: 95px;
+  top: 50px;
+}
+
+.study_view_h1 {
+  position: absolute;
+  left: 57px;
+  top: 526px;
+}
+
+.study_view_mountain {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.study_view_mountain p {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 500;
+}
+
+.study_view_guide {
+  position: absolute;
+  left: 720px;
+  top: 432px;
+}
+
+.study_view_guide2 {
+  position: absolute;
+  left: 714px;
+  top: 313px;
+  z-index: 1000;
+}
+
+.study_milepost_guide1 {
+  position: absolute;
+  left: 615px;
+  top: 313px;
+  z-index: 1000;
+}
+
+.study_view_cloud {
+  position: absolute;
+  left: 556px;
+  top: 78px;
+}
+
+.study_view_cont {
+  position: absolute;
+  left: 95px;
+  top: 130px;
+  width: 716px;
+  height: 460px;
+}
+
+.study_view_cont .scroll {
+  position: absolute;
+  width: 585px;
+  height: 256px;
+  overflow: auto;
+  margin: 0 0 0 70px;
+  z-index: 999;
+}
+
+.study_view_cont h3 {
+  background: url(../../images/front/contents/counsel/bomulsum/job_view_tit_ico.gif)
+    no-repeat 1px 3px;
+  padding: 1px 0 16px 11px;
+  margin-left: 70px;
+  font-size: 24px;
+  color: #ff6633;
+  font-family: "NanumGothicBoldWeb";
+  line-height: 100%;
+}
+
+.study_view_cont strong {
+  display: block;
+  font-size: 16px;
+  color: #000;
+  font-family: "NanumGothicBoldWeb";
+  padding: 72px 0 5px 70px;
+}
+
+.study_view_cont p {
+  line-height: 150%;
+  color: #444444;
+  font-size: 12px;
+}
+
+.study_view_milepost {
+  position: absolute;
+  left: 0;
+  top: 122px;
+  width: 655px;
+  height: 400px;
+  padding: 80px 0 0 265px;
+  text-align: left;
+  z-index: 100;
+  background: url(../../images/front/contents/counsel/bomulsum/study_milepost_bg.jpg)
+    no-repeat;
+}
+
+.study_view_milepost h2 {
+  margin: 5px 0;
+}
+
+.study_weed {
+  position: absolute;
+  left: 547px;
+  top: 584px;
+  z-index: 1000;
+}
+
+/***** 상담신청 2013-0426 *****/
+.cnetsubmain_counsel {
+  position: relative;
+  width: 940px;
+  margin: 0 auto 30px auto;
+}
+
+/***** 상담신청 타이틀 *****/
+.counsel_title {
+  margin: 56px 0 25px 0;
+  width: 940px;
+  font-family: Malgun Gothic;
+}
+
+.counsel_title h1 {
+  margin: 0;
+  padding: 0;
+  height: 38px;
+  font-size: 0;
+  line-height: 999px;
+  overflow: hidden;
+  background: url(../../images/front/contents/counsel/cnetsubmain_counsel_title.gif)
+    0 0 no-repeat;
+}
+
+.counsel_title p {
+  margin: 0;
+  padding: 0;
+  height: 14px;
+  font-size: 0;
+  line-height: 999px;
+  overflow: hidden;
+  background: url(../../images/front/contents/counsel/cnetsubmain_counsel_subtitle.gif)
+    0 0 no-repeat;
+}
+
+.counsel_contents {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.counsel_contents ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 940px;
+  height: 440px;
+}
+
+.counsel_contents li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  vertical-align: top;
+}
+
+/***** 상담신청
+.counsel_request {margin: 0; padding: 0; width: 330px; height: 440px; background: url(../../images/front/contents/counsel/counsel_request.gif) 0 0 no-repeat;}
+.counsel_request h2,
+.counsel_request p {display: none;}
+.counsel_request .request_link a {display: block; width: 330px; height: 440px; border: 0; font-size: 0; line-height: 999px; overflow: hidden; background: url(../../images/front/contents/counsel/link_button.gif) 35px 155px no-repeat; cursor: pointer;}
+	*****/
+.counsel_request_ho .request_link a {
+  position: absolute;
+  top: 38px;
+  left: 146px;
+  width: 26px;
+  height: 26px;
+  border: 0;
+  font-size: 0;
+  line-height: 999px;
+  overflow: hidden;
+}
+
+.counsel_request_ho .request_link02 a {
+  position: absolute;
+  bottom: 130px;
+  right: 38px;
+  width: 26px;
+  height: 26px;
+  border: 0;
+  font-size: 0;
+  line-height: 999px;
+  overflow: hidden;
+}
+
+/***** 이주의 공감상담 *****/
+.counsel_week {
+  margin: 0;
+  padding: 0;
+  width: 330px;
+  height: 440px;
+  font-family: Malgun Gothic;
+  background: url(../../images/front/contents/counsel/counsel_week.gif) 0 0
+    no-repeat;
+}
+
+.counsel_week h2,
+.counsel_week p {
+  display: none;
+}
+
+.counsel_week .week_link {
+  padding-top: 150px;
+}
+
+.week_link ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 330px;
+  height: 290px;
+}
+
+.week_link li {
+  display: block;
+  margin: 0;
+  padding: 0 0 0 35px;
+  list-style: none;
+}
+
+.week_link .link_bbstitle {
+  height: 26px;
+  line-height: 26px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  vertical-align: middle;
+}
+
+.week_link .link_bbstitle .bbstitle_text {
+  display: inline-block;
+  width: 220px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+
+.week_link .link_button {
+  display: inline-block;
+  width: 36px;
+  height: 26px;
+  border: 0;
+  font-size: 0;
+  vertical-align: middle;
+  background: url(../../images/front/contents/counsel/link_button.gif) right 0
+    no-repeat;
+  cursor: pointer;
+}
+
+.week_link .link_bbscontent {
+  display: inline-block;
+  padding: 14px 40px 0 30px;
+  height: 50px;
+  overflow: hidden;
+}
+
+.week_link .link_bbscontent a {
+  line-height: 18px;
+  letter-spacing: -1px;
+}
+
+/**/
+/***** 진로탐험대 *****/
+.counsel_exploration {
+  margin: 0;
+  padding: 0;
+  width: 270px;
+  height: 440px;
+  background: url(../../images/front/contents/counsel/counsel_exploration.gif) 0
+    0 no-repeat;
+}
+
+.counsel_exploration h2,
+.counsel_exploration p {
+  display: none;
+}
+
+.counsel_exploration .exploration_link {
+}
+
+.exploration_link a {
+  color: #444;
+  font-size: 12px;
+  line-height: 12px;
+  font-family: Dotum;
+  text-decoration: none;
+}
+
+.exploration_link .link_button {
+  display: block;
+  width: 270px;
+  height: 440px;
+  border: 0;
+  font-size: 0;
+  line-height: 999px;
+  overflow: hidden;
+  background: url(../../images/front/contents/counsel/link_button.gif) 35px
+    150px no-repeat;
+  cursor: pointer;
+}
+
+/***** 전문 사이버 상담센터 *****/
+/*
+.counsel_cyber {clear:both; width: 940px; height: 128px; border-bottom: 1px solid #ccc; background: url(../../images/front/contents/counsel/counsel_cyber.gif) 0 0 no-repeat;}
+.counsel_cyber h2,
+.counsel_cyber p {display: none;}
+.counsel_cyber .cyber_link {position:relative; float:left; width:465px; padding:24px 0 0 500px;}
+.counsel_cyber .cyber_link ul {width:348px; overflow:hidden;}
+.counsel_cyber .cyber_link li {float:left; width:58px; padding-bottom:3px;}
+.counsel_cyber .cyber_link li a {display:block; width:55px; height:13px; background:url(../../images/front/contents/counsel/main_map_off.gif) no-repeat left top; font-size:11px; color:#666; padding:7px 0 0 9px;}
+.counsel_cyber .cyber_link li a span {visibility:hidden; position:absolute; left:0; top:0;  z-index:100;}
+.counsel_cyber .cyber_link li a:hover {display:block; width:46px; height:15px; background:url(../../images/front/contents/counsel/main_map_on.gif) no-repeat left top; font-size:11px; color:#fff; padding:5px 0 0 9px;}
+.counsel_cyber .cyber_link li a:hover span {visibility:visible; position:absolute; left:455px; top:57px;   z-index:100;}
+.counsel_cyber .cyber_link .map {position:absolute; right:0; top:0; z-index:1;}
+*/
+/***** 전문 사이버 상담센터 *****20131008_조가영*/
+.counsel_cyber {
+  clear: both;
+  width: 940px;
+  height: 128px;
+  border-bottom: 1px solid #ccc;
+  overflow: hidden;
+}
+
+.counsel_cyber .cyber_info {
+  margin-top: 23px;
+  width: 240px;
+  float: left;
+}
+
+.counsel_cyber .cyber_link_info h2,
+.counsel_cyber .cyber_info h2 {
+  margin-bottom: 8px;
+}
+
+.counsel_cyber .cyber_info p {
+  margin-bottom: 4px;
+}
+
+.counsel_cyber .cyber_link_info {
+  margin-top: 24px;
+  width: 240px;
+  float: left;
+}
+
+.counsel_cyber .cyber_link {
+  width: 460px;
+  height: 128px;
+  background: url(../../images/front/contents/counsel/counsel_cyber_link_bg.gif)
+    no-repeat right bottom;
+  float: right;
+}
+
+.counsel_cyber .cyber_link ul {
+  margin: 24px 0 0 23px;
+  width: 348px;
+  overflow: hidden;
+}
+
+.counsel_cyber .cyber_link li {
+  float: left;
+  width: 58px;
+  padding-bottom: 3px;
+}
+
+.counsel_cyber .cyber_link li a {
+  display: block;
+  width: 55px;
+  height: 13px;
+  background: url(../../images/front/contents/counsel/main_map_off.gif)
+    no-repeat left top;
+  font-size: 11px;
+  color: #666;
+  padding: 7px 0 0 9px;
+}
+
+.counsel_cyber .cyber_link li a:hover {
+  display: block;
+  width: 46px;
+  height: 15px;
+  background: url(../../images/front/contents/counsel/main_map_on.gif) no-repeat
+    left top;
+  font-size: 11px;
+  color: #fff;
+  padding: 5px 0 0 9px;
+}
+
+.counsel_cyber .cyber_link .map {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+/***** 학부모상담 지원 안내 *****/
+div.counsel_layerpop {
+  border: 0;
+  padding: 8px;
+  background: #fff url(../../images/front/contents/counsel/popup_bg02.png)
+    no-repeat;
+}
+
+div.counsel_layerpop .ui-dialog-titlebar {
+  background: none;
+  border: 0;
+  padding: 0;
+  font-size: 14px;
+  text-align: center;
+  padding: 3px 0;
+}
+
+div.counsel_layerpop .ui-dialog-titlebar .ui-dialog-title {
+  float: none;
+}
+
+div.counsel_layerpop .ui-dialog-titlebar-close {
+  display: block;
+  top: 0;
+  right: 0;
+  width: 22px;
+  height: 21px;
+  margin: 0;
+  padding: 0;
+  background: url(../../images/front/contents/counsel/popup_xclose.gif)
+    no-repeat;
+}
+
+div.counsel_layerpop .ui-dialog-titlebar-close:hover {
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+}
+
+div.counsel_layerpop .ui-dialog-titlebar-close .ui-icon-closethick {
+  display: none;
+}
+
+div.counsel_layerpop .counsel_pop {
+  padding: 5px 0;
+}
+
+div.counsel_layerpop .ui-dialog-buttonpane {
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: 0;
+}
+
+div.counsel_layerpop .ui-dialog-buttonpane button {
+  margin: 0;
+  width: 67px;
+  height: 27px;
+  border: 0;
+  background: url(../../images/front/contents/counsel/popup_close.gif) no-repeat;
+}
+
+div.counsel_layerpop .ui-dialog-buttonpane button span {
+  display: none;
+}
+
+.counsel_pop .pop_title {
+  height: 35px;
+  margin: 0;
+  padding: 0;
+}
+
+.counsel_pop .pop_xclose {
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 22px;
+  height: 21px;
+  background: url(../../images/front/contents/counsel/popup_xclose.gif)
+    no-repeat;
+}
+
+.counsel_pop .pop_xclose span {
+  display: none;
+}
+
+.counsel_pop .pop_content {
+  display: block;
+  border: 1px solid #adadad;
+  background: #fff;
+}
+
+.counsel_pop .pop_content img {
+  vertical-align: top;
+}
+
+.counsel_pop .pop_bottom {
+  text-align: right;
+  margin: 5px;
+}
+
+.counsel_pop .pop_closebtn {
+  display: block;
+  width: 22px;
+  height: 21px;
+  background: url(../../images/front/contents/counsel/popup_close.gif) no-repeat;
+}
+
+.counsel_pop .pop_closebtn span {
+  display: none;
+}
+
+/*진로상담 추가*/
+.counsel_request_ho {
+  margin: 0;
+  padding: 0;
+  width: 330px;
+  height: 440px;
+  background: url(../../images/front/contents/counsel/left_cont.gif) 0 0
+    no-repeat;
+  position: relative;
+}
+
+.counsel_request_ho h2,
+.counsel_request_ho p {
+  display: none;
+}
+
+.counsel_request_ho .reqiest_text {
+  padding: 290px 0 0 0;
+  height: 80px;
+}
+
+.counsel_request_ho .reqiest_text .bbstitle_text {
+  display: inline-block;
+  width: 220px;
+  line-height: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+
+.counsel_request_ho .reqiest_text ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 330px;
+  height: 140px;
+}
+
+.counsel_request_ho .reqiest_text li {
+  display: block;
+  margin: 0;
+  padding: 0 0 0 35px;
+  list-style: none;
+}
+
+.counsel_request_ho .reqiest_text li.text01 {
+  height: 26px;
+  line-height: 26px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  vertical-align: middle;
+}
+
+.counsel_request_ho .reqiest_text li.text02 {
+  display: inline-block;
+  padding: 14px 40px 0 30px;
+  height: 50px;
+  overflow: hidden;
+}
+
+.counsel_request_ho .reqiest_text li.text02 a {
+  line-height: 18px;
+  letter-spacing: -1px;
+}
+
+/*친구야*/
+.help_friend {
+  margin: 0;
+  padding: 0;
+  width: 330px;
+  height: 440px;
+  background: url(../../images/front/contents/counsel/cent_cont.gif) 0 0
+    no-repeat;
+  position: relative;
+}
+
+.help_friend .text_box {
+  width: 172px;
+  height: 96px;
+  padding: 150px 0 0 110px;
+  position: relative;
+}
+
+.help_friend .text_box .text01 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.help_friend .text_box .text02 {
+  width: 120px;
+}
+
+.help_friend .btn {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+}
+
+.help_friend .best_btn {
+  position: absolute;
+  right: 125px;
+  bottom: 92px;
+}
+
+/***** 신규 : 진로솔루션 서비스안내  2017.03.20 *****/
+.counsel_intro_head p {
+  font-size: 14px;
+  color: #333;
+  padding: 12px 0 12px 0;
+  line-height: 150%;
+}
+
+.counsel_intro_contents .btn_area {
+  background: #f0f5f7 url(../../images/sub_main/examen_intro.png) right top
+    no-repeat;
+  border: 1px solid #b7cfd9;
+  height: 136px;
+}
+
+.counsel_intro_contents .btn_area a {
+  display: inline-block;
+  border-radius: 5px;
+  height: 23px;
+  padding: 15px 25px 5px 25px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.counsel_intro_contents .box_wrap {
+  padding: 30px 0 0 0;
+}
+
+.counsel_intro_contents .box_wrap .boxing {
+  border: 1px solid #b7cfd9;
+  margin-bottom: 20px;
+}
+
+.counsel_intro_contents .box_wrap .boxing h2 {
+  background: #f0f5f7;
+  height: 35px;
+  padding: 20px 0 0 30px;
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+}
+
+.counsel_intro_contents .box_wrap .boxing .box_content {
+  padding: 28px;
+}
+
+.counsel_intro_contents .box_wrap .box01 .box_content {
+  text-align: center;
+}
+
+.counsel_intro_contents .box_wrap .box01 p.info {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.4;
+  margin-bottom: 15px;
+  background: url(../../images/sub_main/solution_intro.png) 700px top no-repeat;
+  padding: 0 0 25px 0;
+  text-align: left;
+}
+
+.counsel_intro_contents .box_wrap .box01 p.info strong {
+  color: #fd5301;
+}
+
+.counsel_intro_contents .box_wrap .boxing .step_sbox {
+  display: inline-block;
+  border: 1px solid #b2c4a4;
+  border-radius: 5px;
+  width: 280px;
+  height: 170px;
+  position: relative;
+  vertical-align: middle;
+}
+
+.counsel_intro_contents .box_wrap .boxing .step_sbox h3 {
+  background: #f3f7f5;
+  height: 25px;
+  padding: 15px 0 0 0;
+  font-size: 14px;
+  color: #000;
+  font-weight: bold;
+  border-radius: 5px 5px 0 0;
+  text-align: center;
+}
+
+.counsel_intro_contents .box_wrap .boxing .step_sbox span {
+  display: block;
+  background: url(../../images/sub_main/solution_intro.png) -581px -35px
+    no-repeat;
+  width: 74px;
+  height: 74px;
+  position: absolute;
+  padding: 0;
+  left: 10px;
+  top: 50px;
+}
+
+.counsel_intro_contents .box_wrap .boxing .step_sbox p {
+  padding: 17px 10px 0 93px;
+  text-align: left;
+  word-break: keep-all;
+}
+
+.counsel_intro_contents .box_wrap .boxing .step_sbox a {
+  margin: 10px 0 20px 44px;
+  background: #fe9b00;
+  display: inline-block;
+  border-radius: 5px;
+  height: 22px;
+  padding: 8px 15px 0 15px;
+  font-size: 13px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.counsel_intro_contents .box_wrap .boxing .step_arw {
+  display: inline-block;
+  width: 80px;
+  height: 170px;
+  vertical-align: middle;
+  background: url(../../images/sub_main/solution_intro.png) -748px 27px no-repeat;
+}
+
+.counsel_intro_contents .box_wrap .box02 p.info {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.4;
+  margin-bottom: 15px;
+  padding: 0 0 25px 0;
+  text-align: left;
+}
+
+.counsel_intro_contents .box_wrap .box02 .solution {
+  display: inline-block;
+  width: 428px;
+  height: 95px;
+  background: url(../../images/sub_main/solution_intro.png) 0 -135px no-repeat;
+  padding: 252px 0 0 29px;
+}
+
+.counsel_intro_contents .box_wrap .box02 .solution.s2 {
+  background-position: -460px -135px;
+}
+
+.counsel_intro_contents .box_wrap .box02 .solution h3 {
+  text-indent: -9999px;
+}
+
+.counsel_intro_contents .box_wrap .box02 .solution p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.4;
+}
+
+.counsel_intro_contents .box_wrap .box02 .payback {
+  position: relative;
+}
+
+.counsel_intro_contents .box_wrap .box02 .payback h3 {
+  padding: 20px 0 10px 30px;
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+}
+
+.counsel_intro_contents .box_wrap .box02 .payback p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.4;
+  margin-bottom: 15px;
+  padding: 0 0 25px 33px;
+  text-align: left;
+  width: 510px;
+}
+
+.counsel_intro_contents .box_wrap .box02 .payback p strong {
+  color: #205caa;
+  display: block;
+  padding: 5px 0 10px 0;
+}
+
+.counsel_intro_contents .box_wrap .box02 .payback a {
+  position: absolute;
+  left: 580px;
+  top: 42px;
+  background: #3b79c9;
+  border: 1px solid #0054a6;
+  display: inline-block;
+  border-radius: 5px;
+  height: 28px;
+  padding: 12px 25px 0 25px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+}
+
+/***** 신규 : 진로탐헙대 서비스안내  2017.03.20 *****/
+.adven_intro_head p {
+  font-size: 14px;
+  color: #333;
+  padding: 12px 0 30px 0;
+  line-height: 150%;
+}
+
+.adven_intro_head .tab_menus_re2 ul li a span {
+  position: absolute;
+  width: 96px;
+  height: 96px;
+  display: block;
+  right: 10px;
+  top: -27px;
+  background: url(../../images/sub_main/adventure_intro.png) -100px 0 no-repeat;
+}
+
+.adven_intro_head .tab_menus_re2 ul li.tab01 a.selected span {
+  background-position: 0 0;
+}
+
+.adven_intro_head .tab_menus_re2 ul li.tab02 a span {
+  background-position: -339px 0;
+}
+
+.adven_intro_head .tab_menus_re2 ul li.tab02 a.selected span {
+  background-position: -221px 0;
+}
+
+.adven_intro_contents {
+  background: url(../../images/sub_main/adventure_intro.png) 0 -100px;
+  height: 608px;
+  border: 1px solid #b7b1aa;
+  margin-top: 15px;
+}
+
+.adven_intro_contents h3 {
+  padding: 0 0 10px 0;
+  font-size: 20px;
+  color: #000;
+  font-weight: bold;
+  margin: 50px 0 0 184px;
+}
+
+.adven_intro_contents h3 strong {
+  color: #fd5301;
+}
+
+.adven_intro_contents p {
+  padding: 0;
+  font-size: 14px;
+  color: #000;
+  margin: 10px 0 100px 184px;
+  line-height: 1.5;
+}
+
+.adven_intro_contents h3 span {
+  display: inline-block;
+  text-indent: -9999px;
+  width: 0;
+}
+
+.adven_intro_contents ul {
+  margin: 40px 0 43px 184px;
+  line-height: 1.5;
+}
+
+.adven_intro_contents li h4 {
+  padding: 0 0 10px 0;
+  font-size: 20px;
+  color: #000;
+  font-weight: bold;
+}
+
+.adven_intro_contents li {
+  padding: 0 94px 25px 0;
+  font-size: 12px;
+  color: #000;
+  display: inline-block;
+  width: 321px;
+  line-height: 1.4;
+}
+
+.adven_intro_contents li:nth-child(even) {
+  padding: 0 0 25px 0;
+}
+
+.adven_intro_contents .go_adventure {
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+  text-align: right;
+  padding: 0 60px 0 0;
+}
+
+.adven_intro_contents .go_adventure a {
+  background: #f07033;
+  border: 1px solid #c9671e;
+  display: inline-block;
+  border-radius: 8px;
+  height: 28px;
+  padding: 12px 25px 0 25px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+  margin: 0 0 0 10px;
+}
+
+.word_tit p.tit_dscpt {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+}
+
+/***** 신규 : 친구야도와줘 서비스안내  2017.03.20 *****/
+.friends_intro_head p {
+  font-size: 14px;
+  color: #333;
+  padding: 12px 0 12px 0;
+  line-height: 150%;
+}
+
+.friends_intro_contents .btn_area {
+  background: #f0f5f7 url(../../images/sub_main/examen_intro.png) right top
+    no-repeat;
+  border: 1px solid #b7cfd9;
+  height: 136px;
+}
+
+.friends_intro_contents .btn_area a {
+  display: inline-block;
+  border-radius: 5px;
+  height: 23px;
+  padding: 15px 25px 5px 25px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.friends_intro_contents .box_wrap {
+  padding: 30px 0 0 0;
+}
+
+.friends_intro_contents .box_wrap .boxing {
+  border: 1px solid #b7cfd9;
+  margin-bottom: 20px;
+}
+
+.friends_intro_contents .box_wrap .boxing h2 {
+  background: #f0f5f7;
+  height: 35px;
+  padding: 20px 0 0 30px;
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+}
+
+.friends_intro_contents .box_wrap .boxing .box_content {
+  padding: 28px;
+}
+
+.friends_intro_contents .box_wrap .box01 .box_content {
+  text-align: center;
+}
+
+.friends_intro_contents .box_wrap .box01 p.info {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.4;
+  margin-bottom: 15px;
+  background: url(../../images/sub_main/friends_intro.png) 650px top no-repeat;
+  padding: 0 0 25px 0;
+  text-align: left;
+}
+
+.friends_intro_contents .box_wrap .box01 p.info strong {
+  color: #fd5301;
+}
+
+.friends_intro_contents .box_wrap .box01 p.info span {
+  font-weight: bold;
+}
+
+.friends_intro_contents .box_wrap .boxing .step_sbox {
+  display: inline-block;
+  border: 1px solid #b2c4a4;
+  border-radius: 5px;
+  width: 188px;
+  position: relative;
+  vertical-align: middle;
+}
+
+.friends_intro_contents .box_wrap .boxing .step_sbox h3 {
+  background: #f3f7f5;
+  height: 25px;
+  padding: 15px 0 0 0;
+  font-size: 14px;
+  color: #000;
+  font-weight: bold;
+  border-radius: 5px 5px 0 0;
+  text-align: center;
+}
+
+.friends_intro_contents .box_wrap .boxing .step_sbox span {
+  display: block;
+  background: url(../../images/sub_main/solution_intro.png) -581px -35px
+    no-repeat;
+  width: 74px;
+  height: 74px;
+  position: absolute;
+  padding: 0;
+  left: 10px;
+  top: 50px;
+}
+
+.friends_intro_contents .box_wrap .boxing .step_sbox p {
+  padding: 17px 10px 0 0;
+  text-align: center;
+  word-break: keep-all;
+}
+
+.friends_intro_contents .box_wrap .boxing .step_sbox a {
+  margin: 10px 0 20px 0;
+  background: #87ba5d;
+  display: inline-block;
+  border-radius: 5px;
+  height: 22px;
+  padding: 8px 15px 0 15px;
+  font-size: 13px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.friends_intro_contents .box_wrap .boxing .step_arw {
+  display: inline-block;
+  width: 43px;
+  height: 170px;
+  vertical-align: middle;
+  background: url(../../images/sub_main/solution_intro.png) -767px 27px no-repeat;
+}
+
+.friends_intro_contents .box_wrap .boxing .sdscpt {
+  text-align: right;
+  font-size: 12px;
+  color: #666;
+  line-height: 1.5;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0 20px 0;
+}
+
+.friends_intro_contents .box_wrap .boxing .join {
+  padding: 30px 0;
+  text-align: left;
+  background: url(../../images/sub_main/friends_intro.png) 650px -218px no-repeat;
+}
+
+.friends_intro_contents .box_wrap .boxing .join dt {
+  font-size: 16px;
+  color: #000;
+  line-height: 1.4;
+  font-weight: bold;
+  display: inline-block;
+  padding: 15px 20px 0 0;
+  background: url(../../images/sub_main/friends_intro.png) right -188px no-repeat;
+}
+
+.friends_intro_contents .box_wrap .boxing .join dt b {
+  color: #fd5301;
+  padding-left: 5px;
+}
+
+.friends_intro_contents .box_wrap .boxing .join dd {
+  font-size: 13px;
+  color: #000;
+  line-height: 1.5;
+  display: inline-block;
+  width: 825px;
+  vertical-align: top;
+  padding: 15px 0 0 0;
+}
+
+.friends_intro_contents .box_wrap .boxing .join dd span {
+  font-weight: bold;
+  display: block;
+  padding: 0 0 5px 0;
+}
+
+.friends_intro_contents .box_wrap .boxing .join dd strong {
+  color: #fd5301;
+}
+
+.friends_intro_contents .box_wrap .boxing .btn_join {
+  background: #fe9b00;
+  border: 2px solid #f98a14;
+  display: inline-block;
+  border-radius: 5px;
+  height: 28px;
+  padding: 12px 30px 0 30px;
+  font-size: 15px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.h1_tit_new {
+  font-size: 14px;
+  color: #333;
+  padding: 12px 0 12px 0;
+  line-height: 1.5;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/***** 신규 : 서비스안내  2017.03.20 *****/
+.examen_intro_head p {
+  font-size: 14px;
+  color: #333;
+  padding: 12px 0 12px 0;
+  line-height: 150%;
+}
+
+.examen_intro_contents .btn_area {
+  background: #f0f5f7 url(../../images/sub_main/examen_intro.png) right top
+    no-repeat;
+  border: 1px solid #b7cfd9;
+  height: 136px;
+}
+
+.examen_intro_contents .btn_area a {
+  display: inline-block;
+  border-radius: 5px;
+  height: 23px;
+  padding: 15px 25px 5px 25px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.examen_intro_contents .btn_area a.btn01 {
+  background: #0095d0;
+  border: 1px solid #1f8cae;
+  margin: 45px 5px 0 35px;
+}
+
+.examen_intro_contents .btn_area a.btn02 {
+  background: #5a9440;
+  border: 1px solid #5f9e43;
+}
+
+.examen_intro_contents .btn_area a.btn01:hover {
+  background: #03829a;
+}
+
+.examen_intro_contents .btn_area a.btn02:hover {
+  background: #31860b;
+}
+
+.examen_intro_contents .box_wrap {
+  padding: 30px 0 0 0;
+}
+
+.examen_intro_contents .box_wrap .boxing {
+  border: 1px solid #b7cfd9;
+  width: 478px;
+  float: left;
+}
+
+.examen_intro_contents .box_wrap .boxing h2 {
+  background: #f0f5f7;
+  height: 35px;
+  padding: 20px 0 0 30px;
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+}
+
+.examen_intro_contents .box_wrap .boxing .box_content {
+  padding: 28px;
+}
+
+.examen_intro_contents .box_wrap .box01 {
+  height: 285px;
+  margin: 0 20px 20px 0;
+}
+
+.examen_intro_contents .box_wrap .box02 {
+  height: 285px;
+}
+
+.examen_intro_contents .box_wrap .box03 {
+  height: 290px;
+  margin-right: 20px;
+}
+
+.examen_intro_contents .box_wrap .box04 {
+  height: 290px;
+}
+
+.examen_intro_contents .box_wrap .box01 li {
+  line-height: 1.4;
+  padding: 5px 0;
+}
+
+.examen_intro_contents .box_wrap .box02 p {
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.examen_intro_contents .box_wrap .box02 h3 {
+  font-size: 14px;
+  color: #00769b;
+  font-weight: bold;
+  padding: 15px 0 5px 0;
+}
+
+.examen_intro_contents .box_wrap .box02 li {
+  padding: 3px 0;
+}
+
+.examen_intro_contents .box_wrap .box03 p.dscp1 {
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.examen_intro_contents .box_wrap .box03 p.dscp2 {
+  font-size: 12px;
+  color: #333;
+  line-height: 1.4;
+  padding: 15px 0;
+}
+
+.examen_intro_contents .box_wrap .box03 p.dscp1 strong {
+  color: #fd5301;
+}
+
+.examen_intro_contents .box_wrap .box03 a {
+  display: inline-block;
+  border-radius: 5px;
+  height: 20px;
+  padding: 12px 25px 5px 25px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.examen_intro_contents .box_wrap .box03 .box_btn01 {
+  background: #5b7197;
+  margin: 0 5px 0 0;
+}
+
+.examen_intro_contents .box_wrap .box03 .box_btn02 {
+  background: #fff;
+  border: 1px solid #5b7197;
+  color: #2f4469;
+}
+
+.examen_intro_contents .box_wrap .box04 dl dt {
+  background: url(../../images/sub_main/examen_intro.png) -6px -144px no-repeat;
+  width: 74px;
+  height: 74px;
+  position: absolute;
+  text-align: center;
+  padding: 80px 0 0 0;
+  font-weight: bold;
+  color: #000;
+  font-size: 14px;
+}
+
+.examen_intro_contents .box_wrap .box04 dl dd {
+  padding: 0 0 15px 100px;
+  line-height: 1.4;
+  word-break: keep-all;
+}
+
+.examen_intro_contents .box_wrap .box04 dl dd span {
+  font-weight: bold;
+  color: #000;
+  font-size: 14px;
+  display: block;
+  padding: 0 0 5px 0;
+}
+
+.examen_intro_contents .box_wrap .box04 dl.app {
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+  margin-top: 5px;
+}
+
+.examen_intro_contents .box_wrap .box04 dl.app dt {
+  background-position: -85px -144px;
+}
+
+.examen_intro_contents .box_wrap .box04 dl.app dd {
+  border: 1px solid #ccc;
+  color: #2f4469;
+  margin: 0 0 5px 100px;
+  padding: 0;
+  border-radius: 5px;
+  width: 240px;
+  height: 34px;
+  font-size: 14px;
+  color: #000;
+}
+
+.examen_intro_contents .box_wrap .box04 dl.app dd span {
+  display: inline-block;
+  padding: 0;
+  background: url(../../images/sub_main/examen_intro.png) -343px -158px
+    no-repeat;
+  width: 40px;
+  height: 36px;
+  vertical-align: middle;
+}
+
+.examen_intro_contents .box_wrap .box04 dl.app dd:last-child span {
+  background-position: -383px -158px;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.month_goal {
+  position: relative;
+  padding: 15px 0 0 0;
+  margin-bottom: -20px;
+}
+
+.month_goal .mon {
+  font-size: 16px;
+  color: #fb510d;
+  font-weight: bold;
+}
+
+.month_goal p {
+  font-size: 20px;
+  color: #000;
+  padding: 10px 0 10px 10px;
+  font-weight: bold;
+}
+
+.month_goal .date {
+  position: absolute;
+  right: 10px;
+  top: 50px;
+}
+
+.solution-title-wrap {
+  position: relative;
+}
+
+.btn-solution-top {
+  margin-top: 8px;
+}
+
+.btn-solution-top .btn-solution-go {
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 30px 0 62px;
+  border-radius: 18px;
+  background: url(../../images/jinro/ico_solution_answer.png) no-repeat 30px 9px
+    #2b4889;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.btn-solution-top .btn-solution-go.best {
+  background: url(../../images/jinro/ico_solution_go.png) no-repeat 30px 9px
+    #2b4889;
+}
+
+.btn-solution-top .btn-solution-info {
+  display: inline-block;
+  height: 38px;
+  line-height: 38px;
+  padding: 0 25px;
+  margin: 0 0 0 10px;
+  border: 1px solid #c7c7c7;
+  border-radius: 18px;
+  background: #f8f8f8;
+  color: #555;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.img-jinroSolution-top {
+  position: absolute;
+  right: 52px;
+  bottom: -28px;
+  width: 180px;
+  height: 136px;
+  background: url(../../images/jinro/img_solution_top.png) no-repeat 0 0;
+}
+
+.title-solution-cont {
+  padding: 20px 0 23px 15px;
+  border-top: 2px solid #adb9c6;
+  color: #3f5063;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.title-solution-cont + .board_view_conts {
+  margin-top: 0;
+}
+
+.title-solution-cont + .board_view_conts .board_view {
+  border-top: 1px solid #adb9c6;
+}
+
+.title-solution-cont + .board-help-wrap {
+  border-top: 1px solid #adb9c6;
+}
+
+.btn-submit-counsel {
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 48px 0 50px;
+  border-radius: 3px;
+  background: #6b7b8e;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.board_view_conts.scroll-box {
+  width: 940px;
+  height: 450px;
+  overflow-y: auto;
+  margin: 0;
+  padding: 20px;
+  border-bottom: 1px solid #adb9c6;
+}
+
+/***이주의 공감상담***/
+.junior_go_banner {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-right: 149px;
+  background: #e5f1f5 url(../../images/counsel/bg_junior_banner.png) no-repeat
+    730px 0;
+  font-size: 20px;
+  line-height: 70px;
+  color: #2a2a2a;
+  text-align: center;
+  letter-spacing: -1px;
+}
+
+.junior_go_banner strong {
+  font-weight: 700;
+  color: #396ec2;
+}
+
+.junior_go_banner .go_btn {
+  display: inline-block;
+  margin-left: 12px;
+  padding: 0 28px 0 15px;
+  border-radius: 15px;
+  background: #11959c url(../../images/counsel/btn_junior_arrow.png) no-repeat
+    100% 50%;
+  font-size: 14px;
+  line-height: 30px;
+  color: #fff;
+  vertical-align: 3px;
+}
+
+.board_list .week_best td,
+.board_list .week_best:hover td {
+  background: #2793e0;
+  color: #fff;
+  font-weight: 600;
+}
+
+.board_list .week_best td a {
+  color: #fff;
+}
+
+.board_list .week_best .c33a501 {
+  color: #fff;
+}
+
+.btn_dark_gray_bg {
+  display: inline-block;
+  margin: 0 2px;
+  padding: 0 20px;
+  border: 1px solid #6b7b8e;
+  border-radius: 3px;
+  background: #6b7b8e;
+  font-size: 15px;
+  line-height: 38px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.btn_dark_gray_bg:hover {
+  color: #fff;
+}
+
+.btn_dark_gray_line {
+  display: inline-block;
+  margin: 0 2px;
+  padding: 0 20px;
+  border: 1px solid #6b7b8e;
+  border-radius: 3px;
+  background: #fff;
+  font-size: 15px;
+  line-height: 38px;
+  font-weight: 500;
+  color: #6b7b8e;
+}
+
+.btn_dark_gray_line:hover {
+  color: #6b7b8e;
+}
+
+/*20201105 상담기능개선*/
+#careernet,
+select,
+a {
+  color: #333;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.counsel-h2 {
+  font-size: 32px;
+  font-weight: 500;
+  font-family: "Nanum Gothic", "돋움", dotum, AppleGothic, droidS, sans-serif;
+}
+
+.counsel-h2 span {
+  color: #e14f1e;
+}
+
+.h1_tit_new.nopadding {
+  padding: 12px 0 3px 0;
+}
+
+.info-wrap {
+  position: relative;
+  border-top: 2px solid #ccc;
+  margin-top: 40px;
+  padding: 40px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-wrap:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.info-wrap .info-tit {
+  padding: 0px 0 40px 0px;
+  font-size: 20px;
+  color: #333;
+  position: relative;
+}
+
+.info-wrap .info-tit::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background: #e0501c;
+  position: absolute;
+  top: 6px;
+  left: -15px;
+}
+
+.info-wrap .info-tit span {
+  font-size: 14px;
+  margin-left: 24px;
+}
+
+.info-wrap .info-tit span.pocen {
+  position: absolute;
+  top: 3px;
+}
+
+.info-wrap .info-tit span.r-color {
+  color: #e14f1e;
+  font-size: 20px;
+  margin: 0;
+}
+
+.info-wrap .info-tit a.no-tit {
+  position: absolute;
+  top: -5px;
+  left: 235px;
+  width: 96px;
+  line-height: 32px;
+  color: #fff;
+  background: #888;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.info-wrap .infobox:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.info-wrap .infobox .user-info {
+  width: 770px;
+  margin: 10px 0 0px;
+  font-size: 16px;
+}
+
+.info-wrap .infobox .user-info:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.info-wrap .infobox .user-info .radman {
+  width: 164px;
+  float: left;
+  margin: 0 20px 0 8px;
+}
+
+.info-wrap .infobox .user-info .radman li {
+  width: 50%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.info-wrap .infobox .user-info .radman li input[type="radio"] + label {
+  height: 40px;
+  line-height: 36px;
+}
+
+.info-wrap .infobox .user-info .radman li input[type="radio"]:checked + label {
+  line-height: 35px;
+}
+
+.info-wrap .infobox .user-info .name {
+  float: left;
+  width: 206px;
+}
+
+.info-wrap .infobox .user-info .agen {
+  width: 80px;
+  margin-right: 8px;
+}
+
+.info-wrap .infobox .user-info .place {
+  width: 240px;
+  margin-left: 24px;
+}
+
+.info-wrap .infobox .email-wrap {
+  margin-top: 25px;
+}
+
+.info-wrap .infobox .marem {
+  margin: 0 8px;
+}
+
+.info-wrap .infobox .email01 {
+  width: 206px;
+}
+
+.info-wrap .infobox .email02 {
+  width: 262px;
+}
+
+.info-wrap .infobox .email03 {
+  width: 240px;
+  margin-left: 25px;
+}
+
+.info-wrap .infobox .g-color {
+  font-size: 14px;
+  color: #888;
+  margin-top: 24px;
+}
+
+.info-wrap .infobox ul li label > span {
+  width: 98%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 1.3;
+  word-break: keep-all;
+}
+
+.info-wrap .infobox ul li span.fontsize14 {
+  display: block;
+  font-size: 14px;
+}
+
+.info-wrap input[type="radio"],
+.info-wrap input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0px, 0px, 0px, 0px);
+}
+
+.info-wrap .infobox ul {
+  width: 100%;
+}
+
+.info-wrap .infobox ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.info-wrap .infobox ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.info-wrap .infobox ul.identity li {
+  width: 16.6666%;
+  margin-top: 32px;
+  text-align: center;
+}
+
+.info-wrap .infobox ul.rabox5 li {
+  width: 20%;
+}
+
+.info-wrap .infobox ul.rabox2 li {
+  width: 160px;
+  height: 48px;
+}
+
+.info-wrap .infobox ul.rabox2 li input[type="radio"] + label {
+  height: 48px;
+}
+
+.info-wrap .infobox ul.rabox2 li input[type="radio"]:checked + label {
+  height: 48px;
+}
+
+.info-wrap .infobox ul li {
+  float: left;
+  width: 25%;
+  height: 56px;
+  margin-left: -1px;
+  font-size: 0;
+  position: relative;
+}
+
+.info-wrap .infobox ul li input[type="radio"] + label {
+  display: block;
+  height: 56px;
+  font-size: 16px;
+  line-height: 1.3;
+  font-weight: 400;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.info-wrap .infobox ul li input[type="radio"]:checked + label {
+  border: 2px solid #e14f1e;
+  color: #e14f1e;
+  font-weight: 400;
+  position: relative;
+  z-index: 100;
+}
+
+.info-wrap input::placeholder {
+  font-size: 16px;
+  color: #333;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.info-wrap input[type="checkbox"] + label {
+  display: inline-block;
+  width: 80px;
+  line-height: 36px;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: #e14f1e;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.info-wrap input[type="checkbox"] + label:before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 10px;
+  background: url(../../images/counsel/cpzm2.png) no-repeat;
+  margin-right: 5px;
+}
+
+.info-wrap input[type="checkbox"]:checked + label {
+  border-color: #e14f1e;
+  background: #e14f1e;
+  color: #fff;
+}
+
+.info-wrap input[type="checkbox"]:checked + label:before {
+  background: url(../../images/counsel/cpzm1.png) no-repeat;
+}
+
+.info-wrap .infobox input[type="text"],
+.info-wrap .infobox input[type="number"],
+.info-wrap .infobox select {
+  padding-left: 16px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  background: #f2f3f5;
+  border: none;
+  box-sizing: border-box;
+}
+
+.info-wrap .infobox select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #f2f3f5 url(../../images/counsel/alloww.png) no-repeat 92% 50%;
+}
+
+.info-wrap .infobox select::-ms-expand {
+  display: none;
+}
+
+.info-wrap.back {
+  padding: 24px 32px;
+  background: #f8f8f8;
+  border: none;
+}
+
+.info-wrap.back .info-tit {
+  padding: 0;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.info-wrap.back .info-tit::before {
+  display: none;
+}
+
+.info-wrap.back .info-tit a.info-open {
+  line-height: 32px;
+}
+
+.info-wrap .info-tit a.info-open {
+  float: right;
+  font-size: 16px;
+  color: #666;
+  padding-right: 45px;
+  position: relative;
+}
+
+.info-wrap .info-tit a.info-open:after {
+  content: "";
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url(../../images/counsel/ud.png) no-repeat;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.info-wrap .info-tit a.info-open.go-close:after {
+  transform: rotate(180deg);
+}
+
+.info-wrap .infobox.full {
+  display: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 32px 3px 10px;
+  background: #f8f8f8;
+}
+
+.info-wrap .infobox.full.on {
+  display: block;
+}
+
+.info-wrap .infobox.full > div {
+  padding: 33px 30px;
+  background: #fff;
+}
+
+.info-wrap .infobox.full > div > strong {
+  display: inline-block;
+  position: relative;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 15px;
+  padding-left: 45px;
+  line-height: 1.3;
+}
+
+.info-wrap .infobox.full .question-box strong.question-tit:before {
+  content: "";
+  display: inline-block;
+  width: 35px;
+  height: 32px;
+  background: url(../../images/counsel/jq.png) no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.info-wrap .infobox.full .answer-box strong.answer-tit:before {
+  content: "";
+  display: inline-block;
+  width: 35px;
+  height: 32px;
+  background: url(../../images/counsel/ja.png) no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.info-wrap .infobox.full > div > p {
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+.info-wrap .infobox.full .question-box {
+  margin-bottom: 40px;
+  border-radius: 30px 30px 0 30px;
+  box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-wrap .infobox.full .answer-box {
+  overflow: hidden;
+  float: left;
+  border-radius: 30px 30px 30px 0;
+  box-shadow: -3px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-wrap .infobox .input-cont {
+  position: relative;
+  width: 100%;
+  background: #f1f3f4;
+}
+
+.info-wrap .infobox .countit01 {
+  width: 90%;
+}
+
+.info-wrap .infobox .len {
+  position: absolute;
+  top: 11px;
+  right: 16px;
+  font-size: 15px;
+}
+
+.info-wrap .infobox .len em {
+  color: #e14f1e;
+}
+
+.info-wrap .infobox .textarea-wrap {
+  position: relative;
+  height: 120px;
+  background: #f2f3f5;
+  padding: 16px;
+}
+
+.info-wrap .infobox textarea {
+  height: 96px;
+  line-height: 1.3;
+  background: #f2f3f5;
+  border: none;
+  font-size: 16px;
+  color: #333;
+  font-family: "Noto Sans KR", sans-serif;
+  resize: none;
+}
+
+.info-wrap .infobox textarea::placeholder {
+  font-size: 16px;
+  color: #333;
+  letter-spacing: -1px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.info-wrap .infobox .textarea-wrap .len {
+  top: 118px;
+  right: 16px;
+}
+
+.info-wrap .notice01 {
+  display: none;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  z-index: 500;
+  width: 480px;
+  padding: 32px 40px;
+  background: #fff;
+  border: 2px solid #e6e6e6;
+  font-size: 16px;
+}
+
+.info-wrap .notice01.on {
+  display: block;
+}
+
+.info-wrap .notice01 strong {
+  display: block;
+  margin-bottom: 25px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+}
+
+.info-wrap .notice01 p {
+  display: inline-block;
+  line-height: 1.5;
+}
+
+.info-wrap .notice01 p em {
+  font-weight: 600;
+}
+
+.info-wrap .notice01 p span {
+  color: #e14f1e;
+  font-weight: 500;
+}
+
+.info-wrap .notice01 p span.in-notice {
+  display: block;
+  padding: 20px 8px 28px;
+  line-height: 1.5;
+  font-size: 14px;
+  font-weight: 400;
+  color: #666;
+}
+
+.info-wrap.back .p-alarm {
+  position: absolute;
+  top: 22px;
+  left: 250px;
+  font-size: 14px;
+  padding: 8px 16px;
+  background: #faefeb;
+  border-radius: 5px;
+}
+
+.info-wrap.back .p-alarm:before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 16px;
+  margin-right: 8px;
+  background: url(../../images/counsel/albell.png) no-repeat;
+  vertical-align: bottom;
+}
+
+.info-wrap .infobox.full02 {
+  display: none;
+  margin: 0;
+  height: 116px;
+  padding: 32px 8px 0;
+  background: #f8f8f8;
+  position: relative;
+}
+
+.info-wrap .infobox.full02.on {
+  display: block;
+}
+
+.info-wrap .infobox.full02 p {
+  position: absolute;
+  top: 32px;
+  right: 96px;
+  font-size: 14px;
+  color: #000;
+}
+
+.info-wrap .infobox.full02 p:before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 2px;
+  background: #e14f1e;
+  position: absolute;
+  top: 3px;
+  left: -10px;
+}
+
+.info-wrap .infobox.full02 em {
+  margin: 0 7px;
+}
+
+.info-wrap .infobox.full02 ul {
+  position: absolute;
+  bottom: -19px;
+  right: 256px;
+  width: 180px;
+}
+
+.info-wrap .infobox.full02 ul li {
+  width: 50%;
+}
+
+.info-wrap .infobox.full02 ul li a {
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.info-wrap select,
+.info-wrap input {
+  width: 160px;
+  font-size: 16px;
+  color: #333;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.info-wrap .infobox .agree-txt {
+  font-size: 16px;
+  position: relative;
+  top: 17px;
+  left: 15px;
+}
+
+.info-wrap .infobox .btn-agree-bx a {
+  color: #e14f1e;
+}
+
+.counsel-btn {
+  text-align: center;
+  margin: 64px 0;
+}
+
+.counsel-btn a {
+  display: inline-block;
+  width: 240px;
+  height: 64px;
+  line-height: 64px;
+  font-size: 20px;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.counsel-btn a.counsel-go {
+  margin-right: 16px;
+  background: #e14f1e;
+}
+
+.counsel-btn a.counsel-cancle {
+  background: #927b73;
+}
+
+.agree-dim {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.agree-dim .nt {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 500;
+  width: 485px;
+  height: 550px;
+  padding: 32px 0px;
+  background: #fff;
+  border: 2px solid #e6e6e6;
+  font-size: 16px;
+}
+
+.agree-dim .nt .nc01 {
+  position: absolute;
+  top: 23px;
+  right: 23px;
+}
+
+.agree-dim .nt .nc02 {
+  display: block;
+  width: 416px;
+  margin: 30px auto 0;
+  line-height: 55px;
+  text-align: center;
+  font-size: 18px;
+  color: #000;
+  background: #f4f4f4;
+  border-radius: 10px;
+}
+
+.agree-dim .nt .ntinner {
+  height: 400px;
+  overflow-y: scroll;
+  padding: 0 40px;
+  margin-top: 40px;
+}
+
+.agree-dim .nt strong {
+  font-size: 18px;
+  padding-left: 40px;
+}
+
+.agree-dim .nt dl {
+  margin-bottom: 25px;
+}
+
+.agree-dim .nt dt {
+  margin-bottom: 18px;
+}
+
+.agree-dim .nt dt em {
+  font-weight: 600;
+}
+
+.agree-dim .nt dd {
+  font-size: 14px;
+  color: #666;
+  font-weight: 400;
+  word-break: keep-all;
+  line-height: 1.5;
+}
+
+/* 상담신청 완료 */
+#contents.counsel-fin {
+  width: auto;
+  padding: 44px 16px 0;
+  letter-spacing: -1px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.counsel-h2.sub-h2 {
+  text-align: center;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.counsel-h2-txt {
+  font-size: 18px;
+  padding: 30px 0 40px;
+  text-align: center;
+}
+
+.counsel-end {
+  padding: 50px 40px;
+  background: url(../../images/counsel/cfinish.jpg) no-repeat 44px;
+  border: 1px solid #ddd;
+}
+
+.counsel-end p {
+  padding-left: 280px;
+  font-size: 14px;
+}
+
+.counsel-end p span {
+  color: #e14f1e;
+}
+
+.counsel-end p strong {
+  color: #e14f1e;
+  font-weight: 500;
+}
+
+.counsel-end p.p-end02:before {
+  content: "";
+  display: block;
+  width: 585px;
+  height: 1px;
+  background: #ddd;
+  margin: 24px 0;
+}
+
+.counsel-btn .main-go {
+  margin-right: 14px;
+  background: #e14f1e;
+}
+
+.counsel-btn .myact-go {
+  border: 2px solid #ddd;
+  color: #000;
+  line-height: 60px;
+  vertical-align: bottom;
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+   <mapper namespace="com.basic.careernet.service.EduMapper">
+   
+   <!-- 게시글 등록 -->
+   	<insert id="getJobs">
+   		insert into edu(
+   						targt,
+   						achieveType,
+   						year,
+   						author,
+   						dataTitle,
+   						selCount,
+   						regDate,
+   						activityType,
+   						seq,
+   						attFile
+   						)
+   				values(
+   					   #{targt},
+   					   #{achieveType},
+   					   #{year},
+   					   #{author},
+   					   #{dataTitle},
+   					   #{selCount},
+   					   #{regDate},
+   					   #{activityType},
+   					   #{seq},
+   					   #{attFile}
+   						)		
+   	</insert>
+   	
+   	<!-- 페이징 처리 -->
+	  <select id="getTotal" resultType="int">
+	    SELECT COUNT(*) as total 
+	    FROM edu
+	    WHERE author = #{author}
+	    <if test="cri.startDate != '' and cri.startDate != null ">
+	        <![CDATA[ AND regDate >= #{cri.startDate} ]]>
+	    </if>
+	    <if test="cri.endDate != '' and cri.endDate != null ">
+	        <![CDATA[ AND regDate <= #{cri.endDate} ]]>
+	    </if>
+	</select>
+
+   
+   </mapper>

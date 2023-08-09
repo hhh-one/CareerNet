@@ -1,0 +1,122 @@
+CREATE TABLE student (
+    sno INT NOT NULL,
+    id VARCHAR(20),
+    pw VARCHAR(20),
+    name VARCHAR(20),
+    gender CHAR(1),
+    birthday DATE,
+    email VARCHAR(20),
+    area VARCHAR(20),
+    identity VARCHAR(20),
+    PRIMARY KEY (sno)
+);
+
+CREATE TABLE teacher (
+    tno INT NOT NULL,
+    name VARCHAR(20),
+    age INT,
+    id VARCHAR(20),
+    pw VARCHAR(20),
+    gender CHAR(1),
+    birthday VARCHAR(20),
+    email VARCHAR(20),
+    area VARCHAR(20),
+    school VARCHAR(20),
+    PRIMARY KEY (tno)
+);
+
+CREATE TABLE consulting (
+    boardId INT NOT NULL,
+    title VARCHAR(20),
+    content VARCHAR(1000),
+    regdate DATE,
+    hit INT,
+    sno INT NOT NULL,
+    writer VARCHAR(20),
+    identity VARCHAR(20),
+    PRIMARY KEY (boardId)
+);
+
+CREATE TABLE reply (
+    replyId VARCHAR(20) NOT NULL,
+    title VARCHAR(20),
+    reply VARCHAR(1000),
+    regdate VARCHAR(20),
+    tno INT NOT NULL,
+    boardId INT NOT NULL,
+    PRIMARY KEY (replyId)
+);
+
+CREATE TABLE job (
+    jobId VARCHAR(20) NOT NULL,
+    Field VARCHAR(255),
+    cno INT NOT NULL,
+    Key INT NOT NULL,
+    Key2 VARCHAR(20) NOT NULL,
+    PRIMARY KEY (jobId)
+);
+
+CREATE TABLE jobCategory (
+    cno INT NOT NULL,
+    jobList VARCHAR(20),
+    PRIMARY KEY (cno)
+);
+
+CREATE TABLE depart (
+    Key INT NOT NULL,
+    Field VARCHAR(20),
+    PRIMARY KEY (Key)
+);
+
+CREATE TABLE certy (
+    Key VARCHAR(20) NOT NULL,
+    link VARCHAR(20),
+    PRIMARY KEY (Key)
+);
+
+CREATE TABLE Untitled (
+    jobId VARCHAR(20) NOT NULL,
+    Field VARCHAR(255),
+    PRIMARY KEY (jobId)
+);
+
+CREATE TABLE edu (
+    eudId int NOT NULL auto_increment primary key,
+    targt VARCHAR(20),
+    achieveType VARCHAR(30),
+    year VARCHAR(30),
+    author VARCHAR(50),
+    dataTitle VARCHAR(1000),
+    selCount VARCHAR(100),
+    regDate VARCHAR(20),
+    activityType VARCHAR(30),
+    seq VARCHAR(20),
+    attFile VARCHAR(1000)
+);
+
+select * from edu;
+
+drop table edu;
+
+ALTER TABLE student ADD CONSTRAINT PK_STUDENT PRIMARY KEY (sno);
+ALTER TABLE teacher ADD CONSTRAINT PK_TEACHER PRIMARY KEY (tno);
+ALTER TABLE consulting ADD CONSTRAINT PK_CONSULTING PRIMARY KEY (boardId);
+ALTER TABLE reply ADD CONSTRAINT PK_REPLY PRIMARY KEY (replyId);
+ALTER TABLE job ADD CONSTRAINT PK_JOB PRIMARY KEY (jobId);
+ALTER TABLE jobCategory ADD CONSTRAINT PK_JOBCATEGORY PRIMARY KEY (cno);
+ALTER TABLE depart ADD CONSTRAINT PK_DEPART PRIMARY KEY (Key);
+ALTER TABLE certy ADD CONSTRAINT PK_CERTY PRIMARY KEY (Key);
+ALTER TABLE edu ADD CONSTRAINT PK_EDU PRIMARY KEY (eduId);
+
+select * from edu;
+
+select *
+from(select @rownum := @rownum+1 rn, #mysql에서 row넘버 사용하기~
+      a.*
+	 from (select * 
+		   from edu 
+		   order by eduid desc
+		  ) 
+          as a, (select @rownum:=0)as b #서브쿼리 절에는 alias를 꼭 하나 달아줘야 된다 mysql은 rownum가 없다..!
+	) 
+    as c; 

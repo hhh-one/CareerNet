@@ -1,0 +1,545 @@
+ <th:block th:replace="~{./include/layout::setContent(~{:: #careernet})}">
+
+  <div id="careernet">
+    <div id="location">
+      <div class="inner">
+        
+
+    <!-- CONTENT -->
+    <div id="ct">
+      <div class="inner">
+        <h2 class="title_h1"><span>자료게시판</span></h2>
+
+        <form name="frm" id="frm" method="post">
+          <input type="hidden" name="BBS_SEQ" id="BBS_SEQ" value="" />
+          <input type="hidden" name="pageIndex" id="pageIndex" value="1" />
+          <input type="hidden" name="YEAR_PREV" id="YEAR_PREV" value="" />
+          <input type="hidden" name="listType" id="listType" value="" />
+          <input type="hidden" name="searchType" id="searchType" value="" />
+          <!-- <input type="hidden" name="TAG_SEQS" id="TAG_SEQS" value="" /> -->
+          <input type="hidden" name="ACT_SEQS" id="ACT_SEQS" value="" />
+          <input type="hidden" name="EDU_SEQS" id="EDU_SEQS" value="" />
+          <input type="hidden" name="isAct" id="isAct" value="1" />
+          <input type="hidden" name="isEdu" id="isEdu" value="1" />
+
+          <!-- 조건검색 START -->
+          <div class="jinro-search-box data-srchbx">
+            <div class="rdo-type">
+              <input
+                type="radio"
+                name="searchFlag"
+                id="jinroSrchRdoAll"
+                value="A"
+                checked="checked"
+              /><label for="jinroSrchRdoAll">전체</label>
+              <input
+                type="radio"
+                name="searchFlag"
+                id="jinroSrchRdo01"
+                value="I"
+              /><label for="jinroSrchRdo01">발행기관</label>
+              <input
+                type="radio"
+                name="searchFlag"
+                id="jinroSrchRdo02"
+                value="T"
+              /><label for="jinroSrchRdo02">제목</label>
+              <input
+                type="radio"
+                name="searchFlag"
+                id="jinroSrchRdo03"
+                value="C"
+              /><label for="jinroSrchRdo03">내용</label>
+              <input
+                type="text"
+                placeholder="발행기관/제목/내용 검색어를 입력하세요"
+                style="width: 352px"
+                name="searchTitleWord"
+                id="searchTitleWord"
+                value=""
+                title="검색어"
+              />
+              <a href="#" class="btn-search" onclick="fn_list();">검색</a>
+              <a href="#none" class="btn-toggle-condition"
+                ><span class="arw"></span>조건 검색</a
+              >
+              <!-- 버튼 활성화 상태 a태그에 'on' 클래스 추가 -->
+            </div>
+            <script>
+              $(document).ready(function () {
+                // 진로카드 탭
+                $(".btn-toggle-condition").click(function () {
+                  if (
+                    $("#searchType").val() == 1 ||
+                    $("#searchType").val() == ""
+                  ) {
+                    $("#searchType").val("2");
+                    $(".chk-condition").hide();
+                    $(".btn-toggle-condition").removeClass("on");
+                  } else {
+                    $(".chk-condition").show();
+                    $(".btn-toggle-condition").addClass("on");
+                    $("#searchType").val("1");
+                  }
+                });
+              });
+            </script>
+
+            <script>
+              $(document).ready(function () {
+                // 전체 선택 체크박스를 클릭했을 때
+                $("#subjectChk05").click(function () {
+                  // 하위 체크박스들의 상태를 전체 선택 체크박스와 동기화
+                  $('input[name="ACTIVITY_TYPE"]').prop("checked", this.checked);
+                });
+
+                // 진로교육성취기준 전체 선택 체크박스를 클릭했을 때
+                $("#subjectChk06").click(function () {
+                  // 하위 체크박스들의 상태를 진로교육성취기준 전체 선택 체크박스와 동기화
+                  $('input[name="EDU_ACHIEVEMENT_TYPE"]').prop("checked", this.checked);
+                });
+
+                // 연도 전체 선택 체크박스를 클릭했을 때
+                $("#subjectChk03_1").click(function () {
+                  // 다른 연도 라디오 버튼들의 선택 상태를 연도 전체 선택 체크박스와 동기화
+                  $('input[name="PRODUCTION_YEAR"]').prop("checked", this.checked);
+                });
+
+                // 하위 체크박스들 중 하나라도 체크가 해제되었을 때
+                $(
+                  'input[name="ACTIVITY_TYPE"], input[name="EDU_ACHIEVEMENT_TYPE"], input[name="PRODUCTION_YEAR"]'
+                ).click(function () {
+                  // 전체 선택 체크박스의 상태를 false로 설정
+                  $("#subjectChk05, #subjectChk06, #subjectChk03_1").prop("checked", false);
+                });
+              });
+            </script>
+
+
+            <div class="chk-condition" style="display: block">
+              <div class="chk-list-wrap">
+                <div class="chk-bx">
+                  <strong>대상</strong>
+                  <ul class="chk-list">
+                    <li>
+                      <input
+                        type="radio"
+                        name="BBS_SH_TARGET"
+                        id="subjectChk01_01"
+                        value=""
+                        checked="checked"
+                      /><label for="subjectChk01_01">전체</label>
+                    </li>
+                    <li>
+                      <input
+                        type="radio"
+                        name="BBS_SH_TARGET"
+                        id="subjectChk01_02"
+                        value="C"
+                      /><label for="subjectChk01_02">공통(초중고)</label>
+                    </li>
+                    <li>
+                      <input
+                        type="radio"
+                        name="BBS_SH_TARGET"
+                        id="subjectChk01_03"
+                        value="E"
+                      /><label for="subjectChk01_03">초등학교</label>
+                    </li>
+                    <li>
+                      <input
+                        type="radio"
+                        name="BBS_SH_TARGET"
+                        id="subjectChk01_04"
+                        value="M"
+                      /><label for="subjectChk01_04">중학교</label>
+                    </li>
+                    <li>
+                      <input
+                        type="radio"
+                        name="BBS_SH_TARGET"
+                        id="subjectChk01_05"
+                        value="I"
+                      /><label for="subjectChk01_05">일반고등학교</label>
+                    </li>
+                    <li>
+                      <input
+                        type="radio"
+                        name="BBS_SH_TARGET"
+                        id="subjectChk01_06"
+                        value="J"
+                      /><label for="subjectChk01_06">직업계고등학교</label>
+                    </li>
+                    <li>
+                      <input
+                        type="radio"
+                        name="BBS_SH_TARGET"
+                        id="subjectChk01_07"
+                        value="V"
+                      /><label for="subjectChk01_07">대학교</label>
+                    </li>
+                    <li>
+                      <input
+                        type="radio"
+                        name="BBS_SH_TARGET"
+                        id="subjectChk01_08"
+                        value="U"
+                      /><label for="subjectChk01_08">기타</label>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="chk-bx">
+                  <strong
+                    ><input
+                      type="checkbox"
+                      name="subjectChk05"
+                      id="subjectChk05"
+                    /><label for="subjectChk05" title="전체선택"
+                      >진로활동유형</label
+                    ></strong
+                  >
+                  <ul class="chk-list">
+                    <li>
+                      <input
+                        type="checkbox"
+                        name="ACTIVITY_TYPE"
+                        id="subjectChk05_1"
+                        value="102331"
+                        checked="checked"
+                      /><label for="subjectChk05_1">진로심리검사</label>
+                    </li>
+                    <li>
+                      <input
+                        type="checkbox"
+                        name="ACTIVITY_TYPE"
+                        id="subjectChk05_2"
+                        value="102332"
+                        checked="checked"
+                      /><label for="subjectChk05_2">진로상담</label>
+                    </li>
+                    <li>
+                      <input
+                        type="checkbox"
+                        name="ACTIVITY_TYPE"
+                        id="subjectChk05_3"
+                        value="102333"
+                        checked="checked"
+                      /><label for="subjectChk05_3">직업정보</label>
+                    </li>
+                    <li>
+                      <input
+                        type="checkbox"
+                        name="ACTIVITY_TYPE"
+                        id="subjectChk05_4"
+                        value="102334"
+                        checked="checked"
+                      /><label for="subjectChk05_4">진로&middot;직업체험</label>
+                    </li>
+                    <li>
+                      <input
+                        type="checkbox"
+                        name="ACTIVITY_TYPE"
+                        id="subjectChk05_5"
+                        value="102335"
+                        checked="checked"
+                      /><label for="subjectChk05_5">창업가정신 함양 교육</label>
+                    </li>
+                    <li>
+                      <input
+                        type="checkbox"
+                        name="ACTIVITY_TYPE"
+                        id="subjectChk05_6"
+                        value="102336"
+                        checked="checked"
+                      /><label for="subjectChk05_6"
+                        >학교&middot;학과 정보</label
+                      >
+                    </li>
+                    <li>
+                      <input
+                        type="checkbox"
+                        name="ACTIVITY_TYPE"
+                        id="subjectChk05_7"
+                        value="102337"
+                        checked="checked"
+                      /><label for="subjectChk05_7"
+                        >진로수업 및 창의적 체험활동 운영</label
+                      >
+                    </li>
+                    <li>
+                      <input
+                        type="checkbox"
+                        name="ACTIVITY_TYPE"
+                        id="subjectChk05_8"
+                        value="102338"
+                        checked="checked"
+                      /><label for="subjectChk05_8"
+                        >학교&middot;학급 운영</label
+                      >
+                    </li>
+                    <li>
+                      <input
+                        type="checkbox"
+                        name="ACTIVITY_TYPE"
+                        id="subjectChk05_9"
+                        value="102339"
+                        checked="checked"
+                      /><label for="subjectChk05_9">기타</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="chk-bx">
+                  <strong
+                    ><input
+                      type="checkbox"
+                      name="subjectChk06"
+                      id="subjectChk06"
+                    /><label for="subjectChk06" title="전체선택"
+                      >진로교육성취기준</label
+                    ></strong
+                  >
+                  <ul class="chk-list">
+                    <li>
+                      <input
+                        type="checkbox"
+                        name="EDU_ACHIEVEMENT_TYPE"
+                        id="subjectChk06_1"
+                        value="102341"
+                        checked="checked"
+                      /><label for="subjectChk06_1"
+                        >자아이해와 사회적 역량개발</label
+                      >
+                    </li>
+                    <li>
+                      <input
+                        type="checkbox"
+                        name="EDU_ACHIEVEMENT_TYPE"
+                        id="subjectChk06_2"
+                        value="102342"
+                        checked="checked"
+                      /><label for="subjectChk06_2">일과 직업세계 이해</label>
+                    </li>
+                    <li>
+                      <input
+                        type="checkbox"
+                        name="EDU_ACHIEVEMENT_TYPE"
+                        id="subjectChk06_3"
+                        value="102343"
+                        checked="checked"
+                      /><label for="subjectChk06_3">진로탐색</label>
+                    </li>
+                    <li>
+                      <input
+                        type="checkbox"
+                        name="EDU_ACHIEVEMENT_TYPE"
+                        id="subjectChk06_4"
+                        value="102344"
+                        checked="checked"
+                      /><label for="subjectChk06_4">진로 디자인과 준비</label>
+                    </li>
+                    <li>
+                      <input
+                        type="checkbox"
+                        name="EDU_ACHIEVEMENT_TYPE"
+                        id="subjectChk06_5"
+                        value="102345"
+                        checked="checked"
+                      /><label for="subjectChk06_5">전영역</label>
+                    </li>
+                    <li>
+                      <input
+                        type="checkbox"
+                        name="EDU_ACHIEVEMENT_TYPE"
+                        id="subjectChk06_6"
+                        value="102346"
+                        checked="checked"
+                      /><label for="subjectChk06_6">기타</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="chk-bx">
+					<strong>연도</strong>
+					<ul class="chk-list" id="bbsYearList">
+                        <li>
+                            <input type="radio" name="PRODUCTION_YEAR" id="subjectChk03_1" value="" checked="checked">    
+                            <label for="subjectChk03_1">전체</label>
+                        </li>
+                        <li>    
+                            <input type="radio" name="PRODUCTION_YEAR" id="subjectChk03_2" value="2023">    
+                            <label for="subjectChk03_2">2023</label>
+                        </li>
+                        <li>    
+                            <input type="radio" name="PRODUCTION_YEAR" id="subjectChk03_3" value="2022">    
+                            <label for="subjectChk03_3">2022</label>
+                        </li>
+                        <li>    
+                            <input type="radio" name="PRODUCTION_YEAR" id="subjectChk03_4" value="2021">    
+                            <label for="subjectChk03_4">2021</label>
+                        </li>
+                        <li>    
+                                <input type="radio" name="PRODUCTION_YEAR" id="subjectChk03_22" value="2020">    
+                                <label for="subjectChk03_22">2020 이전</label>
+                        </li>
+                        </ul>
+				</div>
+              
+            </div>
+            <a href="#none" class="btn-search-condition" onclick="fn_list();">조건 검색</a>
+          </div>
+          <!-- 조건검색 END-->
+
+          <div class="tab-wrap">
+            <ul class="tab-list">
+                <li><a href="javascript:;" onclick="fn_list2()" class="on">전체</a></li>
+                <li><a href="javascript:;" onclick="fn_list2('E')">초등학교</a></li>
+                <li><a href="javascript:;" onclick="fn_list2('M')">중학교</a></li>
+                <li><a href="javascript:;" onclick="fn_list2('I')">일반고</a></li>
+                <li><a href="javascript:;" onclick="fn_list2('J')">직업계고</a></li>
+            </ul>
+            <div class="ui-list-type">
+                <a href="/cnet/front/commbbs/courseMenu/commBbsRss.rss" class="btn-rss" title="RSS 보내기" target="_blank">RSS 2.0</a>
+                <!-- <div class="ui-schSel"> -->
+                <select id="tagUl2" name="sortType" class="ui-schSel" title="정렬방식">
+                    <option class="option" value="R" selected="">최신순</option>
+                    <option class="option" value="A">가나다순</option>
+                    <option class="option" value="V">조회순</option>
+                    <option class="option" value="L">추천순</option>
+                </select>
+                <select name="listCnt" id="listCnt" class="ui-schSel" title="목록보기 개수 선택" style="margin-left:0;" >
+                    <option value="10" selected="">10개씩 보기</option>
+                    <option value="20" selected="">20개씩 보기</option>
+                    <option value="30" selected="">30개씩 보기</option>
+                </select><a href="javascript:;" class="list_apply" title="목록보기 변경시 페이지가 새로고침됩니다">적용</a>
+                <!-- </div> -->
+            </div>
+            
+			<!-- 개씩 보기 -->
+			<script th:inline="javascript">
+		
+			    var msg = '[[${msg}]]';
+			    
+			    if (msg != 'null') {
+			        alert(msg);
+			    }
+			    
+			    // 데이터 핸들링
+			    function handleChange() {
+					
+					// console.log(event.target);
+					//location.href='productList?page=1&amount=' + event.target.value;
+					document.searchForm.amount.value = event.target.value; // 폼태그 서브밋
+					document.searchForm.submit(); // 폼태그 서브밋
+				}
+			    
+			    // 검색 버튼
+			    var searchBtn = document.getElementById("searchBtn");
+			    searchBtn.onclick = function() {
+					
+					event.preventDefault(); // a중지
+					document.searchForm.submit(); // 폼태그 서브밋
+					
+				}
+			    
+			</script>
+
+          <!-- 게시판 리스트 -->
+          <table class="ui-tbl-list">
+		    <caption>
+		        번호,대상,진로활동유형,진로교육성취기준,연도,제목,발행기관,조회수로
+		        이루어진 진로교육자료 목록입니다.
+		    </caption>
+		    <colgroup>
+		        <col style="width: 5%" />
+		        <col style="width: 8%" />
+		        <col style="width: 12%" />
+		        <col style="width: 12%" />
+		        <col style="width: 6%" />
+		        <col style="width: 36%" />
+		        <col style="width: 11%" />
+		        <col style="width: 8%" />
+		    </colgroup>
+		    
+		    <thead>
+		        <tr>
+		            <th scope="col">번호</th>
+		            <th scope="col">대상</th>
+		            <th scope="col">진로활동유형</th>
+		            <th scope="col">진로교육성취기준</th>
+		            <th scope="col">연도</th>
+		            <th scope="col">제목</th>
+		            <th scope="col">발행기관</th>
+		            <th scope="col">조회수</th>
+		        </tr>
+		    </thead>
+    		<tbody id="dataRows"></tbody>
+		</table>
+
+			<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+			<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+			<script>
+			    // 알파벳을 학교 또는 교육 유형으로 매핑하는 함수
+			    function mapTarget(target) {
+			        const targetMap = {
+			            'C': '공통(초중고)',
+			            'H': '고등학교',
+			            'E': '초등학교',
+			            'M': '중학교',
+			            'I': '일반고등학교',
+			            'J': '직업계고등학교',
+			            'V': '대학교',
+			            'U': '기타'
+			        };
+			        return targetMap[target] || target; // 매핑 값이 없을 경우 원본 값을 반환
+			    }
+			
+			    $.ajax({
+			        url: "https://www.career.go.kr/cnet/openapi/getOpenApi?apiKey=b3a0d16121445867cab4a923b481c196&svcType=api&svcCode=COSE&contentType=json&thisPage=1&perPage=10",
+			        type: 'GET',
+			        success: function(data1) {
+			            var dataRows = $('#dataRows'); // tbody 요소 선택
+			            
+			            var eduId = 1; // 초기 PK 값
+			            
+			            data1.dataSearch.content.forEach(function(eduVO) {
+			                var row = `
+			                    <tr>
+			                        <td>${eduId}</td>
+			                        <td>${mapTarget(eduVO.targt)}</td> <!-- 변경된 부분 -->
+			                        <td>${eduVO.activityType}</td>
+			                        <td>${eduVO.achieveType}</td>
+			                        <td>${eduVO.year}</td>
+			                        <td class="subject">
+			                            <a href="${eduVO.dataTitle}" target="_blank">
+			                                <span>${eduVO.dataTitle}</span>
+			                            </a>
+			                        </td>
+			                        <td>${eduVO.author}</td>
+			                        <td>${eduVO.selCount}</td>
+			                    </tr>
+			                `;
+			                dataRows.append(row);
+			                
+			                eduId++; // 다음 PK 값 증가
+			            });
+			        },
+			        error: function(status, error) {
+			            console.log(status);
+			            console.log("잘못 입력한듯?");
+			        }
+			    });
+			</script>
+
+
+          <!-- //게시판 리스트 -->
+		<!-- 페이징 모듈화 -->          
+	<th:block th:replace="~{./include/Edupage :: pageNation(${EduPageVO})}"></th:block>
+	
+         
+        </form>
+      </div>
+    </div>
+  </div>
+ 
+ 
+</th:block>

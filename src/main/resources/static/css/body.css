@@ -359,7 +359,7 @@ input[type=text]::-ms-clear {display: none;}
 /*---------------------------------------------------*\
 	modal layer (sjm)
 \*---------------------------------------------------*/
-body {/*position:relative*/}
+#careernet {/*position:relative*/}
 #mask{display:none;overflow:hidden;position:absolute;top:0;left:0;z-index:9000;min-width:1100px;background-color:#000;opacity:0.15;-moz-opacity:0.15}
 .layer-popup{position:absolute;left:50%;top:35%;z-index:10000;width:368px;margin-left:-185px;border:1px solid #ef7e22;background:#fff;text-align:left}
 .layer-popup .layer-tit {position:relative;height:41px;padding:0 18px;border:1px solid #f39a53;background:#ef7e22;line-height:41px;color:#fff;font-size:16px;}
