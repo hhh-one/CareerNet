@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<th:block th:fragment="pageNation( vo )">
+		  <div id="pagination" class="pagination">
+			 <th:block th:if="${vo.prev}")>
+				 
+            <a class="pageBtn" href="#" onclick="fn_page(1);return false; "><img th:src="@{/img/icon_prevend.gif}" alt="맨앞" ></a>&nbsp;</div>
+			<a class="pageBtn" href="#" onclick="fn_page(1);return false; "><img th:src="@{/img/icon_prev.gif}" alt="이전"></a>&nbsp;
+				 
+				 
+			 </th:block> 
+			<strong>1</strong>&nbsp;
+            <a class="pageBtn" href="#" onclick="fn_page(2);return false; ">2</a>&nbsp;
+            <a class="pageBtn" href="#" onclick="fn_page(3);return false; ">3</a>&nbsp;
+            <a class="pageBtn" href="#" onclick="fn_page(4);return false; ">4</a>&nbsp;
+            <a class="pageBtn" href="#" onclick="fn_page(5);return false; ">5</a>&nbsp;
+            <a class="pageBtn" href="#" onclick="fn_page(6);return false; ">6</a>&nbsp;
+            <a class="pageBtn" href="#" onclick="fn_page(7);return false; ">7</a>&nbsp;
+            <a class="pageBtn" href="#" onclick="fn_page(8);return false; ">8</a>&nbsp;
+            <a class="pageBtn" href="#" onclick="fn_page(9);return false; ">9</a>&nbsp;
+            <a class="pageBtn" href="#" onclick="fn_page(10);return false; ">10</a>&nbsp;
+            <th:block th:if="${pageVO.next}">
+            <a class="pageBtn" href="#" onclick="fn_page(11);return false; "><img th:src="@{/img/icon_next.gif}" alt="다음"></a>&nbsp;
+            <a class="pageBtn" href="#" onclick="fn_page(60);return false; "><img th:src="@{/img/icon_nextend.gif}" alt="맨뒤" ></a>&nbsp;</div>
+            </th:block>
+    </div>
+			
+			
+			
+			
+</html>

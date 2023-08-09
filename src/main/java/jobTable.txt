@@ -1,0 +1,15 @@
+create table job(
+	seq int primary key,#고유번호 
+    aptit_name varchar(20),#직업분류
+    social varchar(20),#사회공헌
+    job_cd int,#직업코드
+    satisfication int,#직업만족도
+    rel_job_nm varchar(20),#관련직업명
+    job_nm varchar(20),#직업명
+    std_job_nm varchar(20),#표준직업코드명
+    wlb varchar(20),#일,가정균형
+    tag varchar(20),#태그
+    wage int #평균연봉
+);
+
+select * from job;

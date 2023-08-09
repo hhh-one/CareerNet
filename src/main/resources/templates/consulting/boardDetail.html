@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<th:block th:replace="~{./include/layout :: setContent(~{ :: #ct})}">
+  <div id="ct">
+    <div class="inner">
+      <div id="contents">
+        <h2 class="content-title">상담 보기</h2>
+        <div class="board-view-wrap">
+          <!-- 학생 상담 내용 -->
+          <table class="board-view">
+            <thead>
+              <th scope="col">
+                <p class="student-title">[[${consultingVO.title}]]</p>
+                <ul class="student-date">
+                  <li>대상: <span>[[${consultingVO.identity}]]</span></li>
+                  <li>조회수: [[${consultingVO.hit}]]</li>
+                  <li>등록일: [[${#temporals.format(consultingVO.regdate, 'yyyy-MM-dd')}]]</li>
+                </ul>
+              </th>
+            </thead>
+            <tbody>
+              <tr class="last">
+                <td class="student-comment"><textarea class="auto-height" disabled th:text="${consultingVO.content}"></textarea></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- 현주언니 파트 -->
+          <table class="advice-reply">
+
+          </table>
+          <!-- 현주언니 파트 끝 -->
+        </div>
+
+        <!-- 목록 보기 -->
+        <div class="board-view-btn">
+          <span class="btn-right">
+            <a href="#" class="btn-gray">목록보기</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</th:block>
+
+<script th:inline="javascript">
+$(document).ready(function() {
+	$(".auto-height").each(function() {
+        $(this).height(this.scrollHeight);
+    });
+});
+</script>

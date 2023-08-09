@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<th:block th:replace="~{./include/layout :: setContent(~{ :: #container})}">
+  <div id="container">
+    <div class="container-inner">
+      <form id="joinForm" action="joinForm" method="post">
+        <div class="cbox-visual">
+          <div class="visual-inner">
+            <div>
+              <h2>통합 회원가입</h2>
+            </div>
+          </div>
+        </div>
+        <!-- 폼 -->
+        <div class="info-input">
+          <h4 class="input-title">필수 입력</h4>
+          <!-- id -->
+          <div>
+            <input type="text" id="studentId" name="id" placeholder="아이디" title="아이디 입력" th:value="${vo != null ? vo.id : ''}">
+            <a href="" class="btn-gray" id="confirmId">중복확인</a>
+            <p class="txt-msg" id="msg-studentId">5~20자의 영문 소문자, 숫자와 특수기호 -, _만 사용 가능합니다.</p>
+            <p class="txt-error" id="error-studentId" style="display: none;">올바르지 않는 아이디입니다</p>
+          </div>
+          <!-- pw -->
+          <div>
+            <input type="password" id="studentPw" name="pw" placeholder="비밀번호" title="비밀번호 입력" maxlength="20">
+            <p class="txt-error" id="error-studentPw">[[${valid_pw}]]</p>
+          </div>
+          <!-- pw 확인 -->
+          <div>
+            <input type="password" id="confirmPw" name="confirmPw" placeholder="비밀번호 확인" title="비밀번호 확인 입력" maxlength="20">
+            <p class="txt-msg" id="msg-studentPw">8~20자의 영문 대/소문자, 숫자, 특수문자 3가지를 조합해 입력하세요 (공백 불가)</p>
+            <p class="txt-error" id="checkConfirmPw"></p>
+          </div>
+          <!-- 이름, 성별 -->
+          <div>
+            <input type="text" id="studentName" name="name" placeholder="이름 또는 별명" title="이름 또는 별명 입력" th:value="${vo != null ? vo.name : ''}">
+            <span class="input-gender">
+              <input type="radio" id="studentGender_M" name="gender" value="M" title="남자">
+              <label for="studentGender_M">남자</label>
+              <input type="radio" id="studentGender_F" name="gender" value="F" title="여자">
+              <label for="studentGender_F">여자</label>
+            </span>
+            <p class="txt-error">[[${valid_name}]]</p>
+            <p class="txt-error">[[${valid_gender}]]</p>
+          </div>
+          <!-- 이메일 -->
+          <div>
+            <input type="text" id="studentEmail" name="email" placeholder="이메일" title="이메일 입력" th:value="${vo != null ? vo.email : ''}">
+            <p class="txt-error">[[${valid_email}]]</p>
+          </div>
+          <!-- 거주지역 -->
+          <div>
+            <select name="area" id="studentArea">
+              <option value>거주지역</option>
+              <option value="서울특별시">서울특별시</option>
+              <option value="부산광역시">부산광역시</option>
+              <option value="인천광역시">인천광역시</option>
+              <option value="광주광역시">광주광역시</option>
+              <option value="세종특별자치시">세종특별자치시</option>
+              <option value="대구광역시">대구광역시</option>
+              <option value="대전광역시">대전광역시</option>
+              <option value="울산광역시">울산광역시</option>
+              <option value="강원특별자치도">강원특별자치도</option>
+              <option value="경기도">경기도</option>
+              <option value="경상남도">경상남도</option>
+              <option value="경상북도">경상북도</option>
+              <option value="전라남도">전라남도</option>
+              <option value="전라북도">전라북도</option>
+              <option value="충청남도">충청남도</option>
+              <option value="충청북도">충청북도</option>
+              <option value="제주특별자치도">제주특별자치도</option>
+              <option value="해외거주">해외거주</option>
+            </select>
+            <p class="txt-error">[[${valid_area}]]</p>
+          </div>
+        </div>
+        <!-- 선택 입력 -->
+        <div class="info-input input-title-select">
+          <h4 class="input-title">선택 입력</h4>
+          <!-- 생일 -->
+          <div class="input-birthday">
+			<input type="hidden" id="studentBirthday" name="birthday">
+            <input type="text" id="studentBirthdayYyyy" name="birthdayYyyy" maxlength="4" placeholder="출생년도" title="출생년도 입력">
+            <select name="birthdayMm" id="studentBirthdayMm">
+              <option value>월</option>
+              <option value="01">1월</option>
+              <option value="02">2월</option>
+              <option value="03">3월</option>
+              <option value="04">4월</option>
+              <option value="05">5월</option>
+              <option value="06">6월</option>
+              <option value="07">7월</option>
+              <option value="08">8월</option>
+              <option value="09">9월</option>
+              <option value="10">10월</option>
+              <option value="11">11월</option>
+              <option value="12">12월</option>
+            </select>
+            <select name="birthdayDd" id="studentBirthdayDd">
+              <option value>일</option>
+              <option value="01">1일</option>
+              <option value="02">2일</option>
+              <option value="03">3일</option>
+              <option value="04">4일</option>
+              <option value="05">5일</option>
+              <option value="06">6일</option>
+              <option value="07">7일</option>
+              <option value="08">8일</option>
+              <option value="09">9일</option>
+              <option value="10">10일</option>
+              <option value="11">11일</option>
+              <option value="12">12일</option>
+              <option value="13">13일</option>
+              <option value="14">14일</option>
+              <option value="15">15일</option>
+              <option value="16">16일</option>
+              <option value="17">17일</option>
+              <option value="18">18일</option>
+              <option value="19">19일</option>
+              <option value="20">20일</option>
+              <option value="21">21일</option>
+              <option value="22">22일</option>
+              <option value="23">23일</option>
+              <option value="24">24일</option>
+              <option value="25">25일</option>
+              <option value="26">26일</option>
+              <option value="27">27일</option>
+              <option value="28">28일</option>
+              <option value="29">29일</option>
+              <option value="30">30일</option>
+              <option value="31">31일</option>
+            </select>
+          </div>
+          <div>
+            <span class="input-memberCheck">
+              <input type="radio" id="person" name="identity" value="일반" title="일반">
+              <label for="person">일반</label>
+              <input type="radio" id="elementary" name="identity" value="초등학생" title="초등학생">
+              <label for="elementary">초등학생</label>
+              <input type="radio" id="middle" name="identity" value="중학생" title="중학생">
+              <label for="middle">중학생</label>
+              <input type="radio" id="high" name="identity" value="고등학생" title="고등학생">
+              <label for="high">고등학생</label>
+              <input type="radio" id="college" name="identity" value="대학생" title="대학생">
+              <label for="college">대학생</label>
+            </span>
+          </div>
+        </div>
+        <!-- 버튼 -->
+        <div class="join-btn">
+          <input class="btn-ok" type="submit" value="가입" onclick="setBirthday()">
+          <input class="btn-cancel" type="reset" value="취소">
+        </div>
+      </form>
+    </div>
+  </div>
+</th:block>
+
+<script th:inline="javascript">
+	//아이디 입력하면서 유효성 검사를 해버려야 중복확인이 편하다
+	$("#studentId").blur(() => {
+		if (!isId($(event.target).val())) {
+			$("#error-studentId").css("display", "block");	
+		} else {
+			$("#error-studentId").css("display", "none");
+		}
+	})
+	
+	function isId(studentId) {
+		var regExp = /^[a-z0-9_-]{5,20}$/g;
+		
+		return regExp.test(studentId);
+	};
+	
+	//비밀번호 일치 확인
+	$("#confirmPw").blur(() => {
+		if ($(event.target).val() !== $("#studentPw").val()) {
+			$("#checkConfirmPw").html("비밀번호가 일치하지 않습니다.");
+		} else {
+			$("#checkConfirmPw").html("");
+		}
+	});
+	
+	//birthday 값 넣기
+	function setBirthday() {
+		$("#studentBirthday").val($("#studentBirthdayYyyy").val() + "/" + $("#studentBirthdayMm").val() + "/" + $("#studentBirthdayDd").val());
+	}
+	
+	//아이디 중복확인
+	let idck = 0; //중복확인을 했는지 여부
+	$("#confirmId").click(function() {
+		event.preventDefault();
+		
+		let studentId = $("#studentId").val();
+		
+		$.ajax({
+			async : true,
+			type : 'post',
+			data : JSON.stringify({id : studentId}),
+			url : "idCheck",
+			contentType : "application/json",
+			success : function(data) {
+				if(isId($("#studentId").val())) {
+					//아이디 중복
+					if (data.cnt > 0) {
+						//아이디가 유효성 검사를 만족했다면
+						$("#error-studentId").html("사용할 수 없는 아이디입니다");
+						$("#error-studentId").css("display", "block");
+						$("#studentId").focus();
+						
+					} else {
+						$("#error-studentId").css("display", "none");
+						$("#confirmId").html("✔");
+						$("#confirmId").css({color: "#01DF3A", border : "1px solid #01DF3A"});
+						idck = 1;
+					}
+				}
+			},
+			error : function(status, err) {
+				console.log(status);
+			}
+		});
+	});
+</script>

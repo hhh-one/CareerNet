@@ -1,0 +1,195 @@
+@charset "UTF-8";@charset "utf-8";
+
+
+
+/* checkbox & radio button Design */
+input[type=checkbox].css-checkbox {
+	overflow: hidden; position:absolute; left:-1000px; width:1px; height:1px;
+}
+input[type=checkbox].css-checkbox + label {
+	display:inline-block; height:20px; padding-left:30px !important; line-height:20px !important; background:url(../img/bg_checkbox.png) no-repeat 0 0; background-size:20px; cursor:pointer; vertical-align:middle; font-size:15px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+input[type=checkbox].css-checkbox:checked + label {
+	background-position:0 -20px;
+}
+/* radio button design */
+input[type=radio].css-radio {
+	overflow:hidden; position:absolute; left:-1000px; width:1px; height:1px;
+}
+input[type=radio].css-radio + label {
+	display:inline-block; padding-left:20px !important; margin-right:20px; background:url(../img/bg_radio.png) no-repeat 0 0; cursor:pointer; vertical-align:middle; font-size:15px;
+	/*-webkit-touch-callout:none;
+	-webkit-user-select:none;
+	-khtml-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;*/
+}
+input[type=radio].css-radio:checked + label {
+	background-position:0 -50px;
+}
+input::-ms-input-placeholder {color:#999;}
+input::-webkit-input-placeholder {color:#999;}
+input::-moz-placeholder {color:#999;}
+textarea::-ms-input-placeholder {color:#999;}
+textarea::-webkit-input-placeholder {color:#999;}
+textarea::-moz-placeholder {color:#999;}
+
+/* input_style */
+.app_list input[type=text] {-webkit-appearance:none; box-sizing:border-box; display:inline-block; height:45px; padding:0 10px; border:1px solid #ccc; background-color:#fff;  line-height:normal; font-size:15px;}
+
+/* select_common */
+.select_common {display:inline-block; box-sizing:border-box; position:relative; width:158px; height:35px; overflow:hidden; border:1px solid #ccc; background:url(../img/ico_selectArr.png) no-repeat 100% 50%;}
+.select_common select {display:inline-block; width:185px; height:29px; padding:0 10px; border:none; background:none; font-size:15px;}
+
+/* common */
+html{height:100%;}
+body {height:100%; font-family:'Malgun Gothic','맑은 고딕',sans-serif; font-size:16px; letter-spacing:-1px; color:#444; white-space:normal; word-wrap:break-word;}
+input, select, textarea {box-sizing:border-box; font-size:15px; font-family:'Malgun Gothic','맑은 고딕',sans-serif; letter-spacing:-1px; color:#444; -webkit-appearance:none;}
+textarea {box-sizing:border-box; padding:10px; border:1px solid #ccc;}
+input, textarea {-webkit-appearance:none; border-radius:0;}
+* {-webkit-text-size-adjust:none;}
+.dp_none {display:none;}
+.hdd, legend {font-size:0; width:0; height:0; line-height:0; text-indent:-9999px; overflow:hidden; visibility:hidden; position:absolute; top:0; left:0;}
+caption {font-size:0; width:0; height:0; line-height:0; text-indent:-9999px; overflow:hidden;}
+.clear:after {content:""; display:block; clear:both;}
+hr {display:none;}
+
+/* ======================================================================== PC */
+
+/* button_style */
+.btn_line {text-align:center; font-size:0;}
+.btn_line a {margin-left:10px;} 
+.btn_line a:first-child {margin-left:0;}
+.btn_srch {display:inline-block; width:70px; text-align:center; height:35px; font-size:14px; line-height:35px; vertical-align:middle; background:#384d75; color:#fff !important;}
+.btn_bbs {display:inline-block; width:70px; text-align:center; height:35px; font-size:14px; line-height:35px; vertical-align:middle; background:#384d75; color:#fff !important;}
+.btn_baseColor {display:inline-block; width:125px; height:50px; line-height:50px; background:#384d75; font-size:20px; color:#fff !important;}
+
+
+/* 회원가입 */
+.appForm {margin:40px auto 0;}
+.appForm .info_pilsoo {position:relative; padding-left:20px; padding-bottom:10px; border-bottom:2px solid #000; font-size:15px; color:#f00;}
+
+.appForm .app_list {padding:10px 0; border-bottom:1px solid #ccc;}
+.appForm .app_list li {padding:8px 0;}
+.appForm .app_list li .tit_lbl {position:relative; float:left; width:150px; box-sizing:border-box; padding-left:20px; line-height:42px; font-weight:bold; font-size:17px; letter-spacing: -2px;}
+.appForm .app_list li .app_content {float:right; width:770px;}
+.appForm .app_list li .app_content * {vertical-align:top;}
+.appForm .app_list li .app_content.email_area .ico_space {display: inline-block; padding-top:10px;}
+.appForm .app_list li .app_content.radio_area {height:45px; box-sizing:border-box; padding-top:12px;}
+.appForm .app_list li .app_content.checkbox_area {height:45px; box-sizing:border-box; padding-top:12px;}
+.appForm .app_list li .app_content label {vertical-align:middle;}
+.appForm .app_list li .select_common {width:160px; height:45px; background-position:100% 50%; border:1px solid #ccc;}
+.appForm .app_list li .select_common select {width:200px; height:43px;}
+.appForm .app_list li textarea {height:245px;}
+.appForm .info_line {padding:10px 10px 20px; font-size:15px;}
+.btn_line {padding:20px 0;}
+.btn_line a.btn_app {height:37px; line-height:37px; margin-left:100px; font-size:14px;}
+
+
+
+@media all and (max-width:1065px) and (min-width:801px) {			/* ipad가로, ipadPro가로세로, gallexyTab가로 */
+	.box_inner {width:100%;}	
+    header .header_area h1 {padding-left:20px;}
+	.header_cont {float:right; width:60%; padding-right:20px;}		/* gnb 간격 줄임 */
+	.header_cont .gnb li a {padding:26px 25px;}
+	.gnb_depth .submenu_list {width:100%; padding-left:52%;}
+    .gnb_depth .submenu_list li a {padding:20px;}                  /* 없으면 395행을 따르게 됨 */
+	#container {padding-bottom:20px;}
+    .about_area .place_list {box-sizing:border-box; padding:0 20px;}
+    .appbbs_area .appbbs_box {box-sizing:border-box; padding:0 20px;}
+    .appbbs_box .app_line a {font-size:21px;}
+    footer .foot_area {box-sizing:border-box; padding-left:20px;}
+    footer .foot_area .snslink li {margin-left:15px;}
+    .quick_area .quick_list {display: none;}
+    .to_top {position:fixed; right:20px; bottom:112px; text-align:center; background:none; z-index:100;}
+	.to_top a {display:block; width:45px; height:45px;  border-left:none; border-bottom:none; background:url(../img/ico_totop_mo.png) no-repeat center; background-size:45px;}
+    /* 회원가입 */
+    .appForm .app_list li .tit_lbl {width:21%;}
+    .appForm .app_list li .app_content {width:79%;}
+    /* MYPAGE */
+    .regForm .reg_list li .tit_lbl {width:25%;}
+    .regForm .reg_list li .reg_content {width:75%;}
+}
+
+@media all and (max-width:800px) {
+	.btn_line a {margin-left:0; margin-bottom: 10px;}
+	.btn_bbs {display:inline-block; width:100%; text-align:center; height:35px; font-size:14px; line-height:35px; vertical-align:middle; background:#384d75; color:#fff !important;}
+	.btn_baseColor {display:inline-block; width:100%; height:50px; line-height:50px; background:#384d75; font-weight:bold; font-size:20px; color:#fff !important; margin-left: 0;}
+
+	.box_inner {width:100%;}
+
+	/* 회원가입 */
+	.appForm {margin:20px auto;}
+	.appForm .pilsoo_item:before {top:1px;}
+	.appForm .app_list li {position:relative; padding:10px 0; border-bottom:1px solid #ccc;}
+	.appForm .app_list li:last-child {border-bottom:none; padding-bottom:10px;}
+	.appForm .app_list li .tit_lbl {float:none; width:auto; line-height:30px;}
+	.appForm .app_list li .app_content {float:none; width:auto;}
+	.appForm .app_list li .app_content * {vertical-align:middle;}
+	.appForm .app_list li .app_content input[type=text],
+	.appForm .app_list li .app_content input[type=password],
+    .appForm .app_list li .app_content input[type=tel] {border:none; width:100% !important;}
+    .appForm .app_list li .app_content.email_area {padding:5px 0 0; font-size:0;}
+	.appForm .app_list li .app_content.email_area input[type=text],
+    .appForm .app_list li .app_content.email_area input[type=password] {border:1px solid #ccc; width:45% !important; font-size:14px;}
+	.appForm .app_list li .app_content.email_area .ico_space {width:10% !important; text-align:center; font-size:14px;}
+	.appForm .app_list li .app_content.radio_area {padding-left:20px; height:40px; padding-top:10px;}
+	.appForm .app_list li .app_content.checkbox_area {padding-left:20px; height:40px; padding-top:10px;}
+	.appForm .app_list li .select_common {width:100%; height:45px; margin-top:10px;}
+	.appForm .app_list li .select_common select {width:100%; height:39px;}
+	.appForm .app_list li textarea {height:130px;}
+	.appForm .btn_line {padding:20px 0;}
+	.appForm .btn_line a.btn_app {margin-left:0;}
+
+	/* MYPAGE */
+	.mypageTab {position:relative;width:100%; margin:20px auto 0; padding-top:50px;}
+	.mypageTab dt {position:absolute; top:0; left:0; width:100px;}
+	.mypageTab dt.t2 {left:101px;}
+	.mypageTab dt a {display:block; height:50px; line-height:50px; text-align:center; background:#dfe3ea; font-size:18px; color:#6f788B;}
+	.mypageTab dt a.on {background:#000; color:#fff;}
+	.mypageTab dd.hidetab {display:none;}
+	.mypageTab dd {border-top:2px solid #000;}
+	.regForm {width:100%; margin:0 auto;}
+	.regForm .reg_list {padding:10px 0 0; background:none;}
+	.regForm .reg_list li {position:relative; min-height:50px; padding:0; border-bottom:1px solid #ccc;}
+	.regForm .reg_list li .tit_lbl {position:relative; float:none; width:auto; box-sizing:border-box; padding-left:10px; line-height:50px; font-weight:bold; font-size:16px;}
+	.regForm .reg_list li .reg_content {float:none; width:auto; box-sizing:border-box; padding-left:10px; padding-top:0; padding-bottom:20px; font-size:15px;}
+	.regForm .reg_list li .reg_content * {vertical-align:middle;}
+	.regForm .reg_list li .reg_content.radio_area {padding-top:5px;}
+	.regForm .reg_list li .reg_content label {vertical-align:middle;}
+	.regForm .reg_list li .reg_content .info_line {padding:10px 10px 15px 0; line-height:1.4; font-size:15px;}
+}
+
+@media all and (max-width:320px) {	
+	.quick_area .quick_list li a h3 {letter-spacing:-2px;}
+}
+
+#ct {
+  padding-top: 36px;
+}
+
+#ct .inner {
+  width: 980px;
+  margin: 0 auto;
+}
+
+#name_lbl {
+  width: 100%;
+}
+
+#content_lbl {
+  width: 770px;
+}
+
+.bodytext_area .board-title {
+    padding-left: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #000;
+    font-size: 30px;
+  font-weight: 700;
+}
