@@ -266,3 +266,95 @@
 .info-input .login-input {
   width: 400px;
 }
+
+.info-input .signup-wrap {
+	margin-top: 15px;
+	text-align: center;
+}
+
+.info-input .signup-wrap > a {
+	color: rgb(142, 142, 142);
+	font-size: 17px;
+}
+
+.info-input .signup-wrap > a:hover {
+	text-decoration: underline;
+	color: #222;
+}
+
+/* --------------------------- signup -------------------------------- */
+#container .signup-inner {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 12px;
+}
+
+.inner .select-user {
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+}
+
+.inner .select-user li {
+  float: left;
+  width: 400px;
+  border: 1px solid #767676;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.inner .select-user li a {
+  padding: 30px 10px;
+  height: 180px;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #222;
+}
+
+.inner .select-user li a img {
+  width: 100px;
+  height: auto;
+  display: inline-block;
+  margin: 0 0 10px 0;
+}
+
+.inner .select-user li a strong {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.inner .select-user li .student-select.select {
+  background: #ffe05f;
+  border: 1px solid #dcbf48;
+  border-radius: 10px;
+}
+
+.inner .select-user li .teacher-select.select {
+  background: #77c3f4;
+  border: 1px solid #64aede;
+  border-radius: 10px;
+}
+
+.signup-inner .signup-btn {
+  display: inline-block;
+}
+
+.signup-btn > input {
+  display: inline-block;
+  min-width: 400px;
+  height: 54px;
+  padding: 0 25px;
+  background: #f29200;
+  border: none;
+  cursor: pointer;
+  margin: 20px 0 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #e3f2ed;
+  border-radius: 5px;
+  
+}

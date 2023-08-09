@@ -9,6 +9,7 @@ import com.basic.careernet.command.ConsultingVO;
 @Mapper
 public interface ConsultingMapper {
 	int writeBoard(ConsultingVO vo);
-	List<ConsultingVO> getBoardList();
+	List<ConsultingVO> getBoardList(ConsultingCriteria consultingCri);
+	int getBoardTotal(ConsultingCriteria consultingCri);
 	ConsultingVO getBoardDetail(int boardId);
 }

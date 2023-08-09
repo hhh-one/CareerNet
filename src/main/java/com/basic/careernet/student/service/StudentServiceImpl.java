@@ -15,4 +15,9 @@ public class StudentServiceImpl implements StudentService {
 		return studentMapper.studentRegist(vo);
 	}
 
+	@Override
+	public int idCheck(String id) {
+		return studentMapper.idCheck(id);
+	}
+
 }

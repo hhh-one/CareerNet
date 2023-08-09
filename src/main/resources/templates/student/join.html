@@ -17,9 +17,9 @@
           <!-- id -->
           <div>
             <input type="text" id="studentId" name="id" placeholder="아이디" title="아이디 입력" th:value="${vo != null ? vo.id : ''}">
-            <a href="#" class="btn-gray">중복확인</a>
+            <a href="" class="btn-gray" id="confirmId">중복확인</a>
             <p class="txt-msg" id="msg-studentId">5~20자의 영문 소문자, 숫자와 특수기호 -, _만 사용 가능합니다.</p>
-            <p class="txt-error" id="error-studentId">[[${valid_id}]]</p>
+            <p class="txt-error" id="error-studentId" style="display: none;">올바르지 않는 아이디입니다</p>
           </div>
           <!-- pw -->
           <div>
@@ -47,7 +47,6 @@
           <!-- 이메일 -->
           <div>
             <input type="text" id="studentEmail" name="email" placeholder="이메일" title="이메일 입력" th:value="${vo != null ? vo.email : ''}">
-            <a href="#" class="btn-gray">인증하기</a>
             <p class="txt-error">[[${valid_email}]]</p>
           </div>
           <!-- 거주지역 -->
@@ -159,6 +158,21 @@
 </th:block>
 
 <script th:inline="javascript">
+	//아이디 입력하면서 유효성 검사를 해버려야 중복확인이 편하다
+	$("#studentId").blur(() => {
+		if (!isId($(event.target).val())) {
+			$("#error-studentId").css("display", "block");	
+		} else {
+			$("#error-studentId").css("display", "none");
+		}
+	})
+	
+	function isId(studentId) {
+		var regExp = /^[a-z0-9_-]{5,20}$/g;
+		
+		return regExp.test(studentId);
+	};
+	
 	//비밀번호 일치 확인
 	$("#confirmPw").blur(() => {
 		if ($(event.target).val() !== $("#studentPw").val()) {
@@ -172,4 +186,40 @@
 	function setBirthday() {
 		$("#studentBirthday").val($("#studentBirthdayYyyy").val() + "/" + $("#studentBirthdayMm").val() + "/" + $("#studentBirthdayDd").val());
 	}
+	
+	//아이디 중복확인
+	let idck = 0; //중복확인을 했는지 여부
+	$("#confirmId").click(function() {
+		event.preventDefault();
+		
+		let studentId = $("#studentId").val();
+		
+		$.ajax({
+			async : true,
+			type : 'post',
+			data : JSON.stringify({id : studentId}),
+			url : "idCheck",
+			contentType : "application/json",
+			success : function(data) {
+				if(isId($("#studentId").val())) {
+					//아이디 중복
+					if (data.cnt > 0) {
+						//아이디가 유효성 검사를 만족했다면
+						$("#error-studentId").html("사용할 수 없는 아이디입니다");
+						$("#error-studentId").css("display", "block");
+						$("#studentId").focus();
+						
+					} else {
+						$("#error-studentId").css("display", "none");
+						$("#confirmId").html("✔");
+						$("#confirmId").css({color: "#01DF3A", border : "1px solid #01DF3A"});
+						idck = 1;
+					}
+				}
+			},
+			error : function(status, err) {
+				console.log(status);
+			}
+		});
+	});
 </script>

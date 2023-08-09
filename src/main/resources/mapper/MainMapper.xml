@@ -4,13 +4,23 @@
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.basic.careernet.main.service.MainMapper">
-	<select id="loginUser" resultType="int">
+	<select id="loginStudent" resultType="int">
 		select count(*) from student
 		where id = #{id} and pw = #{pw};
+	</select>
+	
+	<select id="loginTeacher" resultType="int">
+		select count(*) from teacher
+		where tea_id = #{tea_id} and tea_pw = #{tea_pw};
 	</select>
 	
 	<select id="getStudentInfo" resultType="StudentVO">
 		select * from student 
 		where id = #{id} and pw = #{pw};
+	</select>
+	
+	<select id="getTeacherInfo" resultType="TeacherVO">
+		select * from teacher
+		where tea_id = #{tea_id} and tea_pw = #{tea_pw};
 	</select>
 </mapper>

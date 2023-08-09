@@ -60,11 +60,18 @@
   line-height: 1.5;
 }
 
+.student-comment > .auto-height {
+    width: 100%;
+    border: none;
+    resize: none;
+    height: auto;
+    overflow: hidden;
+}
+
 .board-view-btn {
   width: 100%;
   text-align: center;
   margin: 15px 0 0;
-  overflow: hidden;
 }
 
 .board-view-btn .btn-right {

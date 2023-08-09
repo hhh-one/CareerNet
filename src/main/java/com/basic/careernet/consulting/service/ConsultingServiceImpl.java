@@ -18,8 +18,13 @@ public class ConsultingServiceImpl implements ConsultingService {
 	}
 
 	@Override
-	public List<ConsultingVO> getBoardList() {
-		return consultingMapper.getBoardList();
+	public List<ConsultingVO> getBoardList(ConsultingCriteria consultingCri) {
+		return consultingMapper.getBoardList(consultingCri);
+	}
+
+	@Override
+	public int getBoardTotal(ConsultingCriteria consultingCri) {
+		return consultingMapper.getBoardTotal(consultingCri);
 	}
 
 	@Override
