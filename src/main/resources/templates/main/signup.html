@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<th:block th:replace="~{./include/layout :: setContent(~{ :: #signup-container})}">
+	<div id="signup-container" style="height: 850px;">
+    <form action="studentForm" name="signupForm" method="post">
+      <div id="container" style="min-height: 650px;">
+        <div class="inner signup-inner">
+          <ul class="select-user">
+            <li>
+              <a href="#" class="student-select select">
+                <img th:src="@{/img/student.png}" alt="일반">
+                <strong>일반 회원가입</strong>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="teacher-select">
+                <img th:src="@{/img/teacher.png}" alt="교사">
+                <strong>교사 회원가입</strong>
+              </a>
+            </li>
+          </ul>
+          <div class="signup-btn">
+            <input type="submit" value="다음">
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</th:block>
+
+<script th:inline="javascript">
+	$(".student-select").click(function() {
+		$(".student-select").addClass("select");
+		$(".teacher-select").removeClass("select");
+		document.signupForm.action = "studentForm";
+	})
+	$(".teacher-select").click(function() {
+		$(".student-select").removeClass("select");
+		$(".teacher-select").addClass("select");
+		document.signupForm.action = "teacherForm";
+	})
+</script>

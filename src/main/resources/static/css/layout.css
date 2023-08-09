@@ -256,3 +256,7 @@ ul .m .submenu-list li a{
     color: #2e3434;
 }
 
+
+#wrap{
+	min-height: 800px;
+}
