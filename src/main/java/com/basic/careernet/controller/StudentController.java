@@ -1,6 +1,8 @@
 package com.basic.careernet.controller;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import javax.validation.Valid;
 
@@ -13,7 +15,9 @@ import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.basic.careernet.command.StudentVO;
@@ -48,5 +52,17 @@ public class StudentController {
 		ra.addFlashAttribute("join_success", "회원가입이 완료되었습니다 !");
 		studentService.studentRegist(vo);
 		return "redirect:/main/login";
+	}
+	
+	@PostMapping("/idCheck")
+	@ResponseBody
+	public Map<String, Integer> idCheck(@RequestBody Map<String, String> requestBody) {
+		Map<String, Integer> map = new HashMap<>();
+		int count = 0;
+		String id = requestBody.get("id");
+		count = studentService.idCheck(id);
+		map.put("cnt", count);
+		
+		return map;
 	}
 }

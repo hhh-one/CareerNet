@@ -17,6 +17,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.basic.careernet.command.ConsultingVO;
+import com.basic.careernet.consulting.service.ConsultingCriteria;
+import com.basic.careernet.consulting.service.ConsultingPageVO;
 import com.basic.careernet.consulting.service.ConsultingService;
 
 @Controller
@@ -46,15 +48,21 @@ public class ConsultingController {
 	}
 	
 	@GetMapping("/list")
-	public String list(Model model) {
-		List<ConsultingVO> boardList = consultingService.getBoardList();
+	public String list(Model model, ConsultingCriteria consultingCri) {
+		System.out.println(consultingCri);
+		List<ConsultingVO> boardList = consultingService.getBoardList(consultingCri);
 		model.addAttribute("boardList", boardList);
+		
+		int total = consultingService.getBoardTotal(consultingCri);
+		ConsultingPageVO consultingPageVO = new ConsultingPageVO(consultingCri, total);
+		model.addAttribute("consultingPageVO", consultingPageVO);
+		
 		return "consulting/boardList";
 	}
 	
 	@PostMapping("/writeForm")
 	public String writeForm(@ModelAttribute("consultingVO") ConsultingVO consultingVO) {
 		consultingService.writeBoard(consultingVO);
-		return "consulting/boardList";
+		return "redirect:/consulting/list";
 	}
 }

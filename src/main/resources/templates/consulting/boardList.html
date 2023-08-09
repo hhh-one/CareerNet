@@ -1,102 +1,135 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <th:block th:replace="~{./include/layout :: setContent(~{ :: #ct})}">
-	<div id="ct">
+  <div id="ct">
     <div class="inner">
       <div id="contents">
-        <h2 class="content-title">상담 리스트</h2>
-        <span class="title-comment">나와 비슷한 고민을 가진 분들의 상담내용이 궁금하신가요? <br>
-          상담내용을 통해 나와 같은 고민에 대한 상담답변을 확인해 보세요!
-        </span>
-        <fieldset>
-          <div class="search-box">
-            <div class="search-box-inner">
-              <dl>
-                <dt>대상</dt>
-                <dd>
-                  <select name="identity" id="" class="identity-select">
-                    <option value="">회원구분 선택</option>
-                    <option value="일반">일반</option>
-                    <option value="초등학생">초등학생</option>
-                    <option value="중학생">중학생</option>
-                    <option value="고등학생">고등학생</option>
-                    <option value="대학생">대학생</option>
-                  </select>
-                </dd>
-              </dl>
-              <dl>
-                <dt>검색어</dt>
-                <input type="text" class="search-text">
-              </dl>
-              <p class="search-box-btn">
-                <a class="search-btn" href="#">검색</a>
-                <a class="reset-btn" href="#">초기화</a>
-              </p>
+        <form name="searchForm" action="list" method="get">
+          <!-- form에 넘어가게 하지만 보이면 안될 때 -->
+          <input type="hidden" name="page" value="1">
+          <input type="hidden" name="amount" th:value="${consultingPageVO.amount}">
+          <h2 class="content-title">상담 리스트</h2>
+          <span class="title-comment">나와 비슷한 고민을 가진 분들의 상담내용이 궁금하신가요? <br>
+            상담내용을 통해 나와 같은 고민에 대한 상담답변을 확인해 보세요!
+          </span>
+          <fieldset>
+            <div class="search-box">
+              <div class="search-box-inner">
+                <dl>
+                  <dt>대상</dt>
+                  <dd>
+                    <select name="searchIdentity" id="" class="identity-select">
+                      <option value>회원구분 선택</option>
+                      <option value="일반" th:selected="${consultingPageVO.consultingCri.searchIdentity == '일반'}">일반</option>
+                      <option value="초등학생" th:selected="${consultingPageVO.consultingCri.searchIdentity == '초등학생'}">초등학생</option>
+                      <option value="중학생" th:selected="${consultingPageVO.consultingCri.searchIdentity == '중학생'}">중학생</option>
+                      <option value="고등학생" th:selected="${consultingPageVO.consultingCri.searchIdentity == '고등학생'}">고등학생</option>
+                      <option value="대학생" th:selected="${consultingPageVO.consultingCri.searchIdentity == '대학생'}">대학생</option>
+                    </select>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>검색어</dt>
+                  <input type="text" class="search-text" name="searchTitle" th:value="${consultingPageVO.consultingCri.searchTitle}">
+                </dl>
+                <p class="search-box-btn">
+                  <a class="search-btn" href="#" id="searchBtn">검색</a>
+                  <a class="reset-btn" href="#">초기화</a>
+                </p>
+              </div>
+            </div>
+          </fieldset>
+          <div class="board-list-top">
+            <p class="list-top-right">
+              <a href="#">상담신청</a>
+            </p>
+          </div>
+          <div class="board-list">
+            <table>
+              <colgroup>
+                <col width="120">
+                <col width="180">
+                <col width="359">
+                <col width="120">
+                <col width="100">
+                <col width="100">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col" class="first">번호</th>
+                  <th scope="col">대상</th>
+                  <th scope="col">제목</th>
+                  <th scope="col">답변현황</th>
+                  <th scope="col">등록일</th>
+                  <th scope="col" class="last">조회수</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr th:each="board,status : ${boardList}">
+                  <td>[[${board.boardId}]]</td>
+                  <td>[[${board.identity}]]</td>
+                  <td class="board-content"><a th:href="@{detail/} + ${board.boardId}">[[${board.title}]]</a></td>
+                  <td><span></span></td>
+                  <td>[[${#temporals.format(board.regdate, 'yyyy-MM-dd')}]]</td>
+                  <td>[[${board.hit}]]</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="pagination">
+				
+              <a th:href="@{list(page=1,
+              				amount=${consultingPageVO.amount},
+            				searchIdentity=${consultingPageVO.consultingCri.searchIdentity},
+            				searchTitle=${consultingPageVO.consultingCri.searchTitle})}">
+                <img src="https://www.career.go.kr/cnet/images/egovframework/com/cmm/mod/icon/icon_prevend.gif"
+                  alt="맨앞">
+              </a>
+              
+              <th:block th:if="${consultingPageVO.prev}">
+                <a th:href="@{list(page=${consultingPageVO.start - 1},
+              				amount=${consultingPageVO.amount},
+            				searchIdentity=${consultingPageVO.consultingCri.searchIdentity},
+            				searchTitle=${consultingPageVO.consultingCri.searchTitle})}">
+                  <img src="https://www.career.go.kr/cnet/images/egovframework/com/cmm/mod/icon/icon_prev.gif" alt="이전">
+                </a>
+              </th:block>
+              
+              <th:block th:each="page : ${consultingPageVO.pageList}">
+                <a th:href="@{list(page=${page},
+                			  amount=${consultingPageVO.amount},
+            				  searchIdentity=${consultingPageVO.consultingCri.searchIdentity},
+            				  searchTitle=${consultingPageVO.consultingCri.searchTitle})}">[[${page}]]</a>
+              </th:block>
+              
+              <th:block th:if="${consultingPageVO.next}">
+		          <a th:href="@{list(page=${consultingPageVO.end + 1},
+		          				  amount=${consultingPageVO.amount},
+		          				  searchIdentity=${consultingPageVO.consultingCri.searchIdentity},
+            				  	  searchTitle=${consultingPageVO.consultingCri.searchTitle})}">
+		            <img src="https://www.career.go.kr/cnet/images/egovframework/com/cmm/mod/icon/icon_next.gif" alt="다음">
+		          </a>
+		      </th:block>
+              
+              <a th:href="@{list(page=${consultingPageVO.realEnd},
+              				  amount=${consultingPageVO.amount},
+              				  searchIdentity=${consultingPageVO.consultingCri.searchIdentity},
+            				  searchTitle=${consultingPageVO.consultingCri.searchTitle})}">
+                <img src="https://www.career.go.kr/cnet/images/egovframework/com/cmm/mod/icon/icon_nextend.gif"
+                  alt="맨뒤">
+              </a>
+              
             </div>
           </div>
-        </fieldset>
-        <div class="board-list-top">
-          <p class="list-top-right">
-            <a href="#">상담신청</a>
-          </p>
-        </div>
-        <div class="board-list">
-          <table>
-            <colgroup>
-              <col width="120">
-              <col width="180">
-              <col width="359">
-              <col width="120">
-              <col width="100">
-              <col width="100">
-            </colgroup>
-            <thead>
-              <tr>
-                <th scope="col" class="first">번호</th>
-                <th scope="col">대상</th>
-                <th scope="col">제목</th>
-                <th scope="col">답변현황</th>
-                <th scope="col">등록일</th>
-                <th scope="col" class="last">조회수</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr th:each="board,status : ${boardList}">
-                <td>[[${status.count}]]</td>
-                <td>[[${board.identity}]]</td>
-                <td class="board-content"><a th:href="@{detail/} + ${board.boardId}">[[${board.title}]]</a></td>
-                <td><span></span></td>
-                <td>[[${#temporals.format(board.regdate, 'yyyy-MM-dd')}]]</td>
-                <td>[[${board.hit}]]</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="pagination">
-            <a href="#">
-              <img src="https://www.career.go.kr/cnet/images/egovframework/com/cmm/mod/icon/icon_prevend.gif" alt="맨앞">
-            </a>
-            <a href="#">
-              <img src="https://www.career.go.kr/cnet/images/egovframework/com/cmm/mod/icon/icon_prev.gif" alt="이전">
-            </a>
-            <a href="#">1</a>
-            <a href="#">1</a>
-            <a href="#">1</a>
-            <a href="#">1</a>
-            <a href="#">1</a>
-            <a href="#">1</a>
-            <a href="#">1</a>
-            <a href="#">1</a>
-            <a href="#">1</a>
-            <a href="#">1</a>
-            <a href="#">
-              <img src="https://www.career.go.kr/cnet/images/egovframework/com/cmm/mod/icon/icon_next.gif" alt="다음">
-            </a>
-            <a href="#">
-              <img src="https://www.career.go.kr/cnet/images/egovframework/com/cmm/mod/icon/icon_nextend.gif" alt="맨뒤">
-            </a>
-          </div>
-        </div>
+        </form>
       </div>
     </div>
   </div>
 </th:block>
+
+<script>
+	
+	$("#searchBtn").click(() => {
+		event.preventDefault();
+		document.searchForm.submit();
+	})
+</script>

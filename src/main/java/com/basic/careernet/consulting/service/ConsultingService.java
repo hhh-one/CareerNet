@@ -6,6 +6,7 @@ import com.basic.careernet.command.ConsultingVO;
 
 public interface ConsultingService {
 	int writeBoard(ConsultingVO vo);
-	List<ConsultingVO> getBoardList();
+	List<ConsultingVO> getBoardList(ConsultingCriteria consultingCri);
+	int getBoardTotal(ConsultingCriteria consultingCri);
 	ConsultingVO getBoardDetail(int boardId);
 }

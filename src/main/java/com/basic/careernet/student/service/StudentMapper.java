@@ -7,4 +7,5 @@ import com.basic.careernet.command.StudentVO;
 @Mapper
 public interface StudentMapper {
 	int studentRegist(StudentVO vo);
+	int idCheck(String id);
 }

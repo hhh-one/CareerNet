@@ -20,7 +20,7 @@
             </thead>
             <tbody>
               <tr class="last">
-                <td class="student-comment">[[${consultingVO.content}]]</td>
+                <td class="student-comment"><textarea class="auto-height" disabled th:text="${consultingVO.content}"></textarea></td>
               </tr>
             </tbody>
           </table>
@@ -42,3 +42,11 @@
     </div>
   </div>
 </th:block>
+
+<script th:inline="javascript">
+$(document).ready(function() {
+	$(".auto-height").each(function() {
+        $(this).height(this.scrollHeight);
+    });
+});
+</script>

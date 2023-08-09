@@ -8,4 +8,8 @@
 		insert into student(id, pw, name, gender, email, area, birthday, identity) 
 		values(#{id}, #{pw}, #{name}, #{gender}, #{email}, #{area}, #{birthday}, #{identity})
 	</insert>
+	
+	<select id="idCheck" resultType="int">
+		select count(*) from student where id = #{id};
+	</select>
 </mapper>

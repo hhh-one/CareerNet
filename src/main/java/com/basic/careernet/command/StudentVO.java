@@ -15,7 +15,7 @@ import lombok.NoArgsConstructor;
 @Builder
 public class StudentVO {
 	private Integer sno;
-	@Pattern(message = "아이디를 입력해주세요", regexp = "[a-z0-9_-]{5,20}")
+	//아이디 유효성 검사는 js로 (join.html <script>)
 	private String id;
 
 	@Pattern(message = "올바르지 않은 비밀번호입니다", regexp = "(?=.*[A-Za-z])(?=.*[0-9])(?=.*[@$!%*#?&])[A-Za-z\\d@$!%*#?&]{8,20}")
