@@ -20,3 +20,25 @@ CREATE TABLE consulting (
 	writer		varchar(20)	NULL,
 	hit			int	DEFAULT 0
 );
+
+//교사 테이블
+CREATE TABLE consulting (
+   boardId      INT PRIMARY KEY AUTO_INCREMENT,
+   title      varchar(1000)   NULL,
+   content      varchar(2000)   NULL,
+   regdate      TIMESTAMP DEFAULT NOW(),
+   writer      varchar(20)   NULL,
+   hit         int   DEFAULT 0,
+    sno         int   NOT NULL,
+    identity    varchar(20) NOT NULL
+);
+
+//상담답변 테이블
+CREATE TABLE reply (
+	replyId	INT PRIMARY KEY AUTO_INCREMENT,
+	title	varchar(20)	NOT NULL,
+	reply	varchar(1000)	NOT NULL,
+	regdate	TIMESTAMP DEFAULT NOW(),
+	tno	int	NULL,
+	boardId	int	NULL
+);

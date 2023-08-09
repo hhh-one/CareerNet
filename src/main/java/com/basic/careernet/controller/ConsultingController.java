@@ -14,9 +14,11 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.basic.careernet.command.ConsultingVO;
+import com.basic.careernet.command.ReplyVO;
 import com.basic.careernet.consulting.service.ConsultingService;
 
 @Controller
@@ -31,6 +33,10 @@ public class ConsultingController {
 						 Model model) {
 		ConsultingVO consultingVO = consultingService.getBoardDetail(boardId);
 		model.addAttribute("consultingVO", consultingVO);
+		
+		ReplyVO replyVO = consultingService.getReplyDetail(boardId);
+		model.addAttribute("replyVO", replyVO);
+		
 		return "consulting/boardDetail";
 	}
 	

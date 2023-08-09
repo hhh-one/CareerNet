@@ -14,7 +14,7 @@ import org.springframework.validation.FieldError;
 import com.basic.careernet.command.TeacherVO;
 
 
-@Service("teacherService")
+@Service
 public class TeacherServiceImpl implements TeacherService{
 
 	@Autowired
@@ -31,10 +31,27 @@ public class TeacherServiceImpl implements TeacherService{
 	}
 
 	@Override
-	public ArrayList<TeacherVO> getList(String login) {
+	public ArrayList<TeacherVO> getList(TeacherVO teacherVO) {
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+	//회원가입 중복확인-교사
+	@Override
+	public String getTea_id(String tea_id) {
+		
+		return teacherMapper.getTea_id(tea_id);
+	}
+
+
+
+//	@Override
+//	public String getId(String tea_id) {
+//		// TODO Auto-generated method stub
+//		return null;
+//	}
+
+
 	
 	
 

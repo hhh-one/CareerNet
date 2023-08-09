@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<th:block th:replace="~{./include/layout :: setContent(~{ :: #rep_container})}">
+
+<div id="rep_container" style="margin-top: 132px;">
+	<form action="replyForm" class="replyForm" name="replyForm" method="post">
+	  <div>
+	    <p class="reply_title">상담 답변</p>
+	    <ul class="reply_list">
+		  <input type="hidden" id="boardId" name="boardId" th:value="${key}">	
+	      <li class="reply_title_tea">
+	        <label for="replyTitle_lbl" class="title_reply_lbl">제목</label>
+	        <div class="replyName_content"><input type="text" class="reply" id="reply_title" placeholder="제목을 입력하세요" name="title"></div>
+	      </li>
+	      <li class="reply_content">
+	        <label for="replyContent_lbl" class="content_reply_lbl">답변</label>
+	        <div class="reply_content"><textarea id="reply_content_lbl" class="reply_co" placeholder="질문에 맞는 답변을 해주세요" name="reply"></textarea></div>
+	      </li>
+	    </ul>
+	  </div>
+	  <p class="btn_replyFC">
+		<input type="submit" class="btn_t_reply_finish" value="작성완료">
+		<input type="reset" class="btn_t_reply_cancel" value="작성취소">
+	  </p>
+	  
+	  
+</form>
+	</div>
+</th:block>
+
+
+
+        
+        

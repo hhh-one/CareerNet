@@ -5,6 +5,7 @@
 
 <mapper namespace="com.basic.careernet.teacher.service.TeacherMapper">
 
+	<!-- 회원가입 완료 후 DB저장 -->
 	<insert id="teacherJoin" parameterType="TeacherVO">
 		insert into teacher(tea_id,
 						    tea_pw,
@@ -26,6 +27,11 @@
 		       #{tea_school},
 		       #{tea_age})
 	</insert>
-
+	
+	
+	<!-- 회원가입시 중복확인 -->
+	<select id="getTea_id" resultType="String">
+		select tea_id from teacher where tea_id=#{tea_id}
+	</select>
 
 </mapper>

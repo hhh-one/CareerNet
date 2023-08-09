@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.basic.careernet.command.ConsultingVO;
+import com.basic.careernet.command.ReplyVO;
 
 @Service("consultingService")
 public class ConsultingServiceImpl implements ConsultingService {
@@ -25,6 +26,12 @@ public class ConsultingServiceImpl implements ConsultingService {
 	@Override
 	public ConsultingVO getBoardDetail(int boardId) {
 		return consultingMapper.getBoardDetail(boardId);
+	}
+
+	@Override
+	public ReplyVO getReplyDetail(int boardId) {
+		
+		return consultingMapper.getReplyDetail(boardId);
 	}
 
 }

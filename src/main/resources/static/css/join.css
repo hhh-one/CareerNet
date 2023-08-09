@@ -1,5 +1,12 @@
-
-body,h1,h2,h3,h4,h5,h6,div,p,blockquote,pre,address,form {
+.tea_form {
+  margin: 0;
+  padding: 0;
+  letter-spacing: -1px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.tea_p_text{
   margin: 0;
   padding: 0;
   letter-spacing: -1px;
@@ -8,14 +15,24 @@ body,h1,h2,h3,h4,h5,h6,div,p,blockquote,pre,address,form {
   box-sizing: border-box;
 }
 
-body{
-font-size: 14px;
-color: #767676;
-font-size: 13px;
-font-family: "Nanum Gothic", sans-serif;
-line-height: 30px;
--webkit-font-smoothing: antialiased;
+.tea_title{
+	  margin: 0;
+  padding: 0;
+  letter-spacing: -1px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
+
+.tea_suit{
+	  margin: 0;
+  padding: 0;
+  letter-spacing: -1px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 
 #tea_container{
 	margin-top: 132px;
@@ -90,7 +107,7 @@ margin-bottom: 10px;
 
 }
 
-h3 {
+.tea_suit {
 display: block;
 margin-block-start: 1.33em;
 margin-block-end: 1.33em;
@@ -129,7 +146,7 @@ font-weight: bold;
   color: #999;
 }
 
-p{
+.tea_p_text{
 display: block;
 margin-block-start: 1em;
 margin-block-end: 1em;
@@ -138,7 +155,7 @@ margin-inline-end: 0px;
 }
 
 .tea_pw{
-  width: 360px;
+  width: 100%;
   vertical-align: middle;
 }
 
