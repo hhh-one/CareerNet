@@ -12,4 +12,6 @@
 	<select id="idCheck" resultType="int">
 		select count(*) from student where id = #{id};
 	</select>
+	
+
 </mapper>

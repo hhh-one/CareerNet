@@ -26,9 +26,35 @@
           </table>
 
           <!-- 현주언니 파트 -->
-          <table class="advice-reply">
-
+          <table class="advice-reply" th:if="${replyVO == null}">
+			<div class="reply-btn">
+				<span class="btn-left">
+					<!--<button type="button" id="re_btn" onclick="replyForm">답변하기</button>--> 
+					<a th:href="@{/reply/writeReply(key = ${consultingVO.boardId})}" class="btn_reply" id="btn_reply">답변하기</a>
+				</span>
+			</div>
           </table>
+          
+          
+          <table class="replyFinish" th:if="${replyVO != null}">
+			  <div class="reply_div">
+				<h3 class="reply_title_t">답변 보기</h3> 
+			  <thead>
+				  <th scope="col">
+					  <p class="teacher-reply-title">[[${replyVO.title}]]</p>
+					  <ul class="teacher-date">
+						  <li class="dddss">등록자: [[${replyVO.replyId}]]</li>
+    				      <li class="aaass">등록일: [[${#temporals.format(replyVO.regdate, 'yyyy-MM-dd')}]] </li>
+					  </ul>
+				  </th>
+			  </thead>
+			  <tbody>
+				  <tr class="reply-answer">
+					  <td class="teacher-answer">[[${replyVO.reply}]]</td>
+				  </tr>
+			  </tbody>
+			  </div>
+		  </table>
           <!-- 현주언니 파트 끝 -->
         </div>
 

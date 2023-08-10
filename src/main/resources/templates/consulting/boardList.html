@@ -41,7 +41,7 @@
           </fieldset>
           <div class="board-list-top">
             <p class="list-top-right">
-              <a href="#">상담신청</a>
+              <a href="write">상담신청</a>
             </p>
           </div>
           <div class="board-list">
@@ -75,8 +75,9 @@
                 </tr>
               </tbody>
             </table>
-            <div class="pagination">
+            <div class="pagination" style="margin-bottom: 20px;">
 				
+              <th:block th:if="${consultingPageVO.prev}">
               <a th:href="@{list(page=1,
               				amount=${consultingPageVO.amount},
             				searchIdentity=${consultingPageVO.consultingCri.searchIdentity},
@@ -85,7 +86,6 @@
                   alt="맨앞">
               </a>
               
-              <th:block th:if="${consultingPageVO.prev}">
                 <a th:href="@{list(page=${consultingPageVO.start - 1},
               				amount=${consultingPageVO.amount},
             				searchIdentity=${consultingPageVO.consultingCri.searchIdentity},
@@ -98,7 +98,7 @@
                 <a th:href="@{list(page=${page},
                 			  amount=${consultingPageVO.amount},
             				  searchIdentity=${consultingPageVO.consultingCri.searchIdentity},
-            				  searchTitle=${consultingPageVO.consultingCri.searchTitle})}">[[${page}]]</a>
+            				  searchTitle=${consultingPageVO.consultingCri.searchTitle})}" th:class="${page}">[[${page}]]</a>
               </th:block>
               
               <th:block th:if="${consultingPageVO.next}">
@@ -108,7 +108,6 @@
             				  	  searchTitle=${consultingPageVO.consultingCri.searchTitle})}">
 		            <img src="https://www.career.go.kr/cnet/images/egovframework/com/cmm/mod/icon/icon_next.gif" alt="다음">
 		          </a>
-		      </th:block>
               
               <a th:href="@{list(page=${consultingPageVO.realEnd},
               				  amount=${consultingPageVO.amount},
@@ -117,6 +116,7 @@
                 <img src="https://www.career.go.kr/cnet/images/egovframework/com/cmm/mod/icon/icon_nextend.gif"
                   alt="맨뒤">
               </a>
+		      </th:block>
               
             </div>
           </div>
@@ -125,6 +125,16 @@
     </div>
   </div>
 </th:block>
+
+ <script th:inline="javascript">
+	 
+	 var page='.'+'[[${consultingPageVO.page}]]';
+	 $(page).css({'color':'#ff6600', 
+	 			'font-weight': 800});
+	 
+	 
+	 
+ </script>
 
 <script>
 	

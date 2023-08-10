@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<th:block th:replace="~{./include/layout :: setContent(~{ :: #tea_container})}">
+	<div id="tea_container">
+	  <form action="/teacher/joinForm" method="post" class="tea_form">
+	
+	    <div class="tea_join_wrap">
+	      <div class="tea_join_container">
+	        <div class="tea_join_container_color">
+	          <div class="tea_join_container_inner">
+	            <div>
+	              <h2 class="tea_title">교사 회원가입</h2>
+	            </div>
+	          </div>
+	        </div>
+	        <div class="tea_container_main">
+	          <div class="tea_info_input">
+	            <h3 class="tea_suit">필수입력</h3>
+	
+	            <div class="tea_id">
+	              <input type="text" name="tea_id" title="아이디 입력" placeholder="아이디" id="id"
+	                th:value="${teacherVO != null ? teacherVO.tea_id : ''}">[[${tea_tea_id}]]
+	              <button class="tea_ch_btn" >중복확인 </button>[[${msg}]]<br>
+	              <p class="tea_p_text" id="tea_p_text">5~20자의 영문 소문자, 숫자와 특수기호 -, _ 만 사용 가능합니다.</p>
+	
+	            </div>
+	
+	            <div class="tea_pw">
+	              <input type="password" name="tea_pw" class="pwcheck" id="password_1" placeholder="비밀번호"
+	                th:value="${teacherVO != null ? teacherVO.tea_pw : ''}">[[${tea_tea_pw}]] 
+	              <p class="tea_p_text" id="tea_p_text">8~20자의 영문 대/소문자, 숫자, 특수문자 ~`!@#$%^&amp;*()-_=+\| 3개 이상 조합을
+	                입력하세요(공백불가)
+	              </p>
+	              <input type="password" name="tea_pw_ch" class="pwcheck" id="password_2" placeholder="비밀번호 확인"> </br>
+	              <div class="alert alert-success" id="alert-success">비밀번호가 일치합니다.</div>
+	              <div class="alert alert-danger" id="alert-danger">비밀번호가 일치하지 않습니다.</div>
+	            </div>
+	
+	            <div class="tea_name">
+	              <input type="text" name="tea_name" placeholder="이름"
+	                th:value="${teacherVO != null ? teacherVO.tea_name : ''}">[[${tea_tea_name}]]
+	            </div>
+	
+	            <div class="tea_email">
+	              <input type="text" name="tea_email" placeholder="이메일"
+	                th:value="${teacherVO != null ? teacherVO.tea_email : ''}">[[${tea_tea_email}]]</br>
+	            </div>
+	
+	            <div class="tea_area">
+	              <!--<input type="text" name="tea_area" placeholder="거주지역" th:value="${teacherVO != null ? teacherVO.tea_area : ''}">[[${tea_tea_area}]]-->
+	              <select name="tea_area" title="거주지역 선택"
+	                th:value="${teacherVO != null ? teacherVO.tea_area : ''}">[[${tea_tea_area}]]
+	                <option>--거주지역선택--</option>
+	                <option value="서울특별시">서울특별시</option>
+	                <option value="부산광역시">부산광역시</option>
+	                <option value="인천광역시">인천광역시</option>
+	                <option value="광주광역시">광주광역시</option>
+	                <option value="세종특별자치시">세종특별자치시</option>
+	                <option value="대구광역시">대구광역시</option>
+	                <option value="대전광역시">대전광역시</option>
+	                <option value="울산광역시">울산광역시</option>
+	                <option value="강원특별자치도">강원특별자치도</option>
+	                <option value="경기도">경기도</option>
+	                <option value="경상남도">경상남도</option>
+	                <option value="경상북도">경상북도</option>
+	                <option value="전라남도">전라남도</option>
+	                <option value="전라북도">전라북도</option>
+	                <option value="충청남도">충청남도</option>
+	                <option value="충청북도">충청북도</option>
+	                <option value="제주특별자치도">제주특별자치도</option>
+	                <option value="해외거주">해외거주</option>
+	              </select>
+	
+	            </div>
+	          </div>
+	
+	          <br>
+	          <br>
+	          <hr>
+	
+	          <h3 class="tea_suit">선택입력</h3>
+	          <div class="tea_school">
+	            <input type="text" name="tea_school" placeholder="학교명"
+	              th:value="${teacherVO != null ? teacherVO.tea_school : ''}">[[${tea_tea_school}]]
+	          </div>
+	
+	          <div class="tea_gender">
+	            <input type="radio" name="tea_gender" id="M" class="M" th:value="M" checked>
+	            <label for="M">남자</label>
+	            <input type="radio" name="tea_gender" id="F" class="F" th:value="F">
+	            <label for="F">여자</label>
+	          </div>
+	
+	          <div calss="tea_age">
+	            <input type="text" name="tea_age" placeholder="나이"
+	              th:value="${teacherVO != null ? teacherVO.tea_age : ''}">[[${tea_tea_age}]]
+	          </div>
+	
+	          <div calss="tea_birthday">
+	            <input type="date" name="tea_birthday" placeholder="출생년도"
+	              th:value="${teacherVO != null ? teacherVO.tea_birthday : ''}">[[${tea_tea_birthday}]]
+	            <!--<input type="text" name="" placeholder="월">
+	              <input type="text" name="" placeholder="일"></br>-->
+	          </div>
+	
+	          <br>
+	          <div class="tea_last_btn">
+	            <input type="submit" class="submit" value="회원가입 완료" />
+	            <input type="reset" class="reset" value="취소" />
+	          </div>
+	        </div>
+	      </div>
+	  </form>
+	  ​
+	  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>	
+	  <script type="text/javascript">
+	    $(function () {
+	      $("#alert-success").hide();
+	      $("#alert-danger").hide();
+	      $(".pwcheck").focusout(function () {
+	        var pw1 = $("#password_1").val();
+	        var pw2 = $("#password_2").val();
+	        if (pw1 != "" || pw2 != "") {
+	          null;
+	          if (pw1 == pw2) {
+	            $("#alert-success").show();
+	            $("#alert-danger").hide();
+	            $("#submit").removeAttr("disabled");
+	          } else {
+	            $("#alert-success").hide();
+	            $("#alert-danger").show().css('color', '#ff0000');
+	            $("#submit").attr("disabled", "disabled");
+	          }
+	        }
+	      });
+	    });
+	   
+	
+	  </script>
+
+	</div>
+	
+</th:block>

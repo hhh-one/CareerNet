@@ -38,4 +38,11 @@
 	<select id="getBoardDetail" resultType="ConsultingVO">
 		select * from consulting where boardId = #{boardId};
 	</select>
+	
+	<select id="getReplyDetail" resultType="ReplyVO">
+		select * from reply where boardId = #{boardId};
+	</select>
+	
+	
+	
 </mapper>

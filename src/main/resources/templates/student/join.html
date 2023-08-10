@@ -3,11 +3,11 @@
 <th:block th:replace="~{./include/layout :: setContent(~{ :: #container})}">
   <div id="container">
     <div class="container-inner">
-      <form id="joinForm" action="joinForm" method="post">
+      <form id="joinForm" action="/student/joinForm" method="post">
         <div class="cbox-visual">
           <div class="visual-inner">
             <div>
-              <h2>통합 회원가입</h2>
+              <h2>일반 회원가입</h2>
             </div>
           </div>
         </div>
@@ -17,7 +17,7 @@
           <!-- id -->
           <div>
             <input type="text" id="studentId" name="id" placeholder="아이디" title="아이디 입력" th:value="${vo != null ? vo.id : ''}">
-            <a href="" class="btn-gray" id="confirmId">중복확인</a>
+            <a href="#" onclick="idcheck()" class="btn-gray" id="confirmId">중복확인</a>
             <p class="txt-msg" id="msg-studentId">5~20자의 영문 소문자, 숫자와 특수기호 -, _만 사용 가능합니다.</p>
             <p class="txt-error" id="error-studentId" style="display: none;">올바르지 않는 아이디입니다</p>
           </div>
@@ -182,6 +182,9 @@
 		}
 	});
 	
+
+	
+	
 	//birthday 값 넣기
 	function setBirthday() {
 		$("#studentBirthday").val($("#studentBirthdayYyyy").val() + "/" + $("#studentBirthdayMm").val() + "/" + $("#studentBirthdayDd").val());
@@ -197,8 +200,8 @@
 		$.ajax({
 			async : true,
 			type : 'post',
-			data : JSON.stringify({id : studentId}),
-			url : "idCheck",
+			data : JSON.stringify({"id" : studentId}),
+			url : "/student/idCheck",
 			contentType : "application/json",
 			success : function(data) {
 				if(isId($("#studentId").val())) {

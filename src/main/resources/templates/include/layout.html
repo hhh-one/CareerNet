@@ -26,12 +26,10 @@
     <link rel="stylesheet" th:href="@{/css/common.css}" />
     <link rel="stylesheet" th:href="@{/css/common_renew.css}" />
     <link rel="stylesheet" th:href="@{/css/counsel.css}" />
-    <link rel="stylesheet" th:href="@{/css/edu.css}" />
     <link rel="stylesheet" th:href="@{/css/main.css}" />
     <link rel="stylesheet" th:href="@{/css/mycareer.css}" />
     <link rel="stylesheet" th:href="@{/css/popup.css}" />
     <link rel="stylesheet" th:href="@{/css/submain.css}" />
-    <link rel="stylesheet" th:href="@{/css/service.css}">
     <link rel="stylesheet" th:href="@{/css/res_style.css}">
     <script th:src="@{/js/common.js}"></script>
     <script th:src="@{/js/jquery-1.7.2.js}"></script>
@@ -47,7 +45,10 @@
     <!-- consulting css -->
     <link rel="stylesheet" th:href="@{/css/consulting_common.css}">
     <link rel="stylesheet" th:href="@{/css/consulting.css}">
-
+ <!--Teacher join css-->
+	<link rel="stylesheet" th:href="@{/css/join.css}">
+    <!--Reply+ Write join css-->
+	<link rel="stylesheet" th:href="@{/css/reply.css}">
 
 </head>
 <body>
@@ -55,16 +56,27 @@
     <header id="headerR">
         <div id="headerA">
         <h1 class="headerLogo">
-        <a src="#">
+        <a href="/main/main">
             <img th:src="@{/img/logo.png}">
         </a>
         </h1>
 
         <div class="topMenu">
             <ul>
-                <li><a th:href="@{/main/login}">로그인</a></li>
-                <li><a href="#">회원가입</a></li>
+			
+				<th:block th:if="${session.student_name ==null||session.teacher_name==null}">
+                <li><a th:href="@{/main/login}" >로그인 </a></li>
+                <li><a th:href="@{/main/signup}">회원가입</a></li>
                 <li><a href="#">아이디/비밀번호 찾기</a></li>
+                </th:block>
+                <th:block th:if="${session.student_name !=null}">
+				<li><a>환영합니다 <b style="color: blue ; font-weight: 700;">[[${session.student_name}]] </b> 학우님!</a></li>
+				<li><a href="/main/logout">로그아웃</a></li>
+				</th:block>
+                <th:block th:if="${session.teacher_name !=null}">
+				<li><a>환영합니다 <b style="color: blueviolet ; font-weight: 700;">[[${session.teacher_name}]] 선생님!</b> </a></li>
+				<li><a href="/main/logout">로그아웃</a></li>
+				</th:block>
             </ul>
             <div class="hd-search">
                 <form name="topFrm" id="topFrm" action="#" method="get">

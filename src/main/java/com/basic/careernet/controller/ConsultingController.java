@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.basic.careernet.command.ConsultingVO;
+import com.basic.careernet.command.ReplyVO;
 import com.basic.careernet.consulting.service.ConsultingCriteria;
 import com.basic.careernet.consulting.service.ConsultingPageVO;
 import com.basic.careernet.consulting.service.ConsultingService;
@@ -33,6 +34,8 @@ public class ConsultingController {
 						 Model model) {
 		ConsultingVO consultingVO = consultingService.getBoardDetail(boardId);
 		model.addAttribute("consultingVO", consultingVO);
+		ReplyVO replyVO = consultingService.getReplyDetail(boardId);
+		model.addAttribute("replyVO", replyVO);
 		return "consulting/boardDetail";
 	}
 	
@@ -49,13 +52,13 @@ public class ConsultingController {
 	
 	@GetMapping("/list")
 	public String list(Model model, ConsultingCriteria consultingCri) {
-		System.out.println(consultingCri);
 		List<ConsultingVO> boardList = consultingService.getBoardList(consultingCri);
 		model.addAttribute("boardList", boardList);
 		
 		int total = consultingService.getBoardTotal(consultingCri);
 		ConsultingPageVO consultingPageVO = new ConsultingPageVO(consultingCri, total);
 		model.addAttribute("consultingPageVO", consultingPageVO);
+		System.out.println(consultingPageVO.toString());
 		
 		return "consulting/boardList";
 	}

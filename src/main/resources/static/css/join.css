@@ -1,0 +1,267 @@
+.tea_form {
+  margin: 0;
+  padding: 0;
+  letter-spacing: -1px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.tea_p_text{
+  margin: 0;
+  padding: 0;
+  letter-spacing: -1px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.tea_title{
+	  margin: 0;
+  padding: 0;
+  letter-spacing: -1px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.tea_suit{
+	  margin: 0;
+  padding: 0;
+  letter-spacing: -1px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+#tea_container{
+	margin-top: 132px;
+}
+
+.tea_join_wrap {
+  min-width: 320px;
+  position: relative;
+  width: 100%;
+}
+
+.tea_join_container {
+  position: relative;
+}
+
+.tea_join_container_color {
+  border-color: #dae9e4;
+  background-color: #e3f2ed;;
+  border-width: 1px;
+  border-bottom: 2px solid #f1ede0;
+}
+
+.tea_join_container_inner {
+  height: 110px;
+  background-image: url(https://api.career.go.kr/_web/images/common/m_sub_visual01.png);
+  background-size: 170px auto;
+  margin: 0 auto;
+}
+
+.tea_join_container_inner {
+  display: table;
+  width: 100%;
+  max-width: 1000px;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  font-weight: 700;
+}
+
+
+.tea_join_container_inner div {
+  padding-left: 175px;
+  display: table-cell;
+  padding: 0 20px 0 540px;
+  vertical-align: middle;
+}
+
+.tea_join_container_inner h2 {
+  font-size: 28px;
+  color: #222;
+  line-height: 40px;
+}
+
+.tea_container_main{
+  padding: 40px 12px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.tea_info_input{
+  padding: 0;
+  margin-top: 30px;
+
+}
+
+.tea_suit{
+position: relative;
+margin: 0;
+margin-top: 30px;
+font-size: 23px;
+color: #303030;
+margin-bottom: 10px;
+
+}
+
+.tea_suit {
+display: block;
+margin-block-start: 1.33em;
+margin-block-end: 1.33em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+font-weight: bold;
+} 
+
+.tea_ch_btn{
+  margin-left: 10px;
+  min-width: 95px;
+  width: 50px;
+  padding: 0;
+  font-size: 14px;
+  display: inline-block;
+  min-width: 120px;
+  height: 30px;
+  padding: 0 20px;
+  border: 1px solid #dcdcdc;
+  background: #f4f4f4;
+  color: #999;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 29px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  text-decoration: none;
+
+}
+
+.tea_p_text{
+  position: relative;
+  margin-top: 7px;
+  line-height: 17px;
+  color: #999;
+}
+
+.tea_p_text{
+display: block;
+margin-block-start: 1em;
+margin-block-end: 1em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+}
+
+.tea_pw{
+  width: 100%;
+  vertical-align: middle;
+}
+
+.tea_container_main input, select{
+  height: 40px;
+  padding: 0 0 0 10px;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Nanum Gothic", sans-serif;
+  appearance: none;
+  margin-bottom: 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-border-radius: 5px;
+
+}
+
+.tea_gender .M, .tea_gender .F{
+margin-left: 0;
+  display: inline-block;
+display: none;
+  font-size: 0;
+  line-height: 0;
+                                                                                                                                                                                                                  
+}
+
+.tea_gender .M + label {
+  width: 50px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 40px;
+  position: relative;
+  display: inline-block;
+  margin-left: -1px;
+  border: 1px solid #dcdcdc;
+  color: #999;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 5px 0 0 5px;
+  -webkit-border-radius: 5px 0 0 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.tea_gender .F + label {
+  width: 50px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 40px;
+  position: relative;
+  display: inline-block;
+  margin-left: -1px;
+  border: 1px solid #dcdcdc;
+  color: #999;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 0 5px 5px 0;
+  -webkit-border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.tea_gender .M:checked + label, 
+.tea_gender .F:checked + label{
+border: 3px solid #999;
+}
+
+.tea_last_btn .submit{
+  margin-left: 20px;
+  padding: 0;
+  font-size: 18px;
+  display: inline-block;
+  min-width: 120px;
+  height: 55px;
+  padding: 0 20px;
+  border: 3px solid #dcdcdc;
+  background:  #f29200;
+  color: #303030;
+  font-weight: 700;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  text-decoration: none;
+} 	
+
+
+.tea_last_btn .reset{
+  margin-left: 20px;
+  padding: 0;
+  font-size: 18px;
+  display: inline-block;
+  min-width: 120px;
+  height: 55px;
+  padding: 0 20px;
+  border: 3px solid #dcdcdc;
+  background:  #f4f4f4;
+  color: #303030;
+  font-weight: 700;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  text-decoration: none;
+  
+
+}

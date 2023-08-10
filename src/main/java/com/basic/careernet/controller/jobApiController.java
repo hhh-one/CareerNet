@@ -94,14 +94,20 @@ public class jobApiController {
 		cri.setPage(bno);
 		cri.setAmount(amount);
 		pageVO pageVO=new pageVO(cri,total);
-		System.out.println(pageVO.toString()+"asjklldbnaskfbakjsfbajksfkjf");
+//		System.out.println(pageVO.toString()+"asjklldbnaskfbakjsfbajksfkjf");
 //		List<jobVO> list= jobService.getPage(cri);
 		
 		
 		return pageVO;
-		
-		
 	}
+	
+//	@GetMapping("/api/idcheck")
+//	public String idcheck(String id) {
+//		
+//		
+//		
+//	}
+	
 	
 	@CrossOrigin("*")
 	@GetMapping(value="/api/content")

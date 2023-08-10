@@ -1,0 +1,102 @@
+.reply_title{
+  font-size: 30px;
+    font-weight: 700;
+    color: #000;
+    border-bottom: 2px solid #000;
+    padding-left: 20px;
+}
+
+
+
+.reply_title_tea{
+    position: relative;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.title_reply_lbl, .content_reply_lbl{
+    float: none;
+    width: auto;
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 17px;
+    letter-spacing: -2px;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+.reply{
+  border: none;
+  float: none;
+  width: auto;
+
+}
+
+.reply_content, .content_reply_lbl{
+  float: none;
+  width: auto;
+  border: none;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.reply_content{
+  border-bottom: none;
+  padding-bottom: 10px;
+  position: relative;
+  padding: 10px 0;
+}
+
+.reply_co{
+    float: none;
+    width: 770px;
+    height: 130px;
+}
+
+
+
+
+
+.reply_title_tea, .reply_content{
+  list-style:none;
+  padding-left:0px;
+}
+
+.reply_title_t{
+  font-size: 30px;
+  font-weight: 700;
+  color: #000;
+}
+.replyFinish{
+  width: 100%;
+  margin: 28px 0 0;
+  width: 100%;
+  border-top: 2px solid #768699;
+  border-bottom: 1px solid #b6c1cd;
+}
+
+.teacher-reply-title{
+  font-size: 16px;
+  font-weight: 700;
+  color: #3f5063;
+  margin-bottom: 7px;
+  text-align: left;
+}
+.dddss, .aaass{
+  float: left;
+}
+
+.teacher-date{
+  text-align: left;
+  background: none;
+  padding: 0 12px 0 0;
+  font-size: 12px;
+  float: left;
+  color: #333;
+  font-weight: normal;
+  
+}
+
+.teacher-answer
+{
+  border-top: 2px solid #768699;
+}

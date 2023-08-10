@@ -705,7 +705,6 @@ em {
 
 .pagination .onHere {
     position: relative;
-    width: 26px;
     display: inline-block;
     color: #ff6600;
     vertical-align: middle;
@@ -1503,3 +1502,7 @@ a .on{
 }
 
 .pagination a:hover {display: inline-block; color: #ff6600; background-color:#fff; text-decoration:underline;}
+
+body :not(.pagination .onHere) {
+  word-wrap: break-word;
+}

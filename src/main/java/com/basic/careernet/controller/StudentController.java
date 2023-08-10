@@ -37,6 +37,8 @@ public class StudentController {
 	
 	@PostMapping("/joinForm")
 	public String joinForm(@Valid @ModelAttribute("vo") StudentVO vo, Errors errors, Model model, RedirectAttributes ra) {
+		
+		
 		if (errors.hasErrors()) {
 			List<FieldError> errorList = errors.getFieldErrors();
 

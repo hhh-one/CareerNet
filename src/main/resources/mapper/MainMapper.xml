@@ -14,12 +14,12 @@
 		where tea_id = #{tea_id} and tea_pw = #{tea_pw};
 	</select>
 	
-	<select id="getStudentInfo" resultType="StudentVO">
+	<select id="getStudentInfo" resultType="com.basic.careernet.command.StudentVO">
 		select * from student 
 		where id = #{id} and pw = #{pw};
 	</select>
 	
-	<select id="getTeacherInfo" resultType="TeacherVO">
+	<select id="getTeacherInfo" resultType="com.basic.careernet.command.TeacherVO">
 		select * from teacher
 		where tea_id = #{tea_id} and tea_pw = #{tea_pw};
 	</select>

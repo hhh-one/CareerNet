@@ -1,9 +1,9 @@
- <th:block th:replace="~{./include/layout::setContent(~{:: #careernet})}">
+    <link rel="stylesheet" th:href="@{/css/service.css}">
+    
+    <link rel="stylesheet" th:href="@{/css/edu.css}" />
+ <th:block th:replace="~{./include/layout::setContent(~{:: #ct})}">
 
-  <div id="careernet">
-    <div id="location">
-      <div class="inner">
-        
+ 
 
     <!-- CONTENT -->
     <div id="ct">
@@ -196,7 +196,7 @@
                       name="subjectChk05"
                       id="subjectChk05"
                     /><label for="subjectChk05" title="전체선택"
-                      >진로활동유형</label
+                     style="margin-top: 10px;" >진로활동유형</label
                     ></strong
                   >
                   <ul class="chk-list">
@@ -296,7 +296,7 @@
                       name="subjectChk06"
                       id="subjectChk06"
                     /><label for="subjectChk06" title="전체선택"
-                      >진로교육성취기준</label
+                          style="margin-top: 10px;">진로교육성취기준</label
                     ></strong
                   >
                   <ul class="chk-list">
@@ -410,7 +410,7 @@
                     <option value="10" selected="">10개씩 보기</option>
                     <option value="20" selected="">20개씩 보기</option>
                     <option value="30" selected="">30개씩 보기</option>
-                </select><a href="javascript:;" class="list_apply" title="목록보기 변경시 페이지가 새로고침됩니다">적용</a>
+                </select><a href="javascript:;" class="list_apply" title="목록보기 변경시 페이지가 새로고침됩니다">.</a>
                 <!-- </div> -->
             </div>
             
@@ -538,8 +538,6 @@
          
         </form>
       </div>
-    </div>
-  </div>
- 
+   
  
 </th:block>
