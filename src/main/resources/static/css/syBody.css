@@ -65,7 +65,6 @@ li , ul , a{
 .srh_bx {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 .srh_bx .srh_input {
     border: 1px solid #dadee1;

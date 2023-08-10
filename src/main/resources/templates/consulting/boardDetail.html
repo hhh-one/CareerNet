@@ -1,5 +1,14 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
+	<style>
+		
+		#rep_container{
+    width: 980px;
+    margin: 0 auto;
+    min-height: 630px;
+}
+		
+	</style>
 <th:block th:replace="~{./include/layout :: setContent(~{ :: #ct})}">
   <div id="ct">
     <div class="inner">
@@ -50,7 +59,9 @@
 			  </thead>
 			  <tbody>
 				  <tr class="reply-answer">
-					  <td class="teacher-answer">[[${replyVO.reply}]]</td>
+					  <td class="teacher-answer" style="
+    height: 100px;
+">[[${replyVO.reply}]]</td>
 				  </tr>
 			  </tbody>
 			  </div>
@@ -61,7 +72,7 @@
         <!-- 목록 보기 -->
         <div class="board-view-btn">
           <span class="btn-right">
-            <a href="#" class="btn-gray">목록보기</a>
+            <a th:href="@{/consulting/list}" class="btn-gray">목록보기</a>
           </span>
         </div>
       </div>

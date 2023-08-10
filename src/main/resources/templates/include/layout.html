@@ -64,10 +64,12 @@
         <div class="topMenu">
             <ul>
 			
-				<th:block th:if="${session.student_name ==null||session.teacher_name==null}">
+				<th:block th:if="${session.student_name ==null}">
+				<th:block th:if="${session.teacher_name ==null}">
                 <li><a th:href="@{/main/login}" >로그인 </a></li>
                 <li><a th:href="@{/main/signup}">회원가입</a></li>
                 <li><a href="#">아이디/비밀번호 찾기</a></li>
+                </th:block>
                 </th:block>
                 <th:block th:if="${session.student_name !=null}">
 				<li><a>환영합니다 <b style="color: blue ; font-weight: 700;">[[${session.student_name}]] </b> 학우님!</a></li>
